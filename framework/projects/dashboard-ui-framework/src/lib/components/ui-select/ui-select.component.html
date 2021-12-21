@@ -1,0 +1,197 @@
+<!-- <div *ngIf="!multiSelect" class="dropdown vz-menu singleselect">
+  <a href="javascript:void(0)" class="btn btn-link dropdown-toggle btn-default">
+    <span>{{ selectedItem.text }}</span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+    >
+      <defs></defs>
+      <path fill="none" d="M0,0H24V24H0Z" />
+      <path fill="#253858" d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" />
+    </svg>
+  </a>
+
+  <ul #list class="menu add-btn">
+    <li class="search" *ngIf="allowSearch">
+      <div class="form-group sm">
+        <span class="input-icon">
+          <input
+            class="form-input"
+            [(ngModel)]="searchText"
+            type="text"
+            placeholder="Search…"
+          />
+          <img src="assets/svg/search.svg" alt="" />
+        </span>
+      </div>
+    </li>
+    <li class="single-child">
+      <ul>
+        <li [class.active]="selectedItem.id === ''" (click)="ItemClicked(null)">
+          <a href="javascript:void(0)">{{ placeHolder }}</a>
+        </li>
+        <li
+          *ngFor="let item of data | search: searchText"
+          (click)="ItemClicked(item)"
+          [ngClass]="{
+            'vz-disabled': item.disabled,
+            active: item.id === selectedItem.id
+          }"
+        >
+          <a href="javascript:void(0)">{{ item.text }}</a>
+        </li>
+        <li
+          *ngFor="let link of linkData"
+          (click)="LinkClicked(link)"
+          [ngClass]="{ 'vz-disabled': link.disabled }"
+          class="add-links"
+        >
+          <a href="javascript:void(0)">{{ link.text }}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div> -->
+
+<!-- <div *ngIf="multiSelect" class="dropdown vz-menu multiselect">
+  <a href="javascript:void(0)" class="btn btn-link dropdown-toggle btn-default">
+    <span *ngIf="multiSelectItems.length === 0">{{ placeHolder }}</span>
+    <span *ngIf="multiSelectItems.length > 0">
+      <span *ngFor="let item of data" (click)="$event.stopPropagation()">
+        <span *ngIf="item.checked" class="chip-btn"
+          >{{ item.text }}
+          <svg
+            class="cursorPointer"
+            (click)="RemoveChecked(item)"
+            height="12"
+            viewBox="0 0 24 24"
+            width="12"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <style>
+                .a.add {
+                  fill: #fff;
+                }
+
+                .b.add-b {
+                  fill: none;
+                }
+              </style>
+            </defs>
+            <path
+              class="a add"
+              d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z"
+              transform="translate(0 0)"
+            ></path>
+            <path class="b add-b" d="M0,0H24V24H0Z"></path>
+          </svg>
+        </span>
+      </span>
+    </span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+    >
+      <defs></defs>
+      <path fill="none" d="M0,0H24V24H0Z" />
+      <path fill="#253858" d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" />
+    </svg>
+  </a>
+
+  <ul #list class="menu add-btn">
+    <li class="search" *ngIf="allowSearch">
+      <div class="form-group sm">
+        <span class="input-icon">
+          <input
+            class="form-input"
+            [(ngModel)]="searchText"
+            type="text"
+            placeholder="Search…"
+          />
+          <img src="assets/svg/search.svg" alt="" />
+        </span>
+      </div>
+    </li>
+    <li class="single-child multichild">
+      <ul>
+        <li
+          *ngFor="let item of data | search: searchText"
+          [ngClass]="{
+            'vz-disabled': item.disabled,
+            active: item.id === selectedItem.id
+          }"
+        >
+          
+          <label class="form-checkbox light-blue">
+            <input
+              [(ngModel)]="item.checked"
+              type="checkbox"
+              (ngModelChange)="ItemClickedMulti()"
+            />
+            {{ item.text }}Naseem
+            <i class="form-icon"></i>
+          </label>
+          
+        </li>
+      </ul>
+    </li>
+    <li
+      *ngFor="let link of linkData"
+      (click)="LinkClicked(link)"
+      [ngClass]="{ 'vz-disabled': link.disabled }"
+      class="add-links"
+    >
+      <a href="javascript:void(0)">{{ link.text }}</a>
+    </li>
+  </ul>
+</div> -->
+
+<div class="input-wrapper">
+  <div class="input dropdown vz-menu" #singleDropdownRef>
+    <!-- <input type="text" (click)="toggle()"> -->
+    <a href="javascript:void(0)" class="btn btn-link dropdown-toggle btn-default" (click)="dropdown.toggleDropdown()">
+      <span>{{ selectedItem.text }}</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <defs></defs>
+        <path fill="none" d="M0,0H24V24H0Z" />
+        <path fill="#253858" d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" />
+      </svg>
+    </a>
+    <ui-custom-dropdown [reference]="singleDropdownRef" [classes]="classes">
+      <ul class="menu add-btn singleSelect">
+        <li class="search" *ngIf="allowSearch">
+          <div class="form-group sm">
+            <span class="input-icon">
+              <input class="form-input" [(ngModel)]="tempSearchText" (change)="OnTextChange()"
+                (ngModelChange)="CheckEmptySearch()" type="text" placeholder="Search…" />
+
+              <img src="assets/svg/search.svg" (click)="OnTextChange()" alt="" />
+            </span>
+          </div>
+        </li>
+        <li class="single-child">
+          <ul>
+            <li [class.active]="!selectedItem.id && selectedItem.text===placeHolder" (click)="ItemClicked(null)">
+              <a href="javascript:void(0)">{{ placeHolder }}</a>
+            </li>
+            <li *ngFor="let item of data | search: searchText" (click)="ItemClicked(item)" [ngClass]="{
+                'vz-disabled': item.disabled,
+                active: item.id === selectedItem.id
+              }">
+              <a href="javascript:void(0)">{{ item.text }}</a>
+            </li>
+            <li *ngFor="let link of linkData" (click)="LinkClicked(link)" [ngClass]="{ 'vz-disabled': link.disabled }"
+              class="add-links">
+              <a href="javascript:void(0)">{{ link.text }}</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </ui-custom-dropdown>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+.vz-pagination{
+    .pagination{
+        align-items: end;
+        justify-content: flex-end;
+        margin: 0;
+        border-top: 1.5px solid #DFE1E6;
+        .page-item{
+            a{
+                // width: 32px;
+                min-width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: color(pacificBlue, pacificBlue-100);
+                border: 1px solid color(pacificBlue, pacificBlue-400);
+                color: #2E384D;
+                &:hover{
+                    background: color(pacificBlue, pacificBlue-1800);
+                    border-radius: 4px;
+                    color: color(pacificBlue, pacificBlue-100);
+                    border-color: color(pacificBlue, pacificBlue-1800);
+                }
+            }
+            &.active{
+                opacity: 1;
+                a{
+                    background: color(pacificBlue, pacificBlue-1800);
+                    border-radius: 4px;
+                    color: color(pacificBlue, pacificBlue-100);
+                    border-color: color(pacificBlue, pacificBlue-1800);
+                }
+            }
+        }
+    }
+}

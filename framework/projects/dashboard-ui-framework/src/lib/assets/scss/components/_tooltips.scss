@@ -1,0 +1,467 @@
+.tooltip{
+    position: relative;
+    &:hover{
+        &::before{
+            opacity: 1;
+            -webkit-transform: translate(-50%, -0.5rem);
+            transform: translate(-50%, -0.5rem);
+        }
+    }
+    &:focus{
+        &::after{
+            opacity: 0;
+        }
+    }
+    &::after{
+        background: color(pacificBlue, pacificBlue-1800);
+        font-size: 1rem;
+        border-radius: $border-radius;
+        min-height: 32px;
+        display: flex;
+        align-items: center;
+        // white-space: inherit;
+        // align-items: center;
+        // width: 100%;
+        // display: inline-table;
+    }
+    &.white{
+        &::after{
+            background: color(pacificBlue, pacificBlue-100);
+            color: color(pacificBlue, pacificBlue-1700);
+            box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.08);
+        }
+    }
+    &.primary{
+        &::after{
+            background: color(blue, base);
+        }
+    }
+}
+
+// css for hovering pointed tooltips
+.default-pointed-tooltip{
+  position: relative;
+  .pointed-tooltip{
+    .tooltip-text{
+      max-width: 32rem;
+      line-height: 18px;
+      @include text-ellipsis();
+    }
+  }
+    &.top-tooltip{
+      .pointed-tooltip{
+        @include pointed-tooltip-direction(top, 0);
+        &:before{
+          @include pointed-triangle(top, 0);
+        }
+      }
+      &:hover{
+        .pointed-tooltip{
+          opacity: 1;
+          transform: translate(-50%, -0.5rem);
+        }
+      }
+    }
+    &.right-tooltip{
+      .pointed-tooltip{
+        @include pointed-tooltip-direction(right, 0);
+        &:before{
+          @include pointed-triangle(right, 0);
+        }
+      }
+      &:hover{
+        .pointed-tooltip{
+          transform: translate(0.5rem, 50%);
+          opacity: 1;
+        }
+      }
+    }
+    &.bottom-tooltip{
+      .pointed-tooltip{
+        @include pointed-tooltip-direction(bottom, 0);
+        &:before{
+          @include pointed-triangle(bottom, 0);
+        }
+      }
+      &:hover{
+        .pointed-tooltip{
+          transform: translate(-50%, 0.5rem);
+          opacity: 1;
+        }
+      }
+    }
+    &.left-tooltip{
+      .pointed-tooltip{
+        @include pointed-tooltip-direction(left, 0);
+        &:before{
+          @include pointed-triangle(left, 0);
+        }
+      }
+      &:hover{
+        .pointed-tooltip{
+          transform: translate(-0.5rem, 50%);
+          opacity: 1;
+        }
+      }
+    }
+}
+// end
+
+// css for cdk tooltips
+.cdk-top-tooltip{
+  @include pointed-tooltip-direction(top, 1);
+    &:before{
+      @include pointed-triangle(top, 0);
+    }
+}
+
+.cdk-tooltip-text{
+  white-space: normal;
+  max-width: 300px;
+}
+
+.cdk-right-tooltip{
+  @include pointed-tooltip-direction(right, 1);
+    &:before{
+      @include pointed-triangle(right, 0);
+    }
+}
+
+.cdk-bottom-tooltip{
+  @include pointed-tooltip-direction(bottom, 1);
+    &:before{
+      @include pointed-triangle(bottom, 0);
+    }
+}
+
+.cdk-left-tooltip{
+  @include pointed-tooltip-direction(left, 1);
+    &:before{
+      @include pointed-triangle(left, 0);
+    }
+}
+
+.auto-width{
+  width: auto !important;
+  .cdk-bottom-tooltip,
+  .cdk-left-tooltip,
+  .cdk-right-tooltip,
+  .cdk-top-tooltip{
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    &:before{
+      top: -10px;
+      left: calc(50% - 4px);
+      transform: rotate(90deg);
+    }
+  }
+}
+// end
+
+// css for user journey tooltip with blinker
+@keyframes scaleIn {
+  from {
+    transform: scale(.5, .5);
+    opacity: .5;
+  }
+  to {
+    transform: scale(1.7, 1.7);
+    opacity: 0;
+  }
+}
+
+
+
+
+
+.tooltip-blinking-circle{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 999;
+  pointer-events:none;
+  bottom: -1.2rem;
+  right: -12px;
+  border: 1px solid #FF991F;
+  border-radius: 50%;
+  .small-circle{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #FF991F;
+  }
+  .big-circle {
+    border-radius: 50%;
+    background-color: #FF991F5C;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    opacity: 0;
+    animation: scaleIn 1.2s infinite cubic-bezier(.36, .11, .89, .32);
+  }
+}
+
+.tooltip-info-box{
+  background: color(pacificBlue, pacificBlue-1800);
+  border-radius: 5px;
+  color: color(pacificBlue, pacificBlue-100);
+  padding: 10px 14px;
+  position: absolute;
+  top: 3.15rem;
+  z-index: 999;
+  width: 240px;
+  &:before{
+    @include pointed-triangle(bottom, 0);
+  }
+
+  .inner-body{
+    position: relative;
+    svg{
+     width: 14px;
+     height: 14px;
+     position: absolute;
+     top: 0;
+     right: 0;
+     cursor: pointer;
+    }
+    .skip-tour-step{
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+    }
+  }
+  
+}
+
+.tooltip-main-content{
+  max-width: 85%;
+  .tooltip-main-heading{
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 6px;
+  }
+  .tooltip-info-text{
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.tooltip-main-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+
+  .btn{
+    margin: 0;
+    height: 30px;
+  }
+}
+
+.tour-progress-wrapper{
+  display: flex;
+  align-items: center;
+  .tour-progress{
+    width: 30px;
+    height: 5px;
+    background: color(pacificBlue, pacificBlue-100);;
+    border-radius: 14px;
+    .tour-progress-line{
+      height: 100%;
+      width: 50%;
+      background: #0052cc;
+      border-radius: 14px;
+    }
+  }
+  .tour-step-number{
+    font-size: 12px;
+    padding-left: 5px;
+  }
+}
+
+
+
+.step-journey-right{
+  .tooltip-info-box{
+    &::before{
+      transform: rotate(0deg);
+      top: 10px;
+      left: -10px;
+    }
+  }
+}
+
+// .journey-left,
+.step-journey-left{
+  .tooltip-info-box{
+    &::before{
+      transform: rotate(180deg);
+      top: 10px;
+      right: -10px;
+      left: auto;
+    }
+  }
+}
+
+// .journey-top,
+.step-journey-top{
+  .tooltip-info-box{
+    &::before{
+      transform: rotate(-90deg);
+      top: auto;
+      bottom: -12px;
+      left: auto;
+    }
+  }
+}
+
+
+// Hover action tooltip css
+.hovering-action-tooltip{
+    padding-bottom: 10px;
+    .tooltip-info-box{
+      display: none;
+      // pointer-events: all;
+      // width: auto;
+      width: 180px;
+
+      .tooltip-main-content{
+        max-width: 100%;
+      }
+      .tooltip-main-footer{
+        justify-content: flex-start !important;
+        .btn{
+          &:first-child{
+            margin: 0 8px 0 0;
+          }
+        }
+      }
+    }
+    &:hover{
+      .tooltip-info-box{
+        display: block;
+      }
+    }
+
+    &.step-journey-right{
+      .tooltip-info-box{
+        right:-184px;
+      }
+    }
+
+    &.step-journey-left{
+      .tooltip-info-box{
+        left: -192px;
+      }
+    }
+
+    &.step-journey-top{
+      .tooltip-info-box{
+        top: -106px;
+      }
+    }
+
+}
+
+// .hovering-action-right-tooltip{
+//   .tooltip-info-box{
+//     right: -192px;
+//     top: 0;
+//   }
+// }
+
+// .hovering-action-left-tooltip{
+//   .tooltip-info-box{
+//     left: -192px;
+//     top: 0;
+//   }
+// }
+
+// .hovering-action-top-tooltip {
+//   .tooltip-info-box{
+//     top: auto;
+//     bottom: 52px;
+//   }
+// }
+
+
+// step Journey tooltip css
+.step-journey-right{
+  .tooltip-info-box{
+    right: -244px;
+    top: 0;
+  }
+  .tooltip-blinking-circle{
+    bottom: -5px;
+    right: -10px;
+  }
+}
+
+.step-journey-left{
+  .tooltip-info-box{
+    left: -252px;
+    top: 0;
+  }
+  .tooltip-blinking-circle{
+    right: auto;
+    left: -14px;
+    bottom: -6px;
+  }
+}
+
+.step-journey-top{
+  .tooltip-info-box{
+    top: -174px;
+  }
+  .tooltip-blinking-circle{
+    bottom: 11px;
+    right: auto;
+    left: 0;
+  }
+}
+
+
+// Journy Tooltip with Blinkers
+// .journey-right{
+//   .tooltip-blinking-circle{
+//     bottom: -0.48rem;
+//   }
+//   .tooltip-info-box{
+//     top: 0;
+//     right: -252px;
+//   }
+// }
+
+// .journey-left{
+//   .tooltip-blinking-circle{
+//     left: -1.2rem;
+//     bottom: -.4rem;
+//   }
+//   .tooltip-info-box{
+//     left: -252px;
+//     top: 0;
+//   }
+// }
+
+// .journey-top{
+//   .tooltip-blinking-circle{
+//     bottom: 0.8rem;
+//     right: auto;
+//     left: 0;
+//   }
+//   .tooltip-info-box{
+//     top: -140px;
+//   }
+// }
+
+
+
+
+

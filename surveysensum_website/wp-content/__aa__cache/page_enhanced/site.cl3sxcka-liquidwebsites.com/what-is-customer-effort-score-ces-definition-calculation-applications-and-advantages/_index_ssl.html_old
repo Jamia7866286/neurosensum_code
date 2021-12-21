@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:addthis="https://www.addthis.com/help/api-spec" >
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Survey Sensum &raquo; What is Customer Effort Score (CES)? Definition, Calculation, Applications and Advantages</title>
+<meta name="description" content="" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://site.cl3sxcka-liquidwebsites.com/xmlrpc.php" />
+<meta name='robots' content='noindex,follow' />
+<link rel='dns-prefetch' href='//s7.addthis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="stylesheet" href="https://site.cl3sxcka-liquidwebsites.com/wp-includes/css/dist/block-library/style.min.css?ver=5.2.3">
+<link rel="stylesheet" href="https://site.cl3sxcka-liquidwebsites.com/wp-content/plugins/addthis/frontend/build/addthis_wordpress_public.min.css?ver=5.2.3">
+<link rel="stylesheet" href="https://site.cl3sxcka-liquidwebsites.com/wp-content/themes/survey/assets/css/plugins.min.css">
+<link rel="stylesheet" href="https://site.cl3sxcka-liquidwebsites.com/wp-content/themes/survey/style.css">
+<link rel="stylesheet" href="https://site.cl3sxcka-liquidwebsites.com/wp-content/themes/survey/assets/css/responsive.css">
+<script src="https://site.cl3sxcka-liquidwebsites.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"></script>
+<script src="https://site.cl3sxcka-liquidwebsites.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<link rel='https://api.w.org/' href='https://site.cl3sxcka-liquidwebsites.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://site.cl3sxcka-liquidwebsites.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://site.cl3sxcka-liquidwebsites.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Seven Useful Tips from Experts to “Close the Loop” Customer Feedback' href='https://site.cl3sxcka-liquidwebsites.com/seven-useful-tips-from-experts-to-close-the-loop-customer-feedback/' />
+<link rel='next' title='What is Customer Satisfaction (CSAT) Score? Definition, Calculation, Applications and Advantages' href='https://site.cl3sxcka-liquidwebsites.com/what-is-customer-satisfaction-csat-score-definition-calculation-applications-and-advantages/' />
+<link rel="canonical" href="https://site.cl3sxcka-liquidwebsites.com/what-is-customer-effort-score-ces-definition-calculation-applications-and-advantages/" />
+<link rel='shortlink' href='https://site.cl3sxcka-liquidwebsites.com/?p=1089' />
+<link rel="alternate" type="application/json+oembed" href="https://site.cl3sxcka-liquidwebsites.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsite.cl3sxcka-liquidwebsites.com%2Fwhat-is-customer-effort-score-ces-definition-calculation-applications-and-advantages%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://site.cl3sxcka-liquidwebsites.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsite.cl3sxcka-liquidwebsites.com%2Fwhat-is-customer-effort-score-ces-definition-calculation-applications-and-advantages%2F&#038;format=xml" />
+<link rel="icon" href="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/cropped-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/cropped-favicon-270x270.png" />
+</head>
+<!-- Body Start-->
+<body class="post-template-default single single-post postid-1089 single-format-standard wp-custom-logo">
+<!-- Preloader Start -->
+<div class="preloader">
+    <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
+</div>
+<!-- Preloader End -->
+<!-- Main Start -->
+<main>
+<!-- Header Start -->
+<header>
+<div class="container">
+<nav class="navbar navbar-expand-lg">
+	
+	<a class="navbar-brand" href="https://site.cl3sxcka-liquidwebsites.com">
+    <img src="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/survey-sensum-logo.svg" alt="Survey Sensum">    </a>
+		<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse"><ul id="menu-primary-menu" class="nav navbar-nav"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-133" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-133 nav-item"><a title="Products" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-133">Products</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-133" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-339 nav-item"><a title="Net Promoter Score" href="https://site.cl3sxcka-liquidwebsites.com/net-promoter-score/" class="dropdown-item">Net Promoter Score<span class="menu-item-description">Company culture, people, and vision</span></a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-337" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-337 nav-item"><a title="Customer Effort Score" href="https://site.cl3sxcka-liquidwebsites.com/customer-effort-score/" class="dropdown-item">Customer Effort Score<span class="menu-item-description">Global presence with headquartered in Indonesia</span></a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-338" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-338 nav-item"><a title="Customer Satisfaction Score" href="https://site.cl3sxcka-liquidwebsites.com/customer-satisfaction-score/" class="dropdown-item">Customer Satisfaction Score<span class="menu-item-description">Subscribe to stay ahead of the curve</span></a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-12 nav-item"><a title="Resources" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-12">Resources</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-12" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-143 nav-item"><a title="About Us" href="https://site.cl3sxcka-liquidwebsites.com/about-us/" class="dropdown-item">About Us<span class="menu-item-description">Company culture, people, and vision</span></a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-181" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-181 nav-item"><a title="Contact us" href="https://site.cl3sxcka-liquidwebsites.com/contact-us/" class="dropdown-item">Contact us<span class="menu-item-description">Global presence with headquartered in Indonesia</span></a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-141" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-141 nav-item"><a title="Blog" href="https://site.cl3sxcka-liquidwebsites.com/blog/" class="dropdown-item">Blog<span class="menu-item-description">Subscribe to stay ahead of the curve</span></a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-315 nav-item"><a title="Pricing" href="https://site.cl3sxcka-liquidwebsites.com/pricing/" class="nav-link">Pricing</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-176" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-176 nav-item"><a title="Login" target="_blank" href="https://portal.surveysensum.com/auth/login" class="nav-link">Login</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1303 nav-item"><a title="Request Demo" href="https://site.cl3sxcka-liquidwebsites.com/request-demo/" class="nav-link">Request Demo</a></li>
+</ul></div>        <div class="textwidget custom-html-widget"><ul class="list-inline mb-0">
+    <li class="list-inline-item"><a href="/request-demo" class="btn btn-orange">Request Demo</a></li>
+    <li class="header_phone list-inline-item"><a>+62 21 2551 3883</a>
+    <select id="country_header">
+        <option value="indonesia" data-class="indonesia" data-image="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/indonesia-flag.svg">&nbsp;</option>
+        <option value="singapore" data-class="singapore" data-image="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/singapore-flag.svg">&nbsp;</option>
+        <option value="india" data-class="india" data-image="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/india-flag.svg">&nbsp;</option>
+    </select>
+    </li>
+</ul></div>        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+		<span></span><span></span><span></span>
+	</button>
+</nav>
+</div>
+</header>
+<!-- Header End -->
+<!-- Wrapper Start-->
+<div class="wrapper" id="fullpage"><!-- Header Section Start -->
+ 
+<script>
+jQuery(document).ready(function($){
+/* Header Scroll & Back to top*/
+	jQuery(window).scroll(function() {
+        if ($(this).scrollTop() > 1) {
+            jQuery('body').addClass("headerSmall");
+        } else {
+            jQuery('body').removeClass("headerSmall");
+        }		
+    });
+}); 
+</script>
+
+<section class="blog-header" id="blog-header">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="blog-header-inner d-flex align-items-center">
+				<h2 class="mb-0"><a href="https://site.cl3sxcka-liquidwebsites.com/blog/">The CX Insider</a></h2>
+                <div class="menu-blog-menu-container"><ul id="menu-blog-menu" class="list-inline categories mb-0"><li id="menu-item-1341" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1341"><a href="https://site.cl3sxcka-liquidwebsites.com/category/customer-experience/">Customer Experience</a></li>
+<li id="menu-item-1343" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1343"><a href="https://site.cl3sxcka-liquidwebsites.com/category/infographics/">Infographics</a></li>
+<li id="menu-item-1342" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1342"><a href="https://site.cl3sxcka-liquidwebsites.com/category/e-books/">E-books</a></li>
+<li id="menu-item-1344" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1344"><a href="https://site.cl3sxcka-liquidwebsites.com/category/news/">News</a></li>
+</ul></div> 
+				
+				<div class="search-bar">
+				
+				<form role="search" method="get" id="searchform" class="searchform" action="https://site.cl3sxcka-liquidwebsites.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form>				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.a{fill:none;}.b{fill:#0052cc;}</style></defs><path class="a" d="M0,0H24V24H0Z"/><path class="b" d="M15.5,14h-.79l-.28-.27a6.518,6.518,0,1,0-.7.7l.27.28v.79l4.25,4.25a1.054,1.054,0,0,0,1.49-1.49Zm-6,0A4.5,4.5,0,1,1,14,9.5,4.494,4.494,0,0,1,9.5,14Z"/></svg>
+				</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+                <!-- Header Section End -->
+<!-- Post Detail Section Start -->
+<section class="post-detail-section">
+	<div class="post-top-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                	<div class="post-tp">
+                    	<h3 class="category">
+                            <a href="https://site.cl3sxcka-liquidwebsites.com/category/customer-effort-score/">Customer Effort Score</a>                        </h3>
+                        <h2 class="post-title">What is Customer Effort Score (CES)? Definition, Calculation, Applications and Advantages</h2>
+                        <div class="date-time">
+                            <figure class="author-image"><img alt='' src='https://secure.gravatar.com/avatar/?s=32&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/?s=64&#038;d=mm&#038;r=g 2x' class='avatar avatar-32 photo avatar-default' height='32' width='32' /></figure>
+                            <div class="author-details">
+                            <span>Aug 5, 2019</span> <p class="reading-time mb-0">4 mins read</p>
+                            <p class="name">Afsheen Khan</p>                           
+                            </div>
+                        </div>
+                    </div>
+                                        <figure class="featured-image">
+                        <div class="social-share" id="social-share">
+                            <!-- Created with a shortcode from an AddThis plugin --><div class="addthis_inline_share_toolbox_3hue addthis_tool"></div><!-- End of short code snippet -->                        </div>
+                        <img width="3470" height="1860" src="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/08/Customer-Effort-Score.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/08/Customer-Effort-Score.png 3470w, https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/08/Customer-Effort-Score-300x161.png 300w, https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/08/Customer-Effort-Score-768x412.png 768w, https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/08/Customer-Effort-Score-1024x549.png 1024w" sizes="(max-width: 3470px) 100vw, 3470px" />                    </figure>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-detail-container">
+        <div class="container">
+            <div class="row">
+                                <div class="col-md-12 d-flex  justify-content-between right-details">
+                    <div class="content">                        
+                        <div class="at-above-post addthis_tool" data-url="https://site.cl3sxcka-liquidwebsites.com/what-is-customer-effort-score-ces-definition-calculation-applications-and-advantages/"></div><div>
+<div class="cus-blog" style="float: left; margin-right: 20px;">
+<div style="padding: 15px 15px 15px 30px; border: solid #0D2C63 1px; background: #f6f6f6; margin-bottom: 24px;">
+<p>Table of Contents:</p>
+<ol style="font-weight: 400; margin: 0 0px; line-height: 25px;">
+<li><a href="#What-is-Customer-Effort-Score">What is Customer Effort Score (CES)?</a></li>
+<li><a href="#Customer-Effort-Score-calculation">Customer Effort Score (CES) calculation</a></li>
+<li><a href="#Strategic-CES-applications">Strategic CES applications for an organization</a></li>
+<li><a href="#Advantages-of-CES">Advantages of CES</a></li>
+</ol>
+</div>
+</div>
+<div>
+<h2><a id="What-is-Customer-Effort-Score" style="pointer-events: none; cursor: default;" href="#">What is Customer Effort Score (CES)?</a></h2>
+<p>Customer effort score (CES) is a numeric indicator of positive, neutral or negative customer experience during an interaction with your organization.</p>
+<p>The logic behind this metric is that more effort from a customer in solving a problem results in a negative experience. Whereas, if the company can solve the problem for the customer such that they have to input the least amount of effort, then it results in positive customer experience.</p>
+<p>A CES value is assigned based on customer feedback to the CES survey question.</p>
+<p>For example, let&#8217;s say a customer has an interaction with your customer support/success team and you want to understand how well that went as per customer perception.</p>
+<p>&nbsp;</p>
+</div>
+</div>
+<p>&nbsp;</p>
+<p><img class="alignnone wp-image-1145 size-full" src="https://www.surveysensum.com/wp-content/uploads/2019/08/Customer-Effort-Score.png" alt="Customer-Effort-Score" width="3470" height="1860" /></p>
+<p>A CES survey (discussed below) is deployed to the customer right after the interaction and feedback is collected. Based on the feedback, a score is assigned, which becomes the customer experience score (CES) outcome from that specific interaction.</p>
+<h2><a id="Customer-Effort-Score-calculation" style="pointer-events: none; cursor: default;" href="#">Customer Effort Score (CES) calculation</a></h2>
+<p>The source of data for the customer experience score is derived from the response option selected by the customer in the CES survey.</p>
+<p>CES survey question has undergone standard updates over the years and the latest question and answer options are as follows:</p>
+<p><strong>Q. The company made it easy for me to handle my issue:</strong></p>
+<p><strong>Answer Options with values assigned:</strong></p>
+<p>Score 1 &#8211; Strongly Disagree<br />
+Score 2 &#8211; Disagree<br />
+Score 3 &#8211; Somewhat Disagree<br />
+Score 4 &#8211; Neither Agree nor Disagree<br />
+Score 5 &#8211; Somewhat Agree<br />
+Score 6 &#8211; Agree<br />
+Score 7 &#8211; Strongly Agree</p>
+<p>Scores 1-3 are classified as “difficult”.<br />
+Score 4 is classified as ‘neutral’<br />
+Scores 5-7 are classified as “easy”.</p>
+<p>Based on the responses, an average is calculated which becomes your CES. Let&#8217;s look at an example for better understanding.</p>
+<p>Let us say, a company conducts a CES survey across 100 customers and collects the following responses:</p>
+<p>Score 1 &#8211; 10 responses<br />
+Score 2 &#8211; 5 responses<br />
+Score 3 &#8211; 4 responses<br />
+Score 4 &#8211; 12 responses<br />
+Score 5 &#8211; 25 responses<br />
+Score 6 &#8211; 15 responses<br />
+Score 7 &#8211; 29 responses</p>
+<p>&nbsp;</p>
+<p>Now the CES formula = % Easy scores &#8211; % Difficult scores = [(29+15+25)/100*100] &#8211; [(10+5+4)/100*100] = 50%</p>
+<p>Therefore, CES = 50 .</p>
+<h2><a id="Strategic-CES-applications" style="pointer-events: none; cursor: default;" href="#">Strategic CES implications for an organization</a></h2>
+<p>Customer effort score surveys can be strategically deployed using smart survey software to capture the critical success or failure indicators of your customer-facing teams:</p>
+<p>1. <strong>Post-call:</strong> A post customer support call survey is a great place to begin implementing your CES survey. An email survey typically works best, but IVR and SMS have also shown good promises.<br />
+2. <strong>Web support:</strong> The best mode of feedback is the mode that the customer used for interaction. If your customer is online, so should be your feedback survey. A web-intercept survey or a post-session email will give you better response rates on the web. A follow-up call/reminder to the customer never hurts.<br />
+3. <strong>Kiosk:</strong> If you have a physical outlet where the majority of your customers visit for support or help, then the best mode of CES survey deployment will be an active live, physical Kiosk survey, mounted on a tablet. Customer can provide immediate and live feedback based on the interaction they had at the time with your store/outlet staff.</p>
+<h2><a id="Advantages-of-CES" style="pointer-events: none; cursor: default;" href="#">Advantages of CES</a></h2>
+<p>Here are some of the key advantages drawn from the strategic implementation of CES:</p>
+<h3><strong>Deliver high on low:</strong></h3>
+<p>CES is one of the best <a href="https://www.surveysensum.com/blog/10-customer-experience-statistics-that-your-business-should-know/">measurements of customer experience and satisfaction</a>, mapped across various points of interaction with your company. This data is critical to ensuring which customers need how much effort to be pulled back to a positive perception of your brand and ensuring account and revenue continuity. In other words, CES gives you an action plan on customer prioritization, where your team will need to deliver high on customers with low <a href="https://www.slideshare.net/kayako/what-is-customer-effort-score-and-how-do-you-measure-ces" target="_blank" rel="nofollow noopener noreferrer"">CES scores</a>.</p>
+<h3><strong>Uncover hidden issues:</strong></h3>
+<p>There is a great saying on work culture &#8211; ‘happy employees result in happy customers’. So if the CES metric shows that your customer success team is not able to adequately, a deeper investigation often reveals underlying issues of inadequacies within the team &#8211; be it technological gaps, the employee will and morale, lack of product knowledge, ineffective training, etc.</p>
+<h3><strong>Faster damage control:</strong></h3>
+<p>When it comes to customers &#8211; speed and effectiveness come first. Modern CES survey software can be easily configured through API calls to alert your customer-facing teams when a negative CES survey response is selected by a customer. The assigned representative of the account can now immediately prioritize this account and reach out to the customer to probe what went wrong and how it can be fixed to ease of the customer.</p>
+<h3><strong>Better customer relationship management:</strong></h3>
+<p>Customer crisis management is a big part CRM process and strategic CES implementation tells you exactly when the crisis happened, for which customer and after speaking to which representative. From a crisis management perspective, this is a great head-start to ensure client continuity.</p>
+<p>Have something to add? Please drop in a line at <a href="mailto:support@surveysensum.com">support@surveysensum.com</a></p>
+<!-- AddThis Advanced Settings above via filter on the_content --><!-- AddThis Advanced Settings below via filter on the_content --><!-- AddThis Advanced Settings generic via filter on the_content --><!-- AddThis Share Buttons above via filter on the_content --><!-- AddThis Share Buttons below via filter on the_content --><div class="at-below-post addthis_tool" data-url="https://site.cl3sxcka-liquidwebsites.com/what-is-customer-effort-score-ces-definition-calculation-applications-and-advantages/"></div><!-- AddThis Share Buttons generic via filter on the_content -->                    </div>
+                    <div class="sidebar">
+                        <div class="newsletter">
+  <p class="title">Subscribe Now</p>
+  <div class="form-container">
+    
+                <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_5' ><div id='gf_5' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_5' id='gform_5'  action='/what-is-customer-effort-score-ces-definition-calculation-applications-and-advantages/#gf_5'>
+                        <div class='gform_body'><ul id='gform_fields_5' class='gform_fields top_label form_sublabel_below description_below'><li id='field_5_1'  class='gfield field_sublabel_below field_description_below hidden_label gfield_visibility_visible' ><label class='gfield_label' for='input_5_1' ></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_1' id='input_5_1' type='email' value='' class='medium' tabindex='50'  placeholder='Enter Email ID'  aria-invalid="false" />
+                        </div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_5' class='gform_button button' value='Subscribe' tabindex='51' onclick='if(window["gf_submitting_5"]){return false;}  if( !jQuery("#gform_5")[0].checkValidity || jQuery("#gform_5")[0].checkValidity()){window["gf_submitting_5"]=true;}  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_5"]){return false;} if( !jQuery("#gform_5")[0].checkValidity || jQuery("#gform_5")[0].checkValidity()){window["gf_submitting_5"]=true;}  jQuery("#gform_5").trigger("submit",[true]); }' /> <input type='hidden' name='gform_ajax' value='form_id=5&amp;title=&amp;description=&amp;tabindex=50' />
+            <input type='hidden' class='gform_hidden' name='is_submit_5' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='5' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_5' value='WyJbXSIsImQ4MzgwZjNhY2UzMzE0YzRiNjI1YjRjZmE2MjFhNTVmIl0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_5' id='gform_target_page_number_5' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_5' id='gform_source_page_number_5' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_5' id='gform_ajax_frame_5' title='Ajax Frame'>This iframe contains the logic required to handle Ajax powered Gravity Forms.</iframe>
+                <script type='text/javascript'>jQuery(document).ready(function($){gformInitSpinner( 5, 'https://site.cl3sxcka-liquidwebsites.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery('#gform_ajax_frame_5').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_5');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_5').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_5').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_5').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_5').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_5').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_5').val();gformInitSpinner( 5, 'https://site.cl3sxcka-liquidwebsites.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery(document).trigger('gform_page_loaded', [5, current_page]);window['gf_submitting_5'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_5').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_5').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [5]);window['gf_submitting_5'] = false;}, 50);}else{jQuery('#gform_5').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [5, current_page]);} );} );</script><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 5) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [5, 1]) } ); </script>  </div>
+</div>
+<div class="trending-articles">
+  <h3 class="title">Related Articles</h3>
+    <div class="post-single">
+        <div class="post-content">
+      
+      <a href="https://site.cl3sxcka-liquidwebsites.com/category/net-promoter-score/" class="category">Net Promoter Score</a>      <h2 class="post-title">
+        <a href="
+          https://site.cl3sxcka-liquidwebsites.com/net-promoter-score-nps-survey/">
+          Net Promoter Score (NPS) Survey...        </a>
+      </h2>
+            <a href="https://site.cl3sxcka-liquidwebsites.com/net-promoter-score-nps-survey/" class="read-more">Read More 
+        <img src="
+          https://site.cl3sxcka-liquidwebsites.com/wp-content/themes/survey/assets/img/arrow-blue-right.svg" alt="" />
+        </a>
+      </div>
+    </div>
+      <div class="post-single">
+        <div class="post-content">
+      
+      <a href="https://site.cl3sxcka-liquidwebsites.com/category/customer-experience/" class="category">Customer Experience</a>      <h2 class="post-title">
+        <a href="
+          https://site.cl3sxcka-liquidwebsites.com/why-customer-experience-is-the-driver-of-brand-success/">
+          Why Customer Experience Is The...        </a>
+      </h2>
+            <a href="https://site.cl3sxcka-liquidwebsites.com/why-customer-experience-is-the-driver-of-brand-success/" class="read-more">Read More 
+        <img src="
+          https://site.cl3sxcka-liquidwebsites.com/wp-content/themes/survey/assets/img/arrow-blue-right.svg" alt="" />
+        </a>
+      </div>
+    </div>
+      </div>                    </div>
+                </div>
+                            </div>
+        </div>
+    </div>
+</section>
+<!-- Post Detail Section End -->
+
+<!-- Was this page helpful section Start -->
+<Section class="pageHelpfulSec">
+  <div class="container">
+     <div class="row">
+        <div class="col-12">
+        	<div class="col">
+           		<h2>Was this page helpful?</h2> 
+           		
+                <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_7' style='display:none'><div id='gf_7' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_7' id='gform_7'  action='/what-is-customer-effort-score-ces-definition-calculation-applications-and-advantages/#gf_7'>
+                        <div class='gform_body'><ul id='gform_fields_7' class='gform_fields top_label form_sublabel_below description_below'><li id='field_7_1'  class='gfield smileys-iconsSec gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label'  >Smileys Rates<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_radio'><ul class='gfield_radio' id='input_7_1'><li class='gchoice_7_1_0'><input name='input_1' type='radio' value='Hate'  id='choice_7_1_0' tabindex='12'   /><label for='choice_7_1_0' id='label_7_1_0'>Hate</label></li><li class='gchoice_7_1_1'><input name='input_1' type='radio' value='Dislike'  id='choice_7_1_1' tabindex='13'   /><label for='choice_7_1_1' id='label_7_1_1'>Dislike</label></li><li class='gchoice_7_1_2'><input name='input_1' type='radio' value='Neutral'  id='choice_7_1_2' tabindex='14'   /><label for='choice_7_1_2' id='label_7_1_2'>Neutral</label></li><li class='gchoice_7_1_3'><input name='input_1' type='radio' value='Like'  id='choice_7_1_3' tabindex='15'   /><label for='choice_7_1_3' id='label_7_1_3'>Like</label></li><li class='gchoice_7_1_4'><input name='input_1' type='radio' value='Love'  id='choice_7_1_4' tabindex='16'   /><label for='choice_7_1_4' id='label_7_1_4'>Love</label></li></ul></div></li><li id='field_7_2'  class='gfield field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_7_2' >Leave a reply</label><div class='ginput_container ginput_container_textarea'><textarea name='input_2' id='input_7_2' class='textarea medium' tabindex='17'   placeholder='Leave a reply……..'  aria-invalid="false"   rows='10' cols='50'></textarea></div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_7' class='gform_button button' value='Leave reply' tabindex='18' onclick='if(window["gf_submitting_7"]){return false;}  if( !jQuery("#gform_7")[0].checkValidity || jQuery("#gform_7")[0].checkValidity()){window["gf_submitting_7"]=true;}  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_7"]){return false;} if( !jQuery("#gform_7")[0].checkValidity || jQuery("#gform_7")[0].checkValidity()){window["gf_submitting_7"]=true;}  jQuery("#gform_7").trigger("submit",[true]); }' /> <input type='hidden' name='gform_ajax' value='form_id=7&amp;title=&amp;description=&amp;tabindex=12' />
+            <input type='hidden' class='gform_hidden' name='is_submit_7' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='7' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_7' value='WyJbXSIsImQ4MzgwZjNhY2UzMzE0YzRiNjI1YjRjZmE2MjFhNTVmIl0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_7' id='gform_target_page_number_7' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_7' id='gform_source_page_number_7' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_7' id='gform_ajax_frame_7' title='Ajax Frame'>This iframe contains the logic required to handle Ajax powered Gravity Forms.</iframe>
+                <script type='text/javascript'>jQuery(document).ready(function($){gformInitSpinner( 7, 'https://site.cl3sxcka-liquidwebsites.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery('#gform_ajax_frame_7').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_7');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_7').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_7').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_7').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_7').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_7').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_7').val();gformInitSpinner( 7, 'https://site.cl3sxcka-liquidwebsites.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery(document).trigger('gform_page_loaded', [7, current_page]);window['gf_submitting_7'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_7').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_7').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [7]);window['gf_submitting_7'] = false;}, 50);}else{jQuery('#gform_7').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [7, current_page]);} );} );</script><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 7) {gf_global["number_formats"][7] = {"1":{"price":false,"value":false},"2":{"price":false,"value":false}};if(window['jQuery']){if(!window['gf_form_conditional_logic'])window['gf_form_conditional_logic'] = new Array();window['gf_form_conditional_logic'][7] = { logic: { 2: {"field":{"actionType":"show","logicType":"any","rules":[{"fieldId":"1","operator":"is","value":"Hate"},{"fieldId":"1","operator":"is","value":"Dislike"},{"fieldId":"1","operator":"is","value":"Neutral"},{"fieldId":"1","operator":"is","value":"Like"},{"fieldId":"1","operator":"is","value":"Love"}]},"nextButton":null,"section":null} }, dependents: { 2: [2] }, animation: 0, defaults: [], fields: {"1":[2],"2":[]} }; if(!window['gf_number_format'])window['gf_number_format'] = 'decimal_dot';jQuery(document).ready(function(){gf_apply_rules(7, [2], true);jQuery('#gform_wrapper_7').show();jQuery(document).trigger('gform_post_conditional_logic', [7, null, true]);} );} if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [7, 1]) } ); </script>           </div>
+        </div>
+     </div>
+  </div>
+</Section>
+<!-- Was this page helpful section End-->
+
+<!-- Bottom Subscribe Start -->
+ 
+<section class="bottom-subscribe">
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="bottom-subscribe-inner">
+                <div class="round-top">
+                </div>
+                <h3>Stay up-to-date with latest CX tips and tricks, subscribe now!</h3>
+                
+                <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_4' ><div id='gf_4' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_4' id='gform_4'  action='/what-is-customer-effort-score-ces-definition-calculation-applications-and-advantages/#gf_4'>
+                        <div class='gform_body'><ul id='gform_fields_4' class='gform_fields top_label form_sublabel_below description_below'><li id='field_4_2'  class='gfield field_sublabel_below field_description_below hidden_label gfield_visibility_visible' ><label class='gfield_label' for='input_4_2' ></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_2' id='input_4_2' type='email' value='' class='large' tabindex='56'    aria-invalid="false" />
+                        </div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_4' class='gform_button button' value='Subscribe' tabindex='57' onclick='if(window["gf_submitting_4"]){return false;}  if( !jQuery("#gform_4")[0].checkValidity || jQuery("#gform_4")[0].checkValidity()){window["gf_submitting_4"]=true;}  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_4"]){return false;} if( !jQuery("#gform_4")[0].checkValidity || jQuery("#gform_4")[0].checkValidity()){window["gf_submitting_4"]=true;}  jQuery("#gform_4").trigger("submit",[true]); }' /> <input type='hidden' name='gform_ajax' value='form_id=4&amp;title=&amp;description=&amp;tabindex=56' />
+            <input type='hidden' class='gform_hidden' name='is_submit_4' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='4' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_4' value='WyJbXSIsImQ4MzgwZjNhY2UzMzE0YzRiNjI1YjRjZmE2MjFhNTVmIl0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_4' id='gform_target_page_number_4' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_4' id='gform_source_page_number_4' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_4' id='gform_ajax_frame_4' title='Ajax Frame'>This iframe contains the logic required to handle Ajax powered Gravity Forms.</iframe>
+                <script type='text/javascript'>jQuery(document).ready(function($){gformInitSpinner( 4, 'https://site.cl3sxcka-liquidwebsites.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery('#gform_ajax_frame_4').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_4');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_4').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_4').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_4').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_4').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_4').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_4').val();gformInitSpinner( 4, 'https://site.cl3sxcka-liquidwebsites.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery(document).trigger('gform_page_loaded', [4, current_page]);window['gf_submitting_4'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_4').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_4').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [4]);window['gf_submitting_4'] = false;}, 50);}else{jQuery('#gform_4').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [4, current_page]);} );} );</script><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 4) {} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [4, 1]) } ); </script>                <small>Don’t worry, we don’t spam you.</small>
+                <div class="round-bottom">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- Bottom Subscribe End -->
+<!-- Related Contect Section Start -->
+ 
+<section class="related-content-section">
+	<div class="container">
+		<div class="related-content-inner">
+			<div class="row">
+				<div class="col">
+					<h2 class="title">Blog to read</h2>
+				</div>
+			</div>
+			<div class="row">
+												<div class="col-md-4">
+					<div class="post-single post-small">
+												<figure>
+							<a href="https://site.cl3sxcka-liquidwebsites.com/net-promoter-score-nps-survey/">
+							<img width="3376" height="3123" src="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/Net-Promoter-Score-Survey-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/Net-Promoter-Score-Survey-1.jpg 3376w, https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/Net-Promoter-Score-Survey-1-300x278.jpg 300w, https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/Net-Promoter-Score-Survey-1-768x710.jpg 768w, https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/Net-Promoter-Score-Survey-1-1024x947.jpg 1024w" sizes="(max-width: 3376px) 100vw, 3376px" />							</a>
+						</figure>
+												<div class="post-content">
+							<a href="https://site.cl3sxcka-liquidwebsites.com/category/net-promoter-score/" class="category">Net Promoter Score</a>							<h2 class="post-title"><a href="https://site.cl3sxcka-liquidwebsites.com/net-promoter-score-nps-survey/">Net Promoter Score (NPS) Survey Question with Examples</a>  </h2>
+														<a href="https://site.cl3sxcka-liquidwebsites.com/net-promoter-score-nps-survey/" class="read-more">Read More <img src="https://site.cl3sxcka-liquidwebsites.com/wp-content/themes/survey/assets/img/arrow-blue-right.svg" alt="" />
+							</a>    
+						</div>
+					</div>
+				</div>
+								<div class="col-md-4">
+					<div class="post-single post-small">
+												<figure>
+							<a href="https://site.cl3sxcka-liquidwebsites.com/how-to-celebrate-cx-day-five-cx-day-tips-to-avoid-mistakes-youre-doing-with-customer-experience/">
+							<img width="1200" height="628" src="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/10/happy-customer-experience.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/10/happy-customer-experience.png 1200w, https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/10/happy-customer-experience-300x157.png 300w, https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/10/happy-customer-experience-768x402.png 768w, https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/10/happy-customer-experience-1024x536.png 1024w" sizes="(max-width: 1200px) 100vw, 1200px" />							</a>
+						</figure>
+												<div class="post-content">
+							<a href="https://site.cl3sxcka-liquidwebsites.com/category/customer-experience/" class="category">Customer Experience</a>							<h2 class="post-title"><a href="https://site.cl3sxcka-liquidwebsites.com/how-to-celebrate-cx-day-five-cx-day-tips-to-avoid-mistakes-youre-doing-with-customer-experience/">How To Celebrate CX Day? Five CX Day...</a>  </h2>
+														<a href="https://site.cl3sxcka-liquidwebsites.com/how-to-celebrate-cx-day-five-cx-day-tips-to-avoid-mistakes-youre-doing-with-customer-experience/" class="read-more">Read More <img src="https://site.cl3sxcka-liquidwebsites.com/wp-content/themes/survey/assets/img/arrow-blue-right.svg" alt="" />
+							</a>    
+						</div>
+					</div>
+				</div>
+								<div class="col-md-4">
+					<div class="post-single post-small">
+												<figure>
+							<a href="https://site.cl3sxcka-liquidwebsites.com/why-customer-experience-is-the-driver-of-brand-success/">
+							<img width="1200" height="600" src="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/blog-customer-experience.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/blog-customer-experience.png 1200w, https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/blog-customer-experience-300x150.png 300w, https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/blog-customer-experience-768x384.png 768w, https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/blog-customer-experience-1024x512.png 1024w" sizes="(max-width: 1200px) 100vw, 1200px" />							</a>
+						</figure>
+												<div class="post-content">
+							<a href="https://site.cl3sxcka-liquidwebsites.com/category/customer-experience/" class="category">Customer Experience</a>							<h2 class="post-title"><a href="https://site.cl3sxcka-liquidwebsites.com/why-customer-experience-is-the-driver-of-brand-success/">Why Customer Experience Is The Real Driver Of...</a>  </h2>
+														<a href="https://site.cl3sxcka-liquidwebsites.com/why-customer-experience-is-the-driver-of-brand-success/" class="read-more">Read More <img src="https://site.cl3sxcka-liquidwebsites.com/wp-content/themes/survey/assets/img/arrow-blue-right.svg" alt="" />
+							</a>    
+						</div>
+					</div>
+				</div>
+							</div>
+		</div>
+	</div>
+</section>
+<!-- Related Contect Section End -->
+<!-- CTA Start -->
+<div class="footer-cta">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="textwidget custom-html-widget"><div class="left-content"><h2>Let experience do the talking</h2><p class="m-b-0">Get SurveySensum to improve experiences at a fraction of your current research costs</p></div>
+                <div class="right-content"><a href="https://site.cl3sxcka-liquidwebsites.com/request-demo/" class="btn btn-orange">Request Demo</a></div></div>			</div>
+		</div>
+	</div>
+</div>
+<!-- CTA End -->
+</div>
+<!-- Wrapper End -->
+
+<!-- Footer Start -->
+<footer>
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="products">
+						<p class="title">Products</p>
+						<div class="menu-products-container"><ul id="menu-products" class="productMenu"><li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a href="https://site.cl3sxcka-liquidwebsites.com/net-promoter-score-nps%ef%b8%8f/">Net Promoter Score( NPS®️)</a></li>
+<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="https://site.cl3sxcka-liquidwebsites.com/customer-effort-score/">Customer Effort Score</a></li>
+<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="https://site.cl3sxcka-liquidwebsites.com/customer-satisfaction-score/">Customer Satisfaction Score</a></li>
+<li id="menu-item-1431" class="btm-pricing menu-item menu-item-type-post_type menu-item-object-page menu-item-1431"><a href="https://site.cl3sxcka-liquidwebsites.com/pricing/">Pricing</a></li>
+</ul></div> 
+                        <!-- <p class="title">Pricing</p> -->
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="resources">
+						<p class="title">Resources</p>
+						<ul class="d-flex justify-content-between">
+							<li>								
+								<div class="menu-resources-container"><ul id="menu-resources" class="companyMenu"><li id="menu-item-1375" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1375"><a href="https://site.cl3sxcka-liquidwebsites.com/blog/">Blog</a></li>
+<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="https://site.cl3sxcka-liquidwebsites.com/about-us/">About Us</a></li>
+<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="https://site.cl3sxcka-liquidwebsites.com/contact-us/">Contact us</a></li>
+<li id="menu-item-1374" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1374"><a href="https://site.cl3sxcka-liquidwebsites.com/e-books/">E-Books</a></li>
+</ul></div>	
+							</li>
+						</ul>
+					</div>
+				</div>
+                <div class="col-lg-3 col-md-6">
+                	<div class="footer-contact">
+                    	<p class="title">Contact</p>
+                    	<div class="textwidget custom-html-widget"><div class="footer-phone-container">
+	<p class="footer_phone mb-0 ">
+<a href="tel:+62-21-2251-3883">+62 21 2251 3883</a>
+</p>
+<select id="country_footer">
+	<option value="indonesia" data-class="indonesia" data-image="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/indonesia-flag.svg">&nbsp;</option>
+	<option value="singapore" data-class="singapore" data-image="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/singapore-flag.svg">&nbsp;</option>
+	<option value="india" data-class="india" data-image="https://site.cl3sxcka-liquidwebsites.com/wp-content/uploads/2019/09/india-flag.svg">&nbsp;</option>
+</select>
+	</div></div>						                        <p class="email"><a href="mailto:support@surveysensum.com">support@surveysensum.com</a></p>
+                                            </div>
+                </div>
+				<div class="col-md-6 col-lg-3 email-news">
+					<div class="newsletter">
+						<p class="title">Subscribe for Newsletter</p>
+						<div class="form-container">
+						
+                <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_2' ><div id='gf_2' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_2' id='gform_2'  action='/what-is-customer-effort-score-ces-definition-calculation-applications-and-advantages/#gf_2'>
+                        <div class='gform_body'><ul id='gform_fields_2' class='gform_fields top_label form_sublabel_below description_below'><li id='field_2_1'  class='gfield gfield_contains_required field_sublabel_below field_description_below hidden_label gfield_visibility_visible' ><label class='gfield_label' for='input_2_1' ><span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_1' id='input_2_1' type='email' value='' class='large' tabindex='5'  placeholder='Enter Email' aria-required="true" aria-invalid="false" />
+                        </div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_2' class='gform_button button' value='Subscribe' tabindex='6' onclick='if(window["gf_submitting_2"]){return false;}  if( !jQuery("#gform_2")[0].checkValidity || jQuery("#gform_2")[0].checkValidity()){window["gf_submitting_2"]=true;}  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_2"]){return false;} if( !jQuery("#gform_2")[0].checkValidity || jQuery("#gform_2")[0].checkValidity()){window["gf_submitting_2"]=true;}  jQuery("#gform_2").trigger("submit",[true]); }' /> <input type='hidden' name='gform_ajax' value='form_id=2&amp;title=&amp;description=&amp;tabindex=5' />
+            <input type='hidden' class='gform_hidden' name='is_submit_2' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='2' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_2' value='WyJbXSIsImQ4MzgwZjNhY2UzMzE0YzRiNjI1YjRjZmE2MjFhNTVmIl0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_2' id='gform_target_page_number_2' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_2' id='gform_source_page_number_2' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_2' id='gform_ajax_frame_2' title='Ajax Frame'>This iframe contains the logic required to handle Ajax powered Gravity Forms.</iframe>
+                <script type='text/javascript'>jQuery(document).ready(function($){gformInitSpinner( 2, 'https://site.cl3sxcka-liquidwebsites.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery('#gform_ajax_frame_2').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_2');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_2').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_2').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_2').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_2').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_2').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_2').val();gformInitSpinner( 2, 'https://site.cl3sxcka-liquidwebsites.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery(document).trigger('gform_page_loaded', [2, current_page]);window['gf_submitting_2'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_2').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_2').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [2]);window['gf_submitting_2'] = false;}, 50);}else{jQuery('#gform_2').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [2, current_page]);} );} );</script><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 2) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [2, 1]) } ); </script>						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="top d-flex">
+						<ul class="socialright">
+							<!--social icon start!-->
+														<li><a href="https://www.youtube.com/channel/UCz548HAxbOtYHrTUMxna7BQ" target="_blank" class="vh-center"><i class="fa fa-youtube-play"></i></a></li>
+														<!--social icon end!-->
+							<!--social icon start!-->
+														<li><a href="https://www.facebook.com/SurveySensum/" target="_blank" class="vh-center"><i class="fa fa-facebook"></i></a></li>
+														<!--social icon end!-->
+							<!--social icon start!-->
+														<li><a href="https://twitter.com/surveysensum" target="_blank" class="vh-center"><i class="fa fa-twitter"></i></a></li>
+														<!--social icon end!-->
+							<!--social icon start!-->
+														<li><a href="https://www.linkedin.com/company/14599853/" target="_blank" class="vh-center"><i class="fa fa-linkedin"></i></a></li>
+														<!--social icon end!-->
+							<!--social icon start!-->
+														<li><a href="https://www.instagram.com/surveysensum/" target="_blank" class="vh-center"><i class="fa fa-instagram"></i></a></li>
+														<!--social icon end!-->
+						</ul>
+					</div>
+					<div class="bottom d-flex align-items-center">
+						<div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="footerMenu d-flex align-items-center"><li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a href="https://site.cl3sxcka-liquidwebsites.com/terms-of-use/">Terms of Use</a></li>
+<li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59"><a href="https://site.cl3sxcka-liquidwebsites.com/privacy-policy-2/">Privacy Policy</a></li>
+<li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="https://site.cl3sxcka-liquidwebsites.com/cookie-policy/">Cookie Policy</a></li>
+</ul></div>	
+												<p class="copyright"> Copyright © 2019. SurveySensum Powered by Neurosensum. All rights reserved.</p>
+						 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Footer End -->
+
+<!-- Back to Top Start -->
+<div class="back-to-top vh-center">
+<i class="fa fa-angle-up"></i>
+</div>
+<!-- Back to Top End -->
+</main>
+<!-- Main End -->
+                <!-- Start of Async HubSpot Analytics Code -->
+                <script type="text/javascript">
+                    (function(d,s,i,r) {
+                        if (d.getElementById(i)){return;}
+                        var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+                        n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/5773317.js';
+                        e.parentNode.insertBefore(n, e);
+                    })(document,"script","hs-analytics",300000);
+                </script>
+                <!-- End of Async HubSpot Analytics Code -->
+                <script data-cfasync="false" type="text/javascript">if (window.addthis_product === undefined) { window.addthis_product = "wpp"; } if (window.wp_product_version === undefined) { window.wp_product_version = "wpp-6.2.6"; } if (window.addthis_share === undefined) { window.addthis_share = {}; } if (window.addthis_config === undefined) { window.addthis_config = {"data_track_clickback":true,"ui_atversion":"300"}; } if (window.addthis_plugin_info === undefined) { window.addthis_plugin_info = {"info_status":"enabled","cms_name":"WordPress","plugin_name":"Share Buttons by AddThis","plugin_version":"6.2.6","plugin_mode":"AddThis","anonymous_profile_id":"wp-5fc2aaea0cad4a92083904e098e3bd6c","page_info":{"template":"posts","post_type":""},"sharing_enabled_on_post_via_metabox":false}; } 
+                    (function() {
+                      var first_load_interval_id = setInterval(function () {
+                        if (typeof window.addthis !== 'undefined') {
+                          window.clearInterval(first_load_interval_id);
+                          if (typeof window.addthis_layers !== 'undefined' && Object.getOwnPropertyNames(window.addthis_layers).length > 0) {
+                            window.addthis.layers(window.addthis_layers);
+                          }
+                          if (Array.isArray(window.addthis_layers_tools)) {
+                            for (i = 0; i < window.addthis_layers_tools.length; i++) {
+                              window.addthis.layers(window.addthis_layers_tools[i]);
+                            }
+                          }
+                        }
+                     },1000)
+                    }());
+                </script><link rel="stylesheet" href="https://site.cl3sxcka-liquidwebsites.com/wp-content/plugins/gravityforms/css/formreset.min.css?ver=2.4.12.4">
+<link rel="stylesheet" href="https://site.cl3sxcka-liquidwebsites.com/wp-content/plugins/gravityforms/css/formsmain.min.css?ver=2.4.12.4">
+<link rel="stylesheet" href="https://site.cl3sxcka-liquidwebsites.com/wp-content/plugins/gravityforms/css/readyclass.min.css?ver=2.4.12.4">
+<link rel="stylesheet" href="https://site.cl3sxcka-liquidwebsites.com/wp-content/plugins/gravityforms/css/browsers.min.css?ver=2.4.12.4">
+<script src="https://s7.addthis.com/js/300/addthis_widget.js?ver=5.2.3#pubid=ra-5d8de3ab2dfed5a2"></script>
+<script src="https://site.cl3sxcka-liquidwebsites.com/wp-content/themes/survey/assets/js/plugins.min.js"></script>
+<script src="https://site.cl3sxcka-liquidwebsites.com/wp-content/themes/survey/assets/js/jquery-match-height.js"></script>
+<script src="https://site.cl3sxcka-liquidwebsites.com/wp-content/themes/survey/assets/js/main.js"></script>
+<script src="https://site.cl3sxcka-liquidwebsites.com/wp-includes/js/wp-embed.min.js?ver=5.2.3"></script>
+<script src="https://site.cl3sxcka-liquidwebsites.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.4.12.4"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/site.cl3sxcka-liquidwebsites.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/site.cl3sxcka-liquidwebsites.com\/wp-content\/plugins\/gravityforms\/images\/spinner.gif"};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/site.cl3sxcka-liquidwebsites.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/site.cl3sxcka-liquidwebsites.com\/wp-content\/plugins\/gravityforms\/images\/spinner.gif"};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/site.cl3sxcka-liquidwebsites.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/site.cl3sxcka-liquidwebsites.com\/wp-content\/plugins\/gravityforms\/images\/spinner.gif"};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/site.cl3sxcka-liquidwebsites.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/site.cl3sxcka-liquidwebsites.com\/wp-content\/plugins\/gravityforms\/images\/spinner.gif"};
+/* ]]> */
+</script>
+<script src="https://site.cl3sxcka-liquidwebsites.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.4.12.4"></script>
+<script src="https://site.cl3sxcka-liquidwebsites.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.4.12.4"></script>
+<script src="https://site.cl3sxcka-liquidwebsites.com/wp-content/plugins/gravityforms/js/conditional_logic.min.js?ver=2.4.12.4"></script>
+<!-- Contact Number Start -->
+<script>
+
+	
+	// Default Phone
+	jQuery(function($) { 
+		var targetHeader = jQuery('#country_header option:selected').val();
+		if(targetHeader == 'indonesia'){
+			jQuery('.header_phone a').html('+62 21 2251 3883');
+			jQuery('.header_phone a').attr('href','tel:' + '+' +'622122513883');
+	  }
+	  var targetFooter = jQuery('#country_footer option:selected').val();
+		if(targetFooter == 'indonesia'){
+			jQuery('.footer_phone a').html('+62 21 2251 3883');
+			jQuery('.footer_phone a').attr('href','tel:' + '+' +'622122513883');
+	  }
+	});
+
+
+	// Header Phone
+	jQuery("#country_header").change(function() {
+    	var target = jQuery('#country_header option:selected').val();
+		if(target == 'indonesia'){
+			jQuery('.header_phone a').html('+62 21 2251 3883');
+			jQuery('.header_phone a').attr('href','tel:' + '+' +'622122513883');
+	  }
+	  else if(target == 'singapore'){
+		jQuery('.header_phone a').html('+65 93 550 940');
+		jQuery('.header_phone a').attr('href','tel:' + '+' +'6593550940');
+	  }
+	  else if(target == 'india'){
+		jQuery('.header_phone a').html('+91 9999062749');
+		jQuery('.header_phone a').attr('href','tel:' + '+' + '919999062749');
+	  }
+	});
+
+	// Footer Phone
+	jQuery("#country_footer").change(function() {
+    var target = jQuery('#country_footer option:selected').val();
+		if(target == 'indonesia'){
+			jQuery('.footer_phone a').html('+62 21 2251 3883');
+			jQuery('.footer_phone a').attr('href','tel:' + '+' +'622122513883');
+	  }
+	  else if(target == 'singapore'){
+		jQuery('.footer_phone a').html('+65 93 550 940');
+		jQuery('.footer_phone a').attr('href','tel:' + '+' +'6593550940');
+	  }
+	  else if(target == 'india'){
+		jQuery('.footer_phone a').html('+91 9999062749');
+		jQuery('.footer_phone a').attr('href','tel:' + '+' + '919999062749');
+	  }
+	});
+
+
+
+</script>
+<!-- Contact Number End -->
+
+<script>
+jQuery(document).ready(function(){
+    jQuery('.pageHelpfulSec .gform_body input[type="radio"]').click(function(){
+       jQuery('.pageHelpfulSec .gform_footer .gform_button.button').show(); 
+    });
+});
+</script>
+
+<script>
+var ajaxurl = "https://site.cl3sxcka-liquidwebsites.com/wp-admin/admin-ajax.php";
+var page = 2;
+jQuery(function($) {
+    jQuery('body').on('click', '#load_more.loadmore', function() {
+        var data = {
+            'action': 'load_posts_by_ajax',
+            'page': page,
+            'security': '2cca0d5ff8'
+        };
+ 
+        $.post(ajaxurl, data, function(response) {
+            if(response != '') {
+                jQuery('#ajax-posts').append(response);
+                page++;
+                jQuery('.post-single .post-content') .matchHeight({}) ;
+            } else {
+                jQuery('#load_more.loadmore').hide();
+            }
+        });
+    });
+});
+</script>
+<script>
+setInterval(function(){ jQuery('.post-single .post-content').matchHeight(); }, 2000);
+</script>
+</body>
+<!-- Body End -->
+</html>
+<!-- HTML End -->
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Page Caching using disk: enhanced 
+
+Served from: site.cl3sxcka-liquidwebsites.com @ 2019-10-11 12:54:20 by W3 Total Cache
+-->

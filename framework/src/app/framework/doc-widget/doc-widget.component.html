@@ -1,0 +1,52 @@
+<dashboard-page>
+  <div class="page-head">
+    <h5><strong>Dashboard Widget Component</strong></h5>
+  </div>
+  <div class="page-content">
+    <div class="container">
+      <div class="columns">
+        <div class="column col-12">
+          Dashboard widget is a structural component it wraps the content of a
+          widget within. it should always used inside a
+          <strong
+            style="cursor: pointer"
+            [routerLink]="['../page']"
+            routerLinkActive="router-link-active"
+            >Dashboard Page Component</strong
+          >
+          body. widget is divided into 3 sections:
+          <ul>
+            <li>
+              <strong>Head: </strong> inside a widget tag '.widget-head' class
+              is used to define heading of a widget. user can put any html in
+              head.
+            </li>
+            <li>
+              <strong>Body: </strong> inside a widget tag '.widget-content'
+              class is used to define body of a widget. user can put any html in
+              body.
+            </li>
+            <li>
+              <strong>Footer: </strong> inside a widget tag '.widget-footer'
+              class is used to define footer of a widget. user can put any html
+              in footer.
+            </li>
+          </ul>
+        </div>
+        <div class="column col-12">
+          <pre class="code" data-lang="HTML">
+              <code>
+              {{html}}
+              </code>
+            </pre>
+        </div>
+        <div class="column col-12">
+          <!-- <code></code> -->
+        </div>
+        <!-- <div class="column col-3">col-3</div>
+          <div class="column col-2">col-2</div>
+          <div class="column col-1">col-1</div> -->
+      </div>
+    </div>
+  </div>
+</dashboard-page>

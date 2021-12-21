@@ -1,0 +1,1752 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #02193B;
+  height: 100%;
+  overflow: auto;
+  font-weight: 400;
+}
+
+/********************* Hubspot form css *******************/
+
+form .field {
+  position: relative;
+  margin-bottom: 20px;
+}
+form .field legend {
+  display: none;
+}
+form .field label {
+  margin: 0;
+  display: block;
+}
+form .field label .hs-form-required {
+  display: none;
+}
+form .field .input > input {
+  line-height: normal;
+  border: 1px solid #e5ebff;
+  color: #000000;
+  font-size: 0.9375rem;
+  padding: 0 18px;
+  border-radius: 4px;
+  font-weight: 500;
+  height: 46px;
+  width: 100%;
+  display: block;
+}
+form .field .input > input:focus {
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+form .field .input textarea {
+  border: 1px solid #e5ebff;
+  color: #000000;
+  font-size: 0.9375rem;
+  padding: 13px 18px;
+  border-radius: 4px;
+  font-weight: 500;
+  width: 100%;
+  display: block;
+  resize: none;
+  height: 100px;
+}
+form .field .input textarea:focus {
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+form .field .hs-error-msgs {
+  margin: 0;
+  list-style-type: none;
+}
+form .field .hs-error-msgs > li label {
+  color: #de350b;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+
+form .field.hs-phone .hs-fieldtype-intl-phone.hs-input select {
+  float: left;
+  width: 40% !important;
+  line-height: normal;
+  border: 1px solid #e5ebff;
+  color: #000000;
+  font-size: 0.9375rem;
+  padding: 0 18px;
+  border-radius: 4px;
+  font-weight: 500;
+  height: 46px;
+  display: block;
+  padding-right: 0;
+  background: #fff;
+}
+
+form .field.hs-phone .hs-fieldtype-intl-phone.hs-input > input {
+  width: 58% !important;
+  float: right;
+  line-height: normal;
+  border: 1px solid #e5ebff;
+  color: #000000;
+  font-size: 0.9375rem;
+  padding: 0 18px;
+  border-radius: 4px;
+  font-weight: 500;
+  height: 46px;
+  display: block;
+  padding-right: 0;
+}
+
+
+
+form .legal-consent-container .hs-dependent-field > div .input ul {
+  list-style-type: none;
+}
+form
+  .legal-consent-container
+  .hs-dependent-field
+  > div
+  .input
+  ul
+  li
+  label
+  input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+form
+  .legal-consent-container
+  .hs-dependent-field
+  > div
+  .input
+  ul
+  li
+  label
+  input:checked
+  ~ span:before {
+  background-color: #005cbf;
+}
+form
+  .legal-consent-container
+  .hs-dependent-field
+  > div
+  .input
+  ul
+  li
+  label
+  input:checked
+  ~ span:after {
+  display: block;
+}
+form
+  .legal-consent-container
+  .hs-dependent-field
+  > div
+  .input
+  ul
+  li
+  label
+  > span {
+  position: relative;
+  margin-left: 30px;
+  font-size: 14px;
+}
+form
+  .legal-consent-container
+  .hs-dependent-field
+  > div
+  .input
+  ul
+  li
+  label
+  > span:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -28px;
+  height: 22px;
+  width: 22px;
+  background-color: #dee2e6;
+  display: inline-block;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form
+  .legal-consent-container
+  .hs-dependent-field
+  > div
+  .input
+  ul
+  li
+  label
+  > span:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: -19px;
+  top: 9px;
+  width: 5px;
+  height: 11px;
+  border: solid #fff;
+  border-width: 0px 2.5px 2.5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+form
+  .legal-consent-container
+  .hs-dependent-field
+  > div
+  .input
+  ul
+  li
+  label:hover:before {
+  background: #ccc;
+}
+form .hs_error_rollup {
+  display: none;
+}
+form .hs_submit .actions {
+  margin-top: 40px;
+}
+form .hs_submit .actions > input {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #0B52CC;
+  border: 2px solid #0B52CC;
+  height: 46px;
+  padding: 0.4rem 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+}
+form .hs_submit .actions > input:focus {
+  outline: none;
+}
+
+.hbspt-form .submitted-message p {
+  background: #36b37e;
+  color: #fff;
+  border-radius: 6px;
+  margin: 0;
+  padding: 15px;
+}
+
+.modal .modal-dialog .modal-content .modal-body button.close {
+  top: -9px;
+  right: -5px;
+  padding: 1rem;
+  opacity: 1;
+  position: absolute;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.modal .modal-dialog .modal-content .modal-body button.close:focus {
+  outline: none;
+}
+
+.modal .modal-dialog {
+  max-width: 412px;
+}
+
+.modal .modal-dialog .modal-content .modal-body h5 {
+  color: #000000;
+  font-size: 1.125rem;
+  margin-bottom: 35px;
+}
+
+.modal .modal-dialog .modal-content .modal-body {
+  padding: 40px 46px 40px;
+  background: #f4f6fc;
+  border-radius: 4px;
+  border: 1px solid #e5ebff;
+}
+/********************* End Hubspot form css *******************/
+
+
+/*========================= Links =========================*/
+
+a,
+a:hover,
+.btn,
+.btn:hover {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/**************  Button css  **********************/
+.btn {
+  border-radius: 6px;
+  border: 0;
+  line-height: 1.2rem;
+  font-size: 0.875rem;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+.btn.sm {
+  height: 36px;
+  padding: 0.4rem 15px;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+.btn.lg {
+  height: 46px;
+  padding: 0.4rem 25px;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+.btn.btn-secondary {
+  background-color: #0B5FFF;
+  border: 2px solid #0B5FFF;
+  color: #fff;
+}
+.btn.btn-secondary:after {
+  display: none;
+}
+.btn.btn-secondary:hover {
+  background-color: #fff;
+  border-color: #0B5FFF;
+  color: #0B5FFF;
+}
+
+.btn.btn-secondary-bg{
+  background-color: #0B5FFF;
+  border: 2px solid #0B5FFF;
+  color: #fff;
+}
+
+.btn.btn-secondary-bg:hover{
+  background-color: #3077FF;
+  border: 2px solid #3077FF;
+  color: #fff;
+}
+
+.btn.btn-secondary:focus {
+  box-shadow: none;
+}
+.btn.btn-secondary:not(:disabled):not(.disabled):active {
+  background-color: #fff;
+  box-shadow: none;
+  border: 2px solid #0B5FFF;
+  color: #0B5FFF;
+}
+.btn.btn-dark-primary {
+  background: #02193b;
+  border: 2px solid #02193b;
+  color: #fff;
+}
+.btn.btn-dark-green {
+  background-color: #006644;
+  color: #fff;
+  border: 2px solid #006644;
+}
+.btn.btn-dark-green:after {
+  display: none;
+}
+.btn.btn-dark-green:hover {
+  background-color: #00875a;
+  border-color: #00875a;
+}
+.btn.btn-light-green {
+  background-color: #36b37e;
+  color: #fff;
+  border: 2px solid #36b37e;
+}
+.btn.btn-light-green:after {
+  display: none;
+}
+.btn.btn-light-green:hover {
+  background-color: #00875a;
+  border-color: #00875a;
+}
+.btn.btn-outline-primary {
+  background-color: #fff;
+  color: #1358ff;
+  border: 2px solid #1358ff;
+}
+.btn.btn-outline-primary:after {
+  display: none;
+}
+.btn.btn-outline-primary:focus {
+  box-shadow: none;
+}
+.btn.btn-outline-primary:hover {
+  background-color: #1358ff;
+  color: #fff;
+  border: 2px solid #1358ff;
+}
+.btn.btn-outline-primary:not(:disabled):not(.disabled):active {
+  background-color: #1358ff;
+  color: #fff;
+  border: 2px solid #1358ff;
+  box-shadow: none;
+}
+.btn.btn-outline-secondary {
+  background-color: #fff;
+  color: #1358ff;
+  border: 2px solid #1358ff;
+}
+.btn.btn-outline-secondary:after {
+  display: none;
+}
+.btn.btn-outline-secondary:focus {
+  box-shadow: none;
+}
+.btn.btn-outline-secondary:hover {
+  background-color: #1358ff;
+  color: #fff;
+  border: 2px solid #1358ff;
+}
+.btn.btn-outline-secondary:not(:disabled):not(.disabled):active {
+  background-color: #1358ff;
+  color: #fff;
+  border: 2px solid #1358ff;
+  box-shadow: none;
+}
+
+
+.btn.btn-outline-secondary.request-btn {
+  color: #36B37E;
+  border-color: #36B37E;
+  /* font-weight: 500; */
+}
+
+.btn.btn-outline-secondary.request-btn:hover{
+  background: #36B37E;
+  color: #fff;
+  border-color: #36B37E;
+}
+
+.btn.btn-outline-secondary.request-btn:not(:disabled):not(.disabled):active{
+  background: #36B37E;
+  color: #fff;
+  border-color: #36B37E; 
+}
+
+.btn.btn-secondary.request-btn {
+  background: #36B37E;
+  color: #fff;
+  border-color: #36B37E; 
+}
+
+/* .btn.btn-secondary.request-btn:hover{
+  background-color: #0B5FFF;
+  border-color: #0B5FFF;
+  color: #fff;
+} */
+
+.btn.btn-secondary.request-btn:not(:disabled):not(.disabled):active{
+  background: #36B37E;
+  color: #fff;
+  border-color: #36B37E; 
+}
+/************** End Button css  **********************/
+
+
+
+
+
+
+
+/* page-template-conversational-analytics-voc */
+
+/********************* Heading css ****************/
+
+.page-template-conversational-analytics-voc .heading h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.page-template-conversational-analytics-voc .heading p{
+  color: #172B4D;
+}
+
+.page-template-conversational-analytics-voc header .navbar-light {
+  background-color: transparent !important;
+  padding: 18px 0;
+}
+
+
+.page-template-conversational-analytics-voc .arrow-first {
+  display: inline-block;
+}
+
+.page-template-conversational-analytics-voc .arrow-first svg {
+  position: absolute;
+  right: -54px;
+  top: 16px;
+}
+
+.page-template-conversational-analytics-voc .sign-up-free-home .lets-talk{
+  background: transparent !important;
+  color: #36B37E !important;
+  margin-left: 16px;
+}
+
+.page-template-conversational-analytics-voc .sign-up-free-home .no-credit-card {
+  font-size: 12px;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.page-template-conversational-analytics-voc .sign-up-free-home .no-credit-card a {
+  color: #36B37E;
+  font-weight: 500;
+  display: block;
+}
+
+
+/*************** Identify Emerging Complaints Faster => 1st section css**********/
+.page-template-conversational-analytics-voc .create-single-source{
+  padding: 60px 0 152px;
+}
+
+.page-template-conversational-analytics-voc .create-single-source .heading h2{
+  width: 566px;
+  margin-bottom: 12px;
+  color: #000000;
+}
+
+.page-template-conversational-analytics-voc .create-single-source .heading p{
+  width: 392px;
+  margin:0 0 24px;
+}
+
+.page-template-conversational-analytics-voc .create-single-source .heading p.analytics-software-text {
+  margin-bottom: 10px;
+  color: #36B37E;
+  width: 100%;
+}
+
+.page-template-conversational-analytics-voc .single-source-img {
+  position: absolute;
+  top: -177px;
+  z-index: -1;
+  right: 0;
+  text-align: right;
+  overflow: hidden;
+}
+
+.page-template-conversational-analytics-voc .single-source-img img {
+  margin-right: -106px;
+}
+
+.page-template-conversational-analytics-voc .single-source-img img.mobile{
+  display: none;
+}
+
+
+
+
+/************** Our clients *************/
+.page-template-conversational-analytics-voc .our-clients {
+  padding: 64px 0 40px;
+  background: #fff;
+}
+
+.page-template-conversational-analytics-voc .our-clients .clients h4 {
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.page-template-conversational-analytics-voc .our-clients .clients-brand .software-used .brand-logo img {
+  width: 74%;
+}
+
+.page-template-conversational-analytics-voc .our-clients .clients-brand .software-used .brand-logo {
+  text-align: center;
+}
+
+.page-template-conversational-analytics-voc .our-clients .many-more {
+  text-align: center;
+}
+
+.page-template-conversational-analytics-voc .our-clients .many-more span {
+  padding: 6px 20px;
+  color: #000;
+  border-radius: 2px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 26px;
+  display: inline-block;
+}
+
+
+.page-template-conversational-analytics-voc .benifit-section {
+  padding: 80px 0 44px;
+  background-color: #F7FCFA;
+}
+
+.page-template-conversational-analytics-voc .benifit-section .heading h2 {
+  margin-bottom: 80px;
+  color: #03363D;
+}
+
+.page-template-conversational-analytics-voc .benifit-section .heading h2:before{
+  display: none;
+}
+
+.page-template-conversational-analytics-voc .benifit-section .box-main p {
+  color: #091E42;
+  margin-bottom: 0;
+}
+
+.page-template-conversational-analytics-voc .benifit-section .box-main p strong{
+  color: #0B5FFF;
+}
+
+.page-template-conversational-analytics-voc .data-securtiy-img.mobile{
+  display: none;
+}
+
+.page-template-conversational-analytics-voc .benifit-section .box-main .box-img {
+  margin-bottom: 4px;
+}
+
+.page-template-conversational-analytics-voc .benifit-section .box-main .box-img span {
+  background: #34B17E;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: #fff;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.page-template-conversational-analytics-voc .benifit-section .box-main {
+  margin: 0 44px 36px;
+}
+
+.page-template-conversational-analytics-voc .data-safety {
+  background: #fff;
+  padding: 100px 0 0;
+  position: relative;
+}
+
+.page-template-conversational-analytics-voc .data-safety .heading {
+  position: relative;
+  z-index: 1;
+}
+
+.page-template-conversational-analytics-voc .data-safety .heading img{
+  position: absolute;
+  top: -40px;
+  z-index: -1;
+  left: -21px;
+}
+
+.page-template-conversational-analytics-voc .data-safety .heading h2 {
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.page-template-conversational-analytics-voc .data-safety-points {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-template-conversational-analytics-voc .data-safety-points .points-main {
+  display: flex;
+  width: calc(50% - 40px);
+  margin: 0 20px 24px;
+  align-items: flex-start;
+}
+
+.page-template-conversational-analytics-voc .data-safety-points .point-number span {
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-template-conversational-analytics-voc .data-safety-points .point-description {
+  font-size: 18px;
+  color: #000000;
+}
+
+
+.page-template-conversational-analytics-voc .with-Surveysensum {
+  color: #36B37E;
+  font-weight: 500;
+  margin: 0 0 28px 20px;
+}
+
+
+/* customer-experiance section css  */
+.page-template-conversational-analytics-voc .customer-experiance {
+  /* padding: 146px 0px 90px; */
+  padding: 120px 0px 90px;
+}
+
+.page-template-conversational-analytics-voc .customer-experiance .heading h2 {
+  margin-bottom: 60px;
+  color: #03363D;
+}
+
+.page-template-conversational-analytics-voc .customer-experiance .heading p {
+  margin-bottom: 54px;
+}
+
+.page-template-conversational-analytics-voc .customer-experiance .slider-section .carousel {
+  display: flex;
+  width: 70%;
+}
+
+.page-template-conversational-analytics-voc .dot-carousal-inner {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  top: 9px;
+  z-index: 1;
+  left: 50px;
+}
+
+.page-template-conversational-analytics-voc .dot-carousal-inner .dot {
+  height: 10px;
+  width: 10px;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.page-template-conversational-analytics-voc .how-it-work-mob{
+  display: none;
+}
+
+
+.page-template-conversational-analytics-voc .customer-experiance .slider-section .carousel .carousel-inner {
+  box-shadow: 0px 3px 6px #7c7e813b;
+  border-radius: 10px;
+  border-top: 28px solid #146671;
+  padding: 40px 20px;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.page-template-conversational-analytics-voc .customer-experiance .slider-section .carousel .carousel-inner .carousel-item {
+  padding: 0 10px 4px 0;
+}
+
+.page-template-conversational-analytics-voc .customer-experiance .slider-section .carousel .carousel-inner .carousel-item img{
+  /* width: 60%; */
+  /* height: 278px; */
+  height: 338px;
+  margin: 0 auto;
+}
+
+.page-template-conversational-analytics-voc .customer-experiance .slider-section .carousel .indicators-main {
+  position: absolute;
+  right: -40%;
+  width: 40%;
+}
+.page-template-conversational-analytics-voc .customer-experiance .slider-section .carousel .indicators-main .carousel-indicators {
+  list-style-type: none;
+  position: static;
+  display: block;
+  padding-left: 0;
+  margin: 0;
+  height: 304px;
+}
+
+.page-template-conversational-analytics-voc .customer-experiance .slider-section .carousel .indicators-main .carousel-indicators > li {
+  /* height: 22px; */
+  height: auto;
+  width: auto;
+  text-indent: 0;
+  padding: 8px 18px;
+  margin-bottom: 12px;
+  transition: 0.2s color ease-in-out;
+  user-select: none;
+  cursor: pointer;
+  opacity: 1;
+  box-shadow: 0px 3px 6px #decdcd29;
+  border: 1px solid #7979791F;
+  border-radius: 5px;
+}
+
+.page-template-conversational-analytics-voc .customer-experiance .slider-section .carousel .indicators-main .carousel-indicators > li.active {
+  background: #F6FCFA;
+  border: 1px solid #36B37E;
+}
+
+.page-template-conversational-analytics-voc .customer-experiance .slider-section .carousel .indicators-main .carousel-indicators > li .indicators-inner {
+  display: inline-block;
+}
+
+.page-template-conversational-analytics-voc .customer-experiance .slider-section .carousel .indicators-main .carousel-indicators > li .indicators-inner svg {
+  position: absolute;
+  left: 0;
+}
+
+.page-template-conversational-analytics-voc .customer-experiance .slider-section .carousel .indicators-main .carousel-indicators > li .indicators-inner span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #091E42;
+}
+
+.page-template-conversational-analytics-voc .customer-experiance .slider-section .carousel .indicators-main .carousel-indicators > li.active .indicators-inner span {
+  color: #36B37E;
+}
+
+.page-template-conversational-analytics-voc .customer-experiance .slider-section .carousel .indicators-main .carousel-indicators > li .indicators-inner p{
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 0;
+  display: none;
+}
+
+.page-template-conversational-analytics-voc .customer-experiance .slider-section .carousel .indicators-main .carousel-indicators > li.active .indicators-inner p{
+  color: #36B37E;
+  display: block;
+}
+
+
+.page-template-conversational-analytics-voc .feature-nps {
+  background: #F7FCFA;
+  padding: 84px 0 134px;
+}
+
+.page-template-conversational-analytics-voc .feature-nps .heading h2{
+  width: 410px;
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+  color: #03363D;
+}
+
+.page-template-conversational-analytics-voc .feature-nps .heading h2:before{
+  content: "";
+  position: absolute;
+  left: -58px;
+  top: -52px;
+  width: 280px;
+  height: 280px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.page-template-conversational-analytics-voc .feature-nps-card .our-favorites{
+  font-weight: 500;
+  color: #172B4D;
+  margin-bottom: 20px;
+}
+
+.page-template-conversational-analytics-voc .feature-nps .why-act .feature-nps-card .card {
+  border: 0;
+  min-height: 196px;
+  box-shadow: 0px 6px 15px #E7F8F2;
+  border-radius: 6px;
+}
+
+.page-template-conversational-analytics-voc .feature-nps .why-act .feature-nps-card .card .card-body {
+  padding: 30px;
+}
+
+.page-template-conversational-analytics-voc .feature-nps .why-act .feature-nps-card .card .card-body .card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #03363D;
+}
+
+.page-template-conversational-analytics-voc .feature-nps .why-act .feature-nps-card .card .card-body .card-text {
+  font-size: 18px;
+  color: #03363D;
+  margin-bottom: 0;
+}
+
+.page-template-conversational-analytics-voc .feature-nps-card img.product-1{
+  left: -72px;
+  top: 156px;
+}
+
+.page-template-conversational-analytics-voc .feature-nps-card img.product-2{
+  left: 300px;
+  bottom: -108px;
+}
+
+.page-template-conversational-analytics-voc .feature-nps-card img.product-3{
+  right: 48px;
+  top: -26px;
+}
+
+
+/************************** Customer who love us ******************/
+.page-template-conversational-analytics-voc .customer-who-love {
+  padding: 100px 0 100px;
+}
+
+.page-template-conversational-analytics-voc .customer-who-love .heading h2 {
+  width: 758px;
+  margin: 0 auto 42px;
+  position: relative;
+  font-weight: normal;
+}
+
+.page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner {
+  width: 788px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0px 6px 15px #e7eff8;
+  border-radius: 6px;
+  height: 384px;
+}
+
+.page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner .carousel-item {
+  padding: 70px 60px;
+}
+
+.page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner .carousel-item .client-info .client-logos {
+  margin-bottom: 56px;
+}
+
+.page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner .carousel-item .client-info .client-text {
+  padding: 0 80px;
+}
+
+.page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner .carousel-item .client-info .client-text p {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner .carousel-item .client-info .client-text .left-quotation {
+  left: 0;
+  top: -52px;
+}
+
+.page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner .carousel-item .client-info .client-text .right-quotation {
+  right: 0;
+  top: -52px;
+}
+
+.page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner .carousel-item.client-new-card {
+  padding: 26px 38px 44px;
+}
+
+.page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner .carousel-item .client-info .client-logos.client-profile {
+  margin-bottom: 22px;
+}
+
+.page-template-conversational-analytics-voc .client-logos.client-profile .client-title {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.page-template-conversational-analytics-voc .client-logos.client-profile .client-designation {
+  color: rgba(9, 30, 66, 0.75);
+  font-weight: 500;
+}
+
+.page-template-conversational-analytics-voc .carousel .carousel-control-prev {
+  left: 62px;
+  transform: rotate(-180deg);
+}
+
+.page-template-conversational-analytics-voc .carousel .carousel-control-next {
+  right: 62px;
+}
+
+.page-template-conversational-analytics-voc .carousel .carousel-control-next, .carousel .carousel-control-prev {
+  width: 60px;
+  height: 60px;
+  box-shadow: 0px 6px 15px #9a9a9a14;
+  background: #fff;
+  border-radius: 50%;
+  top: 42%;
+  opacity: 1;
+}
+
+.page-template-conversational-analytics-voc .carousel .carousel-control-next:hover svg g path, .carousel .carousel-control-prev:hover svg g path {
+  stroke: #0b5fff;
+}
+
+
+/**************** connect-for-text-analytics *****************/
+.page-template-conversational-analytics-voc .connect-for-text-analytics{
+  background: #F5F9FE;
+  padding: 70px 0 80px !important;
+}
+
+.page-template-conversational-analytics-voc .connect-for-text-analytics .sign-up {
+  position: relative;
+  z-index: 9;
+  margin-left: 53px;
+  margin-top: 24px;
+}
+
+.page-template-conversational-analytics-voc .connect-for-text-analytics.feature-nps .heading h2:before {
+  left: 52px;
+  top: -44px;
+}
+
+
+.page-template-conversational-analytics-voc .connect-for-text-analytics.feature-nps .heading h2{
+    color: #03363D;
+    margin-top: 0;
+}
+
+.page-template-conversational-analytics-voc .connect-for-text-analytics form .field .input > input{
+  border-color: transparent;
+  box-shadow: 0px 6px 15px #E0EDFA7B;
+  color: #091E42;
+  font-size: 16px;
+}
+
+.page-template-conversational-analytics-voc .connect-for-text-analytics .feature-nps-card{
+    width: 486px;
+}
+
+.page-template-conversational-analytics-voc .connect-for-text-analytics form .hs_submit .actions > input{
+    width: 160px;
+    background-color: #36B37E;
+    border-color: #36B37E;
+}
+
+.page-template-conversational-analytics-voc .connect-for-text-analytics form .field {
+  margin-bottom: 14px;
+}
+
+.page-template-conversational-analytics-voc .connect-for-text-analytics form .hs_submit .actions {
+  margin-top: 26px;
+}
+
+
+
+/**************** Footer css **************/
+.page-template-conversational-analytics-voc footer .top-sub-footer {
+  padding: 85px 0 40px;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .product-items {
+  margin-bottom: 26px;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .product-items h3 {
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .product-items .products-sub-items .item-content {
+  margin-bottom: 20px;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .product-items .products-sub-items a {
+  font-size: 0.875rem;
+  color: #505f79;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .product-items .products-sub-items a:hover {
+  color: #0065ff;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .subscribe {
+  padding-top: 24px;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .subscribe .subscribe-heading {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .subscribe .subscribe-btn {
+  width: 360px;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .subscribe .subscribe-btn .hbspt-form {
+  width: 100%;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .subscribe .subscribe-btn .hbspt-form form {
+  display: flex;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .subscribe .subscribe-btn .hbspt-form form .field {
+  width: 240px;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .subscribe .subscribe-btn .hbspt-form form .field .input input {
+  padding: 0.5rem 1.2142857143rem;
+  border: 1px solid #0b5fff;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .subscribe .subscribe-btn .hbspt-form form .hs_submit {
+  flex: auto;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .subscribe .subscribe-btn .hbspt-form form .hs_submit .actions {
+  margin: 0 0 0 12px;
+  margin-top: 0;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .subscribe .subscribe-btn .hbspt-form form .hs_submit .actions input {
+  background-color: #02193b;
+  border: 2px solid #02193b;
+  padding: 0.4rem 25px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .subscribe {
+  padding-top: 24px;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .social-icons > a {
+  display: block;
+  width: 30px;
+  transition: 0.2s ease-in-out;
+  height: 30px;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .social-icons > a:not(:last-child) {
+  margin-right: 18px;
+}
+
+.page-template-conversational-analytics-voc footer .top-sub-footer .social-icons > a:hover {
+  margin-top: -10px;
+}
+
+.page-template-conversational-analytics-voc footer .bottom-footer {
+  padding: 22px 0;
+  border-top: 1px solid #deebff;
+}
+
+.page-template-conversational-analytics-voc footer .bottom-footer .powered-by .footer-text-common {
+  color: #505f79;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.page-template-conversational-analytics-voc footer .bottom-footer .powered-by .footer-text-common:not(:last-child) {
+  margin-right: 46px;
+}
+
+
+
+
+
+
+/***************** page-template-conversational-analytics-voc responsive  css or media query ***********************/
+
+@media (max-width: 1299.98px){
+  .page-template-conversational-analytics-voc .single-source-img img{
+    width: 90%;
+    margin-right: -110px;
+  }
+  .page-template-conversational-analytics-voc .create-single-source{
+    padding-bottom: 70px;
+  }
+
+  .page-template-conversational-analytics-voc .single-source-img{
+    top: -182px;
+  }
+}
+
+
+@media (max-width: 991.98px){
+
+  .page-template-conversational-analytics-voc footer .bottom-footer .powered-by > .footer-text-common:last-child {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-control-prev {
+    left: 40%;
+  }
+
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-control-next {
+    right: 40%;
+  }
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner {
+      width: 100%;
+      height: 340px;
+  }
+
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner .carousel-item {
+    padding: 40px;
+  }
+
+  .page-template-conversational-analytics-voc footer .bottom-footer .powered-by {
+    flex-wrap: wrap;
+  }
+  .page-template-conversational-analytics-voc footer .bottom-footer .powered-by > .footer-text-common:not(:last-child) {
+    margin: 0;
+  }
+
+  .page-template-conversational-analytics-voc footer .bottom-footer .powered-by > .footer-text-common {
+    width: 33.33%;
+  }
+
+}
+
+@media (min-width:768px) and (max-width: 1020px){
+
+  .page-template-conversational-analytics-voc .single-source-img{
+    position: relative;
+    top: 50px;
+  }
+
+  .page-template-conversational-analytics-voc .single-source-img img{
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .page-template-conversational-analytics-voc .create-single-source .heading p {
+    width: 480px;
+  }
+
+
+  .customer-who-love .heading h2,
+  .page-template-conversational-analytics-voc .create-single-source .heading h2{
+    width: 100%;
+  }
+
+  .page-template-conversational-analytics-voc .connect-for-text-analytics form .hs_submit .actions {
+    text-align: center;
+  }
+
+  .page-template-conversational-analytics-voc /* .benifit-section .box-main {
+    margin: 0 0 36px;
+  } */
+  .page-template-conversational-analytics-voc .data-safety-points {
+    position: relative;
+    z-index: 9;
+  }
+  .page-template-conversational-analytics-voc .data-safety .heading {
+    text-align: center;
+  }
+  .page-template-conversational-analytics-voc .data-safety .heading img {
+    top: -91px;
+    left: 45%;
+  }
+  .page-template-conversational-analytics-voc .customer-experiance .slider-section .carousel {
+    width: 70%;
+  }
+  .page-template-conversational-analytics-voc .customer-experiance .slider-section .carousel .indicators-main {
+    right: -48%;
+    width: 43%;
+  }
+  .page-template-conversational-analytics-voc .customer-experiance {
+    padding: 90px 0px 90px;
+  }
+
+  .page-template-conversational-analytics-voc .feature-nps .why-act .feature-nps-card .card {
+    z-index: 99;
+  }
+
+  .page-template-conversational-analytics-voc .feature-nps .heading h2 {
+    margin: 20px auto 0;
+    text-align: center;
+  }
+  .page-template-conversational-analytics-voc .carousel .carousel-control-next, .carousel .carousel-control-prev {
+    top: 106%;
+  }
+  .page-template-conversational-analytics-voc .customer-who-love {
+    padding: 100px 0 160px;
+  }
+
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner {
+    height: 414px;
+  }
+  .page-template-conversational-analytics-voc .client-logos.client-profile .client-designation {
+    width: 74%;
+    margin: 0 auto;
+  }
+
+  .customer-who-love .our-clients-love .carousel .carousel-inner .carousel-item.client-new-card .client-info .client-text .right-quotation,
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner .carousel-item.client-new-card .client-info .client-text .left-quotation {
+    top: -77px;
+  }
+
+  .page-template-conversational-analytics-voc .connect-for-text-analytics .sign-up {
+    margin-bottom: 6px;
+    text-align: right;
+    margin-top: 0;
+  }
+
+  .page-template-conversational-analytics-voc .connect-for-text-analytics .feature-nps-card {
+    width: 486px;
+    margin: 0 auto;
+  }
+
+
+}
+
+
+@media (min-width:1024px) and (max-width: 1199.98px){
+
+  .page-template-conversational-analytics-voc .carousel .carousel-control-prev {
+    left: -10px;
+  }
+
+  .page-template-conversational-analytics-voc .carousel .carousel-control-next {
+    right: -10px;
+  }
+
+  .page-template-conversational-analytics-voc .customer-experiance .slider-section .carousel .indicators-main {
+    right: -45%;
+  }
+
+  .page-template-conversational-analytics-voc .create-single-source .heading h2{
+    width: 96%;
+  }
+
+
+  .page-template-conversational-analytics-voc .single-source-img {
+    top: -62px;
+  }
+  .page-template-conversational-analytics-voc .single-source-img img {
+    width: 72%;
+  }
+}
+
+
+@media (max-width:767.98px){
+
+  .page-template-conversational-analytics-voc .single-source-img img.desktop{
+    display: none;
+  }
+
+  .page-template-conversational-analytics-voc .single-source-img img.mobile{
+    display: block;
+  }
+  
+
+  .page-template-conversational-analytics-voc .data-securtiy-img.desktop{
+    display: none;
+  }
+
+  .page-template-conversational-analytics-voc .data-securtiy-img.mobile{
+    display: block;
+  }
+
+  .page-template-conversational-analytics-voc .create-single-source .heading{
+    padding: 0 8px;
+  }
+
+
+  .page-template-conversational-analytics-voc .connect-for-text-analytics{
+    overflow: hidden;
+  }
+
+  .page-template-conversational-analytics-voc .connect-for-text-analytics .feature-nps-card{
+    width: 100%;
+  }
+
+  .page-template-conversational-analytics-voc .connect-for-text-analytics.feature-nps .heading h2{
+    margin-bottom: 130px;
+  }
+  
+  .page-template-conversational-analytics-voc .connect-for-text-analytics .sign-up {
+      position: absolute;
+      z-index: 9;
+      margin-left: 0;
+      margin-top: 0;
+      top: 55px;
+      right: -24px;
+  }
+
+  .page-template-conversational-analytics-voc .connect-for-text-analytics.feature-nps .heading h2::before {
+    display: block;
+    left: -27px;
+    top: -106px;
+  }
+
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-control-prev {
+    left: 34% !important;
+    top: inherit;
+    bottom: -80px;
+  }
+
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-control-next {
+    right: 34% !important;
+    top: inherit;
+    bottom: -80px !important;
+  } 
+
+  .page-template-conversational-analytics-voc .client-logos.client-profile .client-img {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 4px;
+  }
+
+  .page-template-conversational-analytics-voc .client-logos.client-profile .client-designation {
+    /* width: 60%; */
+    /* margin: 0 auto; */
+  }
+
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner .carousel-item .client-info .client-logos.client-profile {
+    margin-bottom: 16px;
+  }
+
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner .carousel-item .client-info .client-text .left-quotation, .customer-who-love .our-clients-love .carousel .carousel-inner .carousel-item .client-info .client-text .right-quotation{
+    display: none;
+  }
+
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner .carousel-item .client-info .client-text {
+    padding: 0;
+  }
+
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner .carousel-item .client-info .client-text p {
+    font-size: 14px;
+  }
+
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner .carousel-item .client-info .client-logos {
+    margin-bottom: 90px;
+  }
+
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner .carousel-item {
+    padding: 24px 20px 20px !important;
+  }
+
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner {
+    height: 324px !important;
+  }
+
+  .page-template-conversational-analytics-voc .customer-who-love{
+    padding: 70px 0 130px;
+  }
+  .page-template-conversational-analytics-voc .customer-who-love .heading h2{
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0 14px;
+  }
+
+  .page-template-conversational-analytics-voc .feature-nps{
+    padding: 70px 0;
+  }
+
+  .page-template-conversational-analytics-voc .feature-nps .why-act .feature-nps-card .card{
+    margin-bottom: 20px;
+  }
+
+  .page-template-conversational-analytics-voc .feature-nps-card {
+    padding: 0 30px;
+  }
+
+  .page-template-conversational-analytics-voc .feature-nps .heading h2{
+    text-align: center;
+    width: 100%;
+    margin: 0 0 34px;
+    padding: 0 10px;
+  }
+
+  .page-template-conversational-analytics-voc .feature-nps .heading h2:before, .feature-nps-card img{
+    display: none;
+  }
+
+  .page-template-conversational-analytics-voc .how-it-work-mob .box-card {
+    text-align: center;
+    margin-bottom: 42px;
+  }
+
+
+  .page-template-conversational-analytics-voc .card-box-img-main {
+    box-shadow: 0px 3px 6px #7c7e813b;
+    border-radius: 10px;
+    border-top: 14px solid #03363D;
+    padding: 8px 8px 20px;
+  }
+
+  .page-template-conversational-analytics-voc .how-it-work-mob .box-card:not(:first-child) .card-box-img-main{
+      border-color: #146671;
+  }
+
+  .page-template-conversational-analytics-voc .how-it-work-mob h4 {
+    color: #03363D;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  .page-template-conversational-analytics-voc .description {
+    color: #03363D;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .page-template-conversational-analytics-voc .card-box-img-main .dot-carousal-inner{
+    top: -9px;
+    left: 6px;
+    width: 40px;
+  }
+
+  .page-template-conversational-analytics-voc .card-box-img-main .dot-carousal-inner .dot{
+    height: 5px;
+    width: 5px;
+  }
+
+  .page-template-conversational-analytics-voc .how-work-desktop{
+    display: none !important;
+  }
+
+  .page-template-conversational-analytics-voc .how-it-work-mob {
+    display: block;
+  }
+
+  .page-template-conversational-analytics-voc .customer-experiance .heading p{
+    margin-bottom: 42px;
+  }
+
+  .page-template-conversational-analytics-voc .customer-experiance .heading h2{
+    margin-bottom: 16px;
+  }
+
+  .page-template-conversational-analytics-voc .customer-experiance{
+    padding: 48px 30px 18px;
+  }
+
+  .page-template-conversational-analytics-voc .data-safety-points .point-description{
+    font-size: 16px;
+  }
+
+  .page-template-conversational-analytics-voc .data-safety-points .point-number span{
+    margin: 0 0 14px 0;
+  }
+
+  .page-template-conversational-analytics-voc .data-safety-points .points-main {
+    width: 100%;
+    margin: 0 0 42px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-template-conversational-analytics-voc .with-Surveysensum {
+    color: #36B37E;
+    font-weight: 500;
+    margin: 4px auto 30px;
+  }
+
+  .page-template-conversational-analytics-voc .data-safety-points{
+    padding: 0 30px;
+  }
+
+  .page-template-conversational-analytics-voc .data-safety .heading img {
+    top: -40px;
+    left: auto;
+    right: 0;
+    width: 160px;
+}
+
+  .page-template-conversational-analytics-voc .data-safety{
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .page-template-conversational-analytics-voc .benifit-section .box-main {
+    margin: 0 auto 20px;
+    background: #fff;
+    padding: 20px;
+    width: 294px;
+    box-shadow: 0px 6px 15px #09414417;
+  }
+
+  .page-template-conversational-analytics-voc .box-bg {
+    position: absolute;
+    left: 0;
+    top: -65px;
+    width: 280px;
+    height: 280px;
+    background: rgba(82, 189, 149, 0.08);
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .page-template-conversational-analytics-voc .box-bg.box-bg-2{
+    left: auto;
+    right: 0;
+    top: -95px;
+  }
+
+  .page-template-conversational-analytics-voc .benifit-section .heading h2{
+    margin-bottom: 52px;
+  }
+
+  .page-template-conversational-analytics-voc .our-clients .many-more span{
+    font-size: 12px;
+  }
+
+  .page-template-conversational-analytics-voc .our-clients .clients h4{
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .page-template-conversational-analytics-voc .create-single-source .heading p{
+    font-size: 18px;
+  }
+
+  .page-template-conversational-analytics-voc .btn.btn-secondary.request-btn{
+    font-weight: 500;
+  }
+
+  .page-template-conversational-analytics-voc .heading h2{
+    font-size: 32px;
+    font-weight: normal;
+  }
+
+  .page-template-conversational-analytics-voc .benifit-section {
+    padding: 70px 0 60px;
+  }
+
+  .page-template-conversational-analytics-voc .our-clients {
+    padding: 0 0 46px;
+  }
+
+  .page-template-conversational-analytics-voc .sign-up-free-home .no-credit-card{
+    display: none;
+  }
+
+  .page-template-conversational-analytics-voc .create-single-source{
+    text-align: center;
+    padding: 40px 0 90px;
+    overflow: hidden;
+  }
+
+  .create-single-source .heading h2, 
+  .create-single-source .heading p,
+  .page-template-conversational-analytics-voc .our-clients .clients-brand .software-used .brand-logo img{
+    width: 100%;
+  }
+
+  .page-template-conversational-analytics-voc .single-source-img {
+    position: relative;
+    right: 0;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+  }
+
+  .page-template-conversational-analytics-voc .single-source-img img {
+    margin-right: 0;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 575.98px){
+
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-control-prev {
+    left: 32% !important;
+  }
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-control-next {
+      right: 32% !important;
+  }
+  .page-template-conversational-analytics-voc footer .bottom-footer .powered-by .footer-text-common {
+    width: 100% !important;
+  }
+  .page-template-conversational-analytics-voc footer .bottom-footer .powered-by .footer-text-common:not(:first-child) {
+    margin-top: 20px !important;
+  }
+}
+
+@media (max-width: 450px){
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner {
+      min-height: 370px !important;
+  }
+  .page-template-conversational-analytics-voc footer .top-sub-footer .subscribe .subscribe-btn {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 420px){
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner {
+      min-height: 360px !important;
+  }
+}
+
+
+@media (max-width: 400px){
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-control-prev {
+    left: 30% !important;
+  }
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-control-next {
+      right: 30% !important;
+  }
+  .page-template-conversational-analytics-voc .connect-for-text-analytics.feature-nps .heading h2 {
+    margin-bottom: 170px !important;
+  }
+  .page-template-conversational-analytics-voc .connect-for-text-analytics .sign-up{
+    top: 80px;
+  }
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner {
+    /* min-height: 430px !important; */
+    min-height: 400px !important;
+  }
+}
+
+
+
+@media (max-width: 320px){
+
+  .page-template-conversational-analytics-voc .customer-experiance {
+    padding: 48px 0 18px;
+  }
+  .page-template-conversational-analytics-voc .feature-nps-card, .data-safety-points, .customer-who-love .heading h2{
+    padding: 0;
+  }
+
+  .page-template-conversational-analytics-voc .heading h2{
+    font-size: 30px;
+  }
+  .page-template-conversational-analytics-voc .customer-who-love .our-clients-love .carousel .carousel-inner {
+    min-height: 408px !important;
+  } 
+
+  .page-template-conversational-analytics-voc .sign-up-free-home .btn{
+    width: 100%;
+    margin: 0;
+  }
+
+  .page-template-conversational-analytics-voc .sign-up-free-home .lets-talk{
+    margin-top: 16px;
+  }
+}
+
+
+
+
+

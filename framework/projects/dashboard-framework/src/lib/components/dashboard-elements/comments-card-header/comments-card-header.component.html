@@ -1,0 +1,60 @@
+<div *ngIf="!isLoading" class="card-align">
+    <div *ngIf="title" class="title-txt">
+        {{title}}:
+    </div>
+    <div class="smily-main">
+        <div class="smily">
+            <img *ngIf="questionType===headerType.nps" src="assets/images/svg/Good.svg" alt="" height="40px"
+                width="40px" />
+            <img *ngIf="questionType===headerType.opinion" src="assets/images/svg/low_effort.svg" alt="" />
+        </div>
+        <div class="smily-rating">
+            <span class="subHeading">
+                <span class="percentage-txt">{{ percent[0].toFixed(decimalPlace) }}%</span>
+                <span *ngIf="questionType===headerType.nps"> Promoters</span>
+                <span *ngIf="questionType===headerType.opinion"> Low effort</span></span>
+            <span class="records-heading">{{ crosstabResult.data[0][0]}} Records</span>
+            <div class="progress-score">
+                <!-- <span>Promoters</span> -->
+            </div>
+        </div>
+    </div>
+    <div class="smily-main">
+        <div class="smily">
+            <img *ngIf="questionType===headerType.nps" src="assets/images/svg/Bad.svg" alt="" height="40px"
+                width="40px" />
+            <img *ngIf="questionType===headerType.opinion" src="assets/images/svg/high_effort.svg" alt="" />
+        </div>
+        <div class="smily-rating">
+            <span class="subHeading">
+                <span class="percentage-txt">{{percent[2].toFixed(decimalPlace)}}%</span>
+                <span *ngIf="questionType===headerType.nps"> Detractors</span>
+                <span *ngIf="questionType===headerType.opinion"> High effort</span></span>
+            <span class="records-heading">{{crosstabResult.data[2][0]}} Records</span>
+            <div class="progress-score">
+                <!-- <span>Detractors</span> -->
+            </div>
+        </div>
+    </div>
+    <div class="smily-main">
+        <div class="smily">
+            <img *ngIf="questionType===headerType.nps" src="assets/images/svg/Neutral.svg" alt="" height="40px"
+                width="40px" />
+            <img *ngIf="questionType===headerType.opinion" src="assets/images/svg/moderate.svg" alt="" />
+        </div>
+        <div class="smily-rating">
+            <span class="subHeading">
+                <span class="percentage-txt">{{percent[1].toFixed(decimalPlace)}}%</span>
+                <span *ngIf="questionType===headerType.nps"> Passive</span>
+                <span *ngIf="questionType===headerType.opinion">moderate</span></span>
+            <span class="records-heading">{{crosstabResult.data[1][0]}} Records</span>
+            <div class="progress-score">
+                <!-- <span>Passives</span> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-container *ngIf="isLoading">
+    <div class="lds-dual-ring"></div>
+</ng-container>

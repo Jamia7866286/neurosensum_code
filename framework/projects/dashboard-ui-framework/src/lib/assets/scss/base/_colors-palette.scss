@@ -1,0 +1,79 @@
+// color palattes
+
+$palettes: (
+    blue: (
+        base:#0052CC,
+        blue-100: #DEEBFF,
+        blue-200: #B3D4FF,
+        blue-300: #4C9AFF,
+        blue-400: #2684FF,
+        blue-500: #0065FF,
+        blue-600: #02193B
+    ),
+    green: (
+        base:#36B37E,
+        green-100: #E2FFEE,
+        green-200: #ABF5D1,
+        green-300: #79F2C0,
+        green-400: #57D9A3,
+        green-500: #00875A,
+        green-600: #006644,
+    ),
+    pacificBlue: (
+        base:#EBECF0,
+        pacificBlue-100: #FFFFFF,
+        pacificBlue-200: #FAFBFC,
+        pacificBlue-300: #F4F5F7,
+        pacificBlue-400: #DFE1E6,
+        pacificBlue-500: #C1C7D0,
+        pacificBlue-600: #B3BAC5,
+        pacificBlue-700: #B3BAC5,
+        pacificBlue-800: #A5ADBA,
+        pacificBlue-900: #97A0AF,
+        pacificBlue-1000: #8993A4,
+        pacificBlue-1100: #6B778C,
+        pacificBlue-1200: #5E6C84,
+        pacificBlue-1300: #505F79,
+        pacificBlue-1400: #42526E,
+        pacificBlue-1500: #344563,
+        pacificBlue-1600: #344563,
+        pacificBlue-1700: #172B4D,
+        pacificBlue-1800: #091E42
+    ),
+    purple: (
+        base:#6554C0,
+        purple-100: #EAE6FF,
+        purple-200: #C0B6F2,
+        purple-300: #998DD9,
+        purple-400: #8777D9,
+        purple-500: #5243AA,
+        purple-600: #403294
+    ),
+    red: (
+        base:#FF5630,
+        red-100: #FFEBE5,
+        red-200: #FFBDAD,
+        red-300: #FF8F73,
+        red-400: #FF7452,
+        red-500: #DE350B,
+        red-600: #BF2600
+    ),
+    mediumBlue: (
+        base:#008DA6,
+        mediumBlue-100: #E6FCFF,
+        mediumBlue-200: #B3F5FF,
+        mediumBlue-300: #00C7E6,
+        mediumBlue-400: #00B8D9,
+        mediumBlue-500: #00A3BF,
+        mediumBlue-600: #79E2F2
+    ),
+    orange: (
+        base:#FFAB00,
+        orange-100: #FFFAE6,
+        orange-200: #FFF0B3,
+        orange-300: #FFE380,
+        orange-400: #FFC400,
+        orange-500: #FF991F,
+        orange-600: #FF8B00
+    )
+);

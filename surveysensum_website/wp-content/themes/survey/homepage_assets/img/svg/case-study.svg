@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_9680" data-name="Group 9680" transform="translate(13301 2039)">
+    <circle id="Ellipse_183" data-name="Ellipse 183" cx="12" cy="12" r="12" transform="translate(-13301 -2039)" fill="#0b5fff"/>
+    <g id="case-study" transform="translate(-13299.9 -2033.7)">
+      <path id="Path_7591" data-name="Path 7591" d="M31.639,27.245l-.211-.295a2.435,2.435,0,0,0,.253-3.1A2.5,2.5,0,0,0,29.659,22.8a2.436,2.436,0,0,0-1.411.442,2.466,2.466,0,0,0-.611,3.434,2.5,2.5,0,0,0,2.022,1.053,2.17,2.17,0,0,0,.969-.211l.211.295a.421.421,0,0,0-.063.548l.906,1.306a.822.822,0,0,0,.548.358c.042,0,.105.021.147.021a.852.852,0,0,0,.843-.7.759.759,0,0,0-.147-.632l-.906-1.306A.39.39,0,0,0,31.639,27.245Zm-1.98.147a2.149,2.149,0,0,1-1.222-3.918,2.1,2.1,0,0,1,1.222-.379,2.165,2.165,0,0,1,2.128,2.528,2.2,2.2,0,0,1-.885,1.39A2.389,2.389,0,0,1,29.659,27.392Zm3.265,1.875a.44.44,0,0,1-.232.337.539.539,0,0,1-.4.084.44.44,0,0,1-.337-.232l-.906-1.306a.13.13,0,0,1,.021-.169l.211-.147-.358-.527c.042-.021.105-.063.147-.084a.892.892,0,0,1,.147-.105l.358.527.211-.147a.127.127,0,0,1,.084-.021c.021,0,.063.021.063.042l.906,1.306A.869.869,0,0,1,32.924,29.267Z" transform="translate(-17.597 -18.234)" fill="#fff"/>
+      <rect id="Rectangle_4389" data-name="Rectangle 4389" width="0.316" height="0.316" transform="translate(14.224 10.391) rotate(-124.798)" fill="#fff"/>
+      <rect id="Rectangle_4390" data-name="Rectangle 4390" width="0.316" height="0.316" transform="translate(14.872 10.787) rotate(145.236)" fill="#fff"/>
+      <path id="Path_7592" data-name="Path 7592" d="M4.9-.3V10.422a1.866,1.866,0,0,0,1.833,1.854l9.8,1.243V-.3ZM7.6,12.065a1.887,1.887,0,0,0,.99-1.411l6.425,2.359Zm8.615,1.053L8.27,10.211v.232a1.546,1.546,0,0,1-1.538,1.538,1.528,1.528,0,0,1-1.517-1.538V.016h11Z" fill="#fff"/>
+      <rect id="Rectangle_4391" data-name="Rectangle 4391" width="8.889" height="0.316" transform="translate(6.269 1.132)" fill="#fff"/>
+      <rect id="Rectangle_4392" data-name="Rectangle 4392" width="8.889" height="0.316" transform="translate(6.269 2.544)" fill="#fff"/>
+      <rect id="Rectangle_4393" data-name="Rectangle 4393" width="8.889" height="0.316" transform="translate(6.269 3.934)" fill="#fff"/>
+      <rect id="Rectangle_4394" data-name="Rectangle 4394" width="2.17" height="0.316" transform="translate(10.924 5.556)" fill="#fff"/>
+      <rect id="Rectangle_4395" data-name="Rectangle 4395" width="3.602" height="0.316" transform="translate(10.293 6.736)" fill="#fff"/>
+      <rect id="Rectangle_4396" data-name="Rectangle 4396" width="2.254" height="0.316" transform="translate(10.84 7.936)" fill="#fff"/>
+      <rect id="Rectangle_4397" data-name="Rectangle 4397" width="3.286" height="0.316" transform="translate(6.269 5.556)" fill="#fff"/>
+      <rect id="Rectangle_4398" data-name="Rectangle 4398" width="3.012" height="0.316" transform="translate(6.269 6.736)" fill="#fff"/>
+      <rect id="Rectangle_4399" data-name="Rectangle 4399" width="3.286" height="0.316" transform="translate(6.269 7.936)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,1 @@
+„¯©]<?php exit; ?>a:1:{s:7:"content";s:207:"a:7:{s:7:"enabled";b:1;s:4:"slug";s:7:"nslogin";s:12:"theme_compat";b:1;s:17:"theme_compat_slug";s:9:"not_found";s:16:"post_logout_slug";s:0:"";s:12:"show-tooltip";b:0;s:8:"register";s:15:"wp-register.php";}";}

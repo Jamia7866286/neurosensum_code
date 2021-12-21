@@ -1,0 +1,30 @@
+<div *ngIf="!isLoading" class="responses-align">
+
+    <div *ngIf="showTotalCount" class="customer-effort">
+        <div *ngIf="countTitle" class="response-title">{{totalCountTitle}}</div>
+        <div [ngStyle]="{'color': textColor}" class="customer-score" *ngIf="!isLoading">
+            {{totalNumberOfResponses}}
+        </div>
+    </div>
+    <hr *ngIf="showTotalCount">
+
+    <div *ngIf="showCount" class="customer-effort effort-padding">
+        <div *ngIf="countTitle" class="response-title">{{countTitle}}</div>
+        <div [ngStyle]="{'color': textColor}" class="customer-score" *ngIf="!isLoading">
+            {{totalCount}}
+        </div>
+    </div>
+    <hr *ngIf="showCount && showPercentage">
+
+    <div *ngIf="showPercentage" class="customer-effort effort-padding">
+        <div class="response-title" *ngIf="percentTitle">{{percentTitle}}</div>
+        <div [ngStyle]="{'color': textColor}" class="customer-score" *ngIf="!isLoading">
+            {{totalCountPercent}}
+        </div>
+    </div>
+</div>
+
+<ng-container *ngIf="isLoading">
+    <div class="lds-dual-ring">
+    </div>
+</ng-container>

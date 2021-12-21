@@ -1,0 +1,48 @@
+// variables for background colors
+
+// actions background colors
+$bg-primary: rgba(0, 79, 212, 1);      //use this variable for in progress, me
+$bg-secondary: rgba(235, 236, 240, 1); //use this variable for unavailable, default or to do, trivial, others
+$bg-confirm: rgba(0, 183, 121, 1);     //use this variable for success, available, added or complete,minor
+$bg-warning: rgba(255, 168, 0, 1);     //use this variable for moved, medium or blocker
+$bg-remove: rgba(255, 67, 16, 1);      //use this variable for error, busy, removed or failed,major or critical
+$bg-help: rgba(106, 79, 199, 1);       //use this variable for information, focus, new
+
+
+
+// fonts color
+$text-title: rgba(23, 43, 77, 1);
+$text-body: rgba(137, 147, 164, 1);
+$text-caption: rgba(179, 186, 197, 1);
+$text-disable: rgba(235, 236, 240, 1);
+$text-link: rgba(38, 132, 255, 1);
+
+
+// border radius
+$border-radius: 5px;
+
+// font weights
+
+$font-weightmedium: 500;
+$font-weightbold: 700;
+
+// border directions
+$border-top: top;
+$border-bottom: bottom;
+$border-right: right;
+$border-left: left;
+$border-full: full;
+
+
+
+// Font weight classes
+.w500{
+      font-weight: $font-weightmedium;
+}
+.w700{
+      font-weight: $font-weightbold;
+}
+
+.cursor-pointer{
+      cursor: pointer;
+}

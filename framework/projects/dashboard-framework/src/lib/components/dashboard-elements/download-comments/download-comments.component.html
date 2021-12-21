@@ -1,0 +1,8 @@
+<div *ngIf="!isLoading" >
+    <i class="fa fa-download" aria-hidden="true" (click)="DownloadCommentCard()"></i>
+</div>
+
+<div *ngIf="isLoading" >
+    <i class="fa fa-download" style="opacity: 0.5;" aria-hidden="true"></i>
+</div>
+

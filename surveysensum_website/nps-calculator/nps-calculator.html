@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+    <!-- Format Detection -->
+    <meta name="format-detection" content="telephone=no" />
+    <title>NPS Calculator</title>
+
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://www.surveysensum.com/wp-content/uploads/2019/09/cropped-favicon-192x192.png" type="image/png" sizes="32x32"/>
+
+    <!-- Bootstrap 4.0 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NH6929D');</script>
+     <!-- End Google Tag Manager -->
+
+  </head>
+
+  <body onload="initializePage()">
+
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.6.0/echarts-en.min.js"></script>
+
+      <!-- Google Tag Manager (noscript) -->
+      <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH6929D"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      </noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+
+      <header class="our-logo">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="logo">
+                <img src="https://www.surveysensum.com/wp-content/themes/survey/homepage_assets/img/svg/Surveysensum-logo.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="nps-calculator">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="heading text-center">
+                <h2 class="nps-calc-headeing">Net Promoter Score Calculator</h2>
+                <h2 class="nps-calc-headeing-mob">NPS Calculator</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="score-calculation">
+            <div class="left-nps-response">
+              <div class="nps-score-main">
+                <div class="nps-score-inner">
+
+                  <div class="nps-each-score">
+
+                    <span>Enter the number of times you’ve received each score</span>
+                    <span class="blink">
+                      <img src="assets/img/fingerIcon.svg" style="width: 32px;height: auto;">
+                    </span>
+                  </div>
+
+                  <div class="detractor-box detractor-passive-promoter">
+                    <div class="response-inner detractor-inner">
+                      <div class="detractor-field common-score">
+                        <div class="form-group">
+                          <label for="zero">0</label>
+                          <input oninput="ValueChanged()" type="text" class="form-control" id="input0" placeholder="0">
+                        </div>
+                      </div>
+                      <div class="detractor-field common-score">
+                        <div class="form-group">
+                          <label for="one">1</label>
+                          <input oninput="ValueChanged()" type="text" class="form-control" id="input1" placeholder="0">
+                        </div>
+                      </div>
+                      <div class="detractor-field common-score">
+                        <div class="form-group">
+                          <label for="two">2</label>
+                          <input oninput="ValueChanged()" type="text" class="form-control" id="input2" placeholder="0">
+                        </div>
+                      </div>
+                      <div class="detractor-field common-score">
+                        <div class="form-group">
+                          <label for="three">3</label>
+                          <input oninput="ValueChanged()" type="text" class="form-control" id="input3" placeholder="0">
+                        </div>
+                      </div>
+                      <div class="detractor-field common-score">
+                        <div class="form-group">
+                          <label for="four">4</label>
+                          <input oninput="ValueChanged()" type="text" class="form-control" id="input4" placeholder="0">
+                        </div>
+                      </div>
+                      <div class="detractor-field common-score">
+                        <div class="form-group">
+                          <label for="five">5</label>
+                          <input oninput="ValueChanged()" type="text" class="form-control" id="input5" placeholder="0">
+                        </div>
+                      </div>
+
+                      <div class="detractor-field common-score">
+                        <div class="form-group">
+                          <label for="six">6</label>
+                          <input oninput="ValueChanged()" type="text" class="form-control" id="input6" placeholder="0">
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="passive-box detractor-passive-promoter">
+                    <div class="response-inner detractor-inner">
+                      <div class="passive-field common-score">
+                        <div class="form-group">
+                          <label for="seven">7</label>
+                          <input oninput="ValueChanged()" type="text" class="form-control" id="input7" placeholder="0">
+                        </div>
+                      </div>
+                      <div class="passive-field common-score">
+                        <div class="form-group">
+                          <label for="eight">8</label>
+                          <input oninput="ValueChanged()" type="text" class="form-control" id="input8" placeholder="0">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="promoter-box detractor-passive-promoter">
+                    <div class="response-inner detractor-inner">
+                      <div class="promoter-field common-score">
+                        <div class="form-group">
+                          <label for="nine">9</label>
+                          <input oninput="ValueChanged()" type="text" class="form-control" id="input9" placeholder="0">
+                        </div>
+                      </div>
+                      <div class="promoter-field common-score">
+                        <div class="form-group">
+                          <label for="ten">10</label>
+                          <input oninput="ValueChanged()" type="text" class="form-control" id="input10" placeholder="0">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="right-nps-chart">
+
+              <div class="nps-each-score group-wise-score-mob">
+                See the group-wise breakdown and overall score
+              </div>
+
+              <div class="nps-chart-box">
+                <div class="common-smily detractor-smily">
+                  <div class="smily-inner">
+                    <div class="smily-icon">
+                      <div class="detractor-text">Detractors</div>
+                      <svg height="24" viewBox="0 0 40 40" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20,3.333A16.667,16.667,0,1,1,3.333,20,16.686,16.686,0,0,1,20,3.333ZM20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Zm9.178,23.235A13.926,13.926,0,0,1,20,26.453a13.929,13.929,0,0,1-9.18-3.218L10,24.057C11.878,26.923,15.333,30,20,30s8.12-3.077,10-5.943Zm-15.012-9.9a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,14.167,13.333Zm11.667,0a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,25.833,13.333Z" fill="#FF5630" id=""></path>
+                      </svg>
+                    </div>
+                    <div class="common-percentage" id="detractor">0%</div>
+                  </div>
+                </div>
+                <div class="common-smily passive-smily">
+                  <div class="smily-inner">
+                    <div class="smily-icon">
+                      <div class="detractor-text">Passives</div>
+                      <svg height="24" viewBox="0 0 40 40" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20,3.333A16.667,16.667,0,1,1,3.333,20,16.686,16.686,0,0,1,20,3.333ZM20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Zm9.178,23.235A13.926,13.926,0,0,1,20,26.453a13.929,13.929,0,0,1-9.18-3.218L10,24.057C11.878,26.923,15.333,30,20,30s8.12-3.077,10-5.943Zm-15.012-9.9a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,14.167,13.333Zm11.667,0a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,25.833,13.333Z" fill="#FFAB00" id=""></path>
+                      </svg>
+                    </div>
+                    <div class="common-percentage" id="passive">0%</div>
+                  </div>
+                </div>
+                <div class="common-smily promoter-smily">
+                  <div class="smily-inner">
+                    <div class="smily-icon">
+                      <div class="detractor-text">Promoters</div>
+                      <svg height="24" viewBox="0 0 40 40" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20,3.333A16.667,16.667,0,1,1,3.333,20,16.686,16.686,0,0,1,20,3.333ZM20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Zm9.178,23.235A13.926,13.926,0,0,1,20,26.453a13.929,13.929,0,0,1-9.18-3.218L10,24.057C11.878,26.923,15.333,30,20,30s8.12-3.077,10-5.943Zm-15.012-9.9a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,14.167,13.333Zm11.667,0a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,25.833,13.333Z" fill="#36b37e" id=""></path>
+                      </svg>
+                    </div>
+                    <div class="common-percentage" id="promoter">0%</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nps-chart-main">
+
+                <div class="widget-chart">
+
+                  <div class="chart-inner">
+                    <div style="height: 242px;width: 242px;" class="chart" id="chart"></div>
+                    <!-- <div style="height: 242px;width: 242px;" class="chart" id="empty-state"></div> -->
+                    <div class="industries-main">
+                      
+                      <div class="organization-score mob" id="comparision-text-mob"></div>
+                        <!-- <div class="organization-score mob">Your organisation’s score is <strong>lower</strong> than the Airlines industry’s average NPS of <strong>67</strong></div> -->
+
+                        <label class="dropdown-label" for="exampleFormControlSelect1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20.975" height="20.975" viewBox="0 0 20.975 20.975">
+                            <g transform="translate(9.014) rotate(37)">
+                              <path style="fill:none;" d="M0,0H14.977V14.977H0Z"/>
+                              <path style="fill:#091E42;" d="M6.234,0a6.241,6.241,0,1,0,6.247,6.241A6.238,6.238,0,0,0,6.234,0ZM8.25,9.6,6.241,8.394,4.231,9.6a.313.313,0,0,1-.468-.337l.53-2.284L2.527,5.454a.315.315,0,0,1,.181-.549l2.334-.2.911-2.153a.311.311,0,0,1,.574,0L7.439,4.7l2.334.2a.312.312,0,0,1,.175.549L8.181,6.977l.53,2.29A.309.309,0,0,1,8.25,9.6Z" transform="translate(1.248 1.248)"/>
+                            </g>
+                          </svg>
+                          <span>Select Industry to compare against NPS benchmark*</span>
+                        </label>
+
+                        <div class="input dropdown vz-menu">
+                          <a onclick="EmptySearchInput()" class="btn dropdown-toggle btn-default" href="javascript:void(0)" id="searchDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span id="selected-industry">Industry name</span>
+                            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0,0H24V24H0Z" fill="none"></path>
+                              <path d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" fill="#253858"></path>
+                            </svg>
+                          </a>
+                          <ul class="dropdown-menu menu add-btn singleSelect" aria-labelledby="searchDropdown">
+                            <li class="search">
+                              <div class="form-group sm">
+                              <span class="input-icon">
+                                <input class="form-control" id="searchInput" oninput="createList()" placeholder="Search…" type="text">
+                                <img alt="" src="assets/img/search.svg"></span>
+                              </div>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li class="single-child">
+                                <ul id="Industry-dropdown">
+                                  <!-- <li><a href="javascript:void(0)">ankit 1</a></li>
+                                  <li><a href="javascript:void(0)">Ankit  2</a></li>
+                                  <li><a href="javascript:void(0)">akash 3</a></li>
+                                  <li><a href="javascript:void(0)">neew 4</a></li> -->
+                                </ul>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="bench-mark">*As per the NICE Satmetrix NPS Benchmarks for 2020</div>
+
+                        <div class="organization-score" id="comparision-text"></div>
+                        <!-- <div class="organization-score">Your organisation’s score is <strong id="metricText">lower</strong> than the Airlines industry’s average NPS of <strong>67</strong></div> -->
+                    </div>
+                  </div>
+
+                  <div class="logo-bottom">
+                    <div class="logo">
+                      <img src="https://www.surveysensum.com/wp-content/themes/survey/homepage_assets/img/svg/Surveysensum-logo.svg" alt="">
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Don't delete this element will use in future -->
+          <!-- <div class="embaded-code-main">
+            <div class="embaded-heading">Want to use this NPS Calculator?</div>
+            <div class="embaded-text">Add it to your website as an embed by copying and pasting this <a href="javascript:void(0)">Embed code</a></div>
+          </div> -->
+
+        </div>
+      </section>
+
+  
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
+

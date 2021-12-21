@@ -1,0 +1,58 @@
+.card-align{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title-txt{
+        font-size: 16px;
+        color: #2E384D;
+        font-weight: 500;
+    }
+    .smily-main{
+        display: flex;
+        .smily-rating{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 18.5px;
+            .subHeading{
+                font-size: 14px;
+                color: #2E384D;
+                .percentage-txt{
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+            .records-heading{
+                color: #53627C;
+            }
+        }
+    }
+}
+
+.lds-dual-ring {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    width: 46px;
+    height: 46px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid #4C9AFF;
+    border-color: #4C9AFF transparent #4C9AFF transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

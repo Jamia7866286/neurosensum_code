@@ -1,0 +1,41 @@
+<dashboard-page>
+        <div class="page-head">
+            <h5><strong>Image widget</strong></h5>
+        </div>
+        <div class="page-content">
+            <div class="container">
+                <div class="columns">
+                    <div class="column col-12">
+                        <h5><u>Inputs to be taken</u></h5>
+                        <p>
+                            <strong>Url: (String)</strong> It will take the url of Image that is to be displayed.<br>
+                            <strong>UrlType: (MediaUrlType)</strong> It will take the Type of url as <b>static</b> or <b>Dynamic</b>.<br>
+                            <strong>Note:</strong> MediaUrlType is an enum which is written as:
+                        </p>
+                    </div>
+                    <div class="column col-12">
+                    <pre class="code" data-lang="Typescript">
+                        <code>
+                            {{enums}}
+                        </code>
+                    </pre>
+                    <h5><u>Example for type STATIC:</u></h5>
+                    <pre class="code" data-lang="HTML">
+                            <code>
+                                {{htmlStatic}}
+                            </code>
+                        </pre>
+                    <h5><u>Example for type DYNAMIC:</u></h5>
+                    <pre class="code" data-lang="HTML">
+                            <code>
+                                {{htmlDynamic}}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+</dashboard-page>
+<h5><u>Sample Working Model</u></h5>
+<dashboard-image-preview [url]="'014d0c7c-fdbe-4a4d-912b-5b5aba7b637a'" [urlType]="UrlType.Dynamic"></dashboard-image-preview>
+<!-- <dashboard-image-preview [url]="'http://www.surveysensum.com/wp-content/uploads/2019/04/logo.png'" [urlType]="UrlType.Static"></dashboard-image-preview> -->

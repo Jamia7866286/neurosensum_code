@@ -1,0 +1,34 @@
+<dashboard-page>
+        <div class="page-head">
+            <h5><strong>Key Drivers Component</strong></h5>
+        </div>
+        <div class="page-content">
+            <div class="container">
+                <div class="columns">
+                    <div class="column col-12">
+                        <h5><u>Inputs to be taken</u></h5>
+                        <p>
+                            <strong>projectScale: (Number)</strong> It will take the scale out of which the questions are.<br>
+                            <strong>variables: (Array)</strong> It will take an array of object of class KeyDriversInfo with following inputs.<br>
+                        </p>
+                    </div>
+                    <div class="column col-12">
+                    <pre class="code" data-lang="Typescript">
+                        <code>
+                            {{classes}}
+                        </code>
+                    </pre>
+                    <h5><u>Example:</u></h5>
+                    <pre class="code" data-lang="HTML">
+                            <code>
+                                {{html}}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+</dashboard-page>
+<!-- <dashboard-filter *ngIf="filterConfig" [config]="filterConfig"></dashboard-filter> -->
+<h5><u>Sample Working Model</u></h5>
+<dashboard-key-drivers style="width: 100%;height: 250px;" [barHeight]="'20'" [scale]="projectScale" [variables]="variables"></dashboard-key-drivers>

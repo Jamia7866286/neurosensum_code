@@ -1,0 +1,117 @@
+.smily-main {
+    display: flex;
+    .smily {
+        margin-right: 0.587rem;
+        img {
+            width: 24px;
+        }
+    }
+    .smily-rating {
+        flex: auto;
+        .progress-score {
+            padding: 4px 0;
+            font-size: 12px;
+            color: #2a3a50;
+        }
+        span {
+            display: inline-block;
+        }
+        .rating-triangle {
+            height: 8px;
+            border-radius: 5px;
+        }
+    }
+    &.good {
+        .rating-triangle {
+            background: #4C9AFF;
+        }
+    }
+    &.bad {
+        .rating-triangle {
+            background: #4C9AFF;
+        }
+    }
+    &.neutral {
+        .rating-triangle {
+            background: #4C9AFF;
+        }
+    }
+    &:not(:last-child) {
+        margin-bottom: 0.6828rem;
+    }
+}
+.nps-heading {
+    font-weight: 500;
+    border-bottom: 1px solid #E4E8F0;
+    padding: 0.57rem 0;
+    margin-bottom: 1px;
+    font-size: 1rem;
+}
+.widget-content {
+    display: flex;
+    // align-items: center;
+}
+
+// keydrivers CSS
+
+.bar-design {
+    // height: 10px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.sub-heading {
+    font-size: 12px;
+    color: #0065FF;
+    line-height: 1rem;
+    margin: 0 0 0.4rem;
+}
+
+.comment-heading {
+    div {
+        font-size: 12px;
+        padding: 2px 0;
+    }
+}
+
+.progress-dimensions {
+    display: flex;
+    align-items: center;
+}
+
+.numeric p {
+    font-size: 12px;
+    margin: 0;
+    line-height: 0.28rem;
+}
+
+.numeric {
+    padding-left: 3px;
+}
+
+.lds-dual-ring {
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    height: 100%;
+    align-items: center;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    width: 46px;
+    height: 46px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid #4C9AFF;
+    border-color: #4C9AFF transparent #4C9AFF transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

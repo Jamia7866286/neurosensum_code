@@ -1,0 +1,646 @@
+/*=================================================================
+  Theme Name: Survey Sensum
+  Version: 1.0
+  Author: OG Web Solutions
+=================================================================*/
+/*================================================================
+	CSS Index 
+==================================================================
+    01. Global Styles
+    02. Style Start
+    03. Connect Dots Section
+
+=================================================================*/
+/*================================================================
+	01. Global Styles
+=================================================================*/
+/*============== Custom Fonts ==============*/
+/* @import url(../fonts/custom-fonts.css); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  /*font-family: 'Helvetica Neue';*/
+  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #091E42;
+  height: 100%;
+  overflow: auto;
+  font-weight: 400;
+}
+
+.intercom-lightweight-app{
+  display: none !important;
+}
+
+.heading h2 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 34px;
+}
+
+.heading h2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  height: 5px;
+  width: 50px;
+  background: #2980ff;
+}
+
+.nps-calculator {
+  padding: 60px 0;
+}
+
+.score-calculation {
+  margin-top: 44px;
+  display: flex;
+}
+.score-calculation .nps-each-score {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: rgba(9, 30, 66, 0.8);
+  width: 212px;
+  position: relative;
+}
+
+.nps-each-score span:not(:last-child){
+  width: 212px;
+  display: inline-block;
+}
+
+.score-calculation .left-nps-response {
+  min-width: 328px;
+  max-width: 328px;
+}
+.score-calculation .left-nps-response .detractor-passive-promoter {
+  padding: 20px 30px 4px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.score-calculation .left-nps-response .detractor-passive-promoter.detractor-box {
+  background: #FFEBE5;
+}
+.score-calculation .left-nps-response .detractor-passive-promoter.passive-box {
+  background: #FFFAE6;
+}
+.score-calculation .left-nps-response .detractor-passive-promoter.promoter-box {
+  background: #E2FFEE;
+}
+.score-calculation .left-nps-response .response-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  line-height: initial;
+}
+.score-calculation .left-nps-response .response-inner.detractor-inner .detractor-field:nth-child(4), .score-calculation .left-nps-response .response-inner.detractor-inner .detractor-field:last-child {
+  margin-right: 0;
+}
+.score-calculation .left-nps-response .response-inner .common-score {
+  margin-right: 24px;
+}
+.score-calculation .left-nps-response .response-inner .common-score label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.score-calculation .left-nps-response .response-inner .common-score input {
+  height: 48px;
+  width: 48px;
+  padding: .375rem 2px;
+  margin: 0 auto;
+  text-align: center;
+  color: #2E384D;
+  background: #fff;
+}
+.score-calculation .left-nps-response .response-inner .common-score input:focus {
+  box-shadow: none;
+}
+
+.score-calculation .left-nps-response .response-inner .common-score input:focus::-webkit-input-placeholder {
+  color:transparent;
+}
+
+.score-calculation .left-nps-response .response-inner .common-score input:focus:-moz-placeholder {
+  color:transparent;
+}
+
+.score-calculation .left-nps-response .response-inner .common-score input:focus::-moz-placeholder {
+  color:transparent;
+}
+
+.score-calculation .left-nps-response .response-inner .common-score input:focus:-ms-input-placeholder {
+  color:transparent;
+}
+
+.score-calculation .blink {
+  /* text-align: center; */
+  /* padding-top: 8px; */
+  position: absolute;
+  transform: rotate(180deg);
+  /* top: 0; */
+  -webkit-animation: 0.6s infinite alternate finger;
+  animation: 0.6s infinite alternate finger;
+}
+
+@-webkit-keyframes finger{
+  from{
+    top: 0;
+  }
+  to{
+    top:6px;
+  }
+}
+
+@keyframes finger{
+  from{
+    top:0;
+  }
+  to{
+    top:6px;
+  }
+}
+
+
+.score-calculation .left-nps-response .response-inner .common-score.detractor-field label {
+  color: #FF5630;
+}
+.score-calculation .left-nps-response .response-inner .common-score.detractor-field input {
+  border: 2px solid #FFBDAD;
+}
+.score-calculation .left-nps-response .response-inner .common-score.passive-field label {
+  color: #FFAB00;
+}
+.score-calculation .left-nps-response .response-inner .common-score.passive-field input {
+  border: 2px solid #FFF0B3;
+}
+.score-calculation .left-nps-response .response-inner .common-score.promoter-field label {
+  color: #36B37E;
+}
+.score-calculation .left-nps-response .response-inner .common-score.promoter-field input {
+  border: 2px solid #ABF5D1;
+}
+.score-calculation .right-nps-chart {
+  flex: auto;
+  margin: 64px 0 0 64px;
+}
+.score-calculation .nps-chart-box {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.score-calculation .select2-container .select2-selection--single {
+  height: 34px !important;
+}
+.score-calculation .select2-container--default .select2-selection--single {
+  border: 1px solid #ccc !important;
+  border-radius: 0px !important;
+}
+.score-calculation .common-smily {
+  /* flex: auto; */
+  width: 33.33%;
+  margin-right: 38px;
+  border-radius: 5px;
+  padding: 20px;
+}
+.score-calculation .common-smily .smily-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.score-calculation .common-smily .smily-inner .smily-icon {
+  text-align: center;
+}
+.score-calculation .common-smily .smily-inner .detractor-text {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.score-calculation .common-smily .smily-inner .common-percentage {
+  font-size: 36px;
+  font-weight: 500;
+}
+.score-calculation .common-smily.detractor-smily {
+  border: 1.5px solid #FFBDAD;
+}
+.score-calculation .common-smily.detractor-smily .detractor-text {
+  color: #FF5630;
+}
+.score-calculation .common-smily.detractor-smily .common-percentage {
+  color: #FF5630;
+}
+.score-calculation .common-smily.passive-smily {
+  border: 1.5px solid #FFF0B3;
+}
+.score-calculation .common-smily.passive-smily .detractor-text {
+  color: #FFAB00;
+}
+.score-calculation .common-smily.passive-smily .common-percentage {
+  color: #FFAB00;
+}
+.score-calculation .common-smily.promoter-smily {
+  border: 1.5px solid #ABF5D1;
+  margin-right: 0;
+}
+.score-calculation .common-smily.promoter-smily .detractor-text {
+  color: #36B37E;
+}
+.score-calculation .common-smily.promoter-smily .common-percentage {
+  color: #36B37E;
+}
+
+.nps-calc-headeing-mob {
+  display: none;
+}
+
+.dropdown-label{
+  font-size: 14px;
+  color: #000;
+}
+
+.nps-chart-main {
+  /* padding: 50px 40px 40px; */
+  padding: 24px 50px 25px 20px;
+  border: 2px solid rgba(41, 128, 255, 0.2);
+  border-radius: 5px;
+  background: transparent linear-gradient(360deg, rgba(46, 91, 255, 0.1) 0%, rgba(255, 255, 255, 0.2) 100%) 0% 0% no-repeat padding-box;
+  height: 320px;
+}
+
+.nps-chart-main .chart-inner {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.nps-chart-main .chart {
+  min-width: 242px;
+  max-width: 242px;
+  /* height: 200px; */
+  height: 200px;
+  /* background: #ddd; */
+  border-radius: 50%;
+}
+.nps-chart-main .bench-mark {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.dropdown-toggle.btn-default {
+  min-width: 100%;
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  color: #253858;
+  height: 32px;
+  font-size: 14px;
+  border: 2px solid #EBECF0;
+  border-radius: 5px;
+  background: #fafbfc;
+  text-decoration: none;
+}
+.dropdown-toggle.btn-default:after {
+  display: none;
+}
+.dropdown-toggle.btn-default:focus {
+  box-shadow: none;
+}
+.dropdown-toggle.btn-default svg {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+header.our-logo {
+  display: none;
+  padding: 20px 0 0;
+}
+
+.logo-bottom {
+  /* margin-top: 44px; */
+}
+.logo-bottom .logo {
+  text-align: right;
+}
+.logo-bottom .logo img {
+  width: 110px;
+}
+
+.singleSelect.menu {
+  padding: 0;
+}
+.singleSelect.menu .dropdown-divider {
+  margin: 0;
+}
+
+.menu.add-btn {
+  min-width: 100%;
+  width: 100%;
+  text-align: left;
+}
+
+.menu {
+  background: #fff;
+  border-radius: 0.2rem;
+  list-style: none;
+  margin: 0;
+  min-width: 100%;
+  box-shadow: 0 0.1rem 0.4rem rgba(69, 77, 93, 0.3);
+  transform: translateY(0.5rem);
+  z-index: 100;
+  list-style: none;
+}
+
+.singleSelect.menu li.search {
+  padding: 15px 0.857142857rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.singleSelect.menu li.search .form-group {
+  margin-bottom: 0;
+}
+
+.form-group .input-icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.form-group .form-control {
+  height: 40px;
+  font-size: 1.14285714rem;
+  color: #505f79;
+  border: 0.142857143rem solid #dfe1e5;
+  border-radius: 5px;
+  background: #fafbfc;
+  line-height: normal;
+}
+.form-group .form-control:focus {
+  box-shadow: none;
+}
+
+.group-wise-score-mob {
+  display: none;
+}
+
+.singleSelect.menu li.search .form-group .input-icon img {
+  cursor: pointer;
+}
+
+.form-group .form-control ~ img, .form-group .form-control ~ svg {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.singleSelect.menu li.single-child {
+  margin-top: 4px;
+  /* max-height: 250px; */
+  height: 250px;
+  overflow: auto;
+  background: #fff;
+}
+
+.singleSelect.menu li.single-child ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.singleSelect.menu li.single-child ul li > a {
+  text-decoration: none;
+  color: #253858;
+  padding: 0.357142857rem 0.857142857rem;
+  display: block;
+}
+
+.industries-main {
+  margin-left: 45px;
+  padding-top: 24px;
+}
+
+.organization-score {
+  margin-top: 34px;
+  margin-bottom: 20px;
+}
+.organization-score.mob {
+  display: none;
+}
+
+.embaded-code-main {
+  margin-top: 34px;
+}
+.embaded-code-main .embaded-heading {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+.embaded-code-main .embaded-text a {
+  color: #2980FF;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) and (min-width: 240px) {
+
+  .score-calculation .left-nps-response .response-inner.detractor-inner .detractor-field:nth-child(4), .score-calculation .left-nps-response .response-inner.detractor-inner .detractor-field:last-child{
+    margin-right: 24px;
+  }
+
+  .score-calculation .left-nps-response .detractor-passive-promoter{
+    padding: 20px 6px 4px 30px;
+  }
+  /* .score-calculation .blink{
+    left: 212px;
+  } */
+
+  .nps-chart-main .chart{
+    /* min-width: 100% !important; */
+    /* width: 100% !important; */
+    margin: 0 auto;
+  }
+
+  .embaded-code-main .embaded-heading {
+    font-size: 20px;
+  }
+
+  .embaded-text {
+    font-size: 14px;
+  }
+
+  .logo-bottom .logo {
+    text-align: center;
+  }
+
+  .logo-bottom {
+    margin-top: 26px;
+  }
+
+  .nps-chart-main .bench-mark {
+    margin-top: 12px;
+  }
+
+  .industries-main label {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .organization-score {
+    display: none;
+  }
+  .organization-score.mob {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-size: 14px;
+  }
+
+  .industries-main {
+    margin-left: 0 !important;
+    padding-top: 0;
+  }
+
+  .nps-chart-main {
+    padding: 20px 12px 20px;
+    height: auto;
+  }
+
+  .nps-chart-main .chart-inner {
+    flex-direction: column;
+  }
+
+  .score-calculation .nps-chart-box {
+    margin-bottom: 24px;
+  }
+
+  .score-calculation .group-wise-score-mob.nps-each-score {
+    display: block;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 18px;
+    width: 243px;
+  }
+
+  .score-calculation .nps-each-score {
+    margin-bottom: 24px;
+  }
+
+  header.our-logo {
+    display: block;
+  }
+
+  .nps-calculator {
+    padding: 42px 0 10px;
+  }
+
+  .nps-calc-headeing-mob {
+    display: block;
+    text-align: left;
+  }
+  .nps-calc-headeing-mob:before {
+    left: 0 !important;
+    transform: initial !important;
+  }
+
+  .nps-calc-headeing {
+    display: none;
+  }
+
+  .score-calculation {
+    flex-direction: column;
+    margin-top: 22px;
+  }
+
+  .score-calculation .left-nps-response, .score-calculation .nps-each-score {
+    min-width: 100%;
+  }
+
+  .score-calculation .common-smily .smily-inner .smily-icon svg {
+    display: none;
+  }
+
+  .score-calculation .common-smily .smily-inner {
+    flex-direction: column;
+  }
+
+  .score-calculation .common-smily {
+    margin-right: 14px;
+    padding: 1rem;
+  }
+
+  .score-calculation .common-smily .smily-inner .common-percentage {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .score-calculation .right-nps-chart {
+    margin: 32px 0 0 0;
+  }
+
+  .score-calculation .common-smily .smily-inner .detractor-text {
+    margin-bottom: 0;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .score-calculation .common-smily {
+    margin-right: 3%;
+    width: 31.335%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .industries-main {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .score-calculation .right-nps-chart {
+    margin: 64px 0 0 30px;
+  }
+  .score-calculation .common-smily{
+    margin-right: 30px;
+  }
+
+  .industries-main{
+    margin-left: 0;
+  }
+  .nps-chart-main{
+    padding: 24px 20px 25px 20px;
+  }
+
+  .score-calculation .left-nps-response {
+    min-width: 290px;
+    max-width: 290px;
+  }
+
+  .score-calculation .left-nps-response .response-inner.detractor-inner .detractor-field:nth-child(4), .score-calculation .left-nps-response .response-inner.detractor-inner .detractor-field:last-child{
+    margin-right: 16px;
+  }
+
+  .score-calculation .left-nps-response .response-inner .common-score{
+    margin-right: 16px;
+  }
+  .score-calculation .left-nps-response .detractor-passive-promoter{
+    padding: 10px 14px 4px 30px;
+  }
+
+}
+
+
+
+
+/*# sourceMappingURL=style.css.map */

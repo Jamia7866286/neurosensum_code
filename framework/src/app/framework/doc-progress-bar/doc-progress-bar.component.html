@@ -1,0 +1,25 @@
+<dashboard-page>
+    <div class="page-head">
+            <h5><strong>Progress Bar</strong></h5>
+        </div>
+    <div class="page-content">
+        <div class="container">
+                <div class="column col-12">
+                        <h5><u>Inputs to be taken</u></h5>
+                        <p>
+                            <strong>Score: (Number)</strong> It will take the score between 0 and 100 to display progress bar.<br>
+                        </p>
+                </div>
+                <div class="column-col-12">
+                        <h5>Example</h5>
+                        <pre class="code" data-lang="HTML">
+                                <code>
+                                    {{input}}
+                                </code>
+                        </pre>
+                </div>
+        </div>
+    </div>
+</dashboard-page>
+<h5><u>Sample Working Model</u></h5>
+<dashboard-progress-bar [score]="'20'"></dashboard-progress-bar>

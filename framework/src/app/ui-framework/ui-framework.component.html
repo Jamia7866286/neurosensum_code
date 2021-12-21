@@ -1,0 +1,155 @@
+<div class="container component-container">
+  <div class="columns">
+    <div class="column col-2 component-items">
+      <ul>
+        <!-- <li><span><img src="/assets/images/svg/small-logo.svg"/></span></li> -->
+        <li class="vz-disabled"><span>Overview</span></li>
+        <li class="vz-disabled"><span>The logo</span></li>
+        <li class="vz-disabled"><span>Foundations</span></li>
+        <li>
+          <span [routerLink]="['color-palettes']" routerLinkActive="active"
+            >Color Palettes</span
+          >
+        </li>
+        <li class="vz-disabled"><span>Iconography</span></li>
+        <li [routerLink]="['typography']" routerLinkActive="active">
+          <span>Typography</span>
+        </li>
+        <li class="vz-disabled"><span>Writing style</span></li>
+        <li class="vz-disabled"><span>Components</span></li>
+
+        <li>
+          <span [routerLink]="['ui-text']" routerLinkActive="active"
+            >Ui Text</span
+          >
+        </li>
+        <li>
+          <span
+            [routerLink]="['date-range-picker-v2']"
+            routerLinkActive="active"
+            >Date range picker v2</span
+          >
+        </li>
+        <li>
+          <span [routerLink]="['avatar']" routerLinkActive="active"
+            >Avatars</span
+          >
+        </li>
+        <li>
+          <span [routerLink]="['navigation']" routerLinkActive="active"
+            >Navigation</span
+          >
+        </li>
+        <li>
+          <span [routerLink]="['topnavigation']" routerLinkActive="active"
+            >Top Navigation</span
+          >
+        </li>
+        <li>
+          <span [routerLink]="['badges']" routerLinkActive="active"
+            >Badges</span
+          >
+        </li>
+        <li>
+          <span [routerLink]="['banners']" routerLinkActive="active"
+            >Banners</span
+          >
+        </li>
+        <li>
+          <span [routerLink]="['breadcrumbs']" routerLinkActive="active"
+            >Breadcrumbs</span
+          >
+        </li>
+        <li>
+          <span [routerLink]="['buttons']" routerLinkActive="active"
+            >Buttons</span
+          >
+        </li>
+        <li>
+          <span [routerLink]="['checkboxes']" routerLinkActive="active"
+            >Checkboxes</span
+          >
+        </li>
+        <li>
+          <span [routerLink]="['cards']" routerLinkActive="active">Cards</span>
+        </li>
+        <li>
+          <span [routerLink]="['datepicker']" routerLinkActive="active"
+            >Date/time picker</span
+          >
+        </li>
+        <li>
+          <span [routerLink]="['dropdown']" routerLinkActive="active"
+            >Dropdown menu</span
+          >
+        </li>
+        <li class="vz-disabled"><span>Flag messages</span></li>
+        <li class="vz-disabled"><span>Inline dialog</span></li>
+        <li class="vz-disabled"><span>Lozenges</span></li>
+        <li class="vz-disabled"><span>Messages</span></li>
+        <li>
+          <span [routerLink]="['modal']" routerLinkActive="active"
+            >Modal dialog</span
+          >
+        </li>
+        <li>
+          <span [routerLink]="['pagination']" routerLinkActive="active"
+            >Pagination</span
+          >
+        </li>
+        <li class="vz-disabled"><span>Progress indicators</span></li>
+        <li class="vz-disabled"><span>Progress trackers</span></li>
+        <li>
+          <span [routerLink]="['radiobuttons']" routerLinkActive="active"
+            >Radio group</span
+          >
+        </li>
+        <li class="vz-disabled"><span>Section message</span></li>
+        <li>
+          <span [routerLink]="['select']" routerLinkActive="active"
+            >Select</span
+          >
+        </li>
+        <li>
+          <span [routerLink]="['switch']" routerLinkActive="active"
+            >Switch</span
+          >
+        </li>
+        <li>
+          <span [routerLink]="['table']" routerLinkActive="active">Tables</span>
+        </li>
+        <li>
+          <span [routerLink]="['tabs']" routerLinkActive="active">Tabs</span>
+        </li>
+        <li class="vz-disabled"><span>Tags</span></li>
+        <li>
+          <span [routerLink]="['textfields']" routerLinkActive="active"
+            >Text field</span
+          >
+        </li>
+        <li class="vz-disabled"><span>Toggles</span></li>
+        <li>
+          <span [routerLink]="['tooltips']" routerLinkActive="active"
+            >Tooltips</span
+          >
+        </li>
+        <li class="vz-disabled"><span>Patterns</span></li>
+        <li class="vz-disabled"><span>Benefits modal</span></li>
+        <li class="vz-disabled"><span>Color palette</span></li>
+        <li class="vz-disabled"><span>Comments</span></li>
+        <li class="vz-disabled"><span>Forms</span></li>
+        <li class="vz-disabled"><span>Media picker</span></li>
+        <li class="vz-disabled"><span>Page header</span></li>
+        <li class="vz-disabled"><span>Spotlight</span></li>
+      </ul>
+    </div>
+    <div class="column col-10 component-content">
+      <!-- <div class="component-title">
+          <h2>Buttons</h2>
+      </div> -->
+      <div class="component-section">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

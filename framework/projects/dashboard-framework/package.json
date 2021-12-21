@@ -1,0 +1,8 @@
+{
+    "name": "dashboard-framework",
+    "version": "0.4.04.aws",
+    "peerDependencies": {
+        "@angular/common": "^8.1.1",
+        "@angular/core": "^8.1.1"
+    }
+}

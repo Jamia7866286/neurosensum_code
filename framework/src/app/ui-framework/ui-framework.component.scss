@@ -1,0 +1,37 @@
+.component-container{
+    .component-items{
+        background-color: #F4F5FF;
+        height: 100vh;
+        overflow: auto;
+        &.column{
+            padding: 0 1rem 1rem 3rem;
+            position: fixed;
+        }
+        ul{
+            margin: 0;
+            li{
+                list-style-type: none;
+                span{
+                    text-decoration: none;
+                    padding-left: 8px;
+                    color: #42526E;
+                    cursor: pointer;
+                    display: block;
+                    border-left: 2px solid transparent;
+                    &:focus{
+                        box-shadow: none;
+                        outline: none;
+                    }
+                    &.active{
+                        border-left: 2px solid #0747A6;
+                        color: #0747A6;
+                    }
+                }
+            }
+        }
+    }
+    .component-content{
+        padding-left: 280px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,138 @@
+<div class="container">
+  <div class="columns">
+    <div class="column col-2 sidebar">
+      <div class="logo-cntr">
+        <img src="https://www.surveysensum.com/wp-content/uploads/2019/06/header_logo_svg.svg" class="img-fit-contain "
+          alt="logo" />
+      </div>
+      <div class="accordion">
+        <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden checked />
+        <label class="accordion-header" for="accordion-1">
+          <strong> GETTING STARTED</strong>
+        </label>
+        <div class="accordion-body">
+          <ul class="menu menu-nav">
+            <li class="menu-item">
+              <a [routerLink]="['introduction']">Introduction</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['installation']">Installation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden checked />
+        <label class="accordion-header" for="accordion-4">
+          <strong> Dashboard Authentication</strong>
+        </label>
+        <div class="accordion-body">
+          <ul class="menu menu-nav">
+            <li class="menu-item">
+              <a [routerLink]="['authentication']">Authentication</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="accordion">
+        <input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden />
+        <label class="accordion-header" for="accordion-2">
+          <strong>LAYOUT COMPONENTS</strong>
+        </label>
+        <div class="accordion-body">
+          <ul class="menu menu-nav">
+            <li class="menu-item">
+              <a [routerLink]="['page']">Dashboard Page</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['widget']">Dashboard Widget</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="accordion">
+        <input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden />
+        <label class="accordion-header" for="accordion-3">
+          <strong>Elements</strong>
+        </label>
+        <div class="accordion-body">
+          <ul class="menu menu-nav">
+            <li class="menu-item">
+              <a [routerLink]="['filter']">Dashboard Filter</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['chart']">Dashboard Chart</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['image-preview']">Dashboard image-preview</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['video-preview']">Dashboard video-preview</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['audio-preview']">Dashboard audio-preview</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['progress-bar']">Dashboard progress bar</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['comments-card-header']">Dashboard comments card header</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['comments-card']">Dashboard comments card</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['download-comments']">Dashboard Download comments</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['d3-word-cloud']">Dashboard D3 word cloud</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['responses-count']">Dashboard Responses Count</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['word-cloud']">Dashboard word cloud</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['kpi-widget']">Dashboard kpi widget</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['key-drivers']">Dashboard key drivers</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['packed-donut']">Dashboard packed donut</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['score-card']">Dashboard mean score</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['general-group-details']">Dashboard General group details</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['nps-score-gauge']">Dashboard Element NPS gauge</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['nps-group-details']">Dashboard Element Group details</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['column-chart']">Dashboard Element Column chart</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['nps-trend']">Dashboard Element NPS trend</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['nps-leaderboard']">Dashboard Element NPS Leaderboard</a>
+            </li>
+            <li class="menu-item">
+              <a [routerLink]="['satisfaction-details']">Dashboard Element Satisfaction Details</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="column col-10" *ngIf="initialized">
+      <router-outlet ></router-outlet>
+    </div>
+  </div>
+</div>

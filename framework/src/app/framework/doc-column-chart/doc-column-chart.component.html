@@ -1,0 +1,21 @@
+<dashboard-page>
+    <div class="page-head">
+    </div>
+    <div class="page-content container">
+        <div class="columns">
+            <div class="column col-12">
+                <dashboard-widget class="shadow">
+                    <div class="widget-head">
+                    </div>
+                    <div class="widget-content" style="height: 250px;">
+                        <dashboard-column-chart [crossTabDefination]="CrosstabDef" [chartConfig]="ChartConfig"
+                            [dataSelector]="DataSelector" [barAfterChartRender]="barAfterChartRender"
+                            [excludedFilter]="excludedFilter"></dashboard-column-chart>
+                    </div>
+                </dashboard-widget>
+            </div>
+
+        </div>
+
+    </div>
+</dashboard-page>

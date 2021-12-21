@@ -1,0 +1,1 @@
+„¯©]<?php exit; ?>a:1:{s:7:"content";s:215:"a:10:{s:7:"enabled";b:0;s:5:"login";b:0;s:8:"comments";b:0;s:8:"register";b:0;s:5:"theme";b:0;s:8:"language";s:0:"";s:15:"error_threshold";i:7;s:12:"check_period";i:5;s:8:"site_key";s:0:"";s:10:"secret_key";s:0:"";}";}

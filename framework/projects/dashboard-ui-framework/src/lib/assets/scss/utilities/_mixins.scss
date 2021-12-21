@@ -1,0 +1,416 @@
+// text mixins
+
+@mixin text($size: null, $lineHeight: null, $weight: null, $fontColor: null) {
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: $weight;
+  color: $fontColor;
+}
+
+// avatar mixins
+@mixin avatar-base($size: $unit-8) {
+  font-size: $size / 2;
+  height: $size;
+  width: $size;
+}
+
+// Button variant mixin
+@mixin button-variant($color: $primary-color) {
+  background: $color;
+  border-color: darken($color, 3%);
+  color: $light-color;
+  &:focus {
+    @include control-shadow($color);
+  }
+  &:focus,
+  &:hover {
+    background: darken($color, 2%);
+    border-color: darken($color, 5%);
+    color: $light-color;
+  }
+  &:active,
+  &.active {
+    background: darken($color, 7%);
+    border-color: darken($color, 10%);
+    color: $light-color;
+  }
+  &.loading {
+    &::after {
+      border-bottom-color: $light-color;
+      border-left-color: $light-color;
+    }
+  }
+}
+
+@mixin button-outline-variant($color: $primary-color) {
+  background: $light-color;
+  border-color: $color;
+  color: $color;
+  &:focus {
+    @include control-shadow($color);
+  }
+  &:focus,
+  &:hover {
+    background: lighten($color, 50%);
+    border-color: darken($color, 2%);
+    color: $color;
+  }
+  &:active,
+  &.active {
+    background: $color;
+    border-color: darken($color, 5%);
+    color: $light-color;
+  }
+  &.loading {
+    &::after {
+      border-bottom-color: $color;
+      border-left-color: $color;
+    }
+  }
+}
+
+// Background color utility mixin
+@mixin bg-color-variant($name: ".bg-primary", $color: $primary-color) {
+  #{$name} {
+    background: $color !important;
+
+    @if (lightness($color) < 60) {
+      color: $light-color;
+    }
+  }
+}
+
+// Text color utility mixin
+@mixin text-color-variant($name: ".text-primary", $color: $primary-color) {
+  #{$name} {
+    color: $color !important;
+  }
+
+  a#{$name} {
+    &:focus,
+    &:hover {
+      color: darken($color, 5%);
+    }
+    &:visited {
+      color: lighten($color, 5%);
+    }
+  }
+}
+
+// Margin utility mixin
+@mixin margin-variant($id: 1, $size: $unit-1) {
+  .m-#{$id} {
+    margin: $size !important;
+  }
+
+  .mb-#{$id} {
+    margin-bottom: $size !important;
+  }
+
+  .ml-#{$id} {
+    margin-left: $size !important;
+  }
+
+  .mr-#{$id} {
+    margin-right: $size !important;
+  }
+
+  .mt-#{$id} {
+    margin-top: $size !important;
+  }
+
+  .mx-#{$id} {
+    margin-left: $size !important;
+    margin-right: $size !important;
+  }
+
+  .my-#{$id} {
+    margin-bottom: $size !important;
+    margin-top: $size !important;
+  }
+}
+
+// Padding utility mixin
+@mixin padding-variant($id: 1, $size: $unit-1) {
+  .p-#{$id} {
+    padding: $size !important;
+  }
+
+  .pb-#{$id} {
+    padding-bottom: $size !important;
+  }
+
+  .pl-#{$id} {
+    padding-left: $size !important;
+  }
+
+  .pr-#{$id} {
+    padding-right: $size !important;
+  }
+
+  .pt-#{$id} {
+    padding-top: $size !important;
+  }
+
+  .px-#{$id} {
+    padding-left: $size !important;
+    padding-right: $size !important;
+  }
+
+  .py-#{$id} {
+    padding-bottom: $size !important;
+    padding-top: $size !important;
+  }
+}
+
+// Component focus shadow
+@mixin control-shadow($color: $primary-color) {
+  box-shadow: 0 0 0 0.1rem rgba($color, 0.2);
+}
+
+// Shadow mixin
+@mixin shadow-variant($offset) {
+  box-shadow: 0 $offset ($offset + 0.05rem) * 2 rgba($dark-color, 0.3);
+}
+
+// Text Ellipsis
+@mixin text-ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Toast variant mixin
+@mixin toast-variant($color: $dark-color) {
+  background: rgba($color, 0.95);
+  border-color: $color;
+}
+
+@mixin border-property($border-direction, $border-width, $border-style, $border-color){
+  @if $border-direction == top{
+    border-top-width: $border-width;
+    border-top-style: $border-style;
+    border-top-color: $border-color;
+  }
+  @else if $border-direction == right{
+    border-right-width: $border-width;
+    border-right-style: $border-style;
+    border-right-color: $border-color;
+  }
+  @else if $border-direction == bottom{
+    border-bottom-width: $border-width;
+    border-bottom-style: $border-style;
+    border-bottom-color: $border-color;
+  }
+  @else if $border-direction == left{
+    border-left-width: $border-width;
+    border-left-style: $border-style;
+    border-left-color: $border-color;
+  }
+  @else{
+    border-width: $border-width;
+    border-style: $border-style;
+    border-color: $border-color;
+  }
+}
+
+// Flex and Grid browser support css mixin
+@mixin flexGrid($property) {
+  @if $property == flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  } @else if $property == grid {
+    display: grid;
+    display: -ms-grid;
+  }
+}
+// End Flex and Grid browser support css mixin
+
+// Transition, Transform and Animation browser support css mixin with syntax
+@mixin ttA($property, $value) {
+  @if $property == transition {
+    -moz-transition: #{$value};
+    -o-transition: #{$value};
+    -webkit-transition: #{$value};
+    -ms-transition: #{$value};
+    transition: #{$value};
+  } @else if $property == transform {
+    -moz-transform: #{$value};
+    -o-transform: #{$value};
+    -ms-transform: #{$value};
+    -webkit-transform: #{$value};
+    transform: #{$value};
+  } @else {
+    -webkit-animation: #{$value};
+    -moz-animation: #{$value};
+    -ms-animation: #{$value};
+    -o-animation: #{$value};
+    animation: #{$value};
+  }
+}
+// @include ttA(transition, ease-in-out 0.3s background-color); // syntax transition: <property> <duration> <timing-function> <delay>;
+// @include ttA(animation, slide-left 5s 3); // syntax animation: animation-name duration timing-function delay iteration-count direction fill-mode play-state;
+// @include ttA(transform, translate(-50%, -50%) rotate(45deg));
+// End Transition, Transform and Animation browser support css mixin
+
+// Transform-Origin cross browser support css with syntax
+@mixin transform-origin($value) {
+  -webkit-transform-origin: #{$value};
+  -moz-transform-origin: #{$value};
+  -ms-transform-origin: #{$value};
+  transform-origin: #{$value};
+}
+// @include transform-origin(bottom right 60px); // syntax transform-origin: x-axis y-axis z-axis|initial|inherit;
+// End Transform-Origin cross browser support css with syntax
+
+// Center along vh,vw with position
+@mixin center($position) {
+  position: absolute;
+
+  @if $position == "vertical" {
+    top: 50%;
+
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  } @else if $position == "horizontal" {
+    left: 50%;
+
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  } @else if $position == "both" {
+    top: 50%;
+    left: 50%;
+
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+// End Center along vh,vw with position
+
+// mixin for pointed triangle direction in tooltip
+@mixin pointed-triangle($direction: $triangle-direction, $isJourney: $isJourneyType){
+  content:'';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 10px solid color(pacificBlue, pacificBlue-1800);
+  @if($isJourney == 0){
+    @if ($direction == top){
+      bottom: -10px;
+      left: calc(50% - 4px);
+      transform: rotate(-90deg);
+    }
+    @else if ($direction == right){
+      top: 7px;
+      left: -8px;
+    }
+    @else if ($direction == bottom){
+      top: -12px;
+      left: calc(50% - 4px);
+      transform: rotate(90deg);
+    }
+    @else {
+      top: 7px;
+      right: -8px;
+      transform: rotate(180deg);
+    }
+  }
+  @else{
+    @if($direction == right){
+      top: 10px;
+      left: -10px;
+      transform: rotate(0deg);
+    }
+    @else if($direction == corner-left){
+      top: -10px;
+      left: auto;
+      transform: rotate(90deg);
+    }
+    @else if($direction == left){
+      top: 10px;
+      right: -10px;
+      left: auto;
+      transform: rotate(180deg);
+    }
+    @else if($direction == corner-right){
+      transform: rotate(90deg);
+      right: 14px;
+      left: auto;
+      top: -12px;
+    }
+  }
+}
+
+// mixin for tooltip direction with pointed triangle
+@mixin pointed-tooltip-direction($direction: $tooltip-direction, $isCDK: $isCDKFlag){
+  background: color(pacificBlue, pacificBlue-1800);
+  border-radius: 5px;
+  color: color(pacificBlue, pacificBlue-100);
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  min-height: 32px;
+  position: absolute;
+  padding: .4rem .8rem;
+  transition: all .2s ease;
+  z-index: 200;
+  pointer-events: none;
+  @if ($isCDK == 0){
+    opacity: 0;
+    @if ($direction == top){
+      left: 50%;
+      bottom: 100%;
+      transform: translate(-50%, 1rem);
+    }
+    @else if ($direction == right){
+      bottom: 50%;
+      left: 100%;
+      transform: translate(-1rem, 50%);
+    }
+    @else if ($direction == bottom){
+      bottom: auto;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -1rem);
+    }
+    @else {
+      bottom: 50%;
+      left: auto;
+      right: 100%;
+      transform: translate(1rem, 50%);
+    }
+  }
+  @else {
+    opacity: 1;
+    min-width: max-content;
+    @if ($direction == top){
+      bottom: 36px;
+    }
+    @else if ($direction == right){
+      top: -32px;
+      left: 100%;
+    }
+    @else if ($direction == bottom){
+      top: 5px;
+    }
+    @else {
+      top: -32px;
+      right: 100%;
+    }
+  }
+}

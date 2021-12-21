@@ -1,0 +1,41 @@
+<dashboard-page>
+        <div class="page-head">
+            <h5><strong>Kpi Widget Component</strong></h5>
+        </div>
+        <div class="page-content">
+            <div class="container">
+                <div class="columns">
+                    <div class="column col-12">
+                        <h5><u>Inputs to be taken</u></h5>
+                        <p>
+                            <strong>crosstabDefination: (Object)</strong> It will take the table values required to get the data.<br>
+                            <strong>kpiDataSelector: (Object)</strong> It will take the kpi dataselector options for displaying model.<br>
+                            <strong>Note:</strong> kpiDataSelector and crosstabDefination are objects of classes that contains following options:
+                        </p>
+                    </div>
+                    <div class="column col-12">
+                    <pre class="code" data-lang="Typescript">
+                        <code>
+                            {{classes}}
+                        </code>
+                    </pre>
+                    <p>Here <strong>primaryValue</strong> and <strong>secondaryValue</strong> must contain a string with rowId and columnId joined by a single space (' ').
+                     </p>
+                     <pre class="code" data-lang="">
+                            <code>
+                                {{sample}}
+                            </code>
+                        </pre>
+                    <h5><u>Example:</u></h5>
+                    <pre class="code" data-lang="HTML">
+                            <code>
+                                {{html}}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+</dashboard-page>
+<h5><u>Sample Working Model</u></h5>
+<dashboard-kpi-widget [crosstabDefination]="crosstabDef" [kpiDataSelector]="kpiDataSelector"></dashboard-kpi-widget>

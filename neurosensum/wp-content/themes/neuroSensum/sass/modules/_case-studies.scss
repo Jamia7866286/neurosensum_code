@@ -1,0 +1,369 @@
+/* Awesome icon font */
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.case-studies-page{
+    .case-study-content{
+        p{
+          color:$black_color;
+          font-weight:bold;
+          margin-bottom:0;
+
+          a{
+              color:$black_color;
+            }
+        }
+        a.btn{
+          color:#DE5026;
+          // text-align:center;
+          font-weight:bold;
+          text-transform:uppercase;
+          display:block;
+        }
+    }
+    .pagination{
+      margin-top:20px;
+    }
+}
+.single-casestudies{
+  p{
+    color:$black_color;
+  }
+}
+.pagination {
+  .nav-previous a,.nav-next a{
+    background: none;
+    padding: 10px 20px;
+    border: 1px solid $black_color;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 202px;
+    height: 63px;
+    outline: 0;
+    transition:all 1s;
+    color:$black_color;
+      display: block;
+      text-align: center;
+      line-height: 42px;
+    &:hover{
+      background:$black_color;
+      transition:all 1s;
+      color:$white_color;
+    }
+  }
+}
+
+.single-career #popup{
+  height:auto;
+.button.b-close{
+    position:absolute;
+    bottom:auto;
+    top:15px;;
+    right:10px;
+    opacity:1;
+  }
+  .button.b-close .fa-times-circle{
+        color: #5b5b5b;
+  }
+}
+.career-popup{
+
+  background:$white_color;
+  padding:30px;
+  position:relative;
+  h2{
+    margin-bottom:30px;
+    text-align:center;
+  }
+  ul{
+    display:block;
+    text-align:center;
+    list-style:none;
+    margin-left:0;
+    li{
+      text-align:center;
+      display:inline-block;
+      position:relative;
+      margin-bottom: 20px;
+      width:100%;
+      input{
+        width:100%;
+        padding:15px;
+        background:none;
+        outline:none;
+      }
+      textarea{
+        height:48px;
+        vertical-align: middle;
+        padding:10px 15px;
+        outline:none;
+        font-family:"Open Sans", sans-serif;
+        color:#747474;
+        overflow:hidden;
+        resize:none;
+      }
+    }
+  }
+  div.fileupload{
+    position:relative;
+  }
+  #fileupload{
+    background-color: transparent;
+  }
+  .btn{
+      background: none;
+      padding: 10px 20px;
+      border: 1px solid $black_color;
+      text-transform: uppercase;
+      font-weight: 700;
+      outline: 0;
+      transition:all 1s;
+      color:#000;
+      text-shadow:none;
+    &:hover{
+      background:$black_color;
+      transition:all 1s;
+      color:$white_color;
+    }
+  }
+  label.error{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-size: 12px!important;
+    color: red!important;
+    font-weight: 300!important;
+  }
+
+}
+@media only screen and (min-width:$bp-xxsmall) {
+  .case-studies-page{
+    .cs-col{
+      margin-bottom:30px;
+    }
+    .case-study-content{
+        padding-top:15px;
+      p{
+        line-height:22px;
+        margin-bottom:10px;
+        font-size:1em;
+        text-align:left;
+      }
+      }
+    .cs-image{
+      margin-bottom:20px;
+      img{
+        width:100%;
+      }
+    }
+  }
+  .pagination{
+    .nav-next, .nav-previous{
+       a{width: 100%;}
+    }
+  } 
+  .career-popup {
+    h2{font-size:2em;}
+  #fileupload{
+      font-size: 14px;
+      padding: 10px 3px;
+    }
+      #fileupload,.btn{
+        width:100%;
+    }
+    .btn{
+      margin-top:20px;
+    }
+    label{
+      font-size:12px;
+    }
+  }
+    .pagination{
+      margin:20px 15px;
+      .nav-previous,.nav-next{
+          float:none;
+        }
+        .nav-next{
+          margin-top:20px;
+        }
+      }
+.page-template-template-career{
+  .pagination{
+      margin:20px 0px;
+    }
+}
+
+}
+@media only screen and (min-width:$bp-xsmall){
+.pagination{
+      margin:20px 15px;
+      .nav-previous{
+        float:left;
+      }
+      .nav-next{
+          float:right;
+          margin-top:0;
+        }
+      }
+}
+@media only screen and (min-width:$bp-small){
+  .case-studies-page {
+    .case-study-content{
+      p{
+        font-size:1.15em;
+      }
+    }
+    .cs-col {
+        margin-bottom: 30px;
+        width: 50%;
+        float: left;
+    }
+  }
+
+}
+@media only screen and (min-width:$bp-medium) {
+ .case-studies-page {
+    .case-study-content{
+        padding-top:0px;
+      p{
+        font-size:1em;
+      }
+    }
+ }
+
+}
+
+@media only screen and (min-width:$bp-xlarge) {
+  .case-studies-page {
+    .col-md-4.cs-col{
+      padding:0 45px;
+      margin-bottom:93px;
+    }
+      .case-study-content{
+          padding-top:125px;
+          p{
+            font-size:1.4em;
+            line-height:30px;
+            padding-right: 50px;
+            margin-bottom:0;
+
+          }
+          a.btn{
+            text-align:center;
+            padding-top:55px;
+            font-size:1.125em;
+             opacity:0;
+            transition:all 1s;
+          }
+      }
+      .cs-col{
+        cursor:pointer;
+        width: 33.3%;
+        &:hover{
+          a.btn{
+            opacity:1;
+            transition:all 1s;
+            
+          }
+        }
+      }
+    .pagination {
+          margin: 20px 43px;
+      }
+
+
+
+  }
+
+.career-popup{
+  background:$white_color;
+  padding:30px;
+  max-width:950px;
+  margin:0 auto;
+  position:relative;
+  h2{
+    font-size:1.625em;
+
+  }
+  ul{
+
+    li{
+
+      margin-bottom: 20px;
+      width:45%;
+      input{
+        width:100%;
+        padding:15px;
+
+      }
+    }
+  }
+  div.fileupload{position:relative;
+    width:95%;
+  }
+  #fileupload{
+    margin-left: 43px;
+    background-color: transparent;
+    width:auto;
+    padding:3px;
+  }
+  .btn{
+      margin: 20px 0 0 43px;
+      width:auto;
+    &:hover{
+      background:$black_color;
+      transition:all 1s;
+      color:$white_color;
+    }
+  }
+  label{
+    font-size:16px;
+  }
+
+}
+    
+}
+
+
+
+
+
+
+//=================================
+//Hover style
+//=================================
+
+/* Float */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+
+
+
+
+
+
+

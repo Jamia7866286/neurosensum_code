@@ -1,0 +1,10 @@
+<div @tooltip class="tooltip-container">
+    <div class="default-tooltip" *ngIf="text">
+        {{text}}
+    </div>
+
+    <ng-container *ngIf="!text">
+        <ng-template [ngTemplateOutlet]="templateRef" [ngTemplateOutletContext]="templateContext"></ng-template>
+    </ng-container>
+
+</div>

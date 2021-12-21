@@ -1,0 +1,95 @@
+<dashboard-page>
+    <div class="page-head">
+        <h5><strong>Progress Bar</strong></h5>
+    </div>
+    <div class="page-content">
+        <div class="container">
+            <div class="column col-12">
+                <h5><u>Inputs to be taken</u></h5>
+                <p>
+                    <strong>Filter Config: (FilterConfig)</strong> It will take following properties:<br>
+                </p>
+
+                <strong>Question guid(questionGuid)</strong> Question guid of the question which is to be binded
+                with filter<br>
+                <strong>Variable id(variableId)</strong> variable id of the question which is to be binded with
+                filter<br>
+                <strong>Type(type)</strong> type of the filter you want to make<br>
+                <blockquote>
+                    <strong>Filter types: <br></strong>
+                    <ul>
+                        <li>Dropdown</li>
+                        <li>List</li>
+                        <li>Search box</li>
+                        <li>Number box</li>
+                        <li>Date picker</li>
+                        <li>Date range picker</li>
+                    </ul>
+                </blockquote>
+                <strong>Filter callbacks (optional)</strong> Functions which are to be executed at some specific
+                events<br>
+                <blockquote>
+                    <strong>Filter callback events: <br></strong>
+                    <ul>
+                        <li>beforeOptionsBind</li>
+                        <li>afterOptionsBind</li>
+                        <li>onSelectionChanges</li>
+                    </ul>
+                </blockquote>
+                <strong>Dropdown config</strong> Configuration of dropdown (if dropdown filter type is used)<br>
+                <blockquote>
+                    <strong>Dropdown Settings: <br></strong>
+                    <ul>
+                        <li><strong>dropdownType</strong>: Type of dropdown to make<br>
+                            <blockquote>
+                                <strong>Types of dropdown</strong>
+                                <ul>
+                                    <li>Single Select</li>
+                                    <li>Multi Select</li>
+                                </ul>
+                            </blockquote>
+                        </li>
+                        <li><strong>idField</strong>: field to be used for value</li>
+                        <li><strong>textfield</strong>: field to be used for label</li>
+                        <li><strong>enableCheckAll</strong>: Display checkall button or not</li>
+                        <li><strong>selectAllText</strong>: Text to display when nothing is selected</li>
+                        <li><strong>unSelectAllText</strong>: Text to display when all options are selected</li>
+                        <li><strong>allowSearchFilter</strong>: Display search filter</li>
+                        <li><strong>clearSearchFilter</strong>: Display option to clear search filter</li>
+                        <li><strong>maxHeight</strong>: max height to dropdown</li>
+                        <li><strong>itemsShowLimit</strong>: max items to be displayed which are selected</li>
+                        <li><strong>limitSelection</strong>: Limit the max selection (-1 is infinite)</li>
+                        <li><strong>searchPlaceholderText</strong>: Placeholder for search box</li>
+                        <li><strong>noDataAvailablePlaceholderText</strong>: Placeholder when no data is present</li>
+                        <li><strong>closeDropDownOnSelection</strong>: Whether to close dropdown on selection</li>
+                        <li><strong>showSelectedItemsAtTop</strong>: whether to display selected items on top</li>
+                        <li><strong>defaultOpen</strong>: Keep dropdown open initially</li>
+                    </ul>
+                </blockquote>
+            </div>
+            <div class="column-col-12">
+                <h5>Example</h5>
+                <pre class="code" data-lang="TS">
+                                        <code>
+                                            {{input}}
+                                        </code>
+                                </pre>
+                <pre class="code" data-lang="HTML">
+                                        <code>
+                                            {{htmlInput}}
+                                        </code>
+                                </pre>
+            </div>
+            <div class="column-col-12">
+                <h5><u>Sample Working Model</u></h5>
+                <dashboard-filter [config]="filter1Config"></dashboard-filter>
+                <dashboard-widget class="shadow">
+                    <div class="widget-content" style="height: 300px;">
+                        <dashboard-chart [crosstabDefination]="crosstab1Def" [chartConfig]="chart1Config"
+                            [dataSelector]="dataSelector1"></dashboard-chart>
+                    </div>
+                </dashboard-widget>
+            </div>
+        </div>
+    </div>
+</dashboard-page>

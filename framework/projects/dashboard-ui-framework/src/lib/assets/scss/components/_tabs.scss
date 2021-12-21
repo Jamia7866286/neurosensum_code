@@ -1,0 +1,127 @@
+// .tab{
+//     margin: 0;
+//     border-bottom: 1.5px solid #DFE1E6;
+    
+//     .tab-item{
+//         margin-right: 32px;
+//         a{
+//             &::after{
+//                 content: "";
+//                 position: absolute;
+//                 bottom: -6px;
+//                 width: 100%;
+//                 height: 2px;
+//                 background: rgba(0,0,0,0);
+//             }
+//         }
+//         &.active{
+//             a{
+//                 border-bottom-color: color(blue, base);
+//                 color: color(blue, base);
+//                 border-bottom-color:#0052CC;
+//                 &::after{
+//                     background: #0052cc;
+//                 }
+//                 .tab-badges{
+//                   background: #B3D4FF;
+//                   color: #0052CC;
+//                 }
+//             }
+//         }
+//         a{
+//             display: inline-flex;
+//             align-items: center;
+//             color: #2E384D;
+//             padding: 0 0 6px 0;
+//             font-weight: 500;
+//             font-size: 14px;
+//             &:hover, &:focus{
+//                 color: color(blue, base);
+//             }
+//             .tab-badges{
+//               width: 19px;
+//               height: 19px;
+//               color: #2E384D;
+//               font-size: 0.928571429rem;
+//               border-radius: 5px;
+//               margin-left: 4px;
+//               background: #DFE1E6;
+//               text-align: center;
+//               display: block;
+//             }
+//         }
+//     }
+//   }
+
+
+//   new scss
+.tabs{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1.5px solid #dfe1e6;
+    padding: 0 16px;
+    height: 48px;
+    .tab{
+        margin: 0;
+        border-bottom: none;
+        .tab-item{
+            margin-right: 32px;
+            a{
+                display: inline-flex;
+                align-items: center;
+                color: #2E384D;
+                padding: 0 0 6px 0;
+                font-weight: 500;
+                font-size: 14px;
+                border-bottom: 0;
+                padding-bottom: 0;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: -6px;
+                    width: 100%;
+                    height: 2px;
+                    background: rgba(0,0,0,0);
+                }
+                &:hover, &:focus{
+                    color: color(blue, base);
+                }    
+                .tab-badges{
+                    width: 19px;
+                    height: 19px;
+                    color: #2E384D;
+                    font-size: 0.928571429rem;
+                    border-radius: 5px;
+                    margin-left: 4px;
+                    background: #DFE1E6;
+                    text-align: center;
+                    display: block;
+                }
+            }
+            &.active{
+                a{
+                    // border-bottom-color: color(blue, base);
+                    color: color(blue, base);
+                    // border-bottom-color:#0052CC;
+                    .tab-badges{
+                        background: #B3D4FF;
+                        color: #0052CC;
+                    }
+                    &::after{
+                        background: #0052cc;
+                    }
+                }
+            }
+        }
+        &.second-level{
+            .tab-item{
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

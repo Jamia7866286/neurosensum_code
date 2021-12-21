@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+      <!-- Format Detection -->
+      <meta name="format-detection" content="telephone=no" />
+      <title>Voice of Customer</title>
+
+
+      <meta name="description" content="Become Great at the Voice of Customer Data" />
+
+      <link rel="canonical" href="https://www.surveysensum.com/voc/" />
+
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:type" content="website" />
+
+
+      <meta name="title" content="Become Great at the Voice of Customer Data">
+      <meta name="description" content="Become Great at the Voice of Customer Data">
+
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="/voc/">
+      <meta property="og:title" content="Become Great at the Voice of Customer Data">
+      <meta property="og:description" content="Become Great at the Voice of Customer Data">
+      <!-- <meta property="og:image" content="assets/img/ltd-banner-social-sharing.jpg"> -->
+
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image">
+      <meta property="twitter:url" content="/voc/">
+      <meta property="twitter:title" content="Become Great at the Voice of Customer Data">
+      <meta property="twitter:description" content="Become Great at the Voice of Customer Data">
+
+      <!-- Favicon -->
+      <link rel="icon" href="assets/img/ss-favicon.png" type="image/png" sizes="32x32" />
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet" />
+
+      <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <!-- <script src="assets/js/custom.js"></script> -->
+
+      <script>
+
+            function pauseVideo() {
+                  iframes = document.querySelectorAll('.embed-responsive-item');
+                  iframes.forEach(iframe => {
+                        const iframeSrc = iframe.src;
+                        iframe.src = iframeSrc;
+                  });
+            }
+
+            // $('.ltd-video svg').click(function(){
+            //       console.log($('.ltd-video video').attr(muted));
+            // });
+
+            function isInViewport(el, topOffset) {
+                  const rect = el.getBoundingClientRect();
+                  return (
+                        rect.top >= 0 - el.clientHeight + topOffset &&
+                        rect.left >= 0 &&
+                        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+
+                  );
+            }
+
+
+            $(document).ready(function () {
+                  $(".ltd-video").click(function () {
+                        const video = $(this).find('video');
+                        if (video.prop('muted')) {
+                              video.prop('muted', false);
+                              $(".ltd-video").addClass('video_play');
+                        }
+                        else {
+                              video.prop('muted', true);
+                              $(".ltd-video").removeClass('video_play');
+                        }
+                  });
+
+
+            
+
+                  $('main').scroll(function (e) {
+                        const val = isInViewport(document.querySelector('.ltd-video video'), 120);
+                        if (!val) {
+                              document.querySelector('.ltd-video video').muted = true;
+                              $(".ltd-video").removeClass('video_play');
+                        }
+                  });
+
+            });
+      </script>
+
+      <!-- Google Tag Manager -->
+      <script>(function (w, d, s, l, i) {
+                  w[l] = w[l] || []; w[l].push({
+                        'gtm.start':
+                              new Date().getTime(), event: 'gtm.js'
+                  }); var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                              'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-NH6929D');</script>
+      <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+
+
+      <!-- Google Tag Manager (noscript) -->
+      <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH6929D" height="0" width="0"
+                  style="display:none;visibility:hidden"></iframe>
+      </noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+
+      <div class="request-demo-header">
+            <div class="container">
+                  <div class="row">
+                        <div class="col-12">
+                              <nav class="navbar navbar-expand-lg navbar-light">
+
+                                    <a class="navbar-brand" href="https://www.surveysensum.com">
+                                          <img src="https://www.surveysensum.com/wp-content/themes/survey/homepage_assets/img/svg/Surveysensum-logo.svg"
+                                                class="img-fluid" alt="SurveySensum" />
+                                    </a>
+
+                                    <div class="contacts-number">
+                                          <a data-toggle="modal" data-target="#business-choose" class="ltd-green-btn">
+                                                <span>Master Voice of Customer</span>
+                                          </a>
+                                    </div>
+
+                              </nav>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <main>
+
+            <section class="book-a-demo">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-md-5">
+                                    <div class="heading">
+                                          <h1>Become Great at the Voice of Customer Data</h1>
+                                          <p class="mb-0">Online course by NK Tripathi</p>
+                                          <p><strong>Course length:</strong> 5h 00 min Approx</p>
+                                    </div>
+
+                                    <div class="refunde-book-btn">
+                                          <div class="contacts-number">
+                                                <a data-toggle="modal" data-target="#business-choose" class="ltd-green-btn">
+                                                      <span>Master Voice of Customer</span>
+                                                </a>
+                                          </div>
+
+                                    </div>
+
+                              </div>
+                              <div class="col-md-7">
+                                    <div class="ltd-video">
+
+                                          <video autoplay loop muted style="width: 100%;height: 100%;">
+                                                <source
+                                                      src="https://www.surveysensum.com/wp-content/uploads/2021/01/How-To-Capture-The-B2b-And-B2C-Voc-Data-1.mp4"
+                                                      type="video/mp4" size="576">
+                                          </video>
+
+                                          <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" width="64"
+                                                height="64" viewBox="0 0 120 120">
+                                                <path style="opacity:0.5;"
+                                                      d="M62,2a60,60,0,1,0,60,60A60.022,60.022,0,0,0,62,2ZM50,83V41a3,3,0,0,1,4.8-2.4l28.02,21a2.978,2.978,0,0,1,0,4.8L54.8,85.4A3,3,0,0,1,50,83Z"
+                                                      transform="translate(-2 -2)" />
+                                          </svg>
+
+                                    </div>
+                              </div>
+
+
+                        </div>
+                  </div>
+            </section>
+
+            <section class="deal-work">
+                  <div class="container">
+                        <!-- <div class="row">
+                              <div class="col-md-12">
+                                    <div class="heading text-center">
+                                          <h2>How does the deal work?</h2>
+                                    </div>
+                              </div>
+                        </div> -->
+
+                        <div class="deal-work-inner">
+                              <div class="boxes-common-main">
+                                    <div class="heading">
+                                          <h3>Who should attend?</h3>
+                                          <ul>
+                                                <li>
+                                                      <img src="assets/img/collect-tick.svg" alt="">
+                                                      <span>Customer Experience professional of all levels</span>      
+                                                </li>
+                                                <li>
+                                                      <img src="assets/img/collect-tick.svg" alt="">
+                                                      <span>Customer Success professionals</span>      
+                                                </li>
+                                                <li>
+                                                      <img src="assets/img/collect-tick.svg" alt="">
+                                                      <span>Senior members of Customer Support teams</span>      
+                                                </li>
+                                                <li>
+                                                      <img src="assets/img/collect-tick.svg" alt="">
+                                                      <span>Product Managers</span>      
+                                                </li>
+                                          </ul>
+                                    </div>
+                              </div>
+                              <div class="boxes-common-main">
+                                    <div class="heading">
+                                          <h3>This course will help you</h3>
+                                          <ul>
+                                                <li>
+                                                      <img src="assets/img/collect-tick.svg" alt="">
+                                                      <span>Gain meaningful insights from customer data</span>      
+                                                </li>
+                                                <li>
+                                                      <img src="assets/img/collect-tick.svg" alt="">
+                                                      <span>Stay close to your customer and understand their behavior, perception, motivation, and anxieties</span>      
+                                                </li>
+                                                <li>
+                                                      <img src="assets/img/collect-tick.svg" alt="">
+                                                      <span>Build a systematic framework for collecting and leveraging customer qualitative data for digital experiences</span>      
+                                                </li>
+                                          </ul>
+                                    </div>
+                              </div>
+                              <div class="boxes-common-main">
+                                    <div class="heading">
+                                          <h3>This course is not for you if you</h3>
+                                          <ul>
+                                                <li>
+                                                      <img src="assets/img/collect-tick.svg" alt="">
+                                                      <span>Need a few quick insights</span>      
+                                                </li>
+                                                <li>
+                                                      <img src="assets/img/collect-tick.svg" alt="">
+                                                      <span>Are looking for big data or technical training</span>      
+                                                </li>
+                                                <li>
+                                                      <img src="assets/img/collect-tick.svg" alt="">
+                                                      <span>Are not in a customer-facing role</span>      
+                                                </li>
+                                          </ul>
+                                    </div>
+                              </div>
+                            
+                        </div>
+                  </div>
+            </section>
+
+         
+            <section class="business-choose">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-md-12">
+                                    <div class="heading text-center">
+                                          <h1>Meet our VOC experts</h1>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                              <div class="col-md-6">
+                                    <div class="video-large">
+                                          <div class="card ml-md-auto">
+                                                <div class="card-img-top">
+                                                      <img src="./assets/img/Tanuj-Diwan_SurveySensum.jpeg" alt="surveySensum">
+                                                </div>
+                                                <div class="card-body">
+                                                      <h5 class="card-title">Tanuj Diwan</h5>
+                                                      <p class="card-text">Managing Director- India</p>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-md-6">
+                                    <div class="video-large right-profile">
+                                          <div class="card">
+                                                <div class="card-img-top">
+                                                      <img src="./assets/img/NK_SurveySensum.jfif" alt="surveySensum">
+                                                </div>
+                                                <div class="card-body">
+                                                      <h5 class="card-title">Nandkishor Tripathi</h5>
+                                                      <p class="card-text">Head of Customer Experience</p>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+            </section>
+         
+            <section class="business-choose webinar-series">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-md-12">
+                                    <div class="heading text-center">
+                                          <h1>What is covered?</h1>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="row">
+                              <div class="col-md-6">
+                                    <div class="webinar-list">
+                                          <div class="webinar-title"><a href="https://youtu.be/2gF111ptaD0-" target="_blank">Chapter 1: Getting Started with the Voice of Customer program</a></div>
+                                          <div class="webinar-title">Chapter 2: Are you prepared to launch your VOC program?</div>
+                                          <div class="webinar-title">Chapter 3: Does NPS really work?</div>
+                                          <div class="webinar-title">Chapter 4: Define Customer Journey</div>
+                                          <div class="webinar-title">Chapter 5: Deep dive into the Customer and Business Metrics</div>
+                                    </div>
+                              </div>
+                              <div class="col-md-6">
+                                    <div class="webinar-list">
+                                          <div class="webinar-title">Chapter 6: Can Net Promoter Score be negative? - Measurements</div>
+                                          <div class="webinar-title">Chapter 7: Design your VOC program</div>
+                                          <div class="webinar-title">Chapter 8: Implementation</div>
+                                          <div class="webinar-title">Chapter 9: Monitor your progress</div>
+                                          <div class="webinar-title">Chapter 10: Action Planning</div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+
+            <footer class="request-demo-footer">
+                  <div class="bottom-footer">
+                        <div class="container">
+                              <div class="row">
+                                    <div class="col-md-12">
+                                          <div class="bottom-footer-in">
+                                                <ul class="cookie-privacy">
+                                                      <li><a href="https://www.surveysensum.com/cookie-policy/">Cookie
+                                                                  Policy</a></li>
+                                                      <li><a href="https://www.surveysensum.com/privacy-policy/">Privacy
+                                                                  Policy</a></li>
+                                                </ul>
+                                                <div class="social-icons d-flex">
+                                                      <a href="https://www.instagram.com/surveysensum" class="icon-img"
+                                                            target="_blank">
+                                                            <img src="assets/img/Instagram.svg" class="img-fluid"
+                                                                  alt="SurveySensum" />
+                                                      </a>
+                                                      <a href="https://www.youtube.com/c/surveysensum" class="icon-img"
+                                                            target="_blank">
+                                                            <img src="assets/img/youtube-symbol.svg" class="img-fluid"
+                                                                  alt="SurveySensum" />
+                                                      </a>
+                                                      <a href="https://www.facebook.com/SurveySensum" class="icon-img"
+                                                            target="_blank">
+                                                            <img src="assets/img/Facebook.svg" class="img-fluid"
+                                                                  alt="SurveySensum" />
+                                                      </a>
+                                                      <a href="https://twitter.com/surveysensum" target="_blank"
+                                                            class="icon-img">
+                                                            <img src="assets/img/Twitter.svg" class="img-fluid"
+                                                                  alt="SurveySensum" />
+                                                      </a>
+                                                      <a href="https://www.linkedin.com/company/SurveySensum"
+                                                            target="_blank" class="icon-img">
+                                                            <img src="assets/img/LinkedIN.svg" class="img-fluid"
+                                                                  alt="SurveySensum" />
+                                                      </a>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </footer>
+      </main>
+
+
+
+</body>
+
+</html>
+
+
+<!-- Main large modal left -->
+<div class="modal fade upcoming-event-modal sendgrid-modal" id="business-choose" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalLabelVideo" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                  <div class="modal-body embed-responsive-16by9">
+                        
+                        
+                        <iframe class="sendgrid-form-iframe" src="https://cdn.forms-content.sg-form.com/fc016623-4e5e-11eb-be3f-02d635d29bb2"></iframe>
+                       
+
+
+                        <button type="button" onclick="pauseVideo()" class="close" data-dismiss="modal"
+                              aria-label="Close">
+
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32">
+                                    <defs>
+                                          <style>
+                                                .a {
+                                                      fill: #fff;
+                                                }
+
+                                                .b {
+                                                      fill: none;
+                                                }
+                                          </style>
+                                    </defs>
+                                    <path class="a"
+                                          d="M27,7.216,24.784,5,16,13.784,7.216,5,5,7.216,13.784,16,5,24.784,7.216,27,16,18.216,24.784,27,27,24.784,18.216,16Z"
+                                          transform="translate(0 0)" />
+                                    <path class="b" d="M0,0H32V32H0Z" />
+                              </svg>
+                        </button>
+                  </div>
+            </div>
+      </div>
+</div>

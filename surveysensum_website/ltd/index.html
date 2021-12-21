@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+      <!-- Format Detection -->
+      <meta name="format-detection" content="telephone=no" />
+      <title>Lifetime Deal</title>
+
+
+      <meta name="description" content="Make feedback more actionable with this Lifetime Deal" />
+
+      <link rel="canonical" href="https://www.surveysensum.com/ltd/" />
+
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:type" content="website" />
+
+      <!-- <meta property="og:title" content="Make feedback more actionable with this Lifetime Deal" />
+
+      <meta property="og:description" content="Make feedback more actionable with this Lifetime Deal" />
+
+      <meta property="og:url" content="https://www.surveysensum.com/ltd/" />
+
+      <meta property="og:site_name" content="Survey Sensum" />
+      <meta name="twitter:card" content="summary" />
+
+      <meta name="twitter:description" content="Make feedback more actionable with this Lifetime Deal" />
+
+      <meta name="twitter:title" content="Make feedback more actionable with this Lifetime Deal" />
+
+      <meta property="og:image"
+            content="https://www.surveysensum.com/wp-content/themes/survey/homepage_assets/img/svg/Surveysensum-logo.svg" /> -->
+
+      <meta name="title" content="Make feedback more actionable with this Lifetime Deal">
+      <meta name="description" content="Make feedback more actionable with this Lifetime Deal">
+
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="/ltd/">
+      <meta property="og:title" content="Make feedback more actionable with this Lifetime Deal">
+      <meta property="og:description" content="Make feedback more actionable with this Lifetime Deal">
+      <meta property="og:image" content="assets/img/ltd-banner-social-sharing.jpg">
+
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image">
+      <meta property="twitter:url" content="/ltd/">
+      <meta property="twitter:title" content="Make feedback more actionable with this Lifetime Deal">
+      <meta property="twitter:description" content="Make feedback more actionable with this Lifetime Deal">
+
+      <!-- Favicon -->
+      <link rel="icon" href="assets/img/ss-favicon.png" type="image/png" sizes="32x32" />
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet" />
+
+      <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+      <script type="module" src="assets/js/user.service.js"></script>
+      <script type="module" src="assets/js/plans.service.js"></script>
+      <script type="module" src="assets/js/user-count.service.js"></script>
+
+      <script type="module">
+
+            window.plansService.GetLtdPlan().then(ltdPlan => {
+                  // window.userService.GetUsersCount(ltdPlan.ssPlanId).then(count => {
+                  //       document.querySelector('#toastData .count-peope').innerText = count + " people";
+                  // });
+                  window.usersCountService.GetUserCount().then((count) => {
+                        document.querySelector('#toastData .count-peope').innerText = count + " people";
+                  });
+            });
+            setTimeout(() => {
+                  document.getElementById('toastData').style.display = 'block';
+                  setTimeout(() => {
+                        document.getElementById('toastData').style.display = 'none';
+                  }, 10000);
+            }, 10000);
+      </script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <!-- <script src="assets/js/custom.js"></script> -->
+
+      <script>
+            function pauseVideo() {
+                  iframes = document.querySelectorAll('.embed-responsive-item');
+                  iframes.forEach(iframe => {
+                        const iframeSrc = iframe.src;
+                        iframe.src = iframeSrc;
+                  });
+            }
+            // $('.ltd-video svg').click(function(){
+            //       console.log($('.ltd-video video').attr(muted));
+            // });
+            function isInViewport(el, topOffset) {
+                  const rect = el.getBoundingClientRect();
+                  return (
+                        rect.top >= 0 - el.clientHeight + topOffset &&
+                        rect.left >= 0 &&
+                        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+
+                  );
+            }
+
+            $(document).ready(function () {
+                  $(".ltd-video").click(function () {
+                        const video = $(this).find('video');
+                        if (video.prop('muted')) {
+                              video.prop('muted', false);
+                              $(".ltd-video").addClass('video_play');
+                        }
+                        else {
+                              video.prop('muted', true);
+                              $(".ltd-video").removeClass('video_play');
+                        }
+                  });
+
+
+                  $(".feature-breakdown .scrollThirdQuestion").click(function () {
+
+                        $(".asked-question .question-collapse .card .collapse").removeClass("show");
+                        $(".asked-question .question-collapse .card #question3.collapse").addClass("show");
+
+                        document.querySelector('.asked-question').scrollIntoView({
+                              behavior: "smooth"
+                        });
+
+                        // $("main").animate( { scrollTop: scrollPosition }, 500 );
+
+                  });
+
+                  $('main').scroll(function (e) {
+                        const val = isInViewport(document.querySelector('.ltd-video video'), 120);
+                        if (!val) {
+                              document.querySelector('.ltd-video video').muted = true;
+                              $(".ltd-video").removeClass('video_play');
+                        }
+                  });
+
+            });
+      </script>
+
+      <!-- Google Tag Manager -->
+      <script>(function (w, d, s, l, i) {
+                  w[l] = w[l] || []; w[l].push({
+                        'gtm.start':
+                              new Date().getTime(), event: 'gtm.js'
+                  }); var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                              'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-NH6929D');</script>
+      <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+
+
+      <!-- Google Tag Manager (noscript) -->
+      <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH6929D" height="0" width="0"
+                  style="display:none;visibility:hidden"></iframe>
+      </noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+
+      <div class="request-demo-header">
+            <div class="container">
+                  <div class="row">
+                        <div class="col-12">
+                              <nav class="navbar navbar-expand-lg navbar-light">
+
+                                    <a class="navbar-brand" href="https://www.surveysensum.com">
+                                          <img src="https://www.surveysensum.com/wp-content/themes/survey/homepage_assets/img/svg/Surveysensum-logo.svg"
+                                                class="img-fluid" alt="SurveySensum" />
+                                    </a>
+
+                                    <div class="contacts-number">
+                                          <a href="https://pitchground.com/products/surveysensum"
+                                                class="ltd-green-btn">
+                                                <span>Get SurveySensum for lifetime</span>
+                                          </a>
+                                    </div>
+
+                              </nav>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <main>
+
+            <section class="book-a-demo">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-md-5">
+                                    <div class="heading">
+                                          <h1>Make feedback more actionable with this Lifetime Deal</h1>
+                                          <p>A customer feedback solution for growing startups that allows you to
+                                                measure and improve your CX metrics with NPS, CES, and CSAT surveys.
+                                                <strong>Starting at $97 only!</strong></p>
+                                    </div>
+
+                                    <div class="refunde-book-btn">
+                                          <div class="contacts-number">
+                                                <a href="https://pitchground.com/products/surveysensum"
+                                                      class="ltd-green-btn">
+                                                      <span>Get SurveySensum for lifetime</span>
+                                                      <img src="assets/img/white-arrow-right-dark.svg" alt="">
+                                                </a>
+                                                <div class="refund-guarantee">30-day refund guarantee. No questions
+                                                      asked.</div>
+
+                                          </div>
+
+                                    </div>
+
+                              </div>
+                              <div class="col-md-7">
+                                    <div class="ltd-video">
+
+                                          <video autoplay loop muted style="width: 100%;height: 100%;">
+                                                <source
+                                                      src="https://www.surveysensum.com/wp-content/uploads/2020/11/LTD_Video.mp4"
+                                                      type="video/mp4" size="576">
+                                          </video>
+
+                                          <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg" width="64"
+                                                height="64" viewBox="0 0 120 120">
+                                                <path style="opacity:0.5;"
+                                                      d="M62,2a60,60,0,1,0,60,60A60.022,60.022,0,0,0,62,2ZM50,83V41a3,3,0,0,1,4.8-2.4l28.02,21a2.978,2.978,0,0,1,0,4.8L54.8,85.4A3,3,0,0,1,50,83Z"
+                                                      transform="translate(-2 -2)" />
+                                          </svg>
+
+                                    </div>
+
+                                    <div class="mob-refund-btn">
+                                          <div class="contacts-number">
+                                                <a href="https://pitchground.com/products/surveysensum"
+                                                      class="ltd-green-btn">
+                                                      <span>Get SurveySensum for lifetime</span>
+                                                      <img src="assets/img/white-arrow-right-dark.svg" alt="">
+                                                </a>
+                                          </div>
+
+                                          <div class="refund-guarantee">30-day refund guarantee. No questions asked.
+                                          </div>
+                                    </div>
+
+                              </div>
+
+
+                        </div>
+
+                        <div class="row">
+                              <div class="col-md-12">
+                                    <div class="ltd-clients">
+                                          <div class="brand-logo">
+                                                <img class="desktop-clints-img img-fluid"
+                                                      src="assets/img/client-logos-grp.png" alt="SurveySensum">
+                                                <img class="mob-clints-img img-fluid"
+                                                      src="assets/img/client-logos-grp-mob.svg" alt="SurveySensum">
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+
+            <section class="deal-work">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-md-12">
+                                    <div class="heading text-center">
+                                          <h2>How does the deal work?</h2>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="deal-work-inner">
+                              <div class="boxes-common-main">
+                                    <div class="img-box">
+                                          <img src="./assets/img/one-time-pay.svg" alt="">
+                                    </div>
+                                    <div class="heading">
+                                          <h3>One-time pay</h3>
+                                          <p>Pay once and retain your customers for life</p>
+                                    </div>
+                              </div>
+
+                              <div class="boxes-common-main">
+                                    <div class="img-box">
+                                          <img src="./assets/img/lifetime-benifits.svg" alt="">
+                                    </div>
+                                    <div class="heading">
+                                          <h3>Lifetime benefits</h3>
+                                          <p>Enjoy lifetime access to the SurveySensum platform</p>
+                                    </div>
+                              </div>
+
+                              <div class="boxes-common-main">
+                                    <div class="img-box">
+                                          <img src="./assets/img/exclusive-offer.svg" alt="">
+                                    </div>
+                                    <div class="heading">
+                                          <h3>Exclusive offer</h3>
+                                          <p>Available for a limited-time! Grab this deal before it goes away</p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+
+            <section class="getting-deal">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-md-12">
+                                    <div class="heading text-center">
+                                          <h2>What’s in it for you?</h2>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                              <div class="col-md-6 col-12">
+                                    <div class="starter-cards starter-professional">
+                                          <div class="start-profession-heading">
+                                                <p>Lifetime Starter</p>
+                                                <h3>$ 97</h3>
+                                          </div>
+                                          <div class="new-cards-feature">
+                                                <div class="includes-heading">Includes:</div>
+                                                <div class="start-profession-features">
+                                                      <ul>
+                                                            <li>2 NPS/CES/CSAT projects</li>
+                                                            <li>5 custom surveys</li>
+                                                            <li>2k responses/month</li>
+                                                            <li>3 team members</li>
+                                                            <li>Advanced workflow</li>
+                                                            <li>Filters</li>
+                                                            <li>Custom questions</li>
+                                                      </ul>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-md-6 col-12">
+                                    <div class="professional-cards starter-professional">
+                                          <div class="start-profession-heading">
+                                                <p>Lifetime Professional</p>
+                                                <h3>$ 197</h3>
+                                          </div>
+                                          <div class="new-cards-feature">
+                                                <div class="includes-heading">Includes:</div>
+                                                <div class="start-profession-features">
+                                                      <ul>
+                                                            <li>10 NPS/CES/CSAT projects</li>
+                                                            <li>Unlimited custom surveys</li>
+                                                            <li>10k responses/month</li>
+                                                            <li>10 team members</li>
+                                                            <li>Open API</li>
+                                                            <li>Integrations (Slack/Intercom/Hubspot)</li>
+                                                      </ul>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                              <div class="col-12 col-md-7">
+                                    <div class="checked-tick-main">
+                                          <!-- <div class="collect-social-tick">
+                                                <div class="social-check d-flex align-items-center">
+                                                      <img src="assets/img/collect-tick.svg" alt="">
+                                                      <span>Gather valuable feedback from 2000 customers every
+                                                            month</span>
+                                                </div>
+                                                <div class="social-check d-flex align-items-center">
+                                                      <img src="assets/img/collect-tick.svg" alt="">
+                                                      <span>Ready to use customizable NPS, CES, and CSAT survey
+                                                            templates</span>
+                                                </div>
+                                                <div class="social-check d-flex align-items-center">
+                                                      <img src="assets/img/collect-tick.svg" alt="">
+                                                      <span>Automated dashboards for response analysis</span>
+                                                </div>
+                                                <div class="social-check d-flex align-items-center">
+                                                      <img src="assets/img/collect-tick.svg" alt="">
+                                                      <span>Segment your customers based on your business metrics</span>
+                                                </div>
+                                                <div class="social-check d-flex align-items-center">
+                                                      <img src="assets/img/collect-tick.svg" alt="">
+                                                      <span>Custom questions and theming in your brand colors</span>
+                                                </div>
+                                                <div class="social-check d-flex align-items-center">
+                                                      <img src="assets/img/collect-tick.svg" alt="">
+                                                      <span>Close the loop with automated workflows</span>
+                                                </div>
+                                          </div> -->
+                                          <div class="upcoming-feature-more">
+                                                <div class="upcoming-text">And more upcoming features like</div>
+                                                <div class="collect-social-tick">
+                                                      <div class="social-check d-flex align-items-center">
+                                                            <img src="assets/img/collect-tick.svg" alt="">
+                                                            <span>Recurring surveys to get consistent feedback</span>
+                                                      </div>
+                                                      <div class="social-check d-flex align-items-center">
+                                                            <img src="assets/img/collect-tick.svg" alt="">
+                                                            <span>In-App surveys for website and mobile apps</span>
+                                                      </div>
+                                                      <div class="social-check d-flex align-items-center">
+                                                            <img src="assets/img/collect-tick.svg" alt="">
+                                                            <span>Seamless integration with Slack, Zapier, and
+                                                                  Intercom</span>
+                                                      </div>
+                                                      <div class="social-check d-flex align-items-center">
+                                                            <img src="assets/img/collect-tick.svg" alt="">
+                                                            <span>Text and Sentiment Analysis</span>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-12 col-md-5">
+                                    <!-- <div class="getting-deal-main-right">
+                                          <div class="img-box-large common-in-box">
+
+                                                <div class="top-small-card common-in-box"></div>
+                                                <div class="bottom-small-card common-in-box"></div>
+                                          </div>
+
+                                    </div> -->
+                                    <div class="join-business right-more-upcomingfeature">
+                                          <div class="join-business-inner">
+
+                                                <div class="start-benifit-btn">
+                                                      <div class="start-benifit-text">One time payment. Lifetime
+                                                            benefits.
+                                                      </div>
+                                                </div>
+
+                                                <div class="contacts-number">
+                                                      <a href="https://pitchground.com/products/surveysensum"
+                                                            class="ltd-green-btn">
+                                                            <span>Get SurveySensum for lifetime</span>
+                                                            <img src="assets/img/white-arrow-right-dark.svg" alt="">
+                                                      </a>
+                                                </div>
+                                                <div class="refund-guarantee">30-day refund guarantee. No questions
+                                                      asked.
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                              <div class="col-md-12">
+                                    <div class="feature-breakdown">Want to have a detailed look at everything you’ll be
+                                          getting? <span>See this <a href="javascript:void(0)"
+                                                      class="scrollThirdQuestion">detailed feature
+                                                      break-down</a>.</span>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+
+            <section class="business-choose">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-md-12">
+                                    <div class="heading text-center">
+                                          <h2>Why businesses choose SurveySensum?</h2>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                              <div class="col-md-6">
+                                    <div class="business-large-modal">
+
+                                          <a data-toggle="modal" data-target="#business-choose">
+                                                <div class="video-large">
+                                                      <img src="./assets/img/united-tractors-clints.png" alt=""
+                                                            class="img-fluid">
+                                                      <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg"
+                                                            width="64" height="64" viewBox="0 0 120 120">
+                                                            <path style="opacity:0.5;"
+                                                                  d="M62,2a60,60,0,1,0,60,60A60.022,60.022,0,0,0,62,2ZM50,83V41a3,3,0,0,1,4.8-2.4l28.02,21a2.978,2.978,0,0,1,0,4.8L54.8,85.4A3,3,0,0,1,50,83Z"
+                                                                  transform="translate(-2 -2)" />
+                                                      </svg>
+                                                </div>
+                                          </a>
+
+
+                                          <div class="video-large-inner">
+                                                <div class="logo-description">With SurveySensum, all the processes we
+                                                      have been doing have changed completely. It is an excellent
+                                                      platform, easy and efficient.</div>
+                                                <div class="employee-name">Andrie P</div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-md-6">
+
+                                    <div class="repeat-items">
+
+                                          <div class="business-large-modal small-modal">
+                                                <a data-toggle="modal" data-target="#business-choose-right-top">
+                                                      <div class="video-large">
+                                                            <img src="./assets/img/at-drive-client.png" alt=""
+                                                                  class="img-fluid">
+                                                            <svg class="pause-icon" xmlns="http://www.w3.org/2000/svg"
+                                                                  width="48" height="48" viewBox="0 0 120 120">
+                                                                  <path style="opacity:0.5;"
+                                                                        d="M62,2a60,60,0,1,0,60,60A60.022,60.022,0,0,0,62,2ZM50,83V41a3,3,0,0,1,4.8-2.4l28.02,21a2.978,2.978,0,0,1,0,4.8L54.8,85.4A3,3,0,0,1,50,83Z"
+                                                                        transform="translate(-2 -2)" />
+                                                            </svg>
+                                                      </div>
+                                                </a>
+
+                                                <div class="video-large-inner">
+                                                      <div class="logo-description">After using SurveySensum, the
+                                                            biggest impact we’ve seen is in terms of number. We got a
+                                                            reduction in our overall user complaints.</div>
+                                                      <div class="employee-name">Rahul Sharma</div>
+                                                </div>
+                                          </div>
+
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+
+            <section class="join-business">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-md-12">
+                                    <div class="join-business-inner">
+
+                                          <div class="start-benifit-btn">
+                                                <div class="start-benifit-text">One time payment. Lifetime benefits.
+                                                </div>
+                                          </div>
+
+                                          <div class="contacts-number">
+                                                <a href="https://pitchground.com/products/surveysensum"
+                                                      class="ltd-green-btn">
+                                                      <span>Get SurveySensum for lifetime</span>
+                                                      <img src="assets/img/white-arrow-right-dark.svg" alt="">
+                                                </a>
+                                          </div>
+                                          <div class="refund-guarantee">30-day refund guarantee. No questions asked.
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+
+
+            <!-- Frequently asked question pricing page section -->
+            <section class="asked-question">
+                  <div class="container">
+
+                        <div class="row">
+                              <div class="col-12 customer-inner">
+                                    <div class="heading text-center">
+                                          <h2>FAQs</h2>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                              <div class="col-12">
+                                    <div class="question-collapse">
+
+                                          <div id="accordion">
+
+                                                <div class="card">
+                                                      <div id="question2" class="collapse" aria-labelledby="headingTwo"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body">
+                                                                  It is an enterprise feedback platform that provides
+                                                                  support, success & product teams with AI-powered tools
+                                                                  to monitor and improve their customer experience.
+                                                            </div>
+                                                      </div>
+                                                      <div class="card-header" id="headingTwo">
+                                                            <button class="btn btn-link collapsed position-relative">
+                                                                  <span>What is SurveySensum?</span>
+                                                                  <div class="common-plus-minus" data-toggle="collapse"
+                                                                        data-target="#question2" aria-expanded="false"
+                                                                        aria-controls="question2">
+                                                                        <div class="collapse-minus-plus">
+                                                                              <span class="plus">+</span>
+                                                                              <span class="minus">-</span>
+                                                                        </div>
+                                                                  </div>
+                                                            </button>
+                                                      </div>
+                                                </div>
+
+                                                <div class="card">
+                                                      <div id="question3" class="collapse"
+                                                            aria-labelledby="headingThree" data-parent="#accordion">
+                                                            <div class="card-body">
+
+                                                                  <table class="table table-bordered">
+                                                                        <thead>
+                                                                              <tr>
+                                                                                    <!-- <th scope="col">SURVEY CREATION</th> -->
+                                                                                    <th scope="col">Survey Creation</th>
+                                                                                    <th>Lifetime Starter</th>
+                                                                                    <th>Lifetime Professional</th>
+                                                                              </tr>
+                                                                        </thead>
+                                                                        <tbody>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Out of the box
+                                                                                                      solutions
+                                                                                                      (NPS/CES/CSAT)
+                                                                                                </div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      Ready to use,
+                                                                                                      customisable
+                                                                                                      templates with
+                                                                                                      automatic
+                                                                                                      dashboards for
+                                                                                                      response analysis
+                                                                                                </div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>2 Projects</td>
+                                                                                    <td>10 Projects</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Custom surveys
+                                                                                                </div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      Build surveys from
+                                                                                                      scratch to serve
+                                                                                                      unique campaigns
+                                                                                                </div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>5 Projects</td>
+                                                                                    <td>Unlimited</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Survey length
+                                                                                                </div>
+                                                                                                <!-- <div class="heading-description">Build surveys from scratch to serve unique campaigns</div> -->
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>Unlimited</td>
+                                                                                    <td>Unlimited</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Additional
+                                                                                                      question types
+                                                                                                </div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      Choose from useful
+                                                                                                      formats like
+                                                                                                      Multiple Choice,
+                                                                                                      Long Text, Short
+                                                                                                      Text, Opinion
+                                                                                                      Scale, Rating,
+                                                                                                      Email,
+                                                                                                      Information, Grid
+                                                                                                      Question, Phone
+                                                                                                      number and more
+                                                                                                </div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>Yes</td>
+                                                                                    <td>Yes</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Survey logic
+                                                                                                      (Display/Jump)
+                                                                                                </div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      Make your surveys
+                                                                                                      intuitive by
+                                                                                                      adding logic to
+                                                                                                      the survey
+                                                                                                      structure</div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>Yes</td>
+                                                                                    <td>Yes</td>
+                                                                              </tr>
+
+                                                                        </tbody>
+                                                                  </table>
+
+                                                                  <table class="table table-bordered">
+
+                                                                        <thead>
+                                                                              <tr>
+                                                                                    <th scope="col">Feedback
+                                                                                          Collection</th>
+                                                                                    <th>Lifetime Starter</th>
+                                                                                    <th>Lifetime Professional</th>
+                                                                              </tr>
+                                                                        </thead>
+
+                                                                        <tbody>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Survey responses
+                                                                                                </div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      Number of
+                                                                                                      responses that are
+                                                                                                      accessible to the
+                                                                                                      user. The limit is
+                                                                                                      inclusive of
+                                                                                                      responses from all
+                                                                                                      surveys across all
+                                                                                                      distribution
+                                                                                                      channels.</div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>2k/month</td>
+                                                                                    <td>10k/month</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      No. of Emails
+                                                                                                </div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      Number of total
+                                                                                                      emails that can be
+                                                                                                      sent from the CX
+                                                                                                      Platform</div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>10k/month</td>
+                                                                                    <td>100k/month</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Send reminders
+                                                                                                </div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      Schedule reminders
+                                                                                                      to follow-up on
+                                                                                                      shared surveys
+                                                                                                </div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>Yes</td>
+                                                                                    <td>Yes</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Collect data via
+                                                                                                      Email, QR code,
+                                                                                                      social media &
+                                                                                                      link</div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>Yes</td>
+                                                                                    <td>Yes</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Collect via in-app
+                                                                                                      & website
+                                                                                                      integrations</div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>soon</td>
+                                                                                    <td>soon</td>
+                                                                              </tr>
+
+                                                                        </tbody>
+                                                                  </table>
+
+                                                                  <table class="table table-bordered">
+                                                                        <thead>
+                                                                              <tr>
+                                                                                    <th scope="col">Analysis
+                                                                                          & Reporting</th>
+                                                                                    <th>Lifetime Starter</th>
+                                                                                    <th>Lifetime Professional</th>
+                                                                              </tr>
+                                                                        </thead>
+                                                                        <tbody>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Export data</div>
+                                                                                                <!-- <div class="heading-description">Ready to use, customisable templates with automatic dashboards for response analysis</div> -->
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>Yes</td>
+                                                                                    <td>Yes</td>
+                                                                              </tr>
+
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Wordcloud</div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>Yes</td>
+                                                                                    <td>Yes</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Filters</div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>Yes</td>
+                                                                                    <td>Yes</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Survey Metrics
+                                                                                                </div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>Yes</td>
+                                                                                    <td>Yes</td>
+                                                                              </tr>
+
+                                                                        </tbody>
+                                                                  </table>
+
+
+                                                                  <table class="table table-bordered">
+                                                                        <thead>
+                                                                              <tr>
+                                                                                    <th scope="col">
+                                                                                          Email Notifications</th>
+                                                                                    <th>Lifetime Starter</th>
+                                                                                    <th>Lifetime Professional</th>
+                                                                              </tr>
+                                                                        </thead>
+                                                                        <tbody>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Standard templates
+                                                                                                </div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      A set of pre-designed workflows for internal and external email notifications
+                                                                                                </div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>Yes</td>
+                                                                                    <td>Yes</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Custom emails
+                                                                                                </div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      Create your own workflow for emails and automate important communications
+                                                                                                </div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>Yes</td>
+                                                                                    <td>Yes</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      No. of email workflows
+                                                                                                </div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      Active email workflows for your account
+                                                                                                </div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>5</td>
+                                                                                    <td>20</td>
+                                                                              </tr>
+
+
+                                                                        </tbody>
+                                                                  </table>
+
+                                                                  <table class="table table-bordered">
+                                                                        <thead>
+                                                                              <tr>
+                                                                                    <th scope="col">
+                                                                                          Integrations & Sharing</th>
+                                                                                    <th>Lifetime Starter</th>
+                                                                                    <th>Lifetime Professional</th>
+                                                                              </tr>
+                                                                        </thead>
+                                                                        <tbody>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      No. of users</div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      Users per account
+                                                                                                </div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>3</td>
+                                                                                    <td>10</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Slack integration</div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      Get notified of new survey responses directly in your Slack workspace
+                                                                                                </div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>Yes</td>
+                                                                                    <td>Yes</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      CRM integration
+                                                                                                </div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      Integrate with CRM
+                                                                                                      systems like
+                                                                                                      Hubspot,
+                                                                                                      Salesforce,
+                                                                                                      Freshdesk, Zendesk
+                                                                                                      for uploading
+                                                                                                      contacts and
+                                                                                                      syncing feedback
+                                                                                                      responses</div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>coming soon</td>
+                                                                                    <td>On-demand</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Open API</div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      Connect with the
+                                                                                                      CRM of your choice
+                                                                                                      using open API
+                                                                                                </div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>Yes</td>
+                                                                                    <td>Yes</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Contact management
+                                                                                                </div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      Add and manage
+                                                                                                      contacts through
+                                                                                                      CSV files</div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>Yes</td>
+                                                                                    <td>Yes</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Historical data
+                                                                                                      migrations</div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      Import data from
+                                                                                                      previous surveys
+                                                                                                      built on other
+                                                                                                      platforms</div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>yes, contact suppport</td>
+                                                                                    <td>yes, contact suppport</td>
+                                                                              </tr>
+
+
+                                                                        </tbody>
+                                                                  </table>
+
+                                                                  <table class="table table-bordered">
+                                                                        <thead>
+                                                                              <tr>
+                                                                                    <th scope="col">
+                                                                                          Personalisation</th>
+                                                                                    <th>Lifetime Starter</th>
+                                                                                    <th>Lifetime Professional</th>
+                                                                              </tr>
+                                                                        </thead>
+                                                                        <tbody>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Multilingual
+                                                                                                      surveys</div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      Choose the default
+                                                                                                      survey language to
+                                                                                                      suit your
+                                                                                                      customers' needs
+                                                                                                </div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>Yes</td>
+                                                                                    <td>Yes</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Survey theme</div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      Cutomise the look
+                                                                                                      and feel of your
+                                                                                                      surveys</div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>Yes</td>
+                                                                                    <td>Yes</td>
+                                                                              </tr>
+
+                                                                        </tbody>
+                                                                  </table>
+
+
+                                                                  <table class="table table-bordered">
+                                                                        <thead>
+                                                                              <tr>
+                                                                                    <th scope="col">Support
+                                                                                          and Training</th>
+                                                                                    <th>Lifetime Starter</th>
+                                                                                    <th>Lifetime Professional</th>
+                                                                              </tr>
+                                                                        </thead>
+                                                                        <tbody>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Email support
+                                                                                                </div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>Business hours</td>
+                                                                                    <td>Business hours</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">
+                                                                                          <div class="faq-heading-main">
+                                                                                                <div
+                                                                                                      class="heading-text">
+                                                                                                      Chat support</div>
+                                                                                                <div
+                                                                                                      class="heading-description">
+                                                                                                      Stay connected
+                                                                                                      with our support
+                                                                                                      team via Whatsapp
+                                                                                                      and Chat</div>
+                                                                                          </div>
+                                                                                    </td>
+                                                                                    <td>Business hours</td>
+                                                                                    <td>Business hours</td>
+                                                                              </tr>
+
+                                                                        </tbody>
+                                                                  </table>
+
+                                                            </div>
+                                                      </div>
+                                                      <div class="card-header" id="headingThree">
+                                                            <button class="btn btn-link collapsed position-relative">
+                                                                  <span>What are the features of the lifetime
+                                                                        deal?</span>
+                                                                  <div class="common-plus-minus" data-toggle="collapse"
+                                                                        data-target="#question3" aria-expanded="false"
+                                                                        aria-controls="question3">
+                                                                        <div class="collapse-minus-plus">
+                                                                              <span class="plus">+</span>
+                                                                              <span class="minus">-</span>
+                                                                        </div>
+                                                                  </div>
+                                                            </button>
+                                                      </div>
+                                                </div>
+
+                                                <div class="card">
+                                                      <div id="question4" class="collapse" aria-labelledby="headingfour"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body">
+
+                                                                  <div class="answer-test-top">Lifetime deal users get
+                                                                        many add-on features that the free version
+                                                                        doesn’t offer.</div>
+
+                                                                  <table
+                                                                        class="table table-bordered third-question-table-inner">
+                                                                        <thead>
+                                                                              <tr>
+                                                                                    <th scope="col">Features</th>
+                                                                                    <th>Lifetime Starter</th>
+                                                                                    <th>Free version</th>
+                                                                              </tr>
+                                                                        </thead>
+                                                                        <tbody>
+
+                                                                              <tr>
+                                                                                    <td scope="row">Out of the box
+                                                                                          solutions (NPS/CES/CSAT)</td>
+                                                                                    <td>2 Projects</td>
+                                                                                    <td>1 Projects</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">Custom surveys</td>
+                                                                                    <td>5 Projects</td>
+                                                                                    <td>1 Projects</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">Survey length</td>
+                                                                                    <td>Unlimited</td>
+                                                                                    <td>Upto 10 questions</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">Survey logic
+                                                                                          (Display/Jump)</td>
+                                                                                    <td>Yes</td>
+                                                                                    <td>Not available</td>
+                                                                              </tr>
+
+
+                                                                              <tr>
+                                                                                    <td scope="row">No. of survey
+                                                                                          responses accessible to the
+                                                                                          user</td>
+                                                                                    <td>2k/month</td>
+                                                                                    <td>250/month</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">No. of emails that
+                                                                                          can be sent from the CX
+                                                                                          Platform</td>
+                                                                                    <td>10k/month</td>
+                                                                                    <td>1k/month</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">Schedule and send
+                                                                                          reminders to follow-up on the
+                                                                                          surveys</td>
+                                                                                    <td>Yes</td>
+                                                                                    <td>Not available</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">No. of active
+                                                                                          workflows for your account
+                                                                                    </td>
+                                                                                    <td>5</td>
+                                                                                    <td>1</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">No. of users per
+                                                                                          account</td>
+                                                                                    <td>3</td>
+                                                                                    <td>1</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">CRM integration</td>
+                                                                                    <td>coming soon</td>
+                                                                                    <td>Not available</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">Historical data
+                                                                                          migrations</td>
+                                                                                    <td>On-demand</td>
+                                                                                    <td>Not available</td>
+                                                                              </tr>
+
+                                                                              <tr>
+                                                                                    <td scope="row">Survey theming</td>
+                                                                                    <td>Yes</td>
+                                                                                    <td>Not available</td>
+                                                                              </tr>
+
+
+                                                                        </tbody>
+                                                                  </table>
+                                                            </div>
+                                                      </div>
+                                                      <div class="card-header" id="headingfour">
+                                                            <button class="btn btn-link collapsed position-relative">
+                                                                  <span>How is your lifetime deal better than the free
+                                                                        version you provide?</span>
+                                                                  <div class="common-plus-minus" data-toggle="collapse"
+                                                                        data-target="#question4" aria-expanded="false"
+                                                                        aria-controls="question3">
+                                                                        <div class="collapse-minus-plus">
+                                                                              <span class="plus">+</span>
+                                                                              <span class="minus">-</span>
+                                                                        </div>
+                                                                  </div>
+                                                            </button>
+                                                      </div>
+                                                </div>
+
+                                                <div class="card">
+                                                      <div id="question5" class="collapse" aria-labelledby="headingfive"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body">
+                                                                  The lifetime deal doesn’t offer any demo, however if
+                                                                  you don’t like it, you can get a 100% refund for the
+                                                                  product within 30 days of the date of purchase only.
+                                                            </div>
+                                                      </div>
+                                                      <div class="card-header" id="headingfive">
+                                                            <button class="btn btn-link collapsed position-relative">
+                                                                  <span>I need a demo before I purchase this deal, can
+                                                                        you arrange it?</span>
+                                                                  <div class="common-plus-minus" data-toggle="collapse"
+                                                                        data-target="#question5" aria-expanded="false"
+                                                                        aria-controls="question3">
+                                                                        <div class="collapse-minus-plus">
+                                                                              <span class="plus">+</span>
+                                                                              <span class="minus">-</span>
+                                                                        </div>
+                                                                  </div>
+                                                            </button>
+                                                      </div>
+                                                </div>
+
+                                                <div class="card">
+                                                      <div id="question6" class="collapse" aria-labelledby="headingsix"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body">
+                                                                  Yes, you will get chat and email support during
+                                                                  business hours.
+                                                            </div>
+                                                      </div>
+                                                      <div class="card-header" id="headingsix">
+                                                            <button class="btn btn-link collapsed position-relative">
+                                                                  <span>Does this lifetime deal include customer support
+                                                                        as well? What kind <div class="include-customer-support">of support I can
+                                                                        expect?</div></span>
+                                                                  <div class="common-plus-minus" data-toggle="collapse"
+                                                                        data-target="#question6" aria-expanded="false"
+                                                                        aria-controls="question3">
+                                                                        <div class="collapse-minus-plus">
+                                                                              <span class="plus">+</span>
+                                                                              <span class="minus">-</span>
+                                                                        </div>
+                                                                  </div>
+                                                            </button>
+                                                      </div>
+                                                </div>
+
+                                                <div class="card">
+                                                      <div id="question7" class="collapse"
+                                                            aria-labelledby="headingseven" data-parent="#accordion">
+                                                            <div class="card-body">
+                                                                  Yes, you can integrate it using the open APIs.
+                                                                  However, this is a part of a product roadmap and will
+                                                                  be launched soon.
+                                                            </div>
+                                                      </div>
+                                                      <div class="card-header" id="headingseven">
+                                                            <button class="btn btn-link collapsed position-relative">
+                                                                  <span>Can I integrate your product with my mobile
+                                                                        app?</span>
+                                                                  <div class="common-plus-minus" data-toggle="collapse"
+                                                                        data-target="#question7" aria-expanded="false"
+                                                                        aria-controls="question3">
+                                                                        <div class="collapse-minus-plus">
+                                                                              <span class="plus">+</span>
+                                                                              <span class="minus">-</span>
+                                                                        </div>
+                                                                  </div>
+                                                            </button>
+                                                      </div>
+                                                </div>
+
+                                                <div class="card">
+                                                      <div id="question8" class="collapse"
+                                                            aria-labelledby="headingEight" data-parent="#accordion">
+                                                            <div class="card-body">
+                                                                  Yes, SurveySensum can be integrated with the
+                                                                  application of your choice. All you need to do is
+                                                                  reach out to us!
+                                                            </div>
+                                                      </div>
+                                                      <div class="card-header" id="headingEight">
+                                                            <button class="btn btn-link collapsed position-relative">
+                                                                  <span>Does your software integrate with CRM or any
+                                                                        other system?</span>
+                                                                  <div class="common-plus-minus" data-toggle="collapse"
+                                                                        data-target="#question8" aria-expanded="false"
+                                                                        aria-controls="question3">
+                                                                        <div class="collapse-minus-plus">
+                                                                              <span class="plus">+</span>
+                                                                              <span class="minus">-</span>
+                                                                        </div>
+                                                                  </div>
+                                                            </button>
+                                                      </div>
+                                                </div>
+
+                                                <div class="card">
+                                                      <div id="question9" class="collapse" aria-labelledby="headinNine"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body">
+                                                                  Your data is safe with us and will not be shared with
+                                                                  any third party.
+                                                            </div>
+                                                      </div>
+                                                      <div class="card-header" id="headinNine">
+                                                            <button class="btn btn-link collapsed position-relative">
+                                                                  <span>How about privacy? Is my data safe?</span>
+                                                                  <div class="common-plus-minus" data-toggle="collapse"
+                                                                        data-target="#question9" aria-expanded="false"
+                                                                        aria-controls="question3">
+                                                                        <div class="collapse-minus-plus">
+                                                                              <span class="plus">+</span>
+                                                                              <span class="minus">-</span>
+                                                                        </div>
+                                                                  </div>
+                                                            </button>
+                                                      </div>
+                                                </div>
+
+                                                <div class="card">
+                                                      <div id="question10" class="collapse" aria-labelledby="headinTen"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body">
+                                                                  Yes, you can also request the refund for the product
+                                                                  within 30 days of the date of purchase.
+                                                            </div>
+                                                      </div>
+                                                      <div class="card-header" id="headinTen">
+                                                            <button class="btn btn-link collapsed position-relative">
+                                                                  <span>Can I get a refund if I do not like your
+                                                                        product?</span>
+                                                                  <div class="common-plus-minus" data-toggle="collapse"
+                                                                        data-target="#question10" aria-expanded="false"
+                                                                        aria-controls="question3">
+                                                                        <div class="collapse-minus-plus">
+                                                                              <span class="plus">+</span>
+                                                                              <span class="minus">-</span>
+                                                                        </div>
+                                                                  </div>
+                                                            </button>
+                                                      </div>
+                                                </div>
+
+                                                <div class="card">
+                                                      <div id="question11" class="collapse" aria-labelledby="headinEleven"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body">
+                                                                  Yes. There are a couple of exciting features coming up in upcoming versions of our platform. As an LTD customer, you will be given FIRST access to all the new features like- Text & Sentiment Analysis, In-App surveys and newer integrations with tools like  Zapier, Slack and Intercom.
+                                                                  <div>For detailed roadmap, <a href="https://docs.google.com/spreadsheets/d/1t44iS_-jPBqx_42tABxaFpvyl88YggJkiscYuNBAB1E/edit?usp=sharing" target="_blank">click here </a></div>
+                                                            </div>
+                                                      </div>
+                                                      <div class="card-header" id="headinEleven">
+                                                            <button class="btn btn-link collapsed position-relative">
+                                                                  <span>What are the upcoming features? Can I see the roadmap?</span>
+                                                                  <div class="common-plus-minus" data-toggle="collapse"
+                                                                        data-target="#question11" aria-expanded="false"
+                                                                        aria-controls="question3">
+                                                                        <div class="collapse-minus-plus">
+                                                                              <span class="plus">+</span>
+                                                                              <span class="minus">-</span>
+                                                                        </div>
+                                                                  </div>
+                                                            </button>
+                                                      </div>
+                                                </div>
+
+                                          </div>
+
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                              <div class="col-12">
+                                    <div class="d-flex pricing-question-answer">
+
+                                          <div class="question-mark-img">
+                                                <h6 class="question-query">Didn’t find the answer you were looking for?
+                                                </h6>
+                                                <p><a id="pricing-query">Tell us your query</a> and we’ll get back to
+                                                      you!</p>
+
+                                          </div>
+
+                                          <div class="question-form">
+                                                <img src="assets/img/pricing-query.svg" alt=""
+                                                      class="img-fluid pricing-query-img" />
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+            </section>
+            <!-- End Frequently asked question pricing page section -->
+
+            <footer class="request-demo-footer">
+                  <div class="top-footer">
+                        <div class="container">
+                              <div class="row">
+                                    <div class="col-md-12">
+
+                                          <div class="top-footer-in">
+                                                <div class="footer-top-text">
+                                                      <span>Want to understand more about our Customer Experience Solution?</span>
+                                                      <a href="https://www.surveysensum.com/cx-platform/nps-ces-csat-survey-software/"> Visit our product page.</a>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="bottom-footer">
+                        <div class="container">
+                              <div class="row">
+                                    <div class="col-md-12">
+                                          <div class="bottom-footer-in">
+                                                <ul class="cookie-privacy">
+                                                      <li><a href="https://www.surveysensum.com/cookie-policy/">Cookie
+                                                                  Policy</a></li>
+                                                      <li><a href="https://www.surveysensum.com/privacy-policy/">Privacy
+                                                                  Policy</a></li>
+                                                </ul>
+                                                <div class="social-icons d-flex">
+                                                      <a href="https://www.instagram.com/surveysensum" class="icon-img"
+                                                            target="_blank">
+                                                            <img src="assets/img/Instagram.svg" class="img-fluid"
+                                                                  alt="SurveySensum" />
+                                                      </a>
+                                                      <a href="https://www.youtube.com/c/surveysensum" class="icon-img"
+                                                            target="_blank">
+                                                            <img src="assets/img/youtube-symbol.svg" class="img-fluid"
+                                                                  alt="SurveySensum" />
+                                                      </a>
+                                                      <a href="https://www.facebook.com/SurveySensum" class="icon-img"
+                                                            target="_blank">
+                                                            <img src="assets/img/Facebook.svg" class="img-fluid"
+                                                                  alt="SurveySensum" />
+                                                      </a>
+                                                      <a href="https://twitter.com/surveysensum" target="_blank"
+                                                            class="icon-img">
+                                                            <img src="assets/img/Twitter.svg" class="img-fluid"
+                                                                  alt="SurveySensum" />
+                                                      </a>
+                                                      <a href="https://www.linkedin.com/company/SurveySensum"
+                                                            target="_blank" class="icon-img">
+                                                            <img src="assets/img/LinkedIN.svg" class="img-fluid"
+                                                                  alt="SurveySensum" />
+                                                      </a>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </footer>
+      </main>
+
+      <div id="toastData" class="toastData-register-count" style="display: none;">
+            <div class="toast-in">
+                  <div class="count-peope">
+                        <!-- people count -->
+                  </div>&nbsp;have already bought this deal!
+            </div>
+      </div>
+
+
+
+</body>
+
+</html>
+
+
+<!-- Start Banifits Banner modal -->
+<!-- <div class="modal fade upcoming-event-modal" id="start-benifits" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalLabelVideo" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                  <div class="modal-body embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" width="800" height="450"
+                              src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" frameborder="0"
+                              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                              allowfullscreen></iframe>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32">
+                                    <defs>
+                                          <style>
+                                                .a {
+                                                      fill: #fff;
+                                                }
+
+                                                .b {
+                                                      fill: none;
+                                                }
+                                          </style>
+                                    </defs>
+                                    <path class="a"
+                                          d="M27,7.216,24.784,5,16,13.784,7.216,5,5,7.216,13.784,16,5,24.784,7.216,27,16,18.216,24.784,27,27,24.784,18.216,16Z"
+                                          transform="translate(0 0)" />
+                                    <path class="b" d="M0,0H32V32H0Z" />
+                              </svg>
+                        </button>
+                  </div>
+            </div>
+      </div>
+</div> -->
+
+
+<!-- Main large modal left -->
+<div class="modal fade upcoming-event-modal" id="business-choose" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalLabelVideo" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                  <div class="modal-body embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" width="800" height="450"
+                              src="https://www.youtube.com/embed/NzHR_csXISM?rel=0" frameborder="0"
+                              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                              allowfullscreen></iframe>
+
+                        <!-- <video autoplay loop controls style="width: 100%;height: 100%;">
+                                    <source src="https://www.surveysensum.com/wp-content/uploads/2020/11/AT-Drive.mp4" type="video/mp4" size="576">
+                              </video> -->
+
+                        <button type="button" onclick="pauseVideo()" class="close" data-dismiss="modal"
+                              aria-label="Close">
+
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32">
+                                    <defs>
+                                          <style>
+                                                .a {
+                                                      fill: #fff;
+                                                }
+
+                                                .b {
+                                                      fill: none;
+                                                }
+                                          </style>
+                                    </defs>
+                                    <path class="a"
+                                          d="M27,7.216,24.784,5,16,13.784,7.216,5,5,7.216,13.784,16,5,24.784,7.216,27,16,18.216,24.784,27,27,24.784,18.216,16Z"
+                                          transform="translate(0 0)" />
+                                    <path class="b" d="M0,0H32V32H0Z" />
+                              </svg>
+                        </button>
+                  </div>
+            </div>
+      </div>
+</div>
+
+<!-- small modal right top -->
+<div class="modal fade upcoming-event-modal" id="business-choose-right-top" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalLabelVideo" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                  <div class="modal-body embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" width="800" height="450"
+                              src="https://www.youtube.com/embed/AwHjmQNvv8Y?rel=0" frameborder="0"
+                              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                              allowfullscreen></iframe>
+
+                        <!-- <video autoplay loop controls style="width: 100%;height: 100%;">
+                                    <source src="https://www.surveysensum.com/wp-content/uploads/2020/11/AT-Drive.mp4" type="video/mp4" size="576">
+                              </video> -->
+
+                        <button onclick="pauseVideo()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32">
+                                    <defs>
+                                          <style>
+                                                .a {
+                                                      fill: #fff;
+                                                }
+
+                                                .b {
+                                                      fill: none;
+                                                }
+                                          </style>
+                                    </defs>
+                                    <path class="a"
+                                          d="M27,7.216,24.784,5,16,13.784,7.216,5,5,7.216,13.784,16,5,24.784,7.216,27,16,18.216,24.784,27,27,24.784,18.216,16Z"
+                                          transform="translate(0 0)" />
+                                    <path class="b" d="M0,0H32V32H0Z" />
+                              </svg>
+                        </button>
+                  </div>
+            </div>
+      </div>
+</div>

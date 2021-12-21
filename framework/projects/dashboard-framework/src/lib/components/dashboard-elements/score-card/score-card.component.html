@@ -1,0 +1,12 @@
+<div *ngIf="!isLoading" class="customer-effort">
+  <div class="subHeading">
+    {{title}}
+  </div>
+  <div class="customer-score" *ngIf="score">
+    {{ score}}
+  </div>
+</div>
+<ng-container *ngIf="isLoading">
+  <div class="lds-dual-ring">
+  </div>
+</ng-container>

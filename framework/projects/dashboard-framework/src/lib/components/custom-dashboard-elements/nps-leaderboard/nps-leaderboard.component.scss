@@ -1,0 +1,134 @@
+.main-heading {
+    padding: 0.85rem 0.6rem;
+    color: #2E384D;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.table-heading {
+    display: flex;
+    align-items: flex-end;
+}
+
+// .table-wrap{
+// }
+.table {
+    thead {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+    tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+    td {
+        color: #505F79;
+        font-weight: 500;
+    }
+    th {
+        font-size: 1rem;
+        color: #8993A4;
+        border-bottom: none;
+        padding-bottom: 1.2rem;
+        .column-filter {
+            .up{
+                line-height: 0.2;
+            }
+            .down{
+                line-height: 0.2;
+            }
+            .icon-border {
+                width: 16px;
+                height: 16px;
+                
+                border-radius: 2px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                i {
+                    font-size: 11px;
+                    color: #0052CC;
+                }
+            }
+        }
+    }
+    &.table-noborder tr:last-child {
+        border-bottom: none;
+    }
+    tbody {
+        display: block;
+        height: 400px;
+        overflow-y: overlay;
+        overflow-x: hidden;
+        tr {
+            .vz-ProjectName {
+                background: #B3D4FF;
+            }
+        }
+    }
+}
+
+.btn {
+    &.btn-link:hover {
+        color: #8993A4;
+    }
+    &.btn-pacific-primary.btn-link:focus {
+        color: #8993A4;
+    }
+    &.btn-pacific-primary {
+        background: transparent;
+        color: #8993A4;
+        padding: 0;
+        margin: 0;
+        white-space: normal;
+        text-align: left;
+        line-height: initial;
+        display: block;
+        height: initial !important;
+        font-size: 1rem;
+    }
+}
+
+.dropdown-list-item .active {
+    background: rgb(182, 186, 202);
+    color: #253858;
+}
+
+// .dropdown-list-item {
+//     .active {
+//       background: #dde0e8
+//       color: #253858;
+//     }
+//   }
+
+
+.lds-dual-ring {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  
+  .lds-dual-ring:after {
+    content: " ";
+    width: 46px;
+    height: 46px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid #4C9AFF;
+    border-color: #4C9AFF transparent #4C9AFF transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  
+  @keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+    

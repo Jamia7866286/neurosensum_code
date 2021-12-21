@@ -1,0 +1,80 @@
+<dashboard-page>
+  <div class="page-head">
+    <h5><strong>Dashboard Authentication</strong></h5>
+  </div>
+  <div class="page-content">
+    <div class="container">
+      <div class="columns">
+        <div class="column col-12">
+          Current framework support 2 types of Dashbaords.
+          <ul>
+            <li>
+              <strong>Anonymous Dashboard: </strong> authenticated using auth
+              token.
+            </li>
+            <li>
+              <strong>Shared Dashboard: </strong> authenticate using username
+              and password.
+            </li>
+          </ul>
+        </div>
+        <div class="column col-12">
+          <h6><strong>Anonymous Dashboard Authentication</strong></h6>
+          following are the steps to configure dashbaord for anonymous use: when
+
+          <ul>
+            <li>
+              Step 1 : Pass <strong>anonymousToken</strong> in framework config
+              at time of
+              <strong
+                style="cursor: pointer"
+                [routerLink]="['../installation']"
+                routerLinkActive="router-link-active"
+                >import framework in app module.</strong
+              >
+            </li>
+            <li>
+              Step 2: In App Component Authenticate dashbaord using auth service
+              and load peoject.
+
+              <pre class="code" data-lang="Typescript">
+              <code>
+              {{ts}}
+              </code>
+            </pre>
+            </li>
+          </ul>
+        </div>
+        <div class="column col-12">
+          <h6><strong>Shared Dashboard Authentication</strong></h6>
+          Shared Dashboard must be authorized using Login component. In which
+          user have to provide username and password which will get validated at
+          surveysensum server.
+          <br />
+          In framework you can either use login component provided by framework
+          like below code snippet :
+
+          <pre class="code" data-lang="Html">
+                <code>
+                    {{loginHtml}}
+                </code>
+          </pre>
+
+          <pre class="code" data-lang="Typescript">
+                <code>
+                    {{loginTypescript}}
+                </code>
+          </pre>
+
+          OR you can use custom login component to authenticate user by using
+          auth service.
+          <pre class="code" data-lang="Typescript">
+                <code>
+                    {{loginAuthServieceTypescript}}
+                </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</dashboard-page>

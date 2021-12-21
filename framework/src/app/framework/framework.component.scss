@@ -1,0 +1,13 @@
+.sidebar {
+  min-width: 10rem;
+  overflow-y: auto;
+  background: #f7f8f9;
+  height: 100vh;
+  .logo-cntr {
+    padding-bottom: 3rem;
+  }
+  .menu.menu-nav {
+    background: 0 0;
+    box-shadow: none;
+  }
+}

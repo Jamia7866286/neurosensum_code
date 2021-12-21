@@ -1,0 +1,23 @@
+<div class="date-picker-container">
+  <div class="form-group">
+    <div class="start-end-date ngx-daterangepicker-action" (click)="openDateRangePicker($event)">
+      <span class="ngx-daterangepicker-action">{{selectedRangeLabel}}</span>
+      <svg class="ngx-daterangepicker-action" height="24" viewBox="0 0 24 24" width="24"
+        xmlns="http://www.w3.org/2000/svg">
+        <defs></defs>
+        <path d="M0,0H24V24H0Z" fill="none"></path>
+        <path d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" fill="#253858"></path>
+      </svg>
+    </div>
+
+    <input style="display: none;" type="text" ngxDaterangepickerMd [maxDate]="maxDate" [minDate]="minDate" [ranges]="_ranges"
+    [(ngModel)]="_data" [timePicker]="settings.datepickerType === DatePickerType.CalenderWithTimer" [showDropdowns]="true"
+    [timePicker24Hour]="settings.timeFormat24" [keepCalendarOpeningWithRange]="true"
+    [isInvalidDate]="settings.IsDateInvalid?settings.IsDateInvalid:stubIsInvalidDate"
+    [placeholder]="settings.placeHolder.inputField" [showClearButton]="settings.showClearButton"
+    [showCancel]="settings.showCancelButton" [showCustomRangeLabel]="true"
+       [alwaysShowCalendars]="true" startKey="start" endKey="end"
+       class="form-control" [locale]="locale" (ngModelChange)="onDateChanged($event)"
+      />
+  </div>
+</div>

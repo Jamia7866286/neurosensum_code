@@ -1,0 +1,62 @@
+<table *ngIf="!isLoading" class="table table-hover table-filter table-noborder">
+    <thead>
+        <tr>
+            <th (click)="ReverseList()">
+                Rank
+                <span class="column-filter">
+                    <img src="/assets/images/svg/up-down.svg">
+                    <!-- use 'on' class for filter active state -->
+                    <!-- <i class="fas fa-sort-up up"></i>
+                    <i class="fas fa-sort-down down"></i> -->
+                </span>
+            </th>
+            <th>
+                <!-- City -->
+                <div class="dropdown">
+                    <a class="btn btn-link dropdown-toggle btn-pacific-primary sm" tabindex="0">
+                        {{selectedQuestion.title}}
+                        <span class="column-filter">
+                            <div class="icon-border">
+                                <img src="/assets/images/svg/City icon.svg">
+                                <!-- <i class="fas fa-sort-down"></i> -->
+                            </div>
+
+                            <!-- <i class="fas fa-sort-down"></i> -->
+                        </span>
+                    </a>
+                    <ul class="menu dropdown-list-item">
+                        <li *ngFor="let question of categoryQuestions"
+                            [class.active]="selectedQuestion.questionId === question.questionId"
+                            (click)="GenerateTable(question)">
+                            <a href="javascript:void(0)">{{ question.title }}</a>
+                        </li>
+                        <!-- <li><a href="javascript:void(0)">Button label 2</a></li>-->
+                    </ul>
+                </div>
+
+            </th>
+            <th>
+                Response
+
+            </th>
+            <th>
+                Overall NPS
+
+            </th>
+            <!-- <th></th> -->
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let items of dataToBind">
+            <td><span class="vz-ProjectName">{{items.rank}}</span></td>
+            <td>{{items.varName}}</td>
+            <td>{{items.responses}}</td>
+            <td>{{items.npsScore}}</td>
+            <!-- <td> <i class="fas fa-ellipsis-h"></i></td> -->
+        </tr>
+    </tbody>
+</table>
+
+<ng-container *ngIf="isLoading">
+    <div class="lds-dual-ring"></div>
+</ng-container>

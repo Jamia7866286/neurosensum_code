@@ -1,0 +1,23 @@
+<ng-container *ngIf="config.type===FilterType.Dropdown">
+
+  <ui-dropdown [settings]="config.dropDownConfig" [data]="config.options" [(ngModel)]="config.model"
+    (onSelect)="SelectionChange($event)" (onDeSelect)="SelectionChange($event)" (onSelectAll)="SelectionChange($event)"
+    (onDeSelectAll)="SelectionChange($event)" (onApplyBtnClicked)="SelectionChange($event)">
+  </ui-dropdown>
+
+</ng-container>
+
+<ng-container *ngIf="config.type === FilterType.List">
+  <ui-list [settings]="config.dropDownConfig" [data]="config.options" [(ngModel)]="config.model"
+    (onSelect)="SelectionChange($event)" (onDeSelect)="SelectionChange($event)" (onSelectAll)="SelectionChange($event)"
+    (onDeSelectAll)="SelectionChange($event)"></ui-list>
+</ng-container>
+
+<!-- <ng-container *ngIf="config.type === FilterType.DatePicker">
+  <ui-date-picker [data]="config.dateModel" [settings]="config.datePickerSettings" (onFilterChange)="onDateChange($event)"></ui-date-picker>
+</ng-container> -->
+
+<ng-container *ngIf="config.type === FilterType.DateRangePicker">
+  <ui-date-range-picker-v2 [ranges]="config.datePickerSettings.ranges" [data]="config.dateModel" [settings]="config.datePickerSettings"
+    (onFilterChange)="onDateChange($event)"></ui-date-range-picker-v2>
+</ng-container>

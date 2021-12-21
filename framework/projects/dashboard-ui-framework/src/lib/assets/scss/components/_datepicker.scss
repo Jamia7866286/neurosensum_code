@@ -1,0 +1,25 @@
+.form-group{
+    &.vz-datepicker{
+        .form-input{
+            background-color: color(pacificBlue, base);
+            height: 2.28571429rem;
+            font-size: 1rem;
+            &:focus{
+                background-color: color(pacificBlue, pacificBlue-100);
+                color: color(pacificBlue, pacificBlue-1700);
+                ~i{
+                    color: color(blue, base);
+                }
+            }
+            ~svg{
+                cursor: pointer;
+            }
+            &.disabled{
+                ~img{
+                    cursor: not-allowed;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}

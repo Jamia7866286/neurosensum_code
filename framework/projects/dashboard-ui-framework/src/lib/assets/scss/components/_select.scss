@@ -1,0 +1,39 @@
+.form-group{
+    .form-select{
+        padding: 0rem 1.8rem 0 1rem;
+        border-radius: $border-radius;
+        color: #7A869A;
+        width: 100%;
+        border-width: 2px;
+        background: #FAFBFC url('data:image/svg+xml;base64,PHN2ZyBfbmdjb250ZW50LWR1cS1jMjY9IiIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnMgX25nY29udGVudC1kdXEtYzI2PSIiPjwvZGVmcz48cGF0aCBfbmdjb250ZW50LWR1cS1jMjY9IiIgZD0iTTAsMEgyNFYyNEgwWiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxwYXRoIF9uZ2NvbnRlbnQtZHVxLWMyNj0iIiBkPSJNNy40MSw4LjU5LDEyLDEzLjE3bDQuNTktNC41OEwxOCwxMGwtNiw2TDYsMTBaIiBmaWxsPSIjMjUzODU4Ij48L3BhdGg+PC9zdmc+') no-repeat 97% center;
+        font-size: 1.14285714rem;
+        color: color(pacificBlue, pacificBlue-1300);
+        border: 0.142857143rem solid #DFE1E5;
+        &:focus{
+            border-color: color(blue, base);
+        }
+        &.sm{
+            height: 32px;
+            font-size: 1rem;
+        }
+        &.lg{
+            height: 40px;
+        }
+        &:active, &:hover{
+            outline: none;
+        }
+    }
+    &.is-error{
+        .form-select{
+            border-color: color(red, red-500);
+        }
+        .form-input-hint{
+            font-size: 0.857142857rem;
+            color: color(red, red-500);
+            padding-top: 0.285714286rem;
+            font-weight: 500;
+            display: block;
+            margin: 0;
+        }
+    }
+}

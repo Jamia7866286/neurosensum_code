@@ -1,0 +1,115 @@
+.toast{
+    border: 0;
+    border-radius: 0;
+    font-size: 1rem;
+    padding: 1rem 1.66571429rem;
+    span{
+        // &:first-child{
+        //     margin-right: .5rem;
+        // }
+    }
+    i{
+        padding-right: 0.642857143rem;
+    }
+    &.toast-primary{
+        background-color: color(blue, base);
+    }
+    &.toast-success{
+        background-color: color(green, base);
+    }
+    &.toast-warning{
+        background-color: color(orange, orange-600);
+    }
+    &.toast-error{
+        background-color: color(red, red-600);
+    }
+    .btn-clear{
+        opacity: 1;
+        line-height: 1.2rem;
+        &::before{
+            content: none;
+        }
+    }
+    &.toast-sm{
+        position: fixed;
+        top: 60px;
+        max-width: 50%;
+        border-radius: 7px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        min-height: 45px;
+        line-height: 18px;
+        padding: 4px 8px 4px 4px;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, 0%);
+        width: max-content;
+        background: #091E42 !important;
+        color: #FFFFFF !important;
+        a{
+            .btn-clear{
+                margin: 0;
+                padding-left: 0;
+            }
+        }
+        &.toast-error,&.toast-success,&.toast-warning,&.toast-primary{
+            // background: color(red, red-200);
+            // border: 1.5px solid #BF2600;
+            // color: color(red, red-600);
+            .btn-clear{
+                svg{
+                    fill: #fff;
+                }
+            }
+        }
+        // &.toast-success{
+        //     // background: color(green, green-100);
+        //     // color: color(green, green-500);
+        //     // border: 1.5px solid #00875A;
+        //     .btn-clear{
+        //         svg{
+        //             fill: #fff;
+        //         }
+        //     }
+        // }
+        .toast-wrap{
+            display: flex;
+            display:-webkit-flex;
+            align-items: center;
+            padding-right: 8px;
+            .toast-icon{
+                width:36px;
+                min-width: 36px;
+                height: 36px;
+                border-radius: 5px;
+                margin-right: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &.success{
+                    background: #00875A;
+                }
+                &.info{
+                    background: #0052CC;
+                }
+                &.error{
+                    background: #BF2600;
+                }
+                &.warning{
+                    background: #FF8B00;
+                }
+                span{
+                    display: flex;
+                }
+            }
+            .toast-text{
+                display: inline-table;
+            }
+        }
+        .close{
+            margin-left: 8px;
+        }
+    }
+}

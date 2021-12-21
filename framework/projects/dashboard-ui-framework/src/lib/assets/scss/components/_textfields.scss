@@ -1,0 +1,120 @@
+.form-group {
+  .form-label {
+    color: color(pacificBlue, pacificBlue-1100);
+    padding: 0.785714286rem 0;
+  }
+  .form-input {
+    height: 40px;
+    font-size: 1.14285714rem;
+    color: color(pacificBlue, pacificBlue-1300);
+    border: 0.142857143rem solid #dfe1e5;
+    border-radius: $border-radius;
+    background: color(pacificBlue, pacificBlue-200);
+    line-height: normal;
+    &:focus {
+      border-color: color(blue, base);
+      // box-shadow: none;
+    }
+    ~ .form-input-hint {
+      font-size: 0.857142857rem;
+      color: #253858;
+      padding-top: 0.285714286rem;
+      font-weight: 500;
+      display: block;
+      margin: 0;
+    }
+    ~ svg {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      cursor: pointer;
+    }
+    ~ img {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      cursor: pointer;
+    }
+    &.is-warning {
+      &.form-input {
+        border-color: color(orange, base);
+        &:focus {
+          border-color: color(orange, base);
+        }
+        ~ .form-input-hint {
+          color: #253858;
+          i {
+            color: color(orange, base);
+          }
+        }
+      }
+    }
+    &.is-error {
+      &.form-input {
+        border-color: color(red, red-500);
+        &:focus {
+          border-color: color(red, red-500);
+        }
+        ~ .form-input-hint {
+          color: color(red, red-500);
+          i {
+            color: color(red, red-500);
+          }
+        }
+      }
+    }
+    &.disabled {
+      &.form-input {
+        pointer-events: none;
+      }
+      ~ i {
+        cursor: auto;
+      }
+    }
+  }
+  &.sm {
+    .form-input {
+      height: 32px;
+      font-size: 1rem;
+      padding-right: 2.14285714rem;
+      &:focus {
+        border-color: color(blue, base);
+      }
+    }
+  }
+  .input-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &.has-warning {
+    .form-input {
+      border-color: color(orange, base);
+      &:focus {
+        border-color: color(orange, base);
+      }
+    }
+  }
+  textarea {
+    &.form-input {
+      height: auto;
+      min-height: 40px;
+    }
+  }
+  &.noborder {
+    .form-input {
+      border-color: transparent;
+      background: color(pacificBlue, pacificBlue-1800);
+    }
+  }
+}
+
+// input:placeholder-shown {
+//     color: #7A869A !important;
+// }
+
+// @include flexGridPlaceholder(false, #7a869a);

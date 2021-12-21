@@ -1,0 +1,56 @@
+/****Font Colors***/
+$primary_color: #222222;
+$heading_color: #222222;
+$link_color:  #cc3e17;
+$hover_color: #000;
+/****Font Colors***/
+/****Default Colors***/
+$red_color: #ec121a;
+$blue_color: #1154fb;
+$white_color: #FFF;
+$yellow_color: #FF0;
+$black_color: #000;
+$green_color: #41d983;
+$orange_color: #cc3e17;
+/****Default Colors***/
+/****Background Colors***/
+$background_color: #1154fb;
+$table_bgcolor: #f9f9f9;
+$th_bgcolor: #e0f0f7;
+$table_bordercolor: darken($table_bgcolor,15%);
+/****Background Colors***/
+/****Site Fonts***/
+$primary_font: 'Nunito', sans-serif;
+$secondary_font: 'Nunito', sans-serif;
+$heading_font:    $primary_font;
+/****SiteFonts***/
+/****Button Styles***/
+$button_background: #000;
+$button_color :#FFF;
+$button_border:#ccc #ccc #bbb;
+/****Button Styles***/
+$border-color: rgba($black_color, 0.5);
+
+// =============================================
+// Primary Break Points
+// =============================================
+
+// These should be used with the bp (max-width, xx) mixin
+// where a min-width is used, remember to +1 to break correctly.
+// If these are changed, they must also be updated in app.js
+
+$bp-xxsmall: 320px;
+$bp-xsmall: 480px;
+$bp-small: 600px;
+$bp-medium: 767px;
+$bp-large: 992px;
+$bp-tab: 1023px;
+$bp-xlarge: 1200px;
+$bp-mdScreen: 1350px;
+$bp-xxlarge: 1400px;
+$bp-xxxlarge: 1500px;
+$bp-xxxxlarge: 1650px;
+/**********************************/
+$container-width:1200px;
+$grid_gap : 30px;
+

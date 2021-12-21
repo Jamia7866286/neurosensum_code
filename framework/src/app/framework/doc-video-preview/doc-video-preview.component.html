@@ -1,0 +1,47 @@
+<dashboard-page>
+        <div class="page-head">
+            <h5><strong>Video widget</strong></h5>
+        </div>
+        <div class="page-content">
+            <div class="container">
+                <div class="columns">
+                    <div class="column col-12">
+                        <h5><u>Inputs to be taken</u></h5>
+                        <p>
+                            <strong>Url: (String)</strong> It will take the url of Video that is to be displayed.<br>
+                            <strong>UrlType: (MediaUrlType)</strong> It will take the Type of url as <b>static</b> or <b>Dynamic</b>.<br>
+                            <strong>Note:</strong> MediaUrlType is an enum which is written as:
+                        </p>
+                    </div>
+                    <div class="column col-12">
+                    <pre class="code" data-lang="Typescript">
+                        <code>
+                            {{enums}}
+                        </code>
+                    </pre>
+                    <h5><u>Installation of Intersection-observer</u></h5>
+                    <pre class="code" data-lang="Bash">
+                        <code>
+                            {{bash}}
+                        </code>
+                    </pre>
+                    <h5><u>Example for type STATIC</u></h5>
+                    <pre class="code" data-lang="HTML">
+                            <code>
+                                {{htmlStatic}}
+                            </code>
+                        </pre>
+                    <h4><u>Example for type DYNAMIC</u></h4>
+                    <pre class="code" data-lang="HTML">
+                            <code>
+                                {{htmlDynamic}}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+</dashboard-page>
+<h5><u>Sample Working Model</u></h5>
+<!-- <dashboard-video-preview [url]="'http://clips.vorwaerts-gmbh.de/VfE_html5.mp4'" [urlType]="UrlType.Static"></dashboard-video-preview> -->
+<dashboard-video-preview [url]="'eae550fd-f105-46e0-9ff9-606955eaef50.mp4'" [urlType]="UrlType.Dynamic"></dashboard-video-preview>

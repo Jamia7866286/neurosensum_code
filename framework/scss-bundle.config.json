@@ -1,0 +1,8 @@
+{
+    "bundlerOptions": {
+        "entryFile": "./projects/dashboard-ui-framework/src/lib/assets/scss/main.scss",
+        "outFile": "./dist/dashboard-ui-framework/assets/scss/main.scss",
+        "ignoreImports": ["~@angular/.*"],
+        "logLevel": "silent"
+    }
+}

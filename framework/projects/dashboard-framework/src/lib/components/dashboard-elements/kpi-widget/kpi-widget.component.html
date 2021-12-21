@@ -1,0 +1,11 @@
+<div class="card" *ngIf="crossTabResult">
+    <div class="container">
+      <h4 style="text-align: center"><b>{{crossTabResult.data[primayValueIndex.row][primayValueIndex.column]}}</b></h4> 
+      <h6 *ngIf="kpiDataSelector.showSecondary===true" style="text-align: center">{{crossTabResult.data[secondaryValueIndex.row][secondaryValueIndex.column]}}</h6>
+      <div *ngIf="kpiDataSelector.showDifference===true" style="text-align: right">
+          <i class="fa fa-arrow-up" *ngIf="kpiDifference>0" style="color: green;display:inline" aria-hidden="true"></i>
+          <i class="fa fa-arrow-down" *ngIf="kpiDifference<0" style="color: red;display:inline" aria-hidden="true"></i>
+        <p style="display: inline">| {{kpiDifference}}</p>
+      </div>
+    </div>
+  </div>

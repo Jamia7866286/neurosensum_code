@@ -1,0 +1,85 @@
+// single select css
+::ng-deep {
+  ui-select {
+    width: auto !important;
+    .input-wrapper {
+      .dropdown {
+        .dropdown-toggle {
+          position: relative;
+        }
+      }
+    }
+  }
+  .singleSelect {
+    &.menu {
+      padding: 0;
+      li {
+        &:hover {
+          background: transparent;
+        }
+        &.search {
+          padding: 15px 0.857142857rem 15px;
+          margin-bottom: 0;
+          border-bottom: 1px solid #e4e8f0;
+          margin-top: 0;
+          .form-group {
+            margin-bottom: 0;
+            .input-icon{
+              img{
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        &.single-child {
+          margin-top: 4px;
+          max-height: 250px;
+          overflow: auto;
+          background: #fff;
+          ul {
+            // max-height: 250px;
+            // overflow: auto;
+            margin: 0;
+            list-style-type: none;
+            li {
+              margin: 0;
+              > a {
+                text-decoration: none;
+                color: #253858;
+                padding: 0.357142857rem 0.857142857rem;
+                display: block;
+              }
+              &.add-links {
+                > a {
+                  color: #0052cc;
+                  border-top: 1px solid #e4e8f0;
+                  font-weight: 500;
+                }
+              }
+              &.active {
+                background: #ebecf0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.chip-btn {
+  background: #0065ff;
+  color: #fff;
+  padding: 0 19px 0 8px;
+  height: 20px;
+  display: inline-block;
+  line-height: 20px;
+  border-radius: 20px;
+  position: relative;
+  font-size: 0.85rem;
+  margin-right: 0.3rem;
+  > svg {
+    right: 5px;
+    top: 4px;
+  }
+}

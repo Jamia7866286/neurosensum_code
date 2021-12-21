@@ -1,0 +1,58 @@
+@media (min-width: 992px){
+      .feedback-panel.you-can-content .you-can-main .feedback-inner::before {
+            height: 100%;
+            top: -8px;
+      }
+}
+
+@media (min-width: 768px) and (max-width: 991.99px){
+      .feedback-panel.you-can-content .you-can-main .feedback-inner::before {
+            height: 100%;
+            top: -9px;
+      }
+}
+
+@media (max-width: 767.99px){
+      .contact-btn.desktop-contact-btn{
+            display: none !important;
+      }
+
+      .contact-btn.mob-contact-btn{
+            display: flex !important;
+            justify-content: center;
+      }
+
+      .feedback-panel.you-can-content .you-can-main .feedback-inner::before {
+            height: calc(96.8% - 9px);
+            top: -9px;
+      }
+      .real-store .real-time-content h4{
+            text-align: center;
+            margin-top: 32px;
+            width: 100%;
+      }
+      .panel-header .heading,
+      .feedback-panel.you-can-content .heading h2{
+            width: 100%;
+      }
+
+      .panel-header .heading{
+            text-align: left;
+      }
+      .panel-header .konw-more-main{
+            justify-content: flex-start;
+      }
+}
+
+@media (max-width: 394px){
+      .feedback-panel.you-can-content .you-can-main .feedback-inner::before {
+            height: calc(91.5% - 5px);
+      }
+}
+
+@media (max-width: 320px){
+      .feedback-panel.you-can-content .you-can-main .feedback-inner::before {
+            height: calc(88% - 3px);
+      }
+}
+

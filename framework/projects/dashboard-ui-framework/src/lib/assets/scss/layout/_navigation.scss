@@ -1,0 +1,472 @@
+.vz-navigation{
+    position: relative;
+    z-index: 2;
+    width: 19.5714285714rem;
+    transition: all .3s ease;
+    .navigation-wrapper{
+        transition: none 0s ease 0s;
+        width: 64px;
+        .navigationFixedContainer{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: row;
+            position: fixed;
+            left: 0px;
+            top:0;
+            z-index: 300;
+            transition: height 0.25s ease-in-out 0s;
+            &:hover{
+                .navigation-outerSection{
+                    .outer-button{
+                        button{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .navigation-outerSection{
+                .outer-button{
+                    button{
+                        .navCollapsed{
+                            display: none;
+                        }
+                    }
+                }
+            }        
+            .navigationConatainerWrapper{
+                -webkit-box-flex: 1;
+                flex-grow: 1;
+                flex-shrink: 1;
+                min-width: 64px;
+                display: flex;
+                border-right: 1px solid #E4E8F0;
+                .navigation-inner{
+                    background-color: color(pacificBlue, pacificBlue-1800);
+                    color: rgb(222, 235, 255);
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0.857142857rem 0 0;
+                    width: 100%;
+                    .navigationItem-sec{
+                        flex-shrink: 0;
+                        opacity: 1;
+                        transition: height 200ms ease 0s, opacity 200ms ease 0s;
+                        .primaryaction-inner{
+                            box-sizing: border-box;
+                            // padding: 8px 0px 16px;
+                            .primaryaction-innerItem{
+                                -webkit-box-align: center;
+                                align-items: center;
+                                display: flex;
+                                flex-direction: column;
+                                a{
+                                    width: 40px;
+                                    height: 40px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    span{
+                                        color: rgb(255, 255, 255);
+                                        display: inline-block;
+                                        fill: currentcolor;
+                                        height: 24px;
+                                        position: relative;
+                                        user-select: none;
+                                        svg{
+                                            fill: inherit;
+                                            height: 100%;
+                                            left: 0px;
+                                            position: absolute;
+                                            top: 0px;
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .primaryaction-innerWrapper{
+                            -webkit-box-align: center;
+                            align-items: center;
+                            display: flex;
+                            flex-direction: column;
+                            padding-top: 2.28571429rem;
+                            .nav-items{
+                                display: flex;
+                                -webkit-box-align: center;
+                                align-items: center;
+                                -webkit-box-pack: center;
+                                justify-content: center;
+                                margin: 0px;
+                                background: none;
+                                border-width: initial;
+                                border-style: none;
+                                border-color: initial;
+                                border-image: initial;
+                                border-radius: 50%;
+                                padding: 0px;
+                                outline: none;
+                                margin-bottom: 1.57142857rem;
+                                position: relative;
+                                button{
+                                    span:first-child{
+                                        height: 24px;
+                                    }
+                                }
+                                img{
+                                    width: 40px;
+                                    height: 40px;
+                                    object-fit: cover;
+                                }
+                                span{
+                                    svg{
+                                        .b{
+                                            fill: color(pacificBlue, pacificBlue-100);
+                                        }
+                                    }
+                                }
+                                &.active{
+                                    background: color(pacificBlue, pacificBlue-100);
+                                    span{
+                                        svg{
+                                            .b{
+                                                fill: color(blue, base);
+                                            }
+                                            
+                                        }
+                                    }
+                                    &::before{
+                                        content: '';
+                                        height: 24px;
+                                        width: 2px;
+                                        background: color(pacificBlue, pacificBlue-100);
+                                        left: -11px;
+                                        position: absolute;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                    }
+                                    button{
+                                        width: 40px;
+                                        height: 40px;
+                                    }
+                                }
+                                button{
+                                    -webkit-appearance: none;
+                                    color: rgb(222, 235, 255);
+                                    background-color: transparent;
+                                    fill: rgb(7, 71, 166);
+                                    -webkit-box-align: center;
+                                    align-items: center;
+                                    cursor: pointer;
+                                    display: flex;
+                                    line-height: 1;
+                                    -webkit-box-pack: center;
+                                    justify-content: center;
+                                    margin-top: 0px;
+                                    text-align: center;
+                                    border-width: initial;
+                                    border-style: none;
+                                    border-color: initial;
+                                    border-image: initial;
+                                    // border-radius: 50%;
+                                    padding: 0px;
+                                    outline: none;
+                                }
+                                &:last-child{
+                                    margin-bottom: 2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .NavigationSubItems{
+                will-change: width;
+                width: 15rem;
+                transition: width 300ms cubic-bezier(0.2, 0, 0, 1) 0s;
+                height: 100%;
+                position: relative;
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                flex-direction: column;
+                min-height: 100vh;
+                height: auto;
+                box-shadow: 0px 0px 3px rgba(0,0,0,0.15);
+                background-color: color(pacificBlue, pacificBlue-100);
+                border-right: 1px solid #E4E8F0;
+                .itemContainer{
+                    box-sizing: border-box;
+                    height: calc(100% - 50px);
+                    left: 0px;
+                    min-width: 15rem;
+                    overflow-x: hidden;
+                    position: absolute;
+                    top: 0px;
+                    width: 100%;
+                    color: rgb(66, 82, 110);
+                    animation-duration: 0.22s;
+                    animation-fill-mode: forwards;
+                    animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+                    transition-property: boxShadow, transform;
+                    transition-duration: 0.22s;
+                    transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+                    padding:1.14285714rem 0.571428571rem;
+                    .client-logo{
+                        padding: 0px 0 0 12px;
+                    }
+                    .active-heading{
+                        padding: 2.57142857rem 0 1.14285714rem 0;
+                        .headingWrapper{
+                            border-bottom: 1px solid #e4e8f0;
+                            padding-bottom: 0.857142857rem;
+                            color: #2E384D;
+                            display: flex;
+                            font-weight: 500;
+                            align-items: center;
+                            margin: 0 0.714285714rem;
+                            .backIcon{
+                                background: color(pacificBlue, pacificBlue-1400);
+                                border-radius: 50%;
+                                width: 24px;
+                                height: 24px;
+                                min-width: 24px;
+                                min-height: 24px;
+                                margin-right: 0.714285714rem;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+                                &:hover{
+                                    background: color(blue, base);
+                                }
+                            }
+                            .project-name{
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                width: 100%;
+                            }
+                        }  
+                    }
+                    .primitiveItems{
+                        .itemList{
+                            display: flex;
+                            padding: 0.571428571rem 0 0.571428571rem 0.714285714rem;
+                            border-radius: $border-radius;
+                            height: 40px;
+                            color: color(pacificBlue, pacificBlue-1400);
+                            cursor: pointer;
+                            align-items: center;
+                            .navIcon{
+                                padding-right: 12px;
+                                max-height: 24px;
+                            }
+                            &:hover{
+                                background: #F3F3F3;
+                                color: color(blue, base);
+                                .navIcon{
+                                    svg{
+                                        .b{
+                                            fill: color(blue, base);
+                                        }
+                                    }
+                                } 
+                            }
+                            &.active{
+                                background: #F3F3F3;
+                                color: color(blue,base);
+                                font-weight: 500;
+                                .navIcon{
+                                    svg{
+                                        .b{
+                                            fill: color(blue, base);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.submenu{
+                            .itemList{
+                                &:first-child{
+                                    border-radius: 5px 5px 0 0;
+                                    font-weight: 500;
+                                    background: #F3F3F3;
+                                    color: color(pacificBlue,pacificBlue-1400);
+                                    .navIcon{
+                                        svg{
+                                            .b{
+                                                fill: color(blue, base);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .nav-collapse{
+                                .itemList{
+                                    background: #F3F3F3;
+                                    margin-bottom: 0;
+                                    border-radius: 0;
+                                    font-weight: normal;
+                                    border-left: 2px solid transparent;
+                                    &:hover{
+                                        background: #DEEBFF;
+                                        color: color(blue, base);
+                                        .navIcon{
+                                            svg{
+                                                .b{
+                                                    fill: color(blue, base);
+                                                }
+                                            }
+                                        } 
+                                    }
+                                    &.active{
+                                        background: color(blue, blue-100);
+                                        font-weight: normal;
+                                        border-left: 2px solid #0052CC;
+                                        color: color(blue, base);
+                                        &:last-child{
+                                            border-radius: 0;
+                                        }
+                                    }
+                                    
+                                    &:last-child{
+                                        border-radius: 0 0 5px 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .footerLogo{
+                    margin: 0 10.5px;
+                    cursor: pointer;
+                    position: absolute;
+                    bottom: 1rem;
+                }
+            }
+            .navigation-outerSection{
+                width: 0;
+                .outer-button{
+                    width: 50px;
+                    height: 50px;
+                    transform: translate(-50%, 20%);
+                    button{
+                        box-shadow: rgba(9, 30, 66, 0.08) 0px 0px 0px 2px, rgba(9, 30, 66, 0.08) 0px 2px 4px 1px;
+                        color: rgb(107, 119, 140);
+                        cursor: pointer;
+                        height: 24px;
+                        opacity: 0;
+                        position: absolute;
+                        top: 20px;
+                        transform: translate(-25%, -40%);
+                        width: 24px;
+                        background: 0px center white;
+                        border-width: 0px;
+                        border-radius: 50%;
+                        outline: 0px;
+                        padding: 0px;
+                        transition: background-color 100ms linear 0s, color 100ms linear 0s, opacity 300ms cubic-bezier(0.2, 0, 0, 1) 0s, transform 300ms cubic-bezier(0.2, 0, 0, 1) 0s;
+                        left: 20px;
+                        svg{
+                            path{
+                                fill: #0052cc;
+                            }
+                        }
+                        &:hover{
+                            background: color(blue, base);
+                            box-shadow: #0052cc 0 0 0 1px, rgba(9,30,66,.08) 0 2px 4px 1px;
+                            svg{
+                                path{
+                                    fill: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .navigationSpacer{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                flex: 1 1 100%;
+                overflow: hidden;
+            }
+        }
+    }
+    &.isCollapsed{
+        height: 100%;
+        width: 24px;
+        outline: 0px;
+        // overflow: hidden;
+        background: #fff;
+        transition: background-color 100ms ease 0s;
+        width: 6.28571429rem;
+        box-shadow: 0px 0px 3px rgba(0,0,0,0.15);
+            .navigation-wrapper{
+                .navigationFixedContainer {
+                    transition: all .3s ease;
+                    .NavigationSubItems {
+                        width: 24px;
+                        &:hover{
+                            position: relative;
+                            width: 15rem ;
+                          .itemContainer{
+                            opacity: 1;
+                            display: block;
+                          }
+                          ~.navigation-outerSection{
+                            .outer-button{
+                              button{
+                                .nav-resizeIcon{
+                                  .navExpand{
+                                    display: block;
+                                  }
+                                  .navCollapsed{
+                                    display: none;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                    }
+                    .navigation-outerSection{
+                        .outer-button{
+                            button{
+                                opacity: 1;
+                                background: #0052CC;
+                                box-shadow: #0052cc 0 0 0 1px, rgba(9, 30, 66, 0.08) 0 2px 4px 1px;
+                                svg{
+                                    path{
+                                        fill: #fff;
+                                    }
+                                }
+                                .nav-resizeIcon{
+                                    .navExpand{
+                                        display: none;
+                                    }
+                                    .navCollapsed{
+                                        display: block;
+                                        width: 24px;
+                                    }
+                                } 
+                            }
+                        }
+                    }
+                }
+            } 
+        .itemContainer{
+            opacity: 0;
+            display: none;
+        }
+        .footerLogo{
+            opacity: 0;
+            display: none;
+        }
+    }
+}
+
+
+
+

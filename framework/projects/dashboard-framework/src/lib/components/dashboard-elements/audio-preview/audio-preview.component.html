@@ -1,0 +1,16 @@
+<ng-container *ngIf="urlType===MediaTypeType.Dynamic ">
+    <audio #myAudio inViewport inViewportOptions="config" (inViewportAction)="onIntersection()"
+    controls [src]="url| loadGlobalAsset: assetInfoType.Audio | async"
+    *ngIf="url | loadGlobalAsset: assetInfoType.Audio | async; else loading">
+    </audio>
+</ng-container>
+
+<ng-container *ngIf="urlType===MediaTypeType.Static">
+    <audio #myAudio inViewport inViewportOptions="config" (inViewportAction)="onIntersection()" 
+    controls [src]="audioUrl" *ngIf="audioUrl; else loading">
+    </audio>
+</ng-container>
+
+<ng-template #loading>
+    Loading Audio...
+</ng-template>

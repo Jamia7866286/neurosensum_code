@@ -1,0 +1,6 @@
+PROCESSED on Fri, 08 Nov 2019 07:29:53 +0000
+/wp-content/plugins/gravityforms/css/formreset.min.css
+/wp-content/plugins/gravityforms/css/formsmain.min.css
+/wp-content/plugins/gravityforms/css/readyclass.min.css
+/wp-content/plugins/gravityforms/css/browsers.min.css
+PROCESSED from https://www.surveysensum.com/template/online-quote-form-template/

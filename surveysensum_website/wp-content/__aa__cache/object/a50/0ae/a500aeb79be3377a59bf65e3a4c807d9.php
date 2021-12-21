@@ -1,0 +1,1 @@
+„¯©]<?php exit; ?>a:1:{s:7:"content";s:207:"a:4:{s:7:"enabled";b:0;s:8:"standard";b:0;s:17:"standard_interval";i:1;s:10:"individual";a:1:{i:0;a:4:{s:4:"type";i:0;s:8:"resource";s:28:"https://www.surveysensum.com";s:8:"interval";i:1;s:5:"itype";i:1;}}}";}

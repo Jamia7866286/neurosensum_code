@@ -1,0 +1,22 @@
+pre {
+  code {
+    min-width: 100%;
+  }
+}
+
+.default-table.full-height {
+  max-height: 100%;
+}
+
+.default-table .table tr {
+  font-size: 20px !important;
+}
+
+// .default-table .table tr th:nth-child(3) {
+//   width: 118px;
+// }
+
+// .default-table .table tr td:last-child {
+//   min-width: 326px;
+//   text-overflow: initial;
+// }

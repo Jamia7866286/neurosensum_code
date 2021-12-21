@@ -1,0 +1,1 @@
+„¯©]<?php exit; ?>a:1:{s:7:"content";s:298:"a:9:{s:6:"method";i:1;s:8:"location";s:57:"/home/s5/html/wp-content/uploads/ithemes-security/backups";s:6:"retain";i:6;s:3:"zip";b:1;s:7:"exclude";a:3:{i:0;s:14:"itsec_lockouts";i:1;s:9:"itsec_log";i:2;s:10:"itsec_temp";}s:8:"interval";i:3;s:7:"enabled";b:0;s:9:"all_sites";b:0;s:8:"last_run";i:0;}";}

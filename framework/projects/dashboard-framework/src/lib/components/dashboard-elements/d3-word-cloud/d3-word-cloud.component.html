@@ -1,0 +1,8 @@
+<ng-container *ngIf="isLoading">
+  <div class="lds-dual-ring"></div>
+</ng-container>
+<div class="word-cloud bgWhite" *ngIf="!isLoading" style="height: calc(100% - 5px); width: 100%">
+    <!-- <div class="overview-heading">Word Cloud</div> -->
+    <div id="word-cloud-canvas" style="height: calc(100% - 1px)">
+    </div>
+  </div>

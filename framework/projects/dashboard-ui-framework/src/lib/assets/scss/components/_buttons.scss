@@ -1,0 +1,273 @@
+
+.btn{
+    border: none;
+    border-radius: $border-radius;
+    height: 40px;
+    font-size: 1.14285714rem;
+    padding: 0.785714286rem 1.07142857rem;
+    color: color(pacificBlue,pacificBlue-100);
+    line-height: 1rem;
+    margin: 0 0.571428571rem 0 0;
+    &.xs{
+      height: 24px;
+      padding: 4px 1.07142857rem;
+      font-size: 1rem;
+    }
+    img{
+        padding-right: 4px;
+    }
+    &:focus{
+        background: color(blue,base);
+    }
+    &.btn-link{
+        &:hover{
+            color: color(blue,base);
+        }
+        &.btn-primary{
+            color: color(pacificBlue, pacificBlue-100);
+        }
+    }
+    &.sm{
+        height: 32px;
+        padding: 0.571428571rem 1.07142857rem;
+        font-size: 1rem;
+    }
+    &.btn-primary{
+        background-color: color(blue,base);
+        &:hover, &:active, &:focus{
+            background: color(blue, blue-500);
+        }
+    }
+    &.btn-secondary{
+        background-color: color(blue,blue-100);
+        color: color(blue,base);
+    }
+    &.btn-transparent{
+        background-color: color(pacificBlue,pacificBlue-100);
+        color: color(blue,base);
+        border: 1px solid color(blue,base);
+        &:hover{
+            background-color: color(blue,base);
+            color: color(pacificBlue,pacificBlue-100);
+        }
+    }
+    &.btn-light-blue{
+        background-color: color(purple,purple-200);
+        color: color(blue,base);
+    }
+    &.btn-pacific-primary{
+        background-color: color(pacificBlue,pacificBlue-1800);
+        color: color(pacificBlue,pacificBlue-100);
+        &.btn-link{
+            &:hover, &:focus{
+                color: color(pacificBlue, pacificBlue-100);
+            }
+        }
+    }
+    &.btn-pacific-secondary{
+        background-color: color(pacificBlue,pacificBlue-1800);
+        color: color(pacificBlue,pacificBlue-100);
+        &:hover{
+            background-color: color(pacificBlue,pacificBlue-1500);
+        }
+    }
+    &.btn-pacific-transparent{
+        background-color: color(pacificBlue,pacificBlue-100);
+        color: color(pacificBlue,pacificBlue-1400);
+        border: 1px solid color(pacificBlue,pacificBlue-1400);
+        &:hover{
+            background-color: color(pacificBlue,pacificBlue-1800);
+            color: color(pacificBlue,pacificBlue-100);
+        }
+    }
+    &.btn-preview{
+        background-color: color(pacificBlue,pacificBlue-1300);
+        color: color(pacificBlue,pacificBlue-100);
+        &:hover{
+            background-color: color(pacificBlue,pacificBlue-1100);
+        }
+    }
+    &.btn-icon{
+        padding: 0;
+        width: 32px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img{
+            padding-right: 0;
+        }
+        &.sm{
+            width: 24px;
+            height: 24px;
+            svg,img{
+                height: 18px;
+                width: 18px;
+            }
+        }
+        &.md{
+            width: 32px;
+            height: 32px;
+            svg,img{
+                height: 24px;
+                width: 24px;
+            }
+        }
+        &.light-gray{
+            background: #6F72761F;
+            &:hover{
+                background: #D0D1D3;
+            }
+        }
+    }
+    &.btn-danger{
+        background-color: color(red,red-600);
+        color: color(pacificBlue,pacificBlue-100);
+        &:hover{
+            background-color: color(red,red-500);
+        }
+    }
+    &.btn-accent{
+        background-color: color(orange,orange-600);
+        color: color(pacificBlue,pacificBlue-100);
+        &:hover{
+            background-color: color(orange,orange-500);
+        }
+    }
+    &.btn-purple{
+        background-color: color(purple,purple-600);
+        color: color(pacificBlue,pacificBlue-100);
+        &:hover{
+            background-color: color(purple,purple-500);
+        }
+    }
+    &.btn-success{
+        background-color: color(green,green-500);
+        color: color(pacificBlue,pacificBlue-100);
+        &:hover{
+          background-color: color(green,base);
+        }
+    }
+    &.btn-upgrade{
+        background-color: color(orange,orange-500);
+        color: color(pacificBlue,pacificBlue-100);
+        display: flex;
+        align-items: center;
+        &:hover{
+          background-color: color(orange,orange-400);
+        }
+    }
+    &.cancel-btn{
+        color: color(pacificBlue, pacificBlue-1300);
+        background: transparent;
+        &:hover{
+            background: color(blue, blue-100);
+        }
+        &.btn-primary{
+            color: color(blue, base);
+        }
+        &:focus{
+            background: #DEEBFF;
+        }
+    }
+}
+
+// dropdown buttons
+.dropdown{
+    margin: 0 0.571428571rem 0 0;
+    .menu{
+        border-radius: $border-radius;
+    }
+}
+
+// small cta buttons
+.setting-action{
+    display: flex;
+    cursor: pointer;
+    .add-media-btn{
+        font-size: .85714286rem;
+        background: rgba(111,114,118,.32);
+        color: #2e384d;
+        width: 38px;
+        height: 24px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        border-radius: 5px;
+        &:hover{
+            background: rgba(111, 114, 118, 0.10);
+        }
+    }
+}
+// close btn
+.quest-slide{
+    display: flex;
+    align-items: center;
+    .cancel-setup{
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        cursor: pointer;
+        color: #0052cc;
+        font-weight: 500;
+        img{
+            max-width: 100%;
+        }
+        &:hover{
+            color: #0065FF;
+        }
+    }
+}
+
+// small icons buttons
+.quest-setting{
+    background: rgba(111,114,118,.12156862745098039);
+    border-radius: 5px;
+    height: 24px;
+    width: 24px;
+    margin-right: 12px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    &.sm{
+        height: 24px;
+        width: 24px;
+        img{
+            height: 18px;
+            width: 18px;
+        }
+    }
+    &.md{
+        height: 32px;
+        width: 32px;
+        img{
+            height: 24px;
+            width: 24px;
+        }
+    }
+    &:hover{
+        background: #D0D1D3;
+    }
+}
+
+// primary color ctas
+.primary-cta-bg{
+    background: #0052CC;
+    &:hover{
+        background: #0065FF;
+    }
+}
+.primary-cta{
+    color: #0052CC;
+    &:hover{
+        color: #0065FF;
+    }
+}

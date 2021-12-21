@@ -1,0 +1,679 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #02193B;
+  height: 100%;
+  overflow: auto;
+  font-weight: 400;
+}
+
+/********************* Hubspot form css *******************/
+form .field {
+  position: relative;
+  margin-bottom: 20px;
+}
+form .field legend {
+  display: none;
+}
+form .field label {
+  margin: 0;
+  display: block;
+}
+form .field label .hs-form-required {
+  display: none;
+}
+form .field .input > input {
+  line-height: normal;
+  border: 1px solid #e5ebff;
+  color: #000000;
+  font-size: 0.9375rem;
+  padding: 0 18px;
+  border-radius: 4px;
+  font-weight: 500;
+  height: 46px;
+  width: 100%;
+  display: block;
+}
+form .field .input > input:focus {
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+form .field .input textarea {
+  border: 1px solid #e5ebff;
+  color: #000000;
+  font-size: 0.9375rem;
+  padding: 13px 18px;
+  border-radius: 4px;
+  font-weight: 500;
+  width: 100%;
+  display: block;
+  resize: none;
+  height: 100px;
+}
+form .field .input textarea:focus {
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+form .field .hs-error-msgs {
+  margin: 0;
+  list-style-type: none;
+}
+form .field .hs-error-msgs > li label {
+  color: #de350b;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+
+form .field.hs-phone .hs-fieldtype-intl-phone.hs-input select {
+  float: left;
+  width: 40% !important;
+  line-height: normal;
+  border: 1px solid #e5ebff;
+  color: #000000;
+  font-size: 0.9375rem;
+  padding: 0 18px;
+  border-radius: 4px;
+  font-weight: 500;
+  height: 46px;
+  display: block;
+  padding-right: 0;
+  background: #fff;
+}
+
+form .field.hs-phone .hs-fieldtype-intl-phone.hs-input > input {
+  width: 58% !important;
+  float: right;
+  line-height: normal;
+  border: 1px solid #e5ebff;
+  color: #000000;
+  font-size: 0.9375rem;
+  padding: 0 18px;
+  border-radius: 4px;
+  font-weight: 500;
+  height: 46px;
+  display: block;
+  padding-right: 0;
+}
+
+
+
+form .legal-consent-container .hs-dependent-field > div .input ul {
+  list-style-type: none;
+}
+form
+  .legal-consent-container
+  .hs-dependent-field
+  > div
+  .input
+  ul
+  li
+  label
+  input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+form
+  .legal-consent-container
+  .hs-dependent-field
+  > div
+  .input
+  ul
+  li
+  label
+  input:checked
+  ~ span:before {
+  background-color: #005cbf;
+}
+form
+  .legal-consent-container
+  .hs-dependent-field
+  > div
+  .input
+  ul
+  li
+  label
+  input:checked
+  ~ span:after {
+  display: block;
+}
+form
+  .legal-consent-container
+  .hs-dependent-field
+  > div
+  .input
+  ul
+  li
+  label
+  > span {
+  position: relative;
+  margin-left: 30px;
+  font-size: 14px;
+}
+form
+  .legal-consent-container
+  .hs-dependent-field
+  > div
+  .input
+  ul
+  li
+  label
+  > span:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -28px;
+  height: 22px;
+  width: 22px;
+  background-color: #dee2e6;
+  display: inline-block;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form
+  .legal-consent-container
+  .hs-dependent-field
+  > div
+  .input
+  ul
+  li
+  label
+  > span:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: -19px;
+  top: 9px;
+  width: 5px;
+  height: 11px;
+  border: solid #fff;
+  border-width: 0px 2.5px 2.5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+form
+  .legal-consent-container
+  .hs-dependent-field
+  > div
+  .input
+  ul
+  li
+  label:hover:before {
+  background: #ccc;
+}
+form .hs_error_rollup {
+  display: none;
+}
+form .hs_submit .actions {
+  margin-top: 40px;
+}
+form .hs_submit .actions > input {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #0B52CC;
+  border: 2px solid #0B52CC;
+  height: 46px;
+  padding: 0.4rem 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+}
+form .hs_submit .actions > input:focus {
+  outline: none;
+}
+
+.hbspt-form .submitted-message p {
+  background: #36b37e;
+  color: #fff;
+  border-radius: 6px;
+  margin: 0;
+  padding: 15px;
+}
+
+.modal .modal-dialog .modal-content .modal-body button.close {
+  top: -9px;
+  right: -5px;
+  padding: 1rem;
+  opacity: 1;
+  position: absolute;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.modal .modal-dialog .modal-content .modal-body button.close:focus {
+  outline: none;
+}
+
+.modal .modal-dialog {
+  max-width: 412px;
+}
+
+.modal .modal-dialog .modal-content .modal-body h5 {
+  color: #000000;
+  font-size: 1.125rem;
+  margin-bottom: 35px;
+}
+
+.modal .modal-dialog .modal-content .modal-body {
+  padding: 40px 46px 40px;
+  background: #f4f6fc;
+  border-radius: 4px;
+  border: 1px solid #e5ebff;
+}
+/********************* End Hubspot form css *******************/
+
+
+
+
+
+/************************ ZOHO CRM css custom form design ************************/
+
+.crmWebToEntityForm{
+  background-color: transparent !important;
+  width: 600px !important;
+}
+
+.modal .modal-dialog.zoho-crm{
+    max-width: 600px;
+}
+
+.modal .modal-dialog.zoho-crm button.close{
+  top: -14px !important;
+  right: 0px !important;
+  opacity: 0.8 !important;
+}
+
+.modal .modal-dialog.zoho-crm .modal-body{
+  padding: 0;
+}
+
+.zcwf_lblLeft .zcwf_privacy .dIB.vat {
+  width: 14px;
+}
+
+.zcwf_lblLeft .zcwf_privacy .dIB.zcwf_privacy_txt{
+  width: calc(100% - 20px);
+}
+
+.zcwf_lblLeft .zcwf_privacy .dIB.zcwf_privacy_txt > *{
+  background-color: #f4f6fc !important;
+}
+
+.zcwf_lblLeft .zcwf_privacy .dIB.zcwf_privacy_txt + div{
+  padding-left: 20px !important;
+}
+
+.zcwf_lblLeft .zcwf_col_fld input[type=text], 
+.zcwf_lblLeft .zcwf_col_fld textarea{
+  width: 74% !important;
+  border: 1px solid #d5d7df !important;
+  border-radius: 4px !important;
+  padding: 4px 7px !important;
+}
+
+.modal-dialog.zoho-crm .modal-title {
+  margin-bottom: 0 !important;
+  padding: 20px 0 0 30px;
+  width: 88%;
+}
+
+.zcwf_lblLeft .zcwf_title{
+  display: none;
+}
+
+
+/************************ End ZOHO CRM css custom form design ************************/
+
+
+
+.heading h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.heading h2{
+  font-size: 36px;
+  font-weight: 700;
+}
+
+
+header{
+  height: 66px;
+  display: flex;
+  align-items: center;
+  background: rgba(203, 243, 218, 0.8);
+}
+
+.logo-main{
+  flex-wrap: wrap;
+}
+
+.logo-main .logo{
+  margin-right: 10px;
+}
+
+.logo-main .logo, .whatsapp-main {
+  margin-top: 14px;
+}
+
+.whatsapp-main a {
+  color: rgba(54, 179, 126, 1);
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+.whatsapp-main a svg{
+    margin-left: 16px;
+}
+
+.traditional-contact-us {
+  background: rgba(203, 243, 218, 0.8);
+  padding: 40px 0 50px;
+}
+
+.traditional-contact-us .heading h1{
+  margin-bottom: 30px;
+  width: 627px;
+}
+
+
+.traditional-contact-us .heading p{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.traditional-contact-us .heading p span{
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.take-our-expert button, .take-our-expert a{
+  height: 46px;
+  width: 200px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.take-our-expert .btn-primary {
+  background: #0052cc;
+  border-color: #0052cc;
+}
+
+.take-our-expert .btn-primary:hover {
+  background: #0065ff;
+  border-color: #0065ff;
+}
+
+.take-our-expert .btn-success {
+  background: #36B37E;
+  border-color: #36B37E;
+  /* margin-left: 24px; */
+}
+
+.take-our-expert .btn-success:hover {
+  background: #2EA574;
+  border-color: #2EA574;
+}
+
+.traditional-contact-us .take-our-expert .survey-free{
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+.take-our-expert .btn-success img{
+  margin-left: 12px;
+}
+
+.benifit-section {
+  padding: 50px 0 30px;
+}
+
+.benifit-section .heading h2{
+  margin-bottom: 44px;
+}
+
+.benifit-section .box-main{
+  margin: 0 44px 60px;
+}
+
+.benifit-section .box-main .box-img {
+  margin-bottom: 20px;
+}
+
+.benifit-section .box-main h4{
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.benifit-section .box-main p{
+  color: #4E4E4E;
+  margin-bottom: 0;
+}
+
+.whatsapp-section {
+  background: #D6F6E2;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.whatsapp-section .take-our-expert{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.whatsapp-section .take-our-expert span{
+  font-weight: 700;
+  margin: 0 18px;
+}
+
+.whatsapp-section .contact-us-btn{
+  font-size: 20px;
+  font-weight: 500;
+  color: #0065FF;
+  cursor: pointer;
+}
+
+.whatsapp-section .heading p{
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+.whatsapp-section .heading h2{
+  width: 728px;
+  margin: 0 auto 52px;
+}
+
+.whatsapp-section .heading a{
+  background: #36B37E;
+  border-color: #36B37E;
+  font-size: 20px;
+  font-weight: 500;
+  width: 200px;
+  height: 46px;
+}
+
+.whatsapp-section .heading a:hover{
+  background: #2EA574;
+  border-color: #2EA574;
+}
+
+.whatsapp-section .heading a:focus{
+  box-shadow: none;
+}
+
+.btn-success:not(:disabled):not(.disabled).active, 
+.btn-success:not(:disabled):not(.disabled):active, 
+.show>.btn-success.dropdown-toggle{
+  background: #36B37E;
+  border-color: #36B37E;
+}
+
+.clients-section{
+  padding: 90px 0;
+  /* border: 1px solid #707070; */
+}
+
+.clients-section .heading h2{
+  margin-bottom: 70px;
+  width: 734px;
+  margin: 0 auto 70px;
+}
+
+.clients-section .client-main-box{
+  margin: 0 44px;
+}
+
+.client-main-box .client-card span{
+  color: #4E4E4E;
+  font-size: 22px;
+}
+
+.client-main-box .client-card svg.left{
+  position: absolute;
+  top: -5px;
+  left: -26px;
+}
+
+.client-main-box .client-card svg.right{
+  position: relative;
+  top: 0;
+  left: 2px;
+}
+@media (max-width:992px){
+	.traditional-contact-us .heading h1{
+		width: 500px;
+    		font-size: 32px;
+	}	
+}
+
+@media (max-width:767px){
+
+  /* Zoho CRM form css*/
+  .crmWebToEntityForm{
+    width: 300px !important;
+  }
+  /* End Zoho CRM form css*/
+
+  .clients-section .heading h2{
+    width: 100%;
+  }
+
+  .whatsapp-main a svg {
+    margin-left: 4px;
+  }
+
+  .heading h1{
+    font-size: 35px;
+  }
+
+  .heading h2{
+    font-size: 32px;
+  }
+
+  header {
+    height: 60px;
+  }
+
+  .whatsapp-main a {
+    font-size: 16px;
+  }
+
+  .clients-section .client-main-box{
+    margin: 0 20px 60px;
+  }
+  .benifit-section, .clients-section{
+    padding: 60px 0 0;
+    text-align: center;
+  }
+  .traditional-img{
+    margin-top: 50px;
+  }
+  .traditional-img img{
+    position: relative;
+    left: inherit;
+    transform: inherit;
+  }
+  .traditional-contact-us{
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  .whatsapp-section .heading h2, .traditional-contact-us .heading h1{
+    width: 100%;
+  }
+
+  .whatsapp-section .heading h2{
+    margin-bottom: 30px;
+  }
+
+  .client-main-box .client-card svg.left {
+    position: relative;
+    top: -9px;
+    left: -4px;
+  }
+
+}
+
+@media (max-width:460px){
+  .modal .modal-dialog {
+    max-width: 100%;
+  }
+}
+
+
+@media(max-width:400px){
+  .whatsapp-section .take-our-expert{
+    flex-direction: column;
+  }
+  .whatsapp-section .take-our-expert span{
+    margin: 18px;
+  }
+}
+
+
+@media (max-width:380px){
+  .whatsapp-main{
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 350px) {
+
+  /* Zoho CRM form css*/
+  .crmWebToEntityForm{
+    width: 300px !important;
+  }
+  /* End Zoho CRM form css*/
+
+}

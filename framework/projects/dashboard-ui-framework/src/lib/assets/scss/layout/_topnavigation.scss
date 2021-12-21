@@ -1,0 +1,209 @@
+.survey-nav-items{
+    margin: 0 auto;
+    // flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul{
+        padding: 0;
+        margin:0;
+        li{
+            float: left;
+            height: 32px;
+            color: #2E384D;
+            display: flex;
+            cursor: pointer;
+            margin-top: 0;
+            margin-right: -1.3em;
+            line-height: 1.2em;
+            padding: 0.5em 2em;
+            background:linear-gradient(70deg, transparent  1em, #DEEBFF 1em, #DEEBFF 50%, transparent 50%) top  left no-repeat,
+                        linear-gradient(-110deg, transparent 1em, #DEEBFF 1em, #DEEBFF 55%, transparent 55%) top   no-repeat,
+                        linear-gradient(-70deg, transparent  1em, #DEEBFF 1em, #DEEBFF 50%, transparent 50%) bottom  left no-repeat,
+                        linear-gradient(110deg, transparent 1em, #DEEBFF 1em, #DEEBFF 55%, transparent 55%) bottom   no-repeat;
+            background-size:100% 51.5% ;
+            @media only screen and (max-width: 1300px){
+                padding: 0.5em 1.4em;
+                margin-right: -1.5em;
+            }
+            &:last-child{
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                padding-right: 1em;
+                background: linear-gradient(70deg, transparent 1em, #DEEBFF 1em, #DEEBFF 100%, transparent 50%) top left no-repeat,
+                linear-gradient(-110deg, transparent 1em, #DEEBFF 1em, #DEEBFF 55%, transparent 55%) top no-repeat,
+                linear-gradient(-70deg, transparent 1em, #DEEBFF 1em, #DEEBFF 50%, transparent 50%) bottom left no-repeat,
+                linear-gradient(110deg, transparent 1em, #DEEBFF 1em, #DEEBFF 100%, transparent 100%) bottom no-repeat;
+                background-size: 100% 51.5%;
+            }
+            &:first-child{
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                padding-left: 1em;
+                background: linear-gradient(70deg, transparent 1em, #DEEBFF 1em, #DEEBFF 50%, transparent 50%) top left no-repeat,
+                linear-gradient(-110deg, transparent 1em, #DEEBFF 1em, #DEEBFF 100%, transparent 55%) top no-repeat,
+                linear-gradient(-70deg, transparent 1em, #DEEBFF 1em, #DEEBFF 100%, transparent 100%) bottom left no-repeat,
+                linear-gradient(110deg, transparent 1em, #DEEBFF 1em, #DEEBFF 55%, transparent 55%) bottom no-repeat;
+                background-size: 100% 51.5%;
+            }
+            .nav-count{
+                width: 17px;
+                height: 17px;
+                line-height: 17px;
+                font-weight: 500;
+                border-radius: 50%;
+                background-color: #B3D4FF;
+                color: #fff;
+                margin-right: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                position: relative;
+                &::before{
+                    opacity: 0;
+                    content: "✔";
+                    // content:url(/assets/svg/tick_icon.svg);
+                    position: absolute;
+                    top: 0px;
+                    left: 4px;
+                    color: #0052CC;
+                }
+            }
+            &.active{
+                background-color: transparent;
+                background:linear-gradient(70deg, transparent  1em, #0052CC 1em, #0052CC 50%, transparent 50%) top  left no-repeat,
+                linear-gradient(-110deg, transparent 1em, #0052CC 1em, #0052CC 55%, transparent 55%) top   no-repeat,
+                linear-gradient(-70deg, transparent  1em, #0052CC 1em, #0052CC 50%, transparent 50%) bottom  left no-repeat,
+                linear-gradient(110deg, transparent 1em, #0052CC 1em, #0052CC 55%, transparent 55%) bottom   no-repeat;
+                background-size:100% 51.5% ;
+                color: #fff;
+                &::before{
+                    border-left-color: #fff;
+                }
+                &::after{
+                    border-left-color: #0052CC;
+                }
+                &:last-child{
+                    background: linear-gradient(70deg, transparent 1em, #0052CC 1em, #0052CC 100%, transparent 50%) top left no-repeat,
+                    linear-gradient(-110deg, transparent 1em, #0052CC 1em, #0052CC 55%, transparent 55%) top no-repeat,
+                    linear-gradient(-70deg, transparent 1em, #0052CC 1em, #0052CC 50%, transparent 50%) bottom left no-repeat,
+                    linear-gradient(110deg, transparent 1em, #0052CC 1em, #0052CC 100%, transparent 100%) bottom no-repeat;
+                    background-size: 100% 51.5%;
+                }
+                &:first-child{
+                    background: linear-gradient(70deg, transparent 1em, #0052CC 1em, #0052CC 50%, transparent 50%) top left no-repeat,
+                    linear-gradient(-110deg, transparent 1em, #0052CC 1em, #0052CC 100%, transparent 55%) top no-repeat,
+                    linear-gradient(-70deg, transparent 1em, #0052CC 1em, #0052CC 100%, transparent 100%) bottom left no-repeat,
+                    linear-gradient(110deg, transparent 1em, #0052CC 1em, #0052CC 55%, transparent 55%) bottom no-repeat ;
+                    background-size: 100% 51.5%;
+                }
+            }
+            &.completed{
+                background-color: transparent;
+                background:linear-gradient(70deg, transparent  1em, #0052CC 1em, #0052CC 50%, transparent 50%) top  left no-repeat,
+                linear-gradient(-110deg, transparent 1em, #0052CC 1em, #0052CC 55%, transparent 55%) top   no-repeat,
+                linear-gradient(-70deg, transparent  1em, #0052CC 1em, #0052CC 50%, transparent 50%) bottom  left no-repeat,
+                linear-gradient(110deg, transparent 1em, #0052CC 1em, #0052CC 55%, transparent 55%) bottom   no-repeat;
+                background-size:100% 51.5% ;
+                color: #fff;
+                &::before{
+                    border-left-color: #fff;
+                }
+                &::after{
+                    border-left-color: #0052CC;
+                }
+                &:last-child{
+                    background: linear-gradient(70deg, transparent 1em, #0052CC 1em, #0052CC 100%, transparent 50%) top left no-repeat,
+                    linear-gradient(-110deg, transparent 1em, #0052CC 1em, #0052CC 55%, transparent 55%) top no-repeat,
+                    linear-gradient(-70deg, transparent 1em, #0052CC 1em, #0052CC 50%, transparent 50%) bottom left no-repeat,
+                    linear-gradient(110deg, transparent 1em, #0052CC 1em, #0052CC 100%, transparent 100%) bottom no-repeat ;
+                    background-size: 100% 51.5%;
+                }
+                &:first-child{
+                    background: linear-gradient(70deg, transparent 1em, #0052CC 1em, #0052CC 50%, transparent 50%) top left no-repeat,
+                    linear-gradient(-110deg, transparent 1em, #0052CC 1em, #0052CC 100%, transparent 55%) top no-repeat,
+                    linear-gradient(-70deg, transparent 1em, #0052CC 1em, #0052CC 100%, transparent 100%) bottom left no-repeat,
+                    linear-gradient(110deg, transparent 1em, #0052CC 1em, #0052CC 55%, transparent 55%) bottom no-repeat ;
+                    background-size: 100% 51.5%;
+                }
+                .nav-count{
+                    background: #fff;
+                    &::before{
+                        opacity: 1;
+                        // -webkit-transition: opacity 0.3s ease 0.5s;
+                        // -moz-transition: opacity 0.3s ease 0.5s;
+                        // -ms-transition: opacity 0.3s ease 0.5s;
+                        // transition: opacity 0.3s ease 0.5s;
+                    }
+                    .count{
+                        display: none;
+                    }
+                }
+                &:hover{
+                    background-color: #0065FF;
+                    background-color: transparent;
+                    background:linear-gradient(70deg, transparent  1em, #0065FF 1em, #0065FF 50%, transparent 50%) top  left no-repeat,
+                    linear-gradient(-110deg, transparent 1em, #0065FF 1em, #0065FF 55%, transparent 55%) top   no-repeat,
+                    linear-gradient(-70deg, transparent  1em, #0065FF 1em, #0065FF 50%, transparent 50%) bottom  left no-repeat,
+                    linear-gradient(110deg, transparent 1em, #0065FF 1em, #0065FF 55%, transparent 55%) bottom   no-repeat;
+                    background-size:100% 51.5% ;
+                    color: #fff;
+                    &::before{
+                        border-left-color: #fff;
+                    }
+                    &::after{
+                        border-left-color: #0065FF;
+                    }
+                    &:last-child{
+                        background: linear-gradient(70deg, transparent 1em, #0065FF 1em, #0065FF 100%, transparent 50%) top left no-repeat,
+                        linear-gradient(-110deg, transparent 1em, #0065FF 1em, #0065FF 55%, transparent 55%) top no-repeat,
+                        linear-gradient(-70deg, transparent 1em, #0065FF 1em, #0065FF 50%, transparent 50%) bottom left no-repeat,
+                        linear-gradient(110deg, transparent 1em, #0065FF 1em, #0065FF 100%, transparent 100%) bottom no-repeat ;
+                        background-size: 100% 51.5%;
+                    }
+                    &:first-child{
+                        background: linear-gradient(70deg, transparent 1em, #0065FF 1em, #0065FF 50%, transparent 50%) top left no-repeat,
+                        linear-gradient(-110deg, transparent 1em, #0065FF 1em, #0065FF 100%, transparent 55%) top no-repeat,
+                        linear-gradient(-70deg, transparent 1em, #0065FF 1em, #0065FF 100%, transparent 100%) bottom left no-repeat,
+                        linear-gradient(110deg, transparent 1em, #0065FF 1em, #0065FF 55%, transparent 55%) bottom no-repeat ;
+                        background-size: 100% 51.5%;
+                    }
+                    .nav-count{
+                        background: #fff;
+                        &::before{
+                            opacity: 1;
+                            // -webkit-transition: opacity 0.3s ease 0.5s;
+                            // -moz-transition: opacity 0.3s ease 0.5s;
+                            // -ms-transition: opacity 0.3s ease 0.5s;
+                            // transition: opacity 0.3s ease 0.5s;
+                        }
+                        .count{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            &.done-active{
+                color: #0052CC;
+                .nav-count{
+                    background: #0052CC;
+                    &::before{
+                        opacity: 1;
+                        -webkit-transition: opacity 0.3s ease 0.5s;
+                        -moz-transition: opacity 0.3s ease 0.5s;
+                        -ms-transition: opacity 0.3s ease 0.5s;
+                        transition: opacity 0.3s ease 0.5s;
+                        color: #fff;
+                    }
+                    .count{
+                        display: none;
+                    }
+                }
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

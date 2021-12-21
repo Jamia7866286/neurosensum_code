@@ -1,0 +1,66 @@
+<dashboard-page>
+  <div class="page-head">
+    Overview page
+  </div>
+  <div class="page-content">
+    <div class="container">
+      <div class="columns">
+        <div class="column col-4">
+          <dashboard-widget class="shadow">
+            <div class="widget-head">
+              Simple Line Chart
+            </div>
+            <div class="widget-content" style="height: 300px;">
+              <dashboard-chart [crosstabDefination]="crosstab1Def" [chartConfig]="chart1Config"
+                [dataSelector]="dataSelector1" [beforeChartRender]="beforeRender"></dashboard-chart>
+            </div>
+          </dashboard-widget>
+        </div>
+        <div class="column col-3">
+          <dashboard-widget class="shadow">
+            <div class="widget-head">
+              Simple Bar Chart
+            </div>
+            <div class="widget-content" style="height: 300px;">
+              <dashboard-chart [crosstabDefination]="crosstab2Def" [chartConfig]="chart2Config"
+                [dataSelector]="dataSelector2"></dashboard-chart>
+            </div>
+          </dashboard-widget>
+        </div>
+        <div class="column col-2">
+          <dashboard-filter [config]="filter1Config"> </dashboard-filter>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column col-4">
+          <h6>Bubble view</h6>
+          <hr>
+          <!-- <dashboard-packed-donut [variableId]="'vz4'"></dashboard-packed-donut> -->
+        </div>
+        <div class="column col-6">
+          <h6 *ngIf="">Word Cloud</h6>
+          <hr>
+          <dashboard-word-cloud [textVariableId]="'vz4'"></dashboard-word-cloud>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column col-6">
+          <h6>Comment cards</h6>
+          <hr>
+          <dashboard-key-drivers [variables]="variables"></dashboard-key-drivers>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column col-6">
+          <h6>Comment cards</h6>
+          <hr>
+          <dashboard-comments-card [cardConfig]="cardConfig" [pageSize]="'20'">
+          </dashboard-comments-card>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="page-footer">
+    page footer
+  </div> -->
+</dashboard-page>

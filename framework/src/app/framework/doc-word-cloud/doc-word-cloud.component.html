@@ -1,0 +1,53 @@
+<dashboard-page>
+  <div class="page-head">
+    <h5><strong>Word Cloud</strong></h5>
+  </div>
+  <div class="page-content">
+    <div class="container">
+      <div class="columns">
+        <div class="column col-12">
+          <h5><u>Inputs to be taken</u></h5>
+          <p>
+            <strong>textVariableId: (String)</strong> It will take variable Id of the words which are to be set in word
+            cloud.<br>
+            <strong>strengthVariableId: (String)</strong> It will take the strength variable Id of that given word which
+            will determine its size in the wordcloud.<br>
+          </p>
+          <h5><u>Optional Inputs</u></h5>
+          <p>
+            <strong>beforeGettingResponseData: (Function)</strong> There will be 3 parameters that will be passed i.e-
+            <strong>tableDefination, pageIndex</strong> and <strong>pageSize</strong> to alter Echart options before
+            getting response data.<br>
+            <strong>beforeCloudRender: (Function)</strong> There will be 3 parameters that will be passed i.e-
+            <strong>tableDefination, pageIndex</strong> and <strong>pageSize</strong> to alter Echart options before
+            rendering Word cloud.<br>
+          </p>
+        </div>
+        <div class="column col-12">
+          <h5><u>Example of Word Cloud</u></h5>
+        </div>
+        <div class="column col-12">
+          <pre class="code" data-lang="HTML">
+                                <code>
+                                    {{example}}
+                                </code>
+                        </pre>
+        </div>
+        <div class="column col-12">
+          <h5><u>Sample Working Model</u></h5>
+          <!-- <dashboard-word-cloud [textVariableId]="'vz4'" [strengthVariableId]="'vz6'" [beforeCloudRender]="printChartOptions" [beforeGettingResponseData]="ShowChartOptions"></dashboard-word-cloud> -->
+          <div style="height: 350px;">
+            <dashboard-widget>
+              <div class="widget-content">
+                <dashboard-word-cloud style="height: 250px" [textVariableId]="'vz15'" [beforeCloudRender]="printChartOptions"
+              [beforeGettingResponseData]="ShowChartOptions"></dashboard-word-cloud>
+              </div>
+            </dashboard-widget>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</dashboard-page>

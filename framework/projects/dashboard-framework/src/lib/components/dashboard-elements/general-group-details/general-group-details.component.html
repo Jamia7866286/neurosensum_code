@@ -1,0 +1,38 @@
+<div *ngIf="!isLoading">
+    <div *ngIf="crossTabResult && detailsType===DetailType.simple" class="detail-score" style="width: 100%;padding-top: 1rem">
+        <div *ngFor="let items of crossTabResult.data;let i=index" class="smily-main good">
+
+            <div class="smily-rating">
+                <span class="subHeading">{{items[0] | number: "1.2-2"}}%</span>
+                <div class="progress-score">
+                    <span>{{crossTabResult.rows[i]['text']}}</span>
+                </div>
+                <div class="rating-triangle" [ngStyle]="{'background-color':!colors[i]?'#4C9AFF':colors[i],width: scale[i] + '%'}"></div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="crossTabResult && detailsType===DetailType.singleLine" class="detail-score" style="width: 100%;padding-top: 1rem">
+        <div *ngFor="let items of crossTabResult.data; let i = index">
+            <div class="comment-heading">
+                <div class="progress-dimensions">
+                    <div style="width: 32%">{{crossTabResult.rows[i]['text']}}</div>
+                    <div id="myProgress" style="width:70%;" [ngStyle]="{ width :scale[i] + '%'}">
+                        <div #bar [ngStyle]="{'background-color':!colors[i]?'#4C9AFF':colors[i],'height':barHeight+'px'}" class="bar-design">
+                        </div>
+                    </div>
+                    <div *ngIf="crossTabResult" [ngStyle]="{'width':(63-scale[i])+'%','text-align':'right','margin-left':'4px'}" class="numeric">
+                        <p>{{items[0] | number: '1.2-2'}}%</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<ng-container *ngIf="isLoading">
+    <div class="lds-dual-ring"></div>
+</ng-container>

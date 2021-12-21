@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+      <!-- Format Detection -->
+      <meta name="format-detection" content="telephone=no" />
+      <title>Retain your customers for life with this Lifetime Deal</title>
+
+      <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+      <meta name="description" content="Retain your customers for life with this Lifetime Deal" />
+
+      <link rel="canonical" href="https://www.surveysensum.com/ltd/" />
+
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:type" content="website" />
+
+      <meta property="og:title" content="Retain your customers for life with this Lifetime Deal" />
+
+      <meta property="og:description" content="Retain your customers for life with this Lifetime Deal" />
+
+      <meta property="og:url" content="https://www.surveysensum.com/ltd/" />
+
+      <meta property="og:site_name" content="Survey Sensum" />
+      <meta name="twitter:card" content="summary" />
+
+      <meta name="twitter:description" content="Retain your customers for life with this Lifetime Deal" />
+
+      <meta name="twitter:title" content="Retain your customers for life with this Lifetime Deal" />
+
+      <meta property="og:image"
+            content="https://www.surveysensum.com/wp-content/themes/survey/homepage_assets/img/svg/Surveysensum-logo.svg" />
+
+      <!-- Favicon -->
+      <link rel="icon" href="assets/img/ss-favicon.png" type="image/png" sizes="32x32" />
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet" />
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <script src="https://js.stripe.com/v3/"></script>
+      <script src="assets/js/jquery.serializejson.js"></script>
+
+      <style>
+            .form-input.error.StripeElement--empty {
+                  border-color: #de350b !important;
+            }
+
+            .is-error {
+                  border-color: #de350b !important;
+            }
+
+            .form-input-hint {
+                  color: #de350b;
+                  font-size: .857142857rem;
+            }
+
+            .form-input-hint.success {
+                  color: #00875A;
+            }
+      </style>
+
+      <script>
+            // var env = "prod";
+            $('document').ready(() => {
+                  document.getElementById('ltdBillingForm').reset();
+            });
+
+            window.addEventListener('unload', function (event) {
+                  localStorage.removeItem('Authorization');
+            });
+      </script>
+
+      <!-- Google Tag Manager -->
+      <script>(function (w, d, s, l, i) {
+                  w[l] = w[l] || []; w[l].push({
+                        'gtm.start':
+                              new Date().getTime(), event: 'gtm.js'
+                  }); var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                              'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-NH6929D');</script>
+      <!-- End Google Tag Manager -->
+
+      <script type="module" src="assets/js/billing.service.js"></script>
+      <script type="module" src="assets/js/ltd.logics.js"></script>
+      <script type="module" src="assets/js/country.service.js"></script>
+      <script type="module" src="assets/js/coupon.service.js"></script>
+      <script type="module" src="assets/js/auth.service.js"></script>
+      <script type="module" src="assets/js/user.service.js"></script>
+      <script type="module" src="assets/js/plans.service.js"></script>
+
+      <script type="module">
+            window.ltdLogicService.isCreatingNewAccount = true;
+            document.getElementById('payment-btn-container').classList.add('disable');
+
+            window.plansService.GetLtdPlan().then(ltdPlans => {
+                  const urlParams = new URLSearchParams(window.location.search)
+                  const ltdPlan = ltdPlans.find(plan => plan.ssPlanId === urlParams.get('p'));
+                  const planDiv = document.querySelector('.plan-card .plans-inner');
+                  if (ltdPlan) {
+                        planDiv.setAttribute('data-stripePlanid', ltdPlan.stripePlanId);
+                        planDiv.setAttribute('data-currencySymbol', ltdPlan.currencySymbol);
+                        planDiv.setAttribute('data-amount', ltdPlan.amount / 100);
+                        if (ltdPlan.amount === 19800 || ltdPlan.amount === 9800) {
+                              planDiv.querySelector('.badge-txt').innerText = `${ltdPlan.currencySymbol}${(ltdPlan.amount / 100) -1 }`;
+                        } else{
+                              planDiv.querySelector('.badge-txt').innerText = `${ltdPlan.currencySymbol}${ltdPlan.amount / 100 }`;
+                        }
+                        planDiv.querySelector('.plan-name-choose').innerText = ltdPlan.name;
+
+                        ChangePlan(planDiv);
+                        document.getElementById('payment-btn-container').classList.remove('disable');
+                  } else {
+                        planDiv.querySelector('.plan-name-choose').innerText = "Plan Not Found";
+                  }
+            });
+
+            // window.countryService.getCountries().then((countries) => {
+            //       const countryDropdown = document.querySelector('select[name="address[country]"]');
+            //       for (const country of countries) {
+            //             const option = document.createElement('option');
+            //             option.value = country.alpha2Code;
+            //             option.innerText = country.name;
+            //             countryDropdown.appendChild(option);
+            //       }
+            // });
+      </script>
+
+      <script>
+            function ChangePlan(ltdPlanElement) {
+                  // const planDiv = document.querySelector('.plan-card .plans-inner');
+                  ltdPlanElement.classList.add('active');
+                  // document.querySelector('.plan-card .payment-summary .price.total-price span:nth-child(2)').innerText = `${ltdPlanElement.dataset.currencysymbol}${ltdPlanElement.dataset.amount}`;
+                  // document.querySelector('.plan-card .payment-summary .price.deal-price span:nth-child(2)').innerText = `${ltdPlanElement.dataset.currencysymbol}${ltdPlanElement.dataset.amount}`;
+                  window.ltdLogicService.appliedPromoCode = undefined;
+                  // document.querySelector('.discount-field input').value = '';
+                  // document.querySelector('.discount-message span[error-hint]').style.display = "none";
+                  // document.querySelector('.discount-message span[success-hint]').style.display = "none";
+                  // document.querySelector('.plan-card .payment-summary .price.discount-price').style.display = "none";
+            }
+      </script>
+
+</head>
+
+<body>
+
+
+      <!-- Google Tag Manager (noscript) -->
+      <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH6929D" height="0" width="0"
+                  style="display:none;visibility:hidden"></iframe>
+      </noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+
+      <div class="request-demo-header">
+            <div class="container">
+                  <div class="row">
+                        <div class="col-12">
+                              <nav class="navbar navbar-expand-lg navbar-light">
+
+                                    <a class="navbar-brand" href="https://www.surveysensum.com">
+                                          <img src="https://www.surveysensum.com/wp-content/themes/survey/homepage_assets/img/svg/Surveysensum-logo.svg"
+                                                class="img-fluid" alt="SurveySensum" />
+                                    </a>
+
+                              </nav>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+
+      <div class="billing-main-page">
+
+
+            <div class="container">
+
+                  <div class="row" id="form-errors" style="display: none;">
+                        <div class="col-md-12">
+                              <div class="unsuccess-payment">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                          <path d="M0 0h24v24H0z" fill="none" />
+                                          <path fill="#FF8F73"
+                                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                                    </svg>
+                                    <div class="payment-message">
+                                          <!-- Error message -->
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <form id="ltdBillingForm">
+
+                        <div class="columns columns-spacing">
+
+                              <div class="column col-8 billing-form">
+
+                                    <div class="billing-details">
+
+                                          <div class="billing-heading-main">
+                                                <div class="billing-heading-in">
+                                                      <div class="billing-heading">
+                                                            <!-- Heading -->
+                                                      </div>
+                                                      <div class="billing-sub-heading">This account will be associated
+                                                            with your lifetime subscription</div>
+                                                </div>
+                                                <div>
+                                                      <span class="billing-account-main"
+                                                            onclick="ltdLogicService.isCreatingNewAccount=!ltdLogicService.isCreatingNewAccount;window.ltdLogicService.showErrorMsg(undefined)"></span>
+                                                      <!-- Mode switch text -->
+                                                </div>
+                                          </div>
+                                          <div class="personal-details">
+
+                                                <div class="person-name">
+                                                      <div class="form-group">
+                                                            <label class="form-label" for="input-example-1">Full
+                                                                  Name</label>
+                                                            <input name="name" class="form-input"
+                                                                  placeholder="Enter Your Name" type="text"
+                                                                  oninput="ltdLogicService.formElemRequiredCheck(this)" />
+
+                                                            <span class="form-input-hint" required-hint
+                                                                  style="display: none;">
+                                                                  <span>Name is required</span>
+                                                            </span>
+                                                      </div>
+                                                </div>
+
+
+
+                                                <div class="billing-email">
+                                                      <div class="form-group">
+                                                            <label class="form-label" for="input-example-1">
+                                                                  Email Address</label>
+                                                            <input name="email" class="form-input"
+                                                                  placeholder="example@xyz.com" type="text"
+                                                                  oninput="ltdLogicService.formElemRequiredCheck(this);ltdLogicService.resetEmailCheck(this)"
+                                                                  onchange="ltdLogicService.formElemEmailCheck(this)" />
+                                                            <div>
+                                                                  <span class="form-input-hint" required-hint
+                                                                        style="display: none;">
+                                                                        <span>Email is required</span>
+                                                                  </span>
+                                                                  <span class="form-input-hint" invalidEmail-hint
+                                                                        style="display: none;">
+                                                                        <span>Email is invalid</span>
+                                                                  </span>
+                                                            </div>
+                                                      </div>
+                                                </div>
+
+                                                <div class="billing-email password-field">
+                                                      <div class="form-group">
+                                                            <label class="form-label" for="password">Password</label>
+                                                            <input name="password" class="form-input"
+                                                                  placeholder="Enter Password" type="password" />
+                                                            <span class="form-input-hint" required-hint
+                                                                  style="display: none;">
+                                                                  <span>Password is required</span>
+                                                            </span>
+                                                      </div>
+                                                </div>
+
+                                          </div>
+                                    </div>
+
+
+                              </div>
+
+
+                              <div class="column col-4 col-spacing plan-card">
+                                    <div class="black">
+                                          <div class="card-main border-premium border-basic border-enterprise">
+
+                                                <div class="card-inner">
+
+                                                      <div class="plan">
+
+                                                            <div class="badge-box">
+                                                                  <div class="plan-name-main">
+                                                                        <div class="plans-inner">
+                                                                              <div class="plan-name-choose"></div>
+                                                                              <div class="badge-txt">
+                                                                                    <!-- plan price -->
+                                                                              </div>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+
+                                                      </div>
+
+                                                      <div class="discount-coupon">
+                                                            <div class="discount-heading">Redeem Discount Coupon</div>
+                                                            <div class="discount-field-main">
+                                                                  <div class="discount-field">
+                                                                        <div class="form-group">
+                                                                              <input class="form-input"
+                                                                                    placeholder="Enter code"
+                                                                                    type="text">
+
+                                                                        </div>
+                                                                        <a id="couponId" href="javascript:void(0)"
+                                                                              class="ltd-green-btn"
+                                                                              onclick="ltdLogicService.applyCoupon(this)">
+                                                                              <span class="text">Redeem</span>
+                                                                              <span class="btn-loader">
+                                                                                    <svg class="circle-loader progress"
+                                                                                          width="24" height="24"
+                                                                                          version="1.1"
+                                                                                          xmlns="http://www.w3.org/2000/svg">
+                                                                                          <circle
+                                                                                                style="height: 100%;width:100%"
+                                                                                                cx="12" cy="12" r="10">
+                                                                                          </circle>
+                                                                                    </svg>
+                                                                              </span>
+                                                                        </a>
+                                                                  </div>
+                                                                  <div class="discount-message">
+                                                                        <span error-hint class="form-input-hint"
+                                                                              style="display: none;">
+                                                                              <!-- error message -->
+                                                                        </span>
+                                                                        <span success-hint
+                                                                              class="form-input-hint success"
+                                                                              style="display: none;">
+                                                                              Discount coupon applied!
+                                                                        </span>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+
+                                                      <div class="terms-conditions-box">
+
+                                                            <!-- <div class="encrypted-payment-txt">
+
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" width="10.559"
+                                                                        height="13.123" viewBox="0 0 10.559 13.123">
+                                                                        <g transform="translate(0.25 0.25)">
+                                                                              <path style="fill:#00875a;stroke:#00875a;stroke-width:0.5px;"
+                                                                                    d="M60.579,4.635h-.888V2.608a2.663,2.663,0,0,0-5.325,0V4.635h-.887A1.481,1.481,0,0,0,52,6.114v5.029a1.481,1.481,0,0,0,1.479,1.479h7.1a1.481,1.481,0,0,0,1.479-1.479V6.114A1.481,1.481,0,0,0,60.579,4.635ZM55.352,2.608a1.677,1.677,0,0,1,3.353,0V4.635H55.352V2.608Zm5.72,8.536a.494.494,0,0,1-.493.493h-7.1a.494.494,0,0,1-.493-.493V6.114a.494.494,0,0,1,.493-.493h7.1a.494.494,0,0,1,.493.493Z"
+                                                                                    transform="translate(-52)" />
+                                                                              <g transform="translate(4.117 7.051)">
+                                                                                    <g transform="translate(0)">
+                                                                                          <path style="fill:#00875a;stroke:#00875a;stroke-width:0.5px;"
+                                                                                                d="M219.912,286a.912.912,0,0,0-.494,1.679v1.082a.493.493,0,1,0,.986,0V287.68a.912.912,0,0,0-.492-1.68Z"
+                                                                                                transform="translate(-219 -286)" />
+                                                                                    </g>
+                                                                              </g>
+                                                                        </g>
+                                                                  </svg>
+                                                                  This is a secure and encrypted payment
+                                                            </div> -->
+
+                                                            <!-- <div class="terms-checkbox">
+
+                                                                  <span>
+                                                                        Your privacy is super important to us – we’ll
+                                                                        only use your information as described in our
+                                                                        <a href="https://portal.surveysensum.com/terms"
+                                                                              target="_blank">
+                                                                              Terms of use</a> and <a
+                                                                              href="https://portal.surveysensum.com/policy"
+                                                                              target="_blank">Privacy Policy</a>.
+                                                                  </span>
+
+                                                            </div> -->
+
+                                                            <div class="contacts-number">
+                                                                  <a id="payment-btn-container"
+                                                                        href="javascript:void(0)" class="ltd-green-btn"
+                                                                        onclick="ltdLogicService.makePayment()">
+
+                                                                        <span class="text">Proceed</span>
+                                                                        <span class="btn-loader">
+                                                                              <svg class="circle-loader progress"
+                                                                                    width="24" height="24" version="1.1"
+                                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                                    <circle
+                                                                                          style="height: 100%;width:100%"
+                                                                                          cx="12" cy="12" r="10">
+                                                                                    </circle>
+                                                                              </svg>
+                                                                        </span>
+
+                                                                  </a>
+                                                            </div>
+
+
+                                                      </div>
+
+                                                </div>
+
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </form>
+
+            </div>
+      </div>
+
+
+
+      <footer class="request-demo-footer">
+            <div class="bottom-footer stripe-footer">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-md-12">
+                                    <div class="bottom-footer-in">
+                                          <ul class="cookie-privacy">
+                                                <li><a href="https://www.surveysensum.com/terms-of-use/"
+                                                            target="_blank">Terms of use</a></li>
+                                                <li><a href="https://www.surveysensum.com/privacy-policy/"
+                                                            target="_blank">Privacy Policy</a></li>
+                                          </ul>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </footer>
+
+</body>
+
+</html>

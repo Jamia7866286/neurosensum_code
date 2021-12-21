@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1077" height="447" viewBox="0 0 1077 447">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="SvgjsRect1343" width="928.401" height="300.989" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Group_9679" data-name="Group 9679" transform="translate(6202 -15024)">
+    <rect id="Rectangle_4388" data-name="Rectangle 4388" width="1077" height="447" transform="translate(-6202 15024)" fill="#fff"/>
+    <g id="dynamic-realtime-line-chart" transform="translate(-6148 15035)">
+      <g id="SvgjsG1336" transform="translate(55.971 37.359)">
+        <rect id="SvgjsRect1342" width="1.46" height="275.989" transform="translate(0 20)" fill="rgba(177,185,196,0.9)"/>
+        <g id="SvgjsG1353" transform="translate(0 296.989)">
+          <g id="SvgjsG1354" transform="translate(36.514 15)">
+            <text id="SvgjsText1356" transform="translate(23 9)" font-size="12" font-family="Helvetica"><tspan x="-23.019" y="0">Q1 2019</tspan></text>
+            <text id="SvgjsText1357" transform="translate(85.732 9)" font-size="12" font-family="Helvetica"><tspan x="-23.019" y="0">Q2 2019</tspan></text>
+            <text id="SvgjsText1358" transform="translate(159.594 9)" font-size="12" font-family="Helvetica"><tspan x="-23.019" y="0">Q3 2019</tspan></text>
+            <text id="SvgjsText1359" transform="translate(227.891 9)" font-size="12" font-family="Helvetica"><tspan x="-23.019" y="0">Q4 2019</tspan></text>
+            <text id="SvgjsText1360" transform="translate(293.185 9)" font-size="12" font-family="Helvetica"><tspan x="-23.019" y="0">Q1 2020</tspan></text>
+            <text id="SvgjsText1361" transform="translate(361.982 9)" font-size="12" font-family="Helvetica"><tspan x="-23.019" y="0">Q2 2020</tspan></text>
+            <text id="SvgjsText1362" transform="translate(429.779 9)" font-size="12" font-family="Helvetica"><tspan x="-23.019" y="0">Q3 2020</tspan></text>
+            <text id="SvgjsText1363" transform="translate(498.076 9)" font-size="12" font-family="Helvetica"><tspan x="-23.019" y="0">Q4 2020</tspan></text>
+            <text id="SvgjsText1364" transform="translate(566.373 9)" font-size="12" font-family="Helvetica"><tspan x="-23.019" y="0">Q1 2021</tspan></text>
+            <text id="SvgjsText1365" transform="translate(634.67 9)" font-size="12" font-family="Helvetica"><tspan x="-23.019" y="0">Q2 2021</tspan></text>
+            <text id="SvgjsText1366" transform="translate(708.532 9)" font-size="12" font-family="Helvetica"><tspan x="-23.019" y="0">Q3 2021</tspan></text>
+            <text id="SvgjsText1367" transform="translate(771.264 9)" font-size="12" font-family="Helvetica"><tspan x="-23.019" y="0">Q4 2021</tspan></text>
+          </g>
+          <line id="SvgjsLine1370" x2="928.401" stroke="#78909c" stroke-width="1" stroke-dasharray="0"/>
+        </g>
+        <g id="SvgjsG1381" transform="translate(0 20)">
+          <line id="SvgjsLine1382" y2="6" transform="translate(62.732 276.989)" stroke="#78909c" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1383" y2="6" transform="translate(125.464 276.989)" stroke="#78909c" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1384" y2="6" transform="translate(198.943 276.989)" stroke="#78909c" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1385" y2="6" transform="translate(265.257 276.989)" stroke="#78909c" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1386" y2="6" transform="translate(331.572 276.989)" stroke="#78909c" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1387" y2="6" transform="translate(397.886 276.989)" stroke="#78909c" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1388" y2="6" transform="translate(464.2 276.989)" stroke="#78909c" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1389" y2="6" transform="translate(530.515 276.989)" stroke="#78909c" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1390" y2="6" transform="translate(596.829 276.989)" stroke="#78909c" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1391" y2="6" transform="translate(663.143 276.989)" stroke="#78909c" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1392" y2="6" transform="translate(729.458 276.989)" stroke="#78909c" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1393" y2="6" transform="translate(802.937 276.989)" stroke="#78909c" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1395" x2="928.401" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1396" x2="928.401" transform="translate(0 39.427)" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1397" x2="928.401" transform="translate(0 78.854)" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1398" x2="928.401" transform="translate(0 118.281)" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1399" x2="928.401" transform="translate(0 157.708)" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1400" x2="928.401" transform="translate(0 197.135)" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1401" x2="928.401" transform="translate(0 236.562)" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1402" x2="928.401" transform="translate(0 275.989)" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1404" x2="928.401" transform="translate(0 275.989)" stroke="rgba(0,0,0,0)" stroke-width="1" stroke-dasharray="0"/>
+          <line id="SvgjsLine1403" y2="274.989" transform="translate(0 1)" stroke="rgba(0,0,0,0)" stroke-width="1" stroke-dasharray="0"/>
+        </g>
+        <g id="SvgjsG1344" transform="translate(0)" clip-path="url(#clip-path)">
+          <g id="SvgjsG1349" transform="translate(-324.738 20)">
+            <path id="apexcharts-line-1" d="M-128.926,137.994c23.21,0,43.1-23.656,66.314-23.656s43.1-82.8,66.314-82.8S46.807,110.4,70.017,110.4s43.1,114.338,66.314,114.338,43.1-19.713,66.314-19.713,43.1-43.37,66.314-43.37,43.1-31.542,66.314-31.542,43.1,3.943,66.314,3.943,43.1-59.14,66.314-59.14,43.1,74.911,66.314,74.911,43.1-11.828,66.314-11.828,43.1,59.14,66.314,59.14S709.95,74.911,733.16,74.911s43.1,59.14,66.314,59.14,43.1,23.656,66.314,23.656,43.1-15.771,66.314-15.771,43.1,15.771,66.314,15.771" transform="translate(128.926)" fill="none" stroke="#fe8663" stroke-width="5" stroke-dasharray="0"/>
+            <g id="SvgjsG1350" transform="translate(324.738)">
+              <g id="Group_9677" data-name="Group 9677">
+                <ellipse id="SvgjsCircle1409" fill="#00e396" stroke="rgba(255,255,255,0.9)" stroke-width="2"/>
+              </g>
+            </g>
+          </g>
+          <g id="SvgjsG1345" transform="translate(-325.796 20)">
+            <path id="apexcharts-line-0" d="M-128.926,98.567c23.21,0,43.1-27.6,66.314-27.6s43.1,55.2,66.314,55.2,43.1,55.2,66.314,55.2,43.1-35.484,66.314-35.484,43.1,27.6,66.314,27.6,43.1,19.713,66.314,19.713,43.1,3.943,66.314,3.943,43.1,55.2,66.314,55.2,43.1-7.885,66.314-7.885,43.1-27.6,66.314-27.6,43.1,19.713,66.314,19.713,43.1-161.65,66.314-161.65,43.1,74.911,66.314,74.911,43.1,78.854,66.314,78.854,43.1-55.2,66.314-55.2,43.1-27.6,66.314-27.6,43.1,43.37,66.314,43.37" transform="translate(128.926)" fill="none" stroke="rgba(0,143,251,0.9)" stroke-width="5" stroke-dasharray="0"/>
+            <g id="SvgjsG1346" transform="translate(325.796)">
+              <g id="Group_9678" data-name="Group 9678">
+                <ellipse id="SvgjsCircle1410" fill="#008ffb" stroke="rgba(255,255,255,0.9)" stroke-width="2"/>
+              </g>
+            </g>
+          </g>
+        </g>
+        <line id="SvgjsLine1405" x2="928.401" transform="translate(0 20)" stroke="#b6b6b6" stroke-width="1" stroke-dasharray="0"/>
+        <line id="SvgjsLine1406" x2="928.401" transform="translate(0 20)"/>
+      </g>
+      <rect id="SvgjsRect1337"/>
+      <text id="SvgjsText1339" transform="translate(444 406)" fill="#263238" font-size="16" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="0" y="0">NPS Score</tspan></text>
+      <text id="SvgjsText1339-2" data-name="SvgjsText1339" transform="translate(-20 236) rotate(-90)" fill="#263238" font-size="16" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="0" y="0">Churn</tspan></text>
+      <g id="SvgjsG1371" transform="translate(9 50.059)">
+        <g id="SvgjsG1372">
+          <text id="SvgjsText1373" transform="translate(24 9)" font-size="12" font-family="Helvetica"><tspan x="-24.018" y="0">70%</tspan></text>
+          <text id="SvgjsText1374" transform="translate(24 48.527)" font-size="12" font-family="Helvetica"><tspan x="-24.018" y="0">60%</tspan></text>
+          <text id="SvgjsText1375" transform="translate(24 88.054)" font-size="12" font-family="Helvetica"><tspan x="-24.018" y="0">50%</tspan></text>
+          <text id="SvgjsText1376" transform="translate(24 127.581)" font-size="12" font-family="Helvetica"><tspan x="-24.018" y="0">40%</tspan></text>
+          <text id="SvgjsText1377" transform="translate(24 167.108)" font-size="12" font-family="Helvetica"><tspan x="-24.018" y="0">30%</tspan></text>
+          <text id="SvgjsText1378" transform="translate(24 206.635)" font-size="12" font-family="Helvetica"><tspan x="-24.018" y="0">20%</tspan></text>
+          <text id="SvgjsText1379" transform="translate(24 246.162)" font-size="12" font-family="Helvetica"><tspan x="-24.018" y="0">10%</tspan></text>
+          <text id="SvgjsText1380" transform="translate(21 285.689)" font-size="12" font-family="Helvetica"><tspan x="-17.344" y="0">0%</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

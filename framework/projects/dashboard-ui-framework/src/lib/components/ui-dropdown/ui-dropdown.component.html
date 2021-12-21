@@ -1,0 +1,157 @@
+<!-- <div tabindex="=0" (blur)="onTouched()" class="multiselect-dropdown" (clickOutside)="closeDropdown()">
+  <div [class.disabled]="disabled">
+    <span tabindex="-1" class="dropdown-btn" (click)="toggleDropdown($event)">
+      <span *ngIf="selectedItems.length == 0">{{placeholder}}</span>
+      <span class="selected-item" *ngFor="let item of selectedItems;trackBy: trackByFn;let k = index"
+        [hidden]="k > _settings.itemsShowLimit-1">
+        {{item.text}}
+        <a style="padding-top:2px;padding-left:2px;color:white" (click)="onItemClick($event,item)">x</a>
+      </span>
+      <span style="float:right !important;padding-right:4px">
+        <span style="padding-right: 6px;" *ngIf="itemShowRemaining()>0">+{{itemShowRemaining()}}</span>
+        <span [ngClass]="_settings.defaultOpen ? 'dropdown-up' : 'dropdown-down'"></span>
+      </span>
+    </span>
+  </div>
+  <div class="dropdown-list" [hidden]="!_settings.defaultOpen">
+    <ul class="item1">
+      <li (click)="toggleSelectAll()"
+        *ngIf="_data.length > 0 && !_settings.singleSelection && _settings.enableCheckAll && _settings.limitSelection===-1"
+        class="multiselect-item-checkbox" style="border-bottom: 1px solid #ccc;padding:10px">
+        <input type="checkbox" aria-label="multiselect-select-all" [checked]="isAllItemsSelected()"
+          [disabled]="disabled || isLimitSelectionReached()" />
+        <div>{{!isAllItemsSelected() ? _settings.selectAllText : _settings.unSelectAllText}}</div>
+      </li>
+      <li class="filter-textbox" *ngIf="_data.length>0 && _settings.allowSearchFilter">
+        <input type="text" aria-label="multiselect-search" [readOnly]="disabled"
+          [placeholder]="_settings.searchPlaceholderText" [(ngModel)]="filter.text"
+          (ngModelChange)="onFilterTextChange($event)">
+      </li>
+    </ul>
+    <ul class="item2" [style.maxHeight]="_settings.maxHeight+'px'">
+      <li *ngFor="let item of _data | listFilter:filter; let i = index;" (click)="onItemClick($event,item)"
+        class="multiselect-item-checkbox">
+        <input type="checkbox" aria-label="multiselect-item" [checked]="isSelected(item)"
+          [disabled]="disabled || (isLimitSelectionReached() && !isSelected(item))" />
+        <div>{{item.text}}</div>
+      </li>
+      <li class='no-data' *ngIf="_data.length == 0">
+        <h5>{{_settings.noDataAvailablePlaceholderText}}</h5>
+      </li>
+    </ul>
+  </div>
+</div> -->
+
+<div class="dropdown vz-menu" #dropdown [class.disabled]="disabled">
+  <a class="btn btn-link dropdown-toggle btn-secondary sm" tabindex="0" (click)="dropdownRef.toggleDropdown()">
+    <span class="filter-chip" *ngIf="appliedItems.length !== 0">
+      <span class="chip-btn" *ngFor="let item of appliedItems | slice: 0:_settings.itemsShowLimit">{{ item.text }}
+      </span>
+    </span>
+    <span *ngIf="itemShowRemaining() > 0" class="add-items-count">{{
+      "+" + itemShowRemaining()
+      }}</span>
+    <span *ngIf="appliedItems.length === 0">
+      {{ _settings.placeholder }}
+    </span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <defs></defs>
+      <path fill="none" d="M0,0H24V24H0Z" />
+      <path fill="#253858" d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" />
+    </svg>
+  </a>
+  <!-- menu component -->
+  <ui-custom-dropdown #dropdownRef [classes]="['auto-width']" [reference]="dropdown">
+    <ul class="menu search-box"
+      [ngClass]="{'checktoradio': _settings.dropdownType === DropdownType.SingleSelect, 'with-search': _data.length > 0 && _settings.allowSearchFilter}"
+      style="width: 100%;">
+
+      <li (click)="toggleSelectAll()" *ngIf="
+          _data.length > 0 &&
+          _settings.dropdownType !== DropdownType.SingleSelect &&
+          _settings.enableCheckAll &&
+          _settings.limitSelection === -1
+        ">
+        <a>
+          <div class="form-group">
+            <!-- default checkbox -->
+            <div>
+              <label class="form-checkbox">
+                <input type="checkbox" [disabled]="disabled || isLimitSelectionReached()"
+                  [checked]="isAllItemsSelected()" (click)="$event.stopPropagation(); $event.preventDefault()" />
+                <i class="form-icon"></i>
+                {{
+                !isAllItemsSelected()
+                ? _settings.selectAllText
+                : _settings.unSelectAllText
+                }}
+              </label>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="form-group sm" *ngIf="_data.length > 0 && _settings.allowSearchFilter">
+        <!-- <input type="text" [readOnly]="disabled" [placeholder]="_settings.searchPlaceholderText" [(ngModel)]="filter.text" (ngModelChange)="onFilterTextChange($event)" /> -->
+        <span class="input-icon search-spacing">
+          <input class="form-input" type="text" [readOnly]="disabled" [placeholder]="_settings.searchPlaceholderText"
+            [(ngModel)]="filter.text" (ngModelChange)="onFilterTextChange($event)">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.664"
+            height="17.797" viewBox="0 0 17.664 17.797">
+            <defs>
+              <clipPath id="clip-path">
+                <path id="Combined_Shape" data-name="Combined Shape"
+                  d="M16.663,17.8a.989.989,0,0,1-.713-.3l-3.937-4.006a7.506,7.506,0,1,1,1.422-1.406l3.942,4.01a1,1,0,0,1-.714,1.7ZM7.5,2A5.5,5.5,0,1,0,13,7.5,5.506,5.506,0,0,0,7.5,2Z"
+                  transform="translate(3 3)" fill="#0052cc" />
+              </clipPath>
+              <clipPath id="clip-path-2">
+                <rect width="24" height="24" fill="none" />
+              </clipPath>
+            </defs>
+            <g id="Group_8" data-name="Group 8" transform="translate(-3 -3)" clip-path="url(#clip-path)">
+              <g id="_Color" data-name="â†³ ðŸŽ¨Color" clip-path="url(#clip-path-2)">
+                <path id="N500" d="M0,24H24V0H0Z" fill="#0052cc" />
+              </g>
+            </g>
+          </svg>
+        </span>
+      </li>
+      <div appScrollAtBottom class="checkbox-list"
+        [ngClass]="{'search-hide': !(_data.length > 0 && _settings.allowSearchFilter)}" (atBottom)="triggerLoadMore()">
+        <ng-container *ngFor="let item of _data | listFilter: filter; let i = index">
+          <li (click)="onItemClick($event, item)" *ngIf="!item.hide">
+            <a>
+              <div class="form-group">
+                <!-- default checkbox -->
+                <div>
+                  <label class="form-checkbox">
+                    <input type="checkbox" [checked]="isSelected(item)" [disabled]="
+                    disabled || (isLimitSelectionReached() && !isSelected(item)) || item.disabled
+                  " (click)="$event.stopPropagation(); $event.preventDefault()" />
+                    <i class="form-icon"></i>
+                    {{ item.text }}
+                  </label>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ng-container>
+        <!-- No Data Found list item -->
+        <li class="no-data-found" *ngIf="_settings.allowNoResultFoundAfterSearch && !checkNoResultFound(filter)">
+          {{_settings.noResultFoundText}}</li>
+
+      </div>
+
+      <li *ngIf="_data.length == 0">
+        {{ _settings.noDataAvailablePlaceholderText }}
+      </li>
+      <div class="apply-btn-dropdown" *ngIf="
+      _settings.showApplyBtn &&
+      _settings.dropdownType === DropdownType.Multiselect
+    ">
+        <button class="btn btn-primary" [disabled]="disableApplyBtn" (click)="applyFilter();dropdownRef.hide()">
+          {{ _settings.applyBtnText }}
+        </button>
+      </div>
+    </ul>
+  </ui-custom-dropdown>
+</div>

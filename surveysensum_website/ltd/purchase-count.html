@@ -1,0 +1,112 @@
+<!-- Thank You Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Character Set -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Format Detection -->
+  <title>LTD Purchase Count</title>
+  <link rel="icon" href="assets/img/ss-favicon.png" type="image/png" sizes="32x32" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" /> -->
+
+  <script type="module" src="assets/js/user-count.service.js"></script>
+
+  <script>
+    var env = "prod";
+  </script>
+
+  <script type="module">
+    document.querySelector('.alert.alert-danger').style.display = 'none';
+    window.usersCountService.GetUserCount().then((response) => {
+      document.querySelector('.edit-count #countShow').innerHTML = response;
+    });
+  </script>
+
+  <script>
+
+    function SetValue() {
+      if (!document.querySelector('#password').value.trim()) {
+        document.querySelector('.alert.alert-danger').style.display = 'block';
+        return;
+      } else {
+        document.querySelector('.alert.alert-danger').style.display = 'none';
+      }
+      if (!document.querySelector('#purchased-count').value.trim()) {
+        return;
+      }
+      const body = {
+        "passwordToken": document.querySelector('#password').value,
+        "noOfPlansSold": document.querySelector('#purchased-count').value.trim()
+      };
+      window.usersCountService.SetUserCount(body).then(
+        response => {
+          document.querySelector('.alert.alert-danger').style.display = 'none';
+          document.querySelector('.edit-count #countShow').innerHTML = body.noOfPlansSold;
+        }, (err) => {
+          document.querySelector('.alert.alert-danger').style.display = 'block';
+        });
+    }
+  </script>
+
+</head>
+
+<body>
+
+
+
+  <div class="login">
+    <div class="inner-content shadow-main">
+
+      <!-- <div class="password">
+        <div class="login-form-count">
+          <div class="form-group">
+            <label for="password">Login Password</label>
+            <input class="form-control" placeholder="Enter login password" type="password" id="password">
+            <div class="alert alert-danger" role="alert">Please enter valid password</div>
+          </div>
+          <button class="btn btn-primary">Login</button>
+        </div>
+      </div> -->
+
+      <div class="catagory-content demand-upcoming-content ltd-deal-count">
+        <div class="purchased-count">
+          <div class="deal-purchased">
+            <div class="common-text">Life Time Deal Purchased:</div>
+            <div class="form-group login-count">
+              <label for="password">Login Password</label>
+              <input class="form-control" placeholder="Enter login password" type="password" id="password">
+              <div class="alert alert-danger" role="alert">Please enter valid password</div>
+            </div>
+            <div class="purchased-inner">
+              <div class="purchased">
+                <input type="number" min="0" placeholder="Enter Number of Purchased" class="form-control"
+                  id="purchased-count">
+                <button class="btn btn-primary lg" id="inputCountNumber" onclick="SetValue()"> Submit Data
+                  &nbsp;<i class="fa fa-spinner fa-spin" style="display:none"></i>
+                </button>
+              </div>
+              <div class="edit-count">
+                <button class="btn btn-success lg"> Total Purchased: &nbsp; <span id="countShow"></span> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+  <script src="./assets/js/custom.js"></script>
+
+</body>
+
+</html>

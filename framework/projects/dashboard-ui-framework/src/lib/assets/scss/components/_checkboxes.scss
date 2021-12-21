@@ -1,0 +1,112 @@
+// checkbox scss
+
+.form-checkbox, .form-radio{
+    display: inline;
+    .form-icon{
+        height: 1rem;
+        width: 1rem;
+        border-width: 2px;
+    }
+    input {
+        &:checked + .form-icon{
+            background-color: color(blue, base);
+            color: color(blue, base);
+            border-color: color(blue, base);
+            &::before
+            {
+                height: 0.6rem;
+                margin-left: -.12rem;
+                margin-top: -.36rem;
+                width: .3rem;
+            }
+        } 
+        &:focus + .form-icon{
+            border-color: color(blue, base);
+        }
+        &:disabled + .form-icon{
+            background-color: color(blue, blue-100);
+            color: color(blue, base);
+            border-color: color(blue, blue-100);
+            &::before{
+                border-color: color(pacificBlue, pacificBlue-800);
+            }
+        } 
+    }    
+    &.light{
+        input {
+            &:checked + .form-icon{
+                background-color: color(blue, blue-100);
+                color: color(blue, base);
+                border-color: color(blue, blue-100);
+                &::before{
+                    border-color: color(blue, base);
+                }
+            }
+        }    
+    }
+    &.error-border{
+        input {
+            &:checked + .form-icon{
+                border-color: color(red, red-500);
+            }
+        }
+    } 
+    &.is-error{
+        input {
+            &:checked + .form-icon{
+                background-color: color(red, base);
+                border-color: color(red, base);
+                color: color(pacificBlue, pacificBlue-100);
+            }
+            &:focus + .form-icon{
+                border-color: color(red, base);
+            }
+        }
+    }
+    &.is-success{
+        input {
+            &:checked + .form-icon{
+                background-color: color(blue, blue-300);
+                border-color: color(blue, blue-300);
+                color: color(pacificBlue, pacificBlue-100);
+            }
+            &:focus + .form-icon{
+                border-color: color(blue, blue-300);
+            }
+        }
+    }
+    &.primary{
+        input {
+            &:checked + .form-icon{
+                border-color: color(blue, blue-300);
+            }
+        }
+    }   
+    &.light-blue{
+        input {
+            &:checked + .form-icon{
+                background-color: color(blue, blue-500);
+                border-color: color(blue, blue-500);
+                &::before{
+                    border-color: color(pacificBlue, pacificBlue-100);
+                }
+            }
+        }
+    }
+}
+
+
+
+// radiobuttons scss
+.form-radio {
+    input {
+        &:checked + .form-icon{
+            &::before{
+                height: 0.285714286rem;
+                width: 0.285714286rem;
+                margin-left: -.14rem;
+                margin-top: -.14rem;
+            }
+        }    
+    }
+}

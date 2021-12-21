@@ -1,0 +1,1 @@
+„¯©]<?php exit; ?>a:1:{s:7:"content";s:133:"a:5:{s:7:"enabled";b:1;s:17:"max_attempts_host";i:5;s:17:"max_attempts_user";i:10;s:12:"check_period";i:5;s:14:"auto_ban_admin";b:0;}";}

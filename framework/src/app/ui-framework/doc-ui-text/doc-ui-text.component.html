@@ -1,0 +1,8 @@
+<p><b>Text Filter</b></p>
+<ui-text #UiTextFilter (OnSelectionChange)="logIt($event)"></ui-text>
+
+<br/>
+<p><b>Number Filter</b></p>
+<ui-number-filter #UiNumberFilter (OnSelectionChange)="logIt($event)"></ui-number-filter>
+
+<button (click)="Clear()">Clear</button>

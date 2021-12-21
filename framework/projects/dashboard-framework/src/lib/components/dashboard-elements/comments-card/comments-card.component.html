@@ -1,0 +1,269 @@
+<div *ngIf="displaytype===DisplayType.simple">
+  <div class="message-list" *ngFor="let row of commentsData.rows; let i = index">
+    <div *ngIf="variableIndex['avatarVarId']!== undefined && variableIndex['avatarVarId']!== null"
+      class="scale-message-icon" [class.green]="cardConfig.greenColorTaggingCondition &&
+(cardConfig.greenColorTaggingCondition(
+  commentsData.data[i][variableIndex['avatarVarId']],
+  commentsData.data[i][variableIndex['titleVarId']],
+  commentsData.data[i][variableIndex['contentVarId']],
+  commentsData.data[i][variableIndex['tagText1VarId']],
+  commentsData.data[i][variableIndex['tagText2VarId']],
+  commentsData.data[i][variableIndex['tagText3VarId']]
+))
+" [class.yellow]="cardConfig.yellowColorTaggingCondition &&
+(cardConfig.yellowColorTaggingCondition(
+  commentsData.data[i][variableIndex['avatarVarId']],
+  commentsData.data[i][variableIndex['titleVarId']],
+  commentsData.data[i][variableIndex['contentVarId']],
+  commentsData.data[i][variableIndex['tagText1VarId']],
+  commentsData.data[i][variableIndex['tagText2VarId']],
+  commentsData.data[i][variableIndex['tagText3VarId']]
+))
+" [class.red]=" cardConfig.redColorTaggingCondition &&
+(cardConfig.redColorTaggingCondition(
+  commentsData.data[i][variableIndex['avatarVarId']],
+  commentsData.data[i][variableIndex['titleVarId']],
+  commentsData.data[i][variableIndex['contentVarId']],
+  commentsData.data[i][variableIndex['tagText1VarId']],
+  commentsData.data[i][variableIndex['tagText2VarId']],
+  commentsData.data[i][variableIndex['tagText3VarId']]
+))
+">
+      <span>
+        <ng-container *ngTemplateOutlet="
+    output;
+    context: {
+      response: commentsData.data[i][variableIndex['avatarVarId']],
+      date:
+        commentsData.columns[variableIndex['avatarVarId']].dateTimeType
+    }
+  ">
+        </ng-container>
+      </span>
+    </div>
+    <div class="scale-messages">
+      <div class="title-head" *ngIf="variableIndex['titleVarId']!==null && variableIndex['titleVarId']!==undefined">
+        <ng-container *ngTemplateOutlet="
+    output;
+    context: {
+      response: commentsData.data[i][variableIndex['titleVarId']],
+      date: commentsData.columns[variableIndex['titleVarId']].dateTimeType
+    }
+  ">
+        </ng-container>
+      </div>
+      <div class="title-content"
+        *ngIf="variableIndex['contentVarId']!==null && variableIndex['contentVarId']!==undefined">
+        <ng-container *ngTemplateOutlet="
+    output;
+    context: {
+      response: commentsData.data[i][variableIndex['contentVarId']],
+      date:
+        commentsData.columns[variableIndex['contentVarId']].dateTimeType
+    }
+  ">
+        </ng-container>
+      </div>
+      <div class="tagText">
+        <span *ngIf="variableIndex['tagText1VarId']!==null && variableIndex['tagText1VarId']!==undefined">
+          <ng-container *ngTemplateOutlet="
+      output;
+      context: {
+        response: commentsData.data[i][variableIndex['tagText1VarId']],
+        date:
+          commentsData.columns[variableIndex['tagText1VarId']]
+            .dateTimeType
+      }
+    " style="display: inline">
+          </ng-container>
+
+        </span>
+        <span *ngIf="variableIndex['tagText2VarId']!==null && variableIndex['tagText2VarId']!==undefined">
+
+          <span class="dot-circle">&#9679;</span>
+          <ng-container *ngTemplateOutlet="
+      output;
+      context: {
+        response: commentsData.data[i][variableIndex['tagText2VarId']],
+        date:
+          commentsData.columns[variableIndex['tagText2VarId']]
+            .dateTimeType
+      }
+    " style="display: inline">
+          </ng-container>
+        </span>
+
+        <span *ngIf="variableIndex['tagText3VarId']!==null && variableIndex['tagText3VarId']!==undefined">
+          <span class="dot-circle">&#9679;</span>
+          <ng-container *ngTemplateOutlet="
+      output;
+      context: {
+        response: commentsData.data[i][variableIndex['tagText3VarId']],
+        date:
+          commentsData.columns[variableIndex['tagText3VarId']]
+            .dateTimeType
+      }
+    " style="display:inline">
+          </ng-container>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div *ngIf="displaytype===DisplayType.blocked">
+  <div class="container">
+    <div class="columns" *ngFor="let row of commentsData.rows; let i = index">
+      <div class="column col-12">
+        <div class="nps-title-block nps-head-block">
+          <div class="message-list-block">
+            <div *ngIf="variableIndex['avatarVarId']!== undefined && variableIndex['avatarVarId']!== null"
+              class="scale-message-icon-block" [class.green]="cardConfig.greenColorTaggingCondition &&
+                              (cardConfig.greenColorTaggingCondition(
+                                commentsData.data[i][variableIndex['avatarVarId']],
+                                commentsData.data[i][variableIndex['titleVarId']],
+                                commentsData.data[i][variableIndex['contentVarId']],
+                                commentsData.data[i][variableIndex['tagText1VarId']],
+                                commentsData.data[i][variableIndex['tagText2VarId']],
+                                commentsData.data[i][variableIndex['tagText3VarId']]
+                              ))
+                            " [class.yellow]="cardConfig.yellowColorTaggingCondition &&
+                              (cardConfig.yellowColorTaggingCondition(
+                                commentsData.data[i][variableIndex['avatarVarId']],
+                                commentsData.data[i][variableIndex['titleVarId']],
+                                commentsData.data[i][variableIndex['contentVarId']],
+                                commentsData.data[i][variableIndex['tagText1VarId']],
+                                commentsData.data[i][variableIndex['tagText2VarId']],
+                                commentsData.data[i][variableIndex['tagText3VarId']]
+                              ))
+                            " [class.red]=" cardConfig.redColorTaggingCondition &&
+                              (cardConfig.redColorTaggingCondition(
+                                commentsData.data[i][variableIndex['avatarVarId']],
+                                commentsData.data[i][variableIndex['titleVarId']],
+                                commentsData.data[i][variableIndex['contentVarId']],
+                                commentsData.data[i][variableIndex['tagText1VarId']],
+                                commentsData.data[i][variableIndex['tagText2VarId']],
+                                commentsData.data[i][variableIndex['tagText3VarId']]
+                              ))
+                            ">
+              <span>
+                <ng-container *ngTemplateOutlet="
+                                  output;
+                                  context: {
+                                    response: commentsData.data[i][variableIndex['avatarVarId']],
+                                    date:
+                                      commentsData.columns[variableIndex['avatarVarId']].dateTimeType
+                                  }
+                                ">
+                </ng-container>
+              </span>
+            </div>
+            <div class="scale-messages-block">
+              <div class="title-head-block">
+                <span class="comment-title-block">
+                  <span *ngIf="variableIndex['titleVarId']!==null && variableIndex['titleVarId']!==undefined">
+                    <ng-container *ngTemplateOutlet="
+                      output;
+                      context: {
+                        response: commentsData.data[i][variableIndex['titleVarId']],
+                        date: commentsData.columns[variableIndex['titleVarId']].dateTimeType
+                      }
+                    ">
+                    </ng-container>
+                  </span>
+
+                  <span class="email-txt-block"
+                    *ngIf="variableIndex['tagText2VarId']!==null && variableIndex['tagText2VarId']!==undefined">
+                    <div class="dot"></div>
+                    <ng-container *ngTemplateOutlet="
+                                          output;
+                                          context: {
+                                            response: commentsData.data[i][variableIndex['tagText2VarId']],
+                                            date:
+                                              commentsData.columns[variableIndex['tagText2VarId']]
+                                                .dateTimeType
+                                          }
+                                        " style="display: inline">
+                    </ng-container>
+                  </span>
+                </span>
+                <span class="time-txt-block"
+                  *ngIf="variableIndex['tagText3VarId']!==null && variableIndex['tagText3VarId']!==undefined">
+                  <ng-container *ngTemplateOutlet="
+                                        output;
+                                        context: {
+                                          response: commentsData.data[i][variableIndex['tagText3VarId']],
+                                          date:
+                                            commentsData.columns[variableIndex['tagText3VarId']]
+                                              .dateTimeType
+                                        }
+                                      " style="display:inline">
+                  </ng-container>
+                </span>
+              </div>
+              <div class="title-content-block"
+                *ngIf="variableIndex['contentVarId']!==null && variableIndex['contentVarId']!==undefined">
+                <ng-container *ngTemplateOutlet="
+                                  output;
+                                  context: {
+                                    response: commentsData.data[i][variableIndex['contentVarId']],
+                                    date:
+                                      commentsData.columns[variableIndex['contentVarId']].dateTimeType
+                                  }
+                                ">
+                </ng-container>
+              </div>
+              <div class="tagText-block">
+                <span *ngIf="variableIndex['tagText1VarId']!==null && variableIndex['tagText1VarId']!==undefined">
+
+                  <ng-container *ngTemplateOutlet="
+                                      output;
+                                      context: {
+                                        response: commentsData.data[i][variableIndex['tagText1VarId']],
+                                        date:
+                                          commentsData.columns[variableIndex['tagText1VarId']]
+                                            .dateTimeType
+                                      }
+                                    " style="display: inline">
+                  </ng-container>
+
+
+
+
+                </span>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="load-more">
+  <button class="btn btn-secondary sm" *ngIf="(pageIndex+1)*pageSize < commentsData.totalCount && !isLoading" type="button"
+    (click)="MoreComments()">
+    Load More <i class="icon icon-caret"></i>
+  </button>
+</div>
+
+<ng-container *ngIf="isLoading">
+  <div class="lds-dual-ring"></div>
+</ng-container>
+
+<ng-template #output let-data="response" let-typeDate="date">
+  <ng-container *ngIf="typeDate === DateTimeVariableType.DateUTC">{{
+    data | amFromUtc | amTimeAgo
+  }}</ng-container>
+  <ng-container *ngIf="typeDate != DateTimeVariableType.DateUTC">{{
+    data
+  }}</ng-container>
+</ng-template>

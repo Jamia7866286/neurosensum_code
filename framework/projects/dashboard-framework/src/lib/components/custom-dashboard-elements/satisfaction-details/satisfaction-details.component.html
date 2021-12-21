@@ -1,0 +1,28 @@
+<div class="bars" *ngIf="!isLoading" style="height: 100%;width: 100%;">
+    <div style="width: 100%;">
+        <div>Satisfied</div>
+        <div style="width: 100%;" class="bar-dimensions">
+            <div class="rating good" [ngStyle]="{'width':npsDetails['good']}"></div>
+            <div class="percentage good">{{npsDetails.good}}</div>
+        </div>
+    </div>
+    <div style="width: 100%;">
+        <div>Neutral</div>
+        <div style="width: 100%;" class="bar-dimensions">
+            <div class="rating neutral" [ngStyle]="{'width':npsDetails['neutral']}"></div>
+            <div class="percentage neutral">{{npsDetails.neutral}}</div>
+        </div>
+    </div>
+    <div style="width: 100%;">
+        <div>Disatisfied</div>
+        <div style="width: 100%;" class="bar-dimensions">
+            <div class="rating bad" [ngStyle]="{'width':npsDetails['bad']}"></div>
+            <div class="percentage bad">{{npsDetails.bad}}</div>
+        </div>
+    </div>
+</div>
+
+<ng-container *ngIf="isLoading">
+    <div class="lds-dual-ring">
+    </div>
+  </ng-container>

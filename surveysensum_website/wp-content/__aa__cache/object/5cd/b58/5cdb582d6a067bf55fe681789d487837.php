@@ -1,0 +1,1 @@
+„¯©]<?php exit; ?>a:1:{s:7:"content";s:247:"a:9:{s:7:"enabled";b:0;s:8:"generate";b:1;s:13:"generate_role";s:13:"administrator";s:15:"generate_length";i:50;s:6:"expire";b:0;s:12:"expire_force";i:1571397126;s:10:"expire_max";i:120;s:11:"expire_role";s:13:"administrator";s:9:"generator";i:1;}";}

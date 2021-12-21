@@ -1,0 +1,696 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Nunito";
+  font-weight: normal;
+  color: #000;
+  height: 100%;
+  overflow: auto;
+  font-weight: 400;
+}
+
+.panel-show-mob {
+  display: none;
+}
+
+.panel-hide-desktop {
+  display: block;
+}
+
+@media (max-width: 767.98px) {
+  .panel-hide-desktop {
+    display: none;
+  }
+
+  .panel-show-mob {
+    display: block;
+  }
+
+  .modal-backdrop.show {
+    opacity: 0.6;
+  }
+
+  .modal .modal-dialog {
+    max-width: 380px;
+    margin: 40px auto 0;
+  }
+
+  .modal .modal-dialog .modal-content .modal-body {
+    /* padding: 40px 46px 40px; */
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #fff;
+  }
+
+  .modal .modal-dialog .modal-content .modal-body h5 {
+    color: #000000;
+    font-size: 1.125rem;
+    margin-bottom: 35px;
+    width: 86%;
+    margin: 0 auto 20px;
+  }
+
+  .modal .modal-dialog .modal-content .modal-body button {
+    margin-top: 40px;
+    font-size: 0.9375rem;
+    font-weight: 500;
+  }
+
+  .modal .modal-dialog .modal-content .modal-body button.close {
+    top: -20px;
+    right: -5px;
+    padding: 1rem;
+    opacity: 1;
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0;
+    text-shadow: 0 1px 0 #fff;
+  }
+
+  .modal .modal-dialog .modal-content .modal-body button.close img {
+    width: 20px;
+  }
+
+  .modal .modal-dialog .modal-content .modal-body button.close:focus {
+    outline: none;
+  }
+
+  .modal .modal-dialog .modal-content .modal-body .expert-form {
+    padding-top: 34px;
+  }
+
+  .modal .modal-dialog .modal-content .modal-body .expert-form .form-group textarea {
+    resize: none;
+  }
+
+  .modal .modal-dialog .modal-content .modal-body .expert-form .custom-control .custom-control-label {
+    color: #253858;
+    font-size: 0.75rem;
+  }
+
+  form .field {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  form .field legend {
+    display: none;
+  }
+
+  form .field label {
+    margin: 0;
+    display: block;
+  }
+
+  form .field label .hs-form-required {
+    display: none;
+  }
+
+  form .field .input > input {
+    line-height: normal;
+    border: 1px solid #5e6c84;
+    color: #42526e;
+    font-size: 14px;
+    padding: 0 18px;
+    border-radius: 4px;
+    font-weight: 500;
+    height: 42px;
+    width: 100%;
+    display: block;
+  }
+
+  form .field .input > input:focus {
+    outline: 0;
+  }
+
+  form .field .input textarea {
+    border: 1px solid #5e6c84;
+    color: #42526e;
+    font-size: 14px;
+    padding: 13px 18px;
+    border-radius: 4px;
+    font-weight: 500;
+    width: 100%;
+    display: block;
+    resize: none;
+    height: 100px;
+  }
+
+  form .field .input textarea:focus {
+    outline: 0;
+  }
+
+  form .field .hs-error-msgs {
+    margin: 0;
+    list-style-type: none;
+  }
+
+  form .field .hs-error-msgs > li label {
+    color: #de350b;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  form .field.hs-phone .hs-fieldtype-intl-phone.hs-input select {
+    float: left;
+    width: 40% !important;
+    line-height: normal;
+    border: 1px solid #e5ebff;
+    color: #000000;
+    font-size: 0.9375rem;
+    padding: 0 18px;
+    border-radius: 4px;
+    font-weight: 500;
+    height: 46px;
+    display: block;
+    padding-right: 0;
+    background: #fff;
+  }
+
+  form .field.hs-phone .hs-fieldtype-intl-phone.hs-input > input {
+    width: 58% !important;
+    float: right;
+    line-height: normal;
+    border: 1px solid #e5ebff;
+    color: #000000;
+    font-size: 0.9375rem;
+    padding: 0 18px;
+    border-radius: 4px;
+    font-weight: 500;
+    height: 46px;
+    display: block;
+    padding-right: 0;
+  }
+
+  form .legal-consent-container .hs-dependent-field > div .input ul {
+    list-style-type: none;
+  }
+
+  form .legal-consent-container .hs-dependent-field > div .input ul li label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  form .legal-consent-container .hs-dependent-field > div .input ul li label input:checked ~ span:before {
+    background-color: #0052cc;
+  }
+
+  form .legal-consent-container .hs-dependent-field > div .input ul li label input:checked ~ span:after {
+    display: block;
+  }
+
+  form .legal-consent-container .hs-dependent-field > div .input ul li label > span {
+    position: relative;
+    margin-left: 30px;
+  }
+
+  form .legal-consent-container .hs-dependent-field > div .input ul li label > span:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -28px;
+    height: 22px;
+    width: 22px;
+    background-color: #dee2e6;
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  form .legal-consent-container .hs-dependent-field > div .input ul li label > span:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: -19px;
+    top: 9px;
+    width: 5px;
+    height: 11px;
+    border: solid #fff;
+    border-width: 0px 2.5px 2.5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  form .legal-consent-container .hs-dependent-field > div .input ul li label:hover:before {
+    background: #ccc;
+  }
+
+  form .hs_error_rollup {
+    display: none;
+  }
+
+  form .hs_submit .actions {
+    margin-top: 40px;
+  }
+
+  form .hs_submit .actions > input {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #f15928;
+    border: 2px solid #f15928;
+    box-shadow: 0px 7px 13px #ff991f3b !important;
+    height: 46px;
+    padding: 0.4rem 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  form .hs_submit .actions > input:focus {
+    outline: none;
+  }
+
+  .hbspt-form .submitted-message p {
+    background: #36b37e;
+    color: #fff;
+    border-radius: 6px;
+    margin: 0;
+    padding: 15px;
+  }
+
+  .contact-us-common {
+    background-color: #F15928;
+    color: #fff;
+    width: 200px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-us-common:focus{
+    box-shadow: none;
+  }
+
+  .contact-us-common:hover{
+    color: #fff;
+  }
+
+  .heading {
+    position: relative;
+    margin-bottom: 32px;
+  }
+  .heading h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  .heading h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    height: 2px;
+    width: 84px;
+    background-color: #F15928;
+  }
+
+  .site-logo img {
+    max-width: 80px;
+  }
+
+  .panel-header {
+    background: #000000;
+    color: #fff;
+    padding: 16px 0 32px;
+  }
+  .panel-header .heading {
+    margin-bottom: 0;
+  }
+  .panel-header .heading h1 {
+    margin: 54px 0 24px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .panel-header .heading P {
+    margin-bottom: 24px;
+  }
+  .panel-header .heading P span {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .real-time-data {
+    padding: 50px 0;
+  }
+  .real-time-data .real-time-img img {
+    width: 100%;
+  }
+
+  .important-live-data {
+    padding-top: 0;
+  }
+  .important-live-data .live-data-points {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .important-live-data .live-data-points .points-main {
+    display: flex;
+    margin: 0 20px 16px;
+    width: 100%;
+  }
+  .important-live-data .live-data-points .points-main .point-number span {
+    background: #F15928;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 14px;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+  .important-live-data .live-data-points .point-description {
+    font-size: 14px;
+    color: #707070;
+  }
+  .important-live-data .real-time-img {
+    margin-top: 8px;
+  }
+  .important-live-data .real-time-img img {
+    width: 100%;
+  }
+  .important-live-data .testimonial-section {
+    padding: 36px 47px 30px;
+    border-radius: 4px;
+    background: #F8F8F8;
+    margin-top: 50px;
+  }
+  .important-live-data .testimonial-section .testimonial-content {
+    color: #707070;
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .important-live-data .testimonial-section .testimonial-content .left-quotation {
+    position: absolute;
+    top: -8px;
+    left: -30px;
+  }
+  .important-live-data .testimonial-section .testimonial-content .right-quotation {
+    position: absolute;
+    bottom: -4px;
+    right: -30px;
+  }
+  .important-live-data .testimonial-section .client-logo-single {
+    position: relative;
+  }
+  .important-live-data .testimonial-section .client-logo-single::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 84px;
+    height: 2px;
+    background: red;
+  }
+
+  .feedback-panel .feedback-inner .feedback-point-main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .feedback-panel .feedback-inner .feedback-check {
+    width: 40px;
+  }
+  .feedback-panel .feedback-inner .feedback-description {
+    width: calc(100% - 40px);
+    margin-top: 4px;
+  }
+  .feedback-panel .feedback-inner .feedback-description h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: #000000;
+  }
+  .feedback-panel .feedback-inner .feedback-description p {
+    color: #707070;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  .our-panel-reach {
+    padding: 36px 0 34px;
+  }
+  .our-panel-reach .panel-main .panel-box {
+    background: #F8F8F8;
+    padding: 16px 24px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+  }
+  .our-panel-reach .panel-main .panel-box .panel-heading {
+    color: #F15928;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .our-panel-reach .panel-main .panel-box .panel-heading sub {
+    color: #707070;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .our-panel-reach .panel-main .panel-box .panel-description {
+    color: #707070;
+    font-size: 14px;
+  }
+
+  .successfull-brand.feedback-panel .feedback-inner .feedback-description h3 {
+    margin-bottom: 16px;
+  }
+  .successfull-brand.feedback-panel .clints-logos {
+    margin: 6px 0 24px;
+  }
+  .successfull-brand.feedback-panel .contact-btn .contact-us-common {
+    margin: 0 auto;
+  }
+
+  .testing-section {
+    padding: 50px 0;
+  }
+  .testing-section .testing-main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .testing-section .testing-box {
+    display: flex;
+    align-items: center;
+    background: #F8F8F8;
+    border-radius: 4px;
+    padding: 12px 8px;
+    margin: 0 5px 10px;
+    width: calc(50% - 10px);
+  }
+  .testing-section .testing-box .testing-img {
+    margin-right: 8px;
+  }
+  .testing-section .testing-box .testing-heading {
+    color: #000000;
+    font-weight: 600;
+  }
+
+  .contact-us-panel {
+    background: #F15928;
+    padding: 24px 24px 20px;
+    color: #fff;
+    text-align: center;
+  }
+  .contact-us-panel .contact-panel p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+  .contact-us-panel .contact-panel .contact-btn .contact-us-common {
+    background: #fff;
+    color: #F15928;
+    margin: 0 auto;
+    width: 180px;
+  }
+}
+
+
+.joinchat__button {
+  position: fixed;
+  z-index: 99;
+  bottom: 8px;
+  left: 8px;
+  height: 60px;
+  max-width: 60px;
+  min-width: 60px;
+  background: #25d366;
+  border-radius: 100%;
+  box-shadow: 1px 6px 24px 0 rgb(7 94 84 / 24%);
+  cursor: pointer;
+  transition: background .2s linear;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  will-change: background-color,width;
+  width: 100px;
+}
+
+.joinchat__button__open {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.joinchat__tooltip {
+  position: absolute;
+  top: 14px;
+  left:70px;
+  max-width: calc(100vw - 105px);
+  height: 32px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 16px;
+  background: #fff;
+  color: rgba(0,0,0,.8);
+  line-height: 31px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity .3s ease-out .4s;
+  filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+  transform: translateZ(0);
+  pointer-events: none;
+}
+
+.joinchat__tooltip div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fab-icon{
+    position: relative;
+}
+
+.joinchat__tooltip:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 8px 8px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.joinchat__button:hover .joinchat__tooltip {
+  opacity: 1;
+  animation: none;
+  transition: opacity .2s;
+}
+
+
+
+/************************ ZOHO CRM css custom form design ************************/
+
+.zcwf_lblLeft .zcwf_button{
+  font-size: 16px !important;
+  font-weight: 500;
+  color: #fff !important;
+  background-color: #f15928;
+  border: 2px solid #f15928;
+  box-shadow: none !important;
+  height: 46px;
+  padding: 0.4rem 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.zcwf_lblLeft .zcwf_button[type="reset"]{
+  background-color: #efefef;
+  color: #333 !important;
+}
+
+.crmWebToEntityForm{
+  background-color: transparent !important;
+  padding: 20px 20px 20px!important;
+}
+
+.modal .modal-dialog.zoho-crm{
+    max-width: 600px;
+}
+
+.modal .modal-dialog.zoho-crm button.close{
+  top: -14px !important;
+  right: 0px !important;
+  opacity: 0.8 !important;
+}
+
+.modal .modal-dialog.zoho-crm .modal-body{
+  padding: 0;
+}
+
+.zcwf_lblLeft .zcwf_privacy .dIB.vat {
+  width: 14px;
+}
+
+.zcwf_lblLeft .zcwf_privacy .dIB.zcwf_privacy_txt{
+  width: calc(100% - 20px);
+}
+
+.zcwf_lblLeft .zcwf_privacy .dIB.zcwf_privacy_txt > *{
+  background-color: #f4f6fc !important;
+}
+
+.zcwf_lblLeft .zcwf_privacy .dIB.zcwf_privacy_txt + div{
+  padding-left: 20px !important;
+}
+
+.zcwf_lblLeft .zcwf_col_fld{
+  width: 100% !important;
+}
+
+.zcwf_lblLeft .zcwf_col_fld input[type=text], 
+.zcwf_lblLeft .zcwf_col_fld textarea{
+  width: 100% !important;
+  border: 1px solid #d5d7df !important;
+  border-radius: 4px !important;
+  padding: 4px 7px !important;
+}
+
+.modal-dialog.zoho-crm .modal-title {
+  margin-bottom: 0 !important;
+  padding: 20px 0 0 30px;
+  width: 88%;
+}
+
+.zcwf_lblLeft .zcwf_title{
+  display: none;
+}
+
+
+/************************ End ZOHO CRM css custom form design ************************/
+
+
+
+@media (max-width: 340px){
+  .crmWebToEntityForm {
+    padding: 0!important;
+  }
+}

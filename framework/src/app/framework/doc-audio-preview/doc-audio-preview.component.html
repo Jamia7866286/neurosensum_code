@@ -1,0 +1,47 @@
+<dashboard-page>
+        <div class="page-head">
+            <h5><strong>Audio widget</strong></h5>
+        </div>
+        <div class="page-content">
+            <div class="container">
+                <div class="columns">
+                    <div class="column col-12">
+                        <h5><u>Inputs to be taken</u></h5>
+                        <p>
+                            <strong>Url: (String)</strong> It will take the url of Audio that is to be played.<br>
+                            <strong>UrlType: (MediaUrlType)</strong> It will take the Type of url as <b>static</b> or <b>Dynamic</b>.<br>
+                            <strong>Note:</strong> MediaUrlType is an enum which is written as:
+                        </p>
+                    </div>
+                    <div class="column col-12">
+                    <pre class="code" data-lang="Typescript">
+                        <code>
+                            {{enums}}
+                        </code>
+                    </pre>
+                    <h5><u>Installation of Intersection-observer</u></h5>
+                    <pre class="code" data-lang="Bash">
+                        <code>
+                            {{bash}}
+                        </code>
+                    </pre>
+                    <h5><u>Example for type STATIC:</u></h5>
+                    <pre class="code" data-lang="HTML">
+                            <code>
+                                {{htmlStatic}}
+                            </code>
+                        </pre>
+                    <h5><u>Example for type DYNAMIC:</u></h5>
+                    <pre class="code" data-lang="HTML">
+                            <code>
+                                {{htmlDynamic}}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+</dashboard-page>
+<h5><u>Sample Working Model</u></h5>
+<dashboard-audio-preview [url]="'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'" [urlType]="urlType.Static"></dashboard-audio-preview>
+<!-- <dashboard-audio-preview [url]="'7847fce9-54b3-41df-ad6c-995a76845de1.mp3'" [urlType]="urlType.Dynamic"></dashboard-audio-preview> -->

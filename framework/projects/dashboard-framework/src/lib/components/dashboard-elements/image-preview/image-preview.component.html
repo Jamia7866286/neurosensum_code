@@ -1,0 +1,12 @@
+<ng-container *ngIf="urlType===MediaTypeType.Dynamic">
+  <img [src]="url | loadGlobalAsset: assetInfoType.Image | async" alt=""
+   *ngIf="(url | loadGlobalAsset: assetInfoType.Image | async); else loading">
+</ng-container>
+
+<ng-container *ngIf="urlType===MediaTypeType.Static">
+  <img [src]="imageUrl" alt="" *ngIf="imageUrl; else loading">
+</ng-container>
+
+<ng-template #loading>
+    Loading Image...
+  </ng-template>

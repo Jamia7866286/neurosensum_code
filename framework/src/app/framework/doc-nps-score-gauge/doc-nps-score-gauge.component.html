@@ -1,0 +1,22 @@
+<dashboard-page>
+    <div class="page-head">
+    </div>
+    <div class="page-content container">
+        <div class="columns">
+            <div class="column col-12">
+                <dashboard-widget class="shadow">
+                    <div class="widget-head">
+
+                    </div>
+                    <div class="widget-content" style="height: 500px;width: 500px;">
+                        <dashboard-nps-score-gauge style="height: 500px;width: 500px;" [npsCrosstabDefination]="npsCrosstabDef" [NpsAfterChartrender]="NpsAfterChartrender"
+                            [npsChartConfig]="npsChartConfig" [npsDataSelector]="npsDataSelector"
+                            [excludedFilter]="['vz4']"></dashboard-nps-score-gauge>
+                    </div>
+                </dashboard-widget>
+            </div>
+
+        </div>
+
+    </div>
+</dashboard-page>

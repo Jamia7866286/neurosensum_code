@@ -1,0 +1,62 @@
+<ng-container *ngIf="!isChartSelected">
+    <div class="container">
+        <div class="columns">
+            <div class="column col-6" *ngFor="let chartCard of chartDisplayCard">
+                <div class="card" style="cursor: pointer">
+                    <div class="card-header" (click)="previewChartByType(chartCard.chartType)">
+                        <div class="card-title h7">{{chartCard.title}}</div>
+                        <div class="card-subtitle text-gray">Click to preview</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="isChartSelected">
+    <button class="btn" (click)="deSelectChart()">Go Back</button>
+    <div class="form-group">
+        <label class="form-switch">
+            <input type="checkbox" [disabled]="chartConfig.chartType===chartTypes.Timeline"
+                [(ngModel)]="rowAsCategories" (ngModelChange)="toggleRowAsCotegories($event)">
+            <i class="form-icon"></i> Rows As Categories
+        </label>
+    </div>
+    <div class="columns">
+        <div class="column col-7">
+
+            <pre class="code" data-lang="TS">
+                    <code>{{tsCode}}</code>
+                </pre>
+
+            <pre class="code" data-lang="HTML">
+                    <code>{{htmlCode}}</code>
+                </pre>
+
+        </div>
+        <div class="column col-5">
+            <dashboard-page>
+                <div class="page-head">
+                </div>
+                <div class="page-content container">
+                    <div class="columns">
+                        <div class="column col-12">
+                            <dashboard-widget class="shadow">
+                                <div class="widget-head">
+                                    some head title
+                                </div>
+                                <div class="widget-content" style="height: 250px;">
+                                    <dashboard-chart [crosstabDefination]="crosstabDef" [chartConfig]="chartConfig"
+                                        [dataSelector]="dataSelector"></dashboard-chart>
+                                </div>
+                            </dashboard-widget>
+                        </div>
+
+                    </div>
+
+                </div>
+            </dashboard-page>
+        </div>
+    </div>
+
+</ng-container>

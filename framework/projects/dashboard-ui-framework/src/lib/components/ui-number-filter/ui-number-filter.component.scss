@@ -1,0 +1,36 @@
+@function rem($p) {
+    @return ($p/14)+rem;
+}
+
+.operator-dropdown {
+    display: flex;
+    align-items: center;
+    .box-size {
+        width: auto;
+        min-height: 3.758rem;
+        .box-size-inner {
+            width: auto;
+            min-width: 10.5rem;
+            height: 32px;
+            font-size: 1rem;
+        }
+    }
+    .first-number,
+    .second-number {
+        margin-left: rem(8);
+        min-height: 3.758rem;
+        .number-input {
+            height: 32px;
+            width: auto;
+            font-size: 1rem;
+        }
+    }
+    .first-number {
+        margin-left: 0;
+    }
+    .second-number {
+        .form-input-hint {
+            line-height: 10px;
+        }
+    }
+}

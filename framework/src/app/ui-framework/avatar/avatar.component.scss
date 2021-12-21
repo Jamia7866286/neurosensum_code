@@ -1,0 +1,33 @@
+// code
+pre{
+    padding-left: 50px;
+    // text-align: center;
+    display: flex;
+    code{
+        color: #fff;
+        background: transparent;
+        line-height: 30px;
+        width: 100%;
+        display: block;
+        white-space: normal;
+        font-weight: 500;
+        font-size: 1.2rem;
+        background: #000;
+        padding: 1rem;
+    }
+}
+
+.avt-wrapper{
+    display: flex;align-items: center;padding-bottom: 1rem;
+    .code-wrapper{
+        min-width: 128px;
+        text-align: center;
+    }
+}
+
+
+// display flex class
+.display-flex{
+    display: flex;
+    align-items: center;
+}

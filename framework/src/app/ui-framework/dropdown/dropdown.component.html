@@ -1,0 +1,566 @@
+<div class="component-title">
+  <h2>Dropdown menu</h2>
+</div>
+
+<div class="columns">
+  <!-- add tag dropdown starts -->
+  <div class="column col-12">
+    <strong>Add Tag Dropdown</strong>
+    <div class="column col-3">
+      <div class="dropdown vz-menu add-dropdown" >
+        <div class="added-chip">
+          <span class="chips">
+            <span class="tag-name" title="Payment">Payment</span>
+            <span class="cross-icon">
+              <svg _ngcontent-tjm-c30="" height="24" style="pointer-events: all;" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><defs _ngcontent-tjm-c30=""></defs><path _ngcontent-tjm-c30="" class="cross-icon" fill="#42526E" d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z" transform="translate(0 0)"></path><path fill="none" d="M0,0H24V24H0Z"></path></svg>
+            </span>
+          </span>
+        </div>
+        <div class="form-group sm" #tagDropdownRef>
+          <span class="input-icon" (click)="tagDropdown.toggleDropdown()">
+              <input class="form-input" type="text" placeholder="Add Tag">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><defs><style>.a{fill:none;}.b{fill:#00875a;}</style></defs><path class="a" d="M0,0H20V20H0Z"/><path class="b" d="M10,6a.8.8,0,0,0-.8.8V9.2H6.8a.8.8,0,1,0,0,1.6H9.2v2.4a.8.8,0,1,0,1.6,0V10.8h2.4a.8.8,0,0,0,0-1.6H10.8V6.8A.8.8,0,0,0,10,6Zm0-4a8,8,0,1,0,8,8A8,8,0,0,0,10,2Zm0,14.4A6.4,6.4,0,1,1,16.4,10,6.408,6.408,0,0,1,10,16.4Z"/></svg>
+          </span>
+      </div>
+        <!-- menu component -->
+        <ui-custom-dropdown #tagDropdown [reference]="tagDropdownRef">
+          <ul class="menu">
+            <li class="active"><a href="javascript:void(0)">Add Tag 1</a></li>
+            <li><a href="javascript:void(0)">Add Tag 2</a></li>
+            <li><a href="javascript:void(0)">Add Tag 3</a></li>
+            <li><a href="javascript:void(0)">Add Tag 4</a></li>
+            <li><a href="javascript:void(0)">Add Tag 5</a></li>
+            <li><a href="javascript:void(0)">Add Tag 6</a></li>
+          </ul>
+        </ui-custom-dropdown>
+      </div>
+    </div>
+
+    <div class="column col-3">
+      <div class="dropdown vz-menu" #simpleDropdownRef>
+        <a href="javascript:void(0)" class="btn btn-link dropdown-toggle btn-secondary sm" tabindex="0"
+          (click)="simpleDropdown.toggleDropdown()">
+          dropdown menu
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <defs></defs>
+            <path fill="none" d="M0,0H24V24H0Z" />
+            <path fill="#253858" d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" />
+          </svg>
+        </a>
+        <!-- menu component -->
+        <ui-custom-dropdown #simpleDropdown [reference]="simpleDropdownRef">
+          <ul class="menu">
+            <li class="active"><a href="javascript:void(0)">Button label 1</a></li>
+            <li><a href="javascript:void(0)">Button label 2</a></li>
+            <li><a href="javascript:void(0)">Button label 3</a></li>
+            <li><a href="javascript:void(0)">Button label 4</a></li>
+            <li><a href="javascript:void(0)">Button label 5</a></li>
+            <li><a href="javascript:void(0)">Button label 6</a></li>
+          </ul>
+        </ui-custom-dropdown>
+      </div>
+    </div>
+
+  <!-- documented code -->
+  <pre>
+    <code>
+        &lt;div class="dropdown vz-menu" #simpleDropdownRef&gt;
+        &lt;a href="javascript:void(0)" class="btn btn-link dropdown-toggle btn-secondary sm" tabindex="0"
+          (click)="simpleDropdown.toggleDropdown()"&gt;
+          dropdown menu
+          &lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"&gt;
+            &lt;defs&gt;&lt;/defs&gt;
+            &lt;path fill="none" d="M0,0H24V24H0Z" /&gt;
+            &lt;path fill="#253858" d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" /&gt;
+          &lt;/svg&gt;
+        &lt;/a&gt;
+        &lt;!-- menu component --&gt;
+        &lt;ui-custom-dropdown #simpleDropdown [reference]="simpleDropdownRef"&gt;
+          &lt;ul class="menu"&gt;
+            &lt;li class="active"&gt;&lt;a href="javascript:void(0)"&gt;Button label 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 4&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 5&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 6&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/ui-custom-dropdown&gt;
+      &lt;/div&gt;
+    </code>
+  </pre>
+
+
+    <!-- use is-error class for error -->
+    <div class="column col-3">
+      <div class="dropdown vz-menu is-error" #simpleDropdownRefError>
+        <a href="javascript:void(0)" class="btn btn-link dropdown-toggle btn-secondary sm" tabindex="0"
+          (click)="simpleDropdownError.toggleDropdown()">
+          dropdown menu
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <defs></defs>
+            <path fill="none" d="M0,0H24V24H0Z" />
+            <path fill="#253858" d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" />
+          </svg>
+        </a>
+        <!-- menu component -->
+        <ui-custom-dropdown #simpleDropdownError [reference]="simpleDropdownRefError">
+          <ul class="menu">
+            <li class="active"><a href="javascript:void(0)">Button label 1</a></li>
+            <li><a href="javascript:void(0)">Button label 2</a></li>
+            <li><a href="javascript:void(0)">Button label 3</a></li>
+            <li><a href="javascript:void(0)">Button label 4</a></li>
+            <li><a href="javascript:void(0)">Button label 5</a></li>
+            <li><a href="javascript:void(0)">Button label 6</a></li>
+          </ul>
+        </ui-custom-dropdown>
+        <span class="form-input-hint">
+          Required Field
+        </span>
+      </div>
+    </div>
+
+     <!-- documented code -->
+     <pre>
+       <code>
+          &lt;div class="dropdown vz-menu is-error" #simpleDropdownRefError&gt;
+          &lt;a href="javascript:void(0)" class="btn btn-link dropdown-toggle btn-secondary sm" tabindex="0"
+            (click)="simpleDropdownError.toggleDropdown()"&gt;
+            dropdown menu
+            &lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"&gt;
+              &lt;defs&gt;&lt;/defs&gt;
+              &lt;path fill="none" d="M0,0H24V24H0Z" /&gt;
+              &lt;path fill="#253858" d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" /&gt;
+            &lt;/svg&gt;
+          &lt;/a&gt;
+          &lt;!-- menu component --&gt;
+          &lt;ui-custom-dropdown #simpleDropdownError [reference]="simpleDropdownRefError"&gt;
+            &lt;ul class="menu"&gt;
+              &lt;li class="active"&gt;&lt;a href="javascript:void(0)"&gt;Button label 1&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 2&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 3&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 4&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 5&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 6&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/ui-custom-dropdown&gt;
+          &lt;span class="form-input-hint"&gt;
+            Required Field
+          &lt;/span&gt;
+        &lt;/div&gt;
+       </code>
+     </pre>
+
+    <div class="column col-3">
+      <div class="dropdown vz-menu" #simpleDropdownRefPacific>
+        <a href="javascript:void(0)" class="btn btn-link dropdown-toggle btn-pacific-secondary sm" tabindex="0"
+          (click)="simpleDropdownPacific.toggleDropdown()">
+          dropdown menu
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <defs></defs>
+            <path fill="none" d="M0,0H24V24H0Z" />
+            <path fill="#253858" d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" />
+          </svg>
+        </a>
+        <!-- menu component -->
+        <ui-custom-dropdown #simpleDropdownPacific [reference]="simpleDropdownRefPacific">
+          <ul class="menu">
+            <li class="active"><a href="javascript:void(0)">Button label 1</a></li>
+            <li><a href="javascript:void(0)">Button label 2</a></li>
+            <li><a href="javascript:void(0)">Button label 3</a></li>
+            <li><a href="javascript:void(0)">Button label 4</a></li>
+            <li><a href="javascript:void(0)">Button label 5</a></li>
+            <li><a href="javascript:void(0)">Button label 6</a></li>
+          </ul>
+        </ui-custom-dropdown>
+      </div>
+    </div>
+
+    <!-- documented code -->
+    <pre>
+      <code>
+          &lt;div class="dropdown vz-menu" #simpleDropdownRefPacific&gt;
+          &lt;a href="javascript:void(0)" class="btn btn-link dropdown-toggle btn-pacific-secondary sm" tabindex="0"
+            (click)="simpleDropdownPacific.toggleDropdown()"&gt;
+            dropdown menu
+            &lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"&gt;
+              &lt;defs&gt;&lt;/defs&gt;
+              &lt;path fill="none" d="M0,0H24V24H0Z" /&gt;
+              &lt;path fill="#253858" d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" /&gt;
+            &lt;/svg&gt;
+          &lt;/a&gt;
+          &lt;!-- menu component --&gt;
+          &lt;ui-custom-dropdown #simpleDropdownPacific [reference]="simpleDropdownRefPacific"&gt;
+            &lt;ul class="menu"&gt;
+              &lt;li class="active"&gt;&lt;a href="javascript:void(0)"&gt;Button label 1&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 2&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 3&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 4&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 5&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 6&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/ui-custom-dropdown&gt;
+        &lt;/div&gt;
+      </code>
+    </pre>
+
+    <div class="column col-3">
+      <div class="dropdown vz-menu" #commonSearchDropdownRef>
+        <a href="javascript:void(0)" class="btn btn-link dropdown-toggle btn-secondary sm" tabindex="0"
+          (click)="commonSearchDropdown.toggleDropdown()">
+          Select project
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <defs></defs>
+            <path fill="none" d="M0,0H24V24H0Z" />
+            <path fill="#253858" d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" />
+          </svg>
+        </a>
+        <!-- menu component -->
+        <ui-custom-dropdown #commonSearchDropdown [reference]="commonSearchDropdownRef">
+          <ul class="menu search-list-dropdown">
+            <li class="items-search">
+              <div class="form-group sm">
+                <span class="input-icon">
+                  <input appTyping class="form-input" type="text" placeholder="Search projects" />
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.664" height="17.797" viewBox="0 0 17.664 17.797">
+                      <defs>
+                        <clipPath id="clip-path">
+                          <path id="Combined_Shape" data-name="Combined Shape" d="M16.663,17.8a.989.989,0,0,1-.713-.3l-3.937-4.006a7.506,7.506,0,1,1,1.422-1.406l3.942,4.01a1,1,0,0,1-.714,1.7ZM7.5,2A5.5,5.5,0,1,0,13,7.5,5.506,5.506,0,0,0,7.5,2Z" transform="translate(3 3)" fill="#0052cc"/>
+                        </clipPath>
+                        <clipPath id="clip-path-2">
+                          <rect width="24" height="24" fill="none"/>
+                        </clipPath>
+                      </defs>
+                      <g id="Group_8" data-name="Group 8" transform="translate(-3 -3)" clip-path="url(#clip-path)">
+                        <g id="_Color" data-name="â†³ ðŸŽ¨Color" clip-path="url(#clip-path-2)">
+                          <path id="N500" d="M0,24H24V0H0Z" fill="#0052cc"/>
+                        </g>
+                      </g>
+                    </svg>
+                </span>
+              </div>
+            </li>
+            <li class="items-scroller">
+              <ul>
+                <li>
+                  <a href="javascript:void(0)">Project 1</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Project 2</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Project 3</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Project 4</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Project 5</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Project 6</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Project 7</a>
+                </li>
+              </ul>
+            </li>
+            <li class="no-items-found">
+              <div class="inner-wrapper">No Project found</div>
+            </li>
+          </ul>
+        </ui-custom-dropdown>
+      </div>
+    </div>
+
+    <!-- documented code -->
+    <pre>
+      <code>
+        &lt;div class="dropdown vz-menu" #commonSearchDropdownRef&gt;
+          &lt;a href="javascript:void(0)" class="btn btn-link dropdown-toggle btn-secondary sm" tabindex="0"
+            (click)="commonSearchDropdown.toggleDropdown()"&gt;
+            Select project
+            &lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"&gt;
+              &lt;defs&gt;&lt;/defs&gt;
+              &lt;path fill="none" d="M0,0H24V24H0Z" /&gt;
+              &lt;path fill="#253858" d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" /&gt;
+            &lt;/svg&gt;
+          &lt;/a&gt;
+          <!-- menu component -->
+          $lt;ui-custom-dropdown #commonSearchDropdown [reference]="commonSearchDropdownRef"&gt;
+            &lt;ul class="menu search-list-dropdown"&gt;
+              &lt;li class="items-search"&gt;
+                &lt;div class="form-group sm"&gt;
+                  &lt;span class="input-icon"&gt;
+                    &lt;input appTyping class="form-input" type="text" placeholder="Search projects" /&gt;
+                      &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.664" height="17.797" viewBox="0 0 17.664 17.797"&gt;
+                        &lt;defs&gt;
+                          &lt;clipPath id="clip-path"&gt;
+                            &lt;path id="Combined_Shape" data-name="Combined Shape" d="M16.663,17.8a.989.989,0,0,1-.713-.3l-3.937-4.006a7.506,7.506,0,1,1,1.422-1.406l3.942,4.01a1,1,0,0,1-.714,1.7ZM7.5,2A5.5,5.5,0,1,0,13,7.5,5.506,5.506,0,0,0,7.5,2Z" transform="translate(3 3)" fill="#0052cc"/&gt;
+                          &lt;/clipPath&gt;
+                          &lt;clipPath id="clip-path-2"&gt;
+                            &lt;rect width="24" height="24" fill="none"/&gt;
+                          &lt;/clipPath&gt;
+                        &lt;/defs&gt;
+                        &lt;g id="Group_8" data-name="Group 8" transform="translate(-3 -3)" clip-path="url(#clip-path)"&gt;
+                          &lt;g id="_Color" data-name="â†³ ðŸŽ¨Color" clip-path="url(#clip-path-2)"&gt;
+                            &lt;path id="N500" d="M0,24H24V0H0Z" fill="#0052cc"/&gt;
+                          &lt;/g&gt;
+                        &lt;/g&gt;
+                      &lt;/svg&gt;
+                  &lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/li&gt;
+              &lt;li class="items-scroller"&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;
+                    &lt;a href="javascript:void(0)"&gt;Project 1&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;a href="javascript:void(0)"&gt;Project 2&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;a href="javascript:void(0)"&gt;Project 3&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;a href="javascript:void(0)"&gt;Project 4&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;a href="javascript:void(0)"&gt;Project 5&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;a href="javascript:void(0)"&gt;Project 6&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;a href="javascript:void(0)"&gt;Project 7&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li class="no-items-found"&gt;
+                &lt;div class="inner-wrapper"&gt;No Project found&lt;/div&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/ui-custom-dropdown&gt;
+        &lt;/div&gt;
+      </code>
+    </pre>
+
+    <div class="column col-3">
+      <ui-multi-select [data]="multidata" [(ngModel)]="values" [allowSearch]="true" (ngModelChange)="checkValueChange()"
+        [placeHolder]="'Select list'" [linkData]="linkData" (onLinkSelect)="OnSelectLink($event)"></ui-multi-select>
+
+      <ui-select [data]="data" [(ngModel)]="values" (ngModelChange)="checkValueChange()" [placeHolder]="'Select list'"
+        [linkData]="linkData" (onLinkSelect)="OnSelectLink($event)" [classes]="['prashant']"></ui-select>
+    </div>
+
+    <!-- documented code -->
+    <pre>
+      <code>
+          &lt;ui-multi-select [data]="multidata" [(ngModel)]="values" [allowSearch]="true" (ngModelChange)="checkValueChange()"
+          [placeHolder]="'Select list'" [linkData]="linkData" (onLinkSelect)="OnSelectLink($event)"&gt;&lt;/ui-multi-select&gt;
+
+        &lt;ui-select [data]="data" [(ngModel)]="values" (ngModelChange)="checkValueChange()" [placeHolder]="'Select list'"
+          [linkData]="linkData" (onLinkSelect)="OnSelectLink($event)" [classes]="['prashant']"&gt;&lt;/ui-select&gt;
+      </code>
+    </pre>
+  </div>
+  <!-- add tag dropdown end -->
+  <!-- dropdown icons -->
+  <div class="vz-flexWrap" style="flex-direction: column;align-items: flex-start;">
+    <div class="dropdown" #simpleDropdownRefMenuBtn>
+      <a href="javascript:void(0)" class="btn btn-link dropdown-toggle btn-pacific-secondary sm menu-btn" tabindex="0"
+        (click)="simpleDropdownMenuBtn.toggleDropdown()">
+        <img src="assets/svg/more_vert.svg" />
+        <!-- <i class="fas fa-ellipsis-h" style="color: #fff;"></i> -->
+      </a>
+      <!-- menu component -->
+      <ui-custom-dropdown #simpleDropdownMenuBtn [reference]="simpleDropdownRefMenuBtn">
+        <ul class="menu">
+          <li class="active"><a href="javascript:void(0)">Button label 1</a></li>
+          <li><a href="javascript:void(0)">Button label 2</a></li>
+          <li><a href="javascript:void(0)">Button label 3</a></li>
+          <li><a href="javascript:void(0)">Button label 4</a></li>
+          <li><a href="javascript:void(0)">Button label 5</a></li>
+          <li><a href="javascript:void(0)">Button label 6</a></li>
+        </ul>
+        <!-- <ul>
+        <li>fsdfsdfdsfsdfdsfsdfsdf</li>
+        <li>dsfds</li>
+      </ul> -->
+      </ui-custom-dropdown>
+    </div>
+
+    <!-- documented code -->
+    <pre>
+      <code>
+          &lt;div class="dropdown" #simpleDropdownRefMenuBtn&gt;
+          &lt;a href="javascript:void(0)" class="btn btn-link dropdown-toggle btn-pacific-secondary sm menu-btn" tabindex="0"
+            (click)="simpleDropdownMenuBtn.toggleDropdown()"&gt;
+            &lt;img src="assets/svg/more_vert.svg" /&gt;
+            &lt;!-- &lt;i class="fas fa-ellipsis-h" style="color: #fff;"&gt;&lt;/i&gt; --&gt;
+          &lt;/a&gt;
+          &lt;!-- menu component --&gt;
+          &lt;ui-custom-dropdown #simpleDropdownMenuBtn [reference]="simpleDropdownRefMenuBtn"&gt;
+            &lt;ul class="menu"&gt;
+              &lt;li class="active"&gt;&lt;a href="javascript:void(0)"&gt;Button label 1&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 2&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 3&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 4&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 5&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 6&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;!-- &lt;ul&gt;
+            &lt;li&gt;fsdfsdfdsfsdfdsfsdfsdf&lt;/li&gt;
+            &lt;li&gt;dsfds&lt;/li&gt;
+          &lt;/ul&gt; --&gt;
+          &lt;/ui-custom-dropdown&gt;
+        &lt;/div&gt;
+      </code>
+    </pre>
+
+    <div class="dropdown" #simpleDropdownRefPacificPrimary>
+      <a href="javascript:void(0)" class="btn btn-link dropdown-toggle btn-pacific-primary sm" tabindex="0"
+        (click)="simpleDropdownPacificPrimary.toggleDropdown()">
+        Button variations
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <defs></defs>
+          <path fill="none" d="M0,0H24V24H0Z" />
+          <path fill="#fff" d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" />
+        </svg>
+      </a>
+      <!-- menu component -->
+      <ui-custom-dropdown #simpleDropdownPacificPrimary [reference]="simpleDropdownRefPacificPrimary">
+        <ul class="menu">
+          <li class="active"><a href="javascript:void(0)">Button label 1</a></li>
+          <li><a href="javascript:void(0)">Button label 2</a></li>
+          <li><a href="javascript:void(0)">Button label 3</a></li>
+          <li><a href="javascript:void(0)">Button label 4</a></li>
+          <li><a href="javascript:void(0)">Button label 5</a></li>
+          <li><a href="javascript:void(0)">Button label 6</a></li>
+        </ul>
+      </ui-custom-dropdown>
+    </div>
+
+    <!-- documented code -->
+    <pre>
+      <code>
+          &lt;div class="dropdown" #simpleDropdownRefPacificPrimary&gt;
+          &lt;a href="javascript:void(0)" class="btn btn-link dropdown-toggle btn-pacific-primary sm" tabindex="0"
+            (click)="simpleDropdownPacificPrimary.toggleDropdown()"&gt;
+            Button variations
+            &lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"&gt;
+              &lt;defs&gt;&lt;/defs&gt;
+              &lt;path fill="none" d="M0,0H24V24H0Z" /&gt;
+              &lt;path fill="#fff" d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" /&gt;
+            &lt;/svg&gt;
+          &lt;/a&gt;
+          &lt;!-- menu component --&gt;
+          &lt;ui-custom-dropdown #simpleDropdownPacificPrimary [reference]="simpleDropdownRefPacificPrimary"&gt;
+            &lt;ul class="menu"&gt;
+              &lt;li class="active"&gt;&lt;a href="javascript:void(0)"&gt;Button label 1&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 2&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 3&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 4&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 5&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 6&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/ui-custom-dropdown&gt;
+        &lt;/div&gt;
+      </code>
+    </pre>
+
+    <!-- avtar type -->
+    <div class="dropdown" #simpleDropdownRefIcon>
+      <a href="javascript:void(0)" class="dropdown-toggle" tabindex="0" (click)="simpleDropdownIcon.toggleDropdown()">
+        <img class="vz-icons"
+          src="assets/images/svg/avatar.svg" />
+      </a>
+      <!-- menu component -->
+      <ui-custom-dropdown #simpleDropdownIcon [reference]="simpleDropdownRefIcon">
+        <ul class="menu">
+          <li class="active"><a href="javascript:void(0)">Button label 1</a></li>
+          <li><a href="javascript:void(0)">Button label 2</a></li>
+          <li><a href="javascript:void(0)">Button label 3</a></li>
+          <li><a href="javascript:void(0)">Button label 4</a></li>
+          <li><a href="javascript:void(0)">Button label 5</a></li>
+          <li><a href="javascript:void(0)">Button label 6</a></li>
+        </ul>
+      </ui-custom-dropdown>
+    </div>
+
+    <!-- documented code -->
+    <pre>
+      <code>
+          &lt;div class="dropdown" #simpleDropdownRefIcon&gt;
+          &lt;a href="javascript:void(0)" class="dropdown-toggle" tabindex="0" (click)="simpleDropdownIcon.toggleDropdown()"&gt;
+            &lt;img class="vz-icons"
+              src="assets/images/svg/avatar.svg" /&gt;
+          &lt;/a&gt;
+          &lt;!-- menu component --&gt;
+          &lt;ui-custom-dropdown #simpleDropdownIcon [reference]="simpleDropdownRefIcon"&gt;
+            &lt;ul class="menu"&gt;
+              &lt;li class="active"&gt;&lt;a href="javascript:void(0)"&gt;Button label 1&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 2&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 3&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 4&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 5&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 6&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/ui-custom-dropdown&gt;
+        &lt;/div&gt;
+      </code>
+    </pre>
+
+    <!-- dropdown with heading -->
+    <div class="dropdown" #simpleDropdownRefIconSubList>
+      <a href="javascript:void(0)" class="dropdown-toggle" tabindex="0"
+        (click)="simpleDropdownIconSubList.toggleDropdown()">
+        <img class="vz-icons" src="assets/images/svg/avatar.svg" />
+      </a>
+      <!-- menu component -->
+      <ui-custom-dropdown #simpleDropdownIconSubList [reference]="simpleDropdownRefIconSubList">
+        <ul class="menu">
+          <li class="menu-head">
+            HELP
+          </li>
+          <li><a href="javascript:void(0)">Button label 2</a></li>
+          <li class="active"><a href="javascript:void(0)">Button label 3</a></li>
+          <li><a href="javascript:void(0)">Button label 4</a></li>
+          <li class="menu-head">
+            OPTION
+          </li>
+          <li><a href="javascript:void(0)">Button label 5</a></li>
+          <li><a href="javascript:void(0)">Button label 6</a></li>
+        </ul>
+      </ui-custom-dropdown>
+    </div>
+
+    <!-- documented code -->
+    <pre>
+      <code>
+          &lt;div class="dropdown" #simpleDropdownRefIconSubList&gt;
+          &lt;a href="javascript:void(0)" class="dropdown-toggle" tabindex="0"
+            (click)="simpleDropdownIconSubList.toggleDropdown()"&gt;
+            &lt;img class="vz-icons"
+              src="assets/images/svg/avatar.svg" /&gt;
+          &lt;/a&gt;
+          &lt;!-- menu component --&gt;
+          &lt;ui-custom-dropdown #simpleDropdownIconSubList [reference]="simpleDropdownRefIconSubList"&gt;
+            &lt;ul class="menu"&gt;
+              &lt;li class="menu-head"&gt;
+                HELP
+              &lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 2&lt;/a&gt;&lt;/li&gt;
+              &lt;li class="active"&gt;&lt;a href="javascript:void(0)"&gt;Button label 3&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 4&lt;/a&gt;&lt;/li&gt;
+              &lt;li class="menu-head"&gt;
+                OPTION
+              &lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 5&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="javascript:void(0)"&gt;Button label 6&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/ui-custom-dropdown&gt;
+        &lt;/div&gt;
+      </code>
+    </pre>
+  </div>
+</div>

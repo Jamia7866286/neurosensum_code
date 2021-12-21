@@ -1,0 +1,44 @@
+<div *ngIf="!isLoading" class="widget-content" style="height: 100%;width: 100%">
+    <div *ngIf="npsCrossTabResult" class="detail-score">
+        <div class="smily-main good">
+            <div class="smily">
+                <img src="assets/images/svg/Good.svg" alt="" />
+            </div>
+            <div class="smily-rating">
+                <span class="subHeading">{{ npsCrossTabResult.data[0][0] | number: "1.2-2" }}%</span>
+                <div class="progress-score">
+                    <span>Promoters</span>
+                </div>
+                <div class="rating-triangle" [ngStyle]="{width: scale[0] + '%'}"></div>
+            </div>
+        </div>
+        <div class="smily-main neutral">
+            <div class="smily">
+                <img src="assets/images/svg/Neutral.svg" alt="" />
+            </div>
+            <div class="smily-rating">
+                <span class="subHeading">{{npsCrossTabResult.data[1][0]| number: "1.2-2"}}%</span>
+                <div class="progress-score">
+                    <span>Passives</span>
+                </div>
+                <div class="rating-triangle" [ngStyle]="{width: scale[1] + '%'}"></div>
+            </div>
+        </div>
+        <div class="smily-main bad">
+            <div class="smily">
+                <img src="assets/images/svg/Bad.svg" alt="" />
+            </div>
+            <div class="smily-rating">
+                <span class="subHeading">{{npsCrossTabResult.data[2][0]| number: "1.2-2"}}%</span>
+                <div class="progress-score">
+                    <span>Detractors</span>
+                </div>
+                <div class="rating-triangle" [ngStyle]="{width: scale[2] + '%'}"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-container *ngIf="isLoading">
+    <div class="lds-dual-ring"></div>
+</ng-container>

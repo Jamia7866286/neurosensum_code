@@ -1,0 +1,19 @@
+<ng-container *ngIf="urlType===MediaTypeType.Static">
+        <video width="100%" #myvideo inViewport inViewportOptions="config" (inViewportAction)="onIntersection()"
+         controls [src]="videoUrl"
+        *ngIf="(videoUrl); else loading">
+        </video>
+</ng-container>
+
+<ng-container *ngIf="urlType===MediaTypeType.Dynamic">
+        <video width="100%" #myvideo inViewport inViewportOptions="config" (inViewportAction)="onIntersection()"
+        controls [src]="url| loadGlobalAsset: assetInfoType.Video | async"
+        *ngIf="url | loadGlobalAsset: assetInfoType.Video | async; else loading">
+        </video>
+</ng-container>
+<ng-template #loading>
+        Loading Video...
+      </ng-template>
+
+
+    

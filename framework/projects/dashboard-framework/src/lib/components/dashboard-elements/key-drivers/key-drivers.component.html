@@ -1,0 +1,21 @@
+<ng-container *ngIf="isLoading">
+    <div class="lds-dual-ring"></div>
+</ng-container>
+<ng-container *ngIf="!isLoading">
+    <p *ngIf="scale" class="sub-heading">Grading Scale out of {{scale}}</p>
+    <div *ngFor="let items of variables; let i = index" class="key-driver-box">
+        <div class="comment-heading">
+            <div>{{items.tag}}</div>
+        </div>
+        <div class="progress-dimensions">
+            <div id="myProgress" style="width:100%;" [ngStyle]="{'width':scaling[i]}">
+                <div #bar [ngStyle]="{'background-color':items.color,'height':barHeight+'px'}" class="bar-design"> </div>
+            </div>
+            <div *ngIf="crossTabResult" class="numeric">
+                <p>{{crossTabResult.data[i][0] | number: '1.2-2'}}</p>
+            </div>
+        </div>
+
+
+    </div>
+</ng-container>

@@ -1,0 +1,6 @@
+<ng-container *ngIf="isLoading">
+  <div class="lds-dual-ring"></div>
+</ng-container>
+<!-- <ng-container *ngIf="!isLoading && options"> -->
+<div echarts [options]="options"
+  [ngClass]="{'show-chart' :!isLoading, 'hide-chart':isLoading}" style="height: 100%"></div>

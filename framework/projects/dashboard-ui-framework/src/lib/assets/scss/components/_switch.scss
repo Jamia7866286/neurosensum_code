@@ -1,0 +1,112 @@
+.form-switch {
+  line-height: 1.5rem;
+  &.sm{
+    .form-icon {
+      width: 30px;
+      height: 16px;
+      border: 2px solid #344563;
+      background: #fff;
+      &::before {
+        left: 2px;
+        top: 2px;
+        height: 8px;
+        width: 8px;
+        background: #344563;
+      }
+    }
+    input {
+      &:checked {
+        + .form-icon {
+          background: #fff;
+          border-color: #0052cc !important;
+          &::before {
+            background: #0052cc;
+            left: 1.16rem;
+          }
+        }
+      }
+      &:focus{
+          + .form-icon{
+              border-color: #344563;
+          }
+      }
+      &:active{
+          + .form-icon{
+              &::before{
+                  background: #344563;
+              }
+          }
+      }
+    }
+  }
+  &.lg{
+    .form-icon {
+      width: 35px;
+      height: 18px;
+      border: 2px solid #E4E8F0;
+      background: #E4E8F0;
+      &::before {
+        left: 2px;
+        top: 0px;
+        height: 14px;
+        width: 14px;
+        background: #fff;
+      }
+    }
+    input {
+      &:checked {
+        + .form-icon {
+          background: #00875A;
+          border-color: #00875A !important;
+          &::before {
+            background: #fff;
+            left: 1.16rem;
+          }
+        }
+      }
+      &:focus{
+          + .form-icon{
+              border-color: #E4E8F0;
+          }
+      }
+      &:active{
+          + .form-icon{
+              &::before{
+                  background: #fff;
+              }
+          }
+      }
+    }
+  }
+}
+
+.on-off-indicator {
+  height: 32px;
+  border-radius: $border-radius;
+  width: 96px;
+  margin-right: rem(50);
+  background: #E4E8F0;
+  display: flex;
+  align-items: center;
+  .on-off-switch{
+   width: 50%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   @include text(1rem, 16px, 500, #000000);
+   &.switch-off{
+    background: #C64545;
+    color: #ffffff;
+    border-radius: 5px 0 0 5px;
+    cursor: default;
+   }
+   &.switch-on{
+     background: #00875a;
+     color: #ffffff;
+     border-radius: 0 5px 5px 0;
+     cursor: default;
+   }
+  }
+}

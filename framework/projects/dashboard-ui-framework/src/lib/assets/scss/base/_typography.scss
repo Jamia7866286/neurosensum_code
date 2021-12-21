@@ -1,0 +1,50 @@
+@function rem($px) {
+  @return ($px/14) + rem;
+}
+
+// Typography scss
+$font-size: (
+  display-1: (
+    font-size: rem(48),
+    line-height: linHeight(48),
+  ),
+  display-2: (
+    font-size: rem(34),
+    line-height: linHeight(34),
+  ),
+  display-3: (
+    font-size: rem(24),
+    line-height: linHeight(24),
+  ),
+  display-4: (
+    font-size: rem(20),
+    line-height: linHeight(20),
+  ),
+  title: (
+    font-size: rem(18),
+    line-height: linHeight(18),
+  ),
+  sub-title: (
+    font-size: rem(16),
+    line-height: linHeight(16),
+  ),
+  body: (
+    font-size: rem(14),
+    line-height: linHeight(14),
+  ),
+  caption: (
+    font-size: rem(12),
+    line-height: linHeight(12),
+  ),
+  small: (
+    font-size: rem(10),
+    line-height: linHeight(10),
+  ),
+);
+
+@each $tag, $objKeyVal in $font-size {
+  .#{$tag} {
+    font-size: map-get($objKeyVal, font-size);
+    line-height: map-get($objKeyVal, line-height);
+  }
+}

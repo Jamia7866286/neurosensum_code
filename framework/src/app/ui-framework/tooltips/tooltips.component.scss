@@ -1,0 +1,54 @@
+
+pre{
+    display: flex;
+    code{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+
+.step-tooltip-wrapper{
+  position: relative;
+  display: inline-block;
+}
+
+  .step-journey-left{
+    text-align: left;
+  }
+
+  .step-journey-top{
+    margin-top: 11rem;
+  }
+
+  .step-blink-top{
+      top: -145px;
+  }
+
+
+  .step-tooltip-wrapper  {
+    &.step-journey-top.hovering-action-tooltip{
+      margin-top: 0;
+    }
+  }
+
+
+  .table-custom-view{
+    .table{
+      th{
+          &:first-child{
+            width: 20%;
+          }
+          &:last-child{
+            width: 55%;
+          }
+      }
+      tr{
+        td{
+          white-space: normal;
+          overflow: initial;
+        }
+      }
+    }
+  }

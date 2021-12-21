@@ -1,0 +1,57 @@
+<div class="form-group operator-dropdown">
+    <div class="dropdown vz-menu box-size" #simpleDropdownRef2>
+
+        <a class="btn btn-link dropdown-toggle btn-secondary sm box-size-inner" tabindex="0"
+            (click)="simpleDropdown2.toggleDropdown()">
+            {{Operator.text}}
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <defs></defs>
+                <path fill="none" d="M0,0H24V24H0Z" />
+                <path fill="#253858" d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" />
+            </svg>
+        </a>
+
+        <ui-custom-dropdown #simpleDropdown2 [reference]="simpleDropdownRef2">
+            <ul class="menu textheading operator-menu">
+                <li class="menu-head">
+                    <div class="heading-text">{{dropDownHeading}}</div>
+
+                </li>
+                <div class="list-items">
+                    <li *ngFor="let op of operators">
+                        <a (click)="OnChangeOperator(op)">
+                            {{op.text}}
+                        </a>
+                    </li>
+                </div>
+
+                <!-- <li class="active"><a>Is not</a></li>
+            <li><a>Equal to</a></li>
+            <li><a>Not equal to</a></li>
+            <li><a>Greater Than</a></li>
+            <li><a>Greater Than or Equal to</a></li>
+            <li><a>Less than</a></li>
+            <li><a>Less than or Equal to</a></li>
+            <li><a>Is empty</a></li>
+            <li><a>Is not empty</a></li> -->
+
+            </ul>
+        </ui-custom-dropdown>
+
+
+
+    </div>
+
+    <div class="first-number">
+        <input class="form-input number-input" [disabled]="DisableInput()"
+            [placeholder]="Operator.value === 'between' ? 'First Number': 'Enter Number'" type="text"
+            [ngModel]="Operand[0]" uiNumber [Operand]="Operand[0]" (newValue)="OnChangeOperand($event, Operand[1])" >
+    </div>
+
+    <div class="second-number" *ngIf="Operator.value === 'between'">
+        <input class="form-input number-input" placeholder="Second Number" type="text" [ngModel]="Operand[1]"
+        uiNumber [Operand]="Operand[1]" (newValue)="OnChangeOperand(Operand[0], $event)" [disabled]="DisableSecondInput()" [min]="Operand[0]+1">
+        <span class="form-input-hint" style="color: red;" *ngIf="showError">Value should be greater than
+            {{Operand[0]}}</span>
+    </div>
+</div>

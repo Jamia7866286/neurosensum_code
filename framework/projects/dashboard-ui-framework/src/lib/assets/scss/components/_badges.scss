@@ -1,0 +1,43 @@
+.vz-badge{
+    border-radius: $border-radius;
+    background-color: color(green, green-100);
+    color: color(green, green-600);
+    padding: 0 0.571428571rem;
+    font-size: 0.857142857rem;
+    &.bold{
+        background-color: color(pacificBlue, pacificBlue-1400);
+        color: color(pacificBlue, pacificBlue-100);
+    }
+    &.important{
+        background-color: color(red, base);
+        color: color(pacificBlue, pacificBlue-100);
+    }
+    &.primary-inverted{
+        background-color: color(pacificBlue, pacificBlue-100);
+        color: color(blue, base);
+    }
+    &.primary{
+        background-color: color(blue, base);
+        color: color(pacificBlue, pacificBlue-100);
+    }
+    &.removed{
+        background-color: color(red, red-100);
+        color: color(red, red-600);
+    }
+    &.standard{
+        background-color: color(pacificBlue, pacificBlue-1800);
+        color: color(pacificBlue, pacificBlue-1700);
+    }
+    &.detractors{
+        background-color: color(red, red-100);
+        color: color(red, red-500);
+    }
+    &.passives{
+        background-color: color(pacificBlue, pacificBlue-200);
+        color: color(orange, orange-600);
+    }
+    &.promoters{
+        background-color: color(green, green-100);
+        color: color(green, green-500);
+    }
+}

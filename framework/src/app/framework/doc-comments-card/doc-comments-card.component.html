@@ -1,0 +1,58 @@
+<dashboard-page>
+    <div class="page-head">
+        <h5><strong>Comments Card</strong></h5>
+    </div>
+    <div class="page-content">
+        <div class="container">
+            <div class="columns">
+                <div class="column col-12">
+                    <h5><u>Inputs to be taken</u></h5>
+                    <p>
+                        <strong>CardConfig: (CommentsCardConfig)</strong> It will take up column names that are to be
+                        set on each comment card.<br>
+                        <strong>Note:</strong> CommentsCardConfig is a<strong> Class</strong> which is written as:
+                    </p>
+                </div>
+                <div class="column col-12">
+                    <pre class="code" data-lang="Typescript">
+                            <code>
+                                {{classDec}}
+                            </code>
+                    </pre>
+                </div>
+                <div class="column col-12">
+                    <h5><u>Optional Inputs</u></h5>
+                    <p>
+                        <strong>beforeGettingCommentsData: (Function)</strong> An object of class
+                        <strong>CrosstabDefination</strong> will be passed which can be altered before getting the
+                        dataset.<br>
+                        <strong>beforeCommentsRender: (Function)</strong> An object of class
+                        <strong>CrosstabDefination</strong> will be passed which can be altered before rendering the
+                        dataset.<br>
+                    </p>
+                </div>
+                <div class="column col-12">
+                    <h5><u>Example of Comments card</u></h5>
+                </div>
+                <div class="column col-12">
+                    <pre class="code" data-lang="HTML">
+                            <code>
+                                {{example}}
+                            </code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <dashboard-widget>
+            <div class="widget-content">
+                <h5><u>Sample Working Model</u></h5>
+                <dashboard-comments-card [cardConfig]="cardConfig" [pageSize]="'20'"
+                    [displaytype]="displayType.simple"
+                    [beforeGettingCommentsData]="BeforeGettingCommentsData"
+                    [beforeCommentsRender]="BeforeCommentsRender">
+                </dashboard-comments-card>
+            </div>
+        </dashboard-widget>
+    </div>
+
+</dashboard-page>
